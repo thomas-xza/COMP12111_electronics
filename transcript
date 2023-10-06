@@ -1,0 +1,939 @@
+# //  Questa Sim-64
+# //  Version 2022.4 linux_x86_64 Oct 18 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+#  do /cadtools5/questa_custom/comp121/start_vsim.tcl /cadtools5/questa_custom
+# /cadtools5/questa_custom
+# /home/x93125tp/Questa/COMP12111
+# .main_pane
+# fpgaLoad
+# after#489
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:41 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/BoardLib/AckieV2.v 
+# -- Compiling module AckieV2
+# 
+# Top level modules:
+# 	AckieV2
+# End time: 10:08:41 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:41 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/BoardLib/Board_reset.v 
+# -- Compiling module Board_reset
+# 
+# Top level modules:
+# 	Board_reset
+# End time: 10:08:41 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:41 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/BoardLib/BoardV3.v 
+# -- Compiling module BoardV3
+# 
+# Top level modules:
+# 	BoardV3
+# End time: 10:08:41 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:41 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/BoardLib/Clocks.v 
+# -- Compiling module Clocks
+# 
+# Top level modules:
+# 	Clocks
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/BoardLib/Keyboard.v 
+# -- Compiling module Keyboard
+# 
+# Top level modules:
+# 	Keyboard
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/BoardLib/KMD_defines.v 
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/BoardLib/Segments_Scan.v 
+# -- Compiling module Segments_Scan
+# 
+# Top level modules:
+# 	Segments_Scan
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/BoardLib/Uart_s7.v 
+# -- Compiling module Uart_S7
+# 
+# Top level modules:
+# 	Uart_S7
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
+# -- Compiling module Traffic_Light_Board
+# 
+# Top level modules:
+# 	Traffic_Light_Board
+# End time: 10:08:42 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:42 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
+# -- Compiling module Traffic_Light_Testbench
+# 
+# Top level modules:
+# 	Traffic_Light_Testbench
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
+# -- Compiling module Traffic_Light
+# 
+# Top level modules:
+# 	Traffic_Light
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu_Testbench.v 
+# -- Compiling module MU0_Alu_Testbench
+# 
+# Top level modules:
+# 	MU0_Alu_Testbench
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu.v 
+# -- Compiling module MU0_Alu
+# 
+# Top level modules:
+# 	MU0_Alu
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Board.v 
+# -- Compiling module MU0_Board
+# 
+# Top level modules:
+# 	MU0_Board
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Control.v 
+# -- Compiling module MU0_Control
+# 
+# Top level modules:
+# 	MU0_Control
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Datapath.v 
+# -- Compiling module MU0_Datapath
+# 
+# Top level modules:
+# 	MU0_Datapath
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Flags.v 
+# -- Compiling module MU0_Flags
+# 
+# Top level modules:
+# 	MU0_Flags
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Memory.v 
+# -- Compiling module MU0_Memory
+# 
+# Top level modules:
+# 	MU0_Memory
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux12_Testbench.v 
+# -- Compiling module MU0_Mux12_Testbench
+# 
+# Top level modules:
+# 	MU0_Mux12_Testbench
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux12.v 
+# -- Compiling module MU0_Mux12
+# 
+# Top level modules:
+# 	MU0_Mux12
+# End time: 10:08:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux16_Testbench.v 
+# -- Compiling module MU0_Mux16_Testbench
+# 
+# Top level modules:
+# 	MU0_Mux16_Testbench
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux16.v 
+# -- Compiling module MU0_Mux16
+# 
+# Top level modules:
+# 	MU0_Mux16
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg12_Testbench.v 
+# -- Compiling module MU0_Reg12_Testbench
+# 
+# Top level modules:
+# 	MU0_Reg12_Testbench
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg12.v 
+# -- Compiling module MU0_Reg12
+# 
+# Top level modules:
+# 	MU0_Reg12
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg16_Testbench.v 
+# -- Compiling module MU0_Reg16_Testbench
+###### ./src/Ex3/MU0_Reg16_Testbench.v(61):     D = 12'hxxxx;    #100;
+# ** Warning: ./src/Ex3/MU0_Reg16_Testbench.v(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	MU0_Reg16_Testbench
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg16.v 
+# -- Compiling module MU0_Reg16
+# 
+# Top level modules:
+# 	MU0_Reg16
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Testbench.v 
+# -- Compiling module MU0_Testbench
+# 
+# Top level modules:
+# 	MU0_Testbench
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0.v 
+# -- Compiling module MU0
+# 
+# Top level modules:
+# 	MU0
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:08:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/GLIB/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:08:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# 0
+vsim Ex1.Display_Decoder
+# vsim Ex1.Display_Decoder 
+# Start time: 10:19:57 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Display_Decoder(fast)
+# Loading ./liboverwatch.so
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:44:15 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 10:44:15 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:44:15 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 10:44:15 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:44:15 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+###### ./src/Ex1/Display_Decoder.v(34):     4'b0000: segment_pattern = 15?b000_1100_0011_1111;
+# ** Error: ./src/Ex1/Display_Decoder.v(34): (vlog-2730) Undefined variable: 'b000_1100_0011_1111'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(34): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(36):     4'b0001: segment_pattern = 15?b000_1100_0000_0110;
+# ** Error: ./src/Ex1/Display_Decoder.v(36): (vlog-2730) Undefined variable: 'b000_1100_0000_0110'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(36): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(38):     4'b0010: segment_pattern = 15?b000_0000_1101_1011;
+# ** Error: ./src/Ex1/Display_Decoder.v(38): (vlog-2730) Undefined variable: 'b000_0000_1101_1011'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(38): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(40):     4'b0011: segment_pattern = 15?b000_0000_1100_1111;
+# ** Error: ./src/Ex1/Display_Decoder.v(40): (vlog-2730) Undefined variable: 'b000_0000_1100_1111'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(40): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(42):     4'b0100: segment_pattern = 15?b000_0000_1110_0110;
+# ** Error: ./src/Ex1/Display_Decoder.v(42): (vlog-2730) Undefined variable: 'b000_0000_1110_0110'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(42): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(44):     4'b0101: segment_pattern = 15?b000_0000_1110_1101;
+# ** Error: ./src/Ex1/Display_Decoder.v(44): (vlog-2730) Undefined variable: 'b000_0000_1110_1101'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(44): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(46):     4'b0110: segment_pattern = 15?b000_0000_1111_1101;
+# ** Error: ./src/Ex1/Display_Decoder.v(46): (vlog-2730) Undefined variable: 'b000_0000_1111_1101'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(46): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(48):     4'b0111: segment_pattern = 15?b001_0100_0000_0001;
+# ** Error: ./src/Ex1/Display_Decoder.v(48): (vlog-2730) Undefined variable: 'b001_0100_0000_0001'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(48): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(50):     4'b1000: segment_pattern = 15?b000_0000_1111_1111;
+# ** Error: ./src/Ex1/Display_Decoder.v(50): (vlog-2730) Undefined variable: 'b000_0000_1111_1111'.
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(50): near ";": syntax error, unexpected ';'.
+###### ./src/Ex1/Display_Decoder.v(59): `default_nettype wire
+# ** Error: ./src/Ex1/Display_Decoder.v(59): Compiler directive "`default_nettype" is not allowed inside a design element.
+# End time: 10:44:15 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:44:47 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 10:44:47 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:44:47 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 10:44:47 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:44:47 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+###### ./src/Ex1/Display_Decoder.v(52): end
+# ** Error: (vlog-13069) ./src/Ex1/Display_Decoder.v(52): near "end": syntax error, unexpected end.
+###### ./src/Ex1/Display_Decoder.v(59): `default_nettype wire
+# ** Error: ./src/Ex1/Display_Decoder.v(59): Compiler directive "`default_nettype" is not allowed inside a design element.
+# End time: 10:44:47 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:45:26 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 10:45:26 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:45:26 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 10:45:26 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:45:26 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 10:45:26 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim Ex1.Display_Decoder_Testbench
+# End time: 10:46:17 on Oct 06,2023, Elapsed time: 0:26:20
+# Errors: 0, Warnings: 3
+# vsim Ex1.Display_Decoder_Testbench 
+# Start time: 10:46:17 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Display_Decoder_Testbench(fast)
+# Loading work.Display_Decoder(fast)
+# Loading ./liboverwatch.so
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:50:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 10:50:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:50:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 10:50:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 10:50:43 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 10:50:43 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 10:51:17 on Oct 06,2023, Elapsed time: 0:05:00
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Testbench GLIB.glbl 
+# Start time: 10:51:17 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Display_Decoder_Testbench(fast)
+# Loading work.Display_Decoder(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/segment_pattern
+run -all
+# [VPI Info] Running Init.** Note: $stop    : ./src/Ex1/Display_Decoder_Testbench.v(51)
+#    Time: 1100 ns  Iteration: 0  Instance: /Display_Decoder_Testbench
+# Break in Module Display_Decoder_Testbench at ./src/Ex1/Display_Decoder_Testbench.v line 51
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/input_code
+run -all
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/segment_pattern
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/input_code
+run -all
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:05:29 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 11:05:29 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:05:29 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 11:05:29 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:05:29 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 11:05:30 on Oct 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 11:05:58 on Oct 06,2023, Elapsed time: 0:14:41
+# Errors: 0, Warnings: 3, Suppressed Warnings: 1
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Testbench GLIB.glbl 
+# Start time: 11:05:58 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.Display_Decoder_Testbench(fast)
+# Loading work.Display_Decoder(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/segment_pattern
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:08:46 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 11:08:46 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:08:46 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 11:08:46 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:08:46 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 11:08:46 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:08:52 on Oct 06,2023, Elapsed time: 0:02:54
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Testbench GLIB.glbl 
+# Start time: 11:08:52 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Display_Decoder_Testbench(fast)
+# Loading work.Display_Decoder(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/segment_pattern
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/input_code
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:10:07 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 11:10:07 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:10:07 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 11:10:07 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:10:07 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 11:10:08 on Oct 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 11:10:42 on Oct 06,2023, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Testbench GLIB.glbl 
+# Start time: 11:10:42 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.Display_Decoder_Testbench(fast)
+# Loading work.Display_Decoder(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/segment_pattern
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/input_code
+run -all
+# [VPI Info] Running Init.** Note: $stop    : ./src/Ex1/Display_Decoder_Testbench.v(51)
+#    Time: 1100 ns  Iteration: 0  Instance: /Display_Decoder_Testbench
+# Break in Module Display_Decoder_Testbench at ./src/Ex1/Display_Decoder_Testbench.v line 51
+quit -sim
+# End time: 11:17:56 on Oct 06,2023, Elapsed time: 0:07:14
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:18:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 11:18:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:18:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 11:18:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:18:44 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 11:18:44 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Testbench GLIB.glbl 
+# Start time: 11:19:09 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Display_Decoder_Testbench(fast)
+# Loading work.Display_Decoder(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/segment_pattern
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/input_code
+run -all
+# [VPI Info] Running Init.** Note: $stop    : ./src/Ex1/Display_Decoder_Testbench.v(51)
+#    Time: 1100 ns  Iteration: 0  Instance: /Display_Decoder_Testbench
+# Break in Module Display_Decoder_Testbench at ./src/Ex1/Display_Decoder_Testbench.v line 51
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:22:18 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 11:22:18 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:22:18 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 11:22:18 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:22:18 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+###### ./src/Ex1/Display_Decoder.v(43):     default: segment_pattern = 15'h000_0000_0000_0000;
+# ** Warning: ./src/Ex1/Display_Decoder.v(43): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 11:22:18 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 11:22:28 on Oct 06,2023, Elapsed time: 0:03:19
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Testbench GLIB.glbl 
+# Start time: 11:22:28 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Display_Decoder_Testbench(fast)
+# Loading work.Display_Decoder(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/segment_pattern
+add wave -position insertpoint  \
+sim:/Display_Decoder_Testbench/input_code
+run -all
+# [VPI Info] Running Init.** Note: $stop    : ./src/Ex1/Display_Decoder_Testbench.v(58)
+#    Time: 1800 ns  Iteration: 0  Instance: /Display_Decoder_Testbench
+# Break in Module Display_Decoder_Testbench at ./src/Ex1/Display_Decoder_Testbench.v line 58
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:42:35 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Board.v 
+# -- Compiling module Display_Decoder_Board
+# 
+# Top level modules:
+# 	Display_Decoder_Board
+# End time: 11:42:35 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:42:35 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder_Testbench.v 
+# -- Compiling module Display_Decoder_Testbench
+# 
+# Top level modules:
+# 	Display_Decoder_Testbench
+# End time: 11:42:35 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 11:42:35 on Oct 06,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex1/Display_Decoder.v 
+# -- Compiling module Display_Decoder
+###### ./src/Ex1/Display_Decoder.v(43):     default: segment_pattern = 15'h000_0000_0000_0000;
+# ** Warning: ./src/Ex1/Display_Decoder.v(43): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	Display_Decoder
+# End time: 11:42:35 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 11:42:55 on Oct 06,2023, Elapsed time: 0:20:27
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Board GLIB.glbl -L BoardLib -L Ex1 
+# Start time: 11:42:55 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "AckieV2(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "Uart_S7(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Keyboard(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Segments_Scan(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Board_reset(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Display_Decoder_Board(fast)
+# Loading work.Display_Decoder(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+# End time: 11:42:57 on Oct 06,2023, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 3, Suppressed Warnings: 1
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Testbench GLIB.glbl 
+# Start time: 11:43:58 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.Display_Decoder_Testbench(fast)
+# Loading work.Display_Decoder(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+# End time: 11:46:46 on Oct 06,2023, Elapsed time: 0:02:48
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" Ex1.Display_Decoder_Board GLIB.glbl -L BoardLib 
+# Start time: 11:46:46 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "AckieV2(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "Uart_S7(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Keyboard(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Segments_Scan(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Board_reset(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Display_Decoder_Board(fast)
+# Loading work.Display_Decoder(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+quit
+vsim Ex1.Display_Decoder_Board
+# End time: 11:49:07 on Oct 06,2023, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 3, Suppressed Warnings: 1
+# vsim Ex1.Display_Decoder_Board 
+# Start time: 11:49:07 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Error (suppressible): /cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/SIM_CONFIGE2.v(118): (vopt-7063) Failed to find 'glbl' in hierarchical name 'glbl.GSR'.
+#         Region: Display_Decoder_Board.BoardI1.Rst1.u_icape2.SIM_CONFIGE2_INST
+# ** Error (suppressible): /cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/SIM_CONFIGE2.v(119): (vopt-7063) Failed to find 'glbl' in hierarchical name 'glbl.GTS'.
+#         Region: Display_Decoder_Board.BoardI1.Rst1.u_icape2.SIM_CONFIGE2_INST
+# ** Error (suppressible): /cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/SIM_CONFIGE2.v(120): (vopt-7063) Failed to find 'glbl' in hierarchical name 'glbl.PROGB_GLBL'.
+#         Region: Display_Decoder_Board.BoardI1.Rst1.u_icape2.SIM_CONFIGE2_INST
+# ** Error (suppressible): /cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/SIM_CONFIGE2.v(121): (vopt-7063) Failed to find 'glbl' in hierarchical name 'glbl.PLL_LOCKG'.
+#         Region: Display_Decoder_Board.BoardI1.Rst1.u_icape2.SIM_CONFIGE2_INST
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=4, Warnings=3.
+# Error loading design
+# End time: 11:49:07 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 3
+vsim Ex1.Display_Decoder_Board
+# vsim Ex1.Display_Decoder_Board 
+# Start time: 11:49:09 on Oct 06,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Error (suppressible): /cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/SIM_CONFIGE2.v(118): (vopt-7063) Failed to find 'glbl' in hierarchical name 'glbl.GSR'.
+#         Region: Display_Decoder_Board.BoardI1.Rst1.u_icape2.SIM_CONFIGE2_INST
+# ** Error (suppressible): /cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/SIM_CONFIGE2.v(119): (vopt-7063) Failed to find 'glbl' in hierarchical name 'glbl.GTS'.
+#         Region: Display_Decoder_Board.BoardI1.Rst1.u_icape2.SIM_CONFIGE2_INST
+# ** Error (suppressible): /cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/SIM_CONFIGE2.v(120): (vopt-7063) Failed to find 'glbl' in hierarchical name 'glbl.PROGB_GLBL'.
+#         Region: Display_Decoder_Board.BoardI1.Rst1.u_icape2.SIM_CONFIGE2_INST
+# ** Error (suppressible): /cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/SIM_CONFIGE2.v(121): (vopt-7063) Failed to find 'glbl' in hierarchical name 'glbl.PLL_LOCKG'.
+#         Region: Display_Decoder_Board.BoardI1.Rst1.u_icape2.SIM_CONFIGE2_INST
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=4, Warnings=3.
+# Error loading design
+# End time: 11:49:09 on Oct 06,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 3
+quit

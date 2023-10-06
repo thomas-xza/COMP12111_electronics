@@ -58,7 +58,7 @@ BoardV3 BoardI1 ( // Board user pins
              .Crossing_A(5'b0_0000), 
 	     .Buzzer(1'b0),
 	     .S7_leds(2'b00),
-	     .Digit0(Digit0), 
+	     .Digit0(15'b000_0000_0000_0000), 
 	     .Digit1(15'b000_0000_0000_0000),
 	     .Digit2(15'b000_0000_0000_0000), 
 	     .Digit3(15'b000_0000_0000_0000),

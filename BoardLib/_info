@@ -1,0 +1,186 @@
+m255
+K4
+z2
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/x93125tp/Questa/COMP12111
+vAckieV2
+Z1 !s110 1696583321
+!i10b 1
+!s100 C:0gK=J5PIh7kj54e2=:m0
+I1NCOA8ZzUY[ak^N9h8Ogo3
+R0
+Z2 w1696579524
+8./src/BoardLib/AckieV2.v
+F./src/BoardLib/AckieV2.v
+!i122 0
+L0 32 521
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2022.4;75
+r1
+!s85 0
+31
+Z5 !s108 1696583321.000000
+!s107 ./src/BoardLib/KMD_defines.v|./src/BoardLib/AckieV2.v|
+!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/BoardLib/AckieV2.v|
+!s101 -O0
+!i113 0
+Z6 !s102 -cover bcsxf
+Z7 o-O0 -lint -cover bcsxf
+Z8 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+n@ackie@v2
+vBoard_reset
+R1
+!i10b 1
+!s100 ^n`a7GY1mH[j[CGLTei]o0
+Ik5PL1<gKS136R3jzKj<6<1
+R0
+R2
+8./src/BoardLib/Board_reset.v
+F./src/BoardLib/Board_reset.v
+!i122 1
+L0 6 77
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./src/BoardLib/Board_reset.v|
+!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/BoardLib/Board_reset.v|
+!s101 -O0
+!i113 0
+R6
+R7
+R8
+n@board_reset
+vBoardV3
+R1
+!i10b 1
+!s100 =j_hSLXT7Z07C5BjXl`7W2
+Ih9?aYYK39^0QbU4IhS1g11
+R0
+R2
+8./src/BoardLib/BoardV3.v
+F./src/BoardLib/BoardV3.v
+!i122 2
+L0 10 186
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./src/BoardLib/../defines.v|./src/BoardLib/BoardV3.v|
+!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/BoardLib/BoardV3.v|
+!s101 -O0
+!i113 0
+R6
+R7
+R8
+n@board@v3
+vClocks
+Z9 !s110 1696583322
+!i10b 1
+!s100 XVceCZFAz1YahOIjQ>WFh0
+I9CfPUGb>U3gPiMDWa`W0h3
+R0
+R2
+8./src/BoardLib/Clocks.v
+F./src/BoardLib/Clocks.v
+!i122 3
+L0 5 32
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./src/BoardLib/Clocks.v|
+!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/BoardLib/Clocks.v|
+!s101 -O0
+!i113 0
+R6
+R7
+R8
+n@clocks
+vKeyboard
+R9
+!i10b 1
+!s100 jAhM2l@6MA8_f=mE>NPI>0
+I4CZo<23BnN84a5z0iB?5V3
+R0
+R2
+8./src/BoardLib/Keyboard.v
+F./src/BoardLib/Keyboard.v
+!i122 4
+L0 5 108
+R3
+R4
+r1
+!s85 0
+31
+Z10 !s108 1696583322.000000
+!s107 ./src/BoardLib/Keyboard.v|
+!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/BoardLib/Keyboard.v|
+!s101 -O0
+!i113 0
+R6
+R7
+R8
+n@keyboard
+vSegments_Scan
+R9
+!i10b 1
+!s100 V2R`mf;?zE=ViDIPD>NFS1
+I2L:UNj;_Vo^`Zi`WKMNXC1
+R0
+R2
+8./src/BoardLib/Segments_Scan.v
+F./src/BoardLib/Segments_Scan.v
+!i122 5
+L0 4 48
+R3
+R4
+r1
+!s85 0
+31
+R10
+!s107 ./src/BoardLib/Segments_Scan.v|
+!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/BoardLib/Segments_Scan.v|
+!s101 -O0
+!i113 0
+R6
+R7
+R8
+n@segments_@scan
+vUart_S7
+R9
+!i10b 1
+!s100 M]<MWb_7dgIRZ<EaXX?`e3
+ISceaj06=dcP<i3n4RK=zJ3
+R0
+R2
+8./src/BoardLib/Uart_s7.v
+F./src/BoardLib/Uart_s7.v
+!i122 6
+L0 13 97
+R3
+R4
+r1
+!s85 0
+31
+R10
+!s107 ./src/BoardLib/Uart_s7.v|
+!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/BoardLib/Uart_s7.v|
+!s101 -O0
+!i113 0
+R6
+R7
+R8
+n@uart_@s7

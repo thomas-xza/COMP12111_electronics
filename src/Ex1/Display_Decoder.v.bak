@@ -40,7 +40,7 @@ begin
     4'b0110: segment_pattern = 15'b000_0000_1111_1101; 
     4'b0111: segment_pattern = 15'b001_0100_0000_0001;  
     4'b1000: segment_pattern = 15'b000_0000_1111_1111;
-    default: segment_pattern = 15'h000_0000_0000_0000;
+    default: segment_pattern = 15'hXXXX;
   endcase
 end
 
