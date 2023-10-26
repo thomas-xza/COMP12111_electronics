@@ -10,77 +10,77 @@ z2
 cModel Technology
 Z0 d/home/x93125tp/Questa/COMP12111
 vTraffic_Light
-!s110 1696583323
+Z1 !s110 1698332061
 !i10b 1
-!s100 5P4NdVS1MEO7o25R9a?`H0
-IXcMW9ZImYbW@ZH`Adjo271
+!s100 TSjS7i@8@VQ3JKVU1M34I1
+IM@T8KN0hCmX1QPbKJMzHf2
 R0
-Z1 w1696579524
+w1698332016
 8./src/Ex2/Traffic_Light.v
 F./src/Ex2/Traffic_Light.v
-!i122 2
-L0 23 24
+!i122 15
+L0 46 75
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 OL;L;2022.4;75
 r1
 !s85 0
 31
-!s108 1696583323.000000
+Z4 !s108 1698332061.000000
 !s107 ./src/Ex2/Traffic_Light.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex2/Traffic_Light.v|
 !s101 -O0
 !i113 0
-Z4 !s102 -cover bcsxf
-Z5 o-O0 -lint -cover bcsxf
-Z6 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+Z5 !s102 -cover bcsxf
+Z6 o-O0 -lint -cover bcsxf
+Z7 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
 n@traffic_@light
 vTraffic_Light_Board
-Z7 !s110 1696583322
+R1
 !i10b 1
 !s100 ;H5nicH=Z3Dj^l?c<dD_`2
 ITliLL6oPP0ILB:=dzSnF@0
 R0
-R1
+Z8 w1696579524
 8./src/Ex2/Traffic_Light_Board.v
 F./src/Ex2/Traffic_Light_Board.v
-!i122 0
+!i122 13
 L0 16 92
 R2
 R3
 r1
 !s85 0
 31
-Z8 !s108 1696583322.000000
+R4
 !s107 ./src/Ex2/Traffic_Light_Board.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex2/Traffic_Light_Board.v|
 !s101 -O0
 !i113 0
-R4
 R5
 R6
+R7
 n@traffic_@light_@board
 vTraffic_Light_Testbench
-R7
+R1
 !i10b 1
 !s100 oPk?cillAiOzgDo_gn1l;1
 INPiL`R6WIIhonTLm;olhL2
 R0
-R1
+R8
 8./src/Ex2/Traffic_Light_Testbench.v
 F./src/Ex2/Traffic_Light_Testbench.v
-!i122 1
+!i122 14
 L0 14 52
 R2
 R3
 r1
 !s85 0
 31
-R8
+R4
 !s107 ./src/Ex2/Traffic_Light_Testbench.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex2/Traffic_Light_Testbench.v|
 !s101 -O0
 !i113 0
-R4
 R5
 R6
+R7
 n@traffic_@light_@testbench

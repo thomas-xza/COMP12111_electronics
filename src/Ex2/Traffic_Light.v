@@ -55,47 +55,63 @@ reg [3:0] current_state, next_state;
 
 
 
-//  Combinatorial logic for input
+//  Combinatorial logic (stateless) for input.
+//  Derives next_state from current_state and start.
+//  Note that this assumes that start is never undefined, for simplicity.
 always @ (*)
   case(current_state)
-    STATE_0: next_state = STATE_1;
-    STATE_1: next_state = STATE_2;
-    STATE_2: next_state = STATE_3;
-    STATE_3: next_state = STATE_4;
-    STATE_4: next_state = STATE_5;
-    STATE_5: 
+    `STATE_0: next_state = `STATE_1;
+    `STATE_1: next_state = `STATE_2;
+    `STATE_2: next_state = `STATE_3;
+    `STATE_3: next_state = `STATE_4;
+    `STATE_4: next_state = `STATE_5;
+    `STATE_5: 
 		if (start)
-			next_state = STATE_8;
+			next_state = `STATE_8;
 		else
-			next_state = STATE_6;
-    STATE_6:
+			next_state = `STATE_6;
+    `STATE_6:
 		if (start)
-			next_state = STATE_9;
+			next_state = `STATE_9;
 		else
-			next_state = STATE_7;
-    STATE_7:
+			next_state = `STATE_7;
+    `STATE_7:
 		if (start)
-			next_state = STATE_10;
+			next_state = `STATE_10;
 		else
-			next_state = STATE_0;
-    STATE_8: next_state = STATE_9;
-    STATE_9: next_state = STATE_10;
-    STATE_10: next_state = STATE_1;
-    
-
-// determine next_state value
-// from inputs and current_state value
+			next_state = `STATE_0;
+    `STATE_8: next_state = `STATE_9;
+    `STATE_9: next_state = `STATE_10;
+    `STATE_10: next_state = `STATE_1;
+    default: next_state = `STATE_0;
+  endcase
 
 
 //  Sequential logic (stateful)
-//always @ (posedge clock)
-
-// perform reset action then perform the
-// next_state to current_state assignment
+always @ (posedge clock)
+  if (reset)
+	current_state <= `STATE_0;
+  else
+    current_state <= next_state;
 
 
 //  Combinatorial logic for output
-//always @(*)
+always @(*)
+  case(current_state)
+    `STATE_0: lightseq = `R__G;
+    `STATE_1: lightseq = `R__A;
+    `STATE_2: lightseq = `G__R;
+    `STATE_3: lightseq = `G__R;
+    `STATE_4: lightseq = `G__R;
+    `STATE_5: lightseq = `R__R;
+    `STATE_6: lightseq = `R__G;
+    `STATE_7: lightseq = `R__G;
+    `STATE_8: lightseq = `R__G;
+    `STATE_9: lightseq = `R__G;
+    `STATE_10: lightseq = `R__G;
+  endcase
+
+
 // determine output signals
 // from current_state
 
