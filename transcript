@@ -72,3 +72,5 @@ run -all
 #    Time: 5700 ns  Iteration: 0  Instance: /Traffic_Light_Testbench
 # Break in Module Traffic_Light_Testbench at ./src/Ex2/Traffic_Light_Testbench.v line 143
 # Causality operation skipped due to absence of debug database file
+# End time: 18:04:38 on Oct 26,2023, Elapsed time: 0:39:30
+# Errors: 0, Warnings: 3

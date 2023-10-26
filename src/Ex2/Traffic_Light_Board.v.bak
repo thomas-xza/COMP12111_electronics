@@ -51,7 +51,7 @@ wire Clk_1kHz;
 // Add instanace(s) here
 Traffic_Light D1(
 .lightseq(Crossing_A),
-.clock(Clk_1kHz[1:0]),
+.clock(button[1:0]),
 .reset(button[2:1]),
 .start(button[1:0])
 );
