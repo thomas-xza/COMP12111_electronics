@@ -9,6 +9,9 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
 !s11f vlog 2022.4 2022.10, Oct 18 2022
 13
 !s112 1.1
@@ -18,105 +21,166 @@ R0
 cModel Technology
 Z1 d/home/x93125tp/Questa/COMP12111
 T_opt
-!s110 1696588975
-VnMz5`ooCioSeh=7W8VW9I3
-Z2 04 21 4 work Display_Decoder_Board fast 0
-Z3 04 4 4 GLIB glbl fast 0
-=1-000ae431a4f1-651fe4af-3de36-42c97
+!s110 1697798535
+VdoYXjSS[k?^]S<9mI83jR2
+Z2 04 15 4 work Display_Decoder fast 0
+=1-000ae431a4f1-65325987-6ed19-46ae1
 R0
-Z4 !s12b OEM100
-Z5 !s124 OEM100
-o-quiet +acc -auto_acc_if_foreign -work Ex1 -gblso libssl.so -L BoardLib -L Ex1 -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+Z5 o-quiet +acc -auto_acc_if_foreign -work work -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3
 Z6 tCvgOpt 0
 n@_opt
 Z7 OL;O;2022.4;75
 R1
 T_opt1
-!s110 1696589206
-VnRSMJ?l8RW:@0ffdQU[=_1
-R2
-R3
-=1-000ae431a4f1-651fe596-72d67-49b8b
+!s110 1697802535
+VQ56TZ`7d?g48o[K?W=EcX1
+04 25 4 work Display_Decoder_Testbench fast 0
+04 4 4 GLIB glbl fast 0
+=1-000ae431a4f1-65326927-578eb-5b698
 R0
+R3
 R4
-R5
-o-quiet +acc -auto_acc_if_foreign -work Ex1 -gblso libssl.so -L BoardLib -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+o-quiet +acc -auto_acc_if_foreign -work Ex1 -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
 R6
 n@_opt1
 R7
+T_opt2
+!s110 1697794204
+V_lLAAaK:Wi[Gm60;=iRIj0
+R2
+=1-000ae431a4f1-6532489c-38bff-30ad9
+R0
+R3
+R4
+R5
+R6
+n@_opt2
+R7
 R1
 vDisplay_Decoder
-Z8 !s110 1696588955
+Z8 !s110 1697802521
 !i10b 1
-!s100 nn:RI;fQ8;I[]<SSiF<Je2
-IWbVF<MChnK<ecFm`j<EG82
+!s100 1HOA7O7j867l2@;o0a=410
+I]Bk<49Ok0JWMF<SYQ_Oeg3
 R1
-w1696587627
-8./src/Ex1/Display_Decoder.v
-F./src/Ex1/Display_Decoder.v
-!i122 30
-L0 23 28
-Z9 VDg1SIo80bB@j0V0VzS_@n1
-Z10 OL;L;2022.4;75
+Z9 w1697802352
+Z10 8./src/Ex1/Display_Decoder.v
+Z11 F./src/Ex1/Display_Decoder.v
+!i122 58
+L0 23 26
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2022.4;75
 r1
 !s85 0
 31
-Z11 !s108 1696588955.000000
-!s107 ./src/Ex1/Display_Decoder.v|
-!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder.v|
+Z14 !s108 1697802521.000000
+Z15 !s107 ./src/Ex1/Display_Decoder.v|
+Z16 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder.v|
 !s101 -O0
 !i113 0
-Z12 !s102 -cover bcsxf
-Z13 o-O0 -lint -cover bcsxf
-Z14 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+Z17 !s102 -cover bcsxf
+Z18 o-O0 -lint -cover bcsxf
+Z19 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
 n@display_@decoder
 vDisplay_Decoder_Board
 R8
 !i10b 1
-!s100 EiakW=m[QdN@kWTS?JCG53
-IAGdG>YckkHC;22Y8D:7N31
+!s100 WS2H?2d@Sbi<=_k3^M9l`2
+IFHnaOR06`_SdzmoM2cAZc2
 R1
-w1696588874
+w1697802005
 8./src/Ex1/Display_Decoder_Board.v
 F./src/Ex1/Display_Decoder_Board.v
-!i122 28
-L0 16 95
-R9
-R10
+!i122 56
+L0 16 99
+R12
+R13
 r1
 !s85 0
 31
-R11
+R14
 !s107 ./src/Ex1/Display_Decoder_Board.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder_Board.v|
 !s101 -O0
 !i113 0
-R12
-R13
-R14
+R17
+R18
+R19
 n@display_@decoder_@board
 vDisplay_Decoder_Testbench
 R8
 !i10b 1
-!s100 SZNFDQd_XOdKLe7RhDOLJ3
-IQF25;@ke=:QSzLGU`Qbl?3
+!s100 c_i=LQd=2YHRN1f=8]TbJ3
+I>KBA7ihINhBhSEJZjCAlQ2
 R1
-w1696587692
-8./src/Ex1/Display_Decoder_Testbench.v
-F./src/Ex1/Display_Decoder_Testbench.v
-!i122 29
-L0 13 55
-R9
-R10
+Z20 w1697802518
+Z21 8./src/Ex1/Display_Decoder_Testbench.v
+Z22 F./src/Ex1/Display_Decoder_Testbench.v
+!i122 57
+L0 13 54
+R12
+R13
 r1
 !s85 0
 31
-R11
-!s107 ./src/Ex1/Display_Decoder_Testbench.v|
-!s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder_Testbench.v|
+R14
+Z23 !s107 ./src/Ex1/Display_Decoder_Testbench.v|
+Z24 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder_Testbench.v|
 !s101 -O0
 !i113 0
+R17
+R18
+R19
+n@display_@decoder_@testbench
+vRiscv_decoder
+R8
+!i10b 1
+!s100 6GeiW10ZajfQ_]==]KSnY0
+IWBdOf2TSW`U;zP9gO?;aU1
+R1
+R9
+R10
+R11
+!i122 58
+L0 53 36
 R12
 R13
+r1
+!s85 0
+31
 R14
-n@display_@decoder_@testbench
+R15
+R16
+!s101 -O0
+!i113 0
+R17
+R18
+R19
+n@riscv_decoder
+vRiscv_decoder_testbench
+R8
+!i10b 1
+!s100 n4ekn;@;VK`V9jmM>^WGL2
+I=<8I:C94jc_6MoGo027ba2
+R1
+R20
+R21
+R22
+!i122 57
+L0 69 28
+R12
+R13
+r1
+!s85 0
+31
+R14
+R23
+R24
+!s101 -O0
+!i113 0
+R17
+R18
+R19
+n@riscv_decoder_testbench

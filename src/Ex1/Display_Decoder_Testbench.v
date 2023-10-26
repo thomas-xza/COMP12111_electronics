@@ -59,11 +59,41 @@ begin
 end
 
 
-
 // IMPORTANT: Do not alter the below line 
 // required for simulation.
 initial begin $init_testbench(); end
 
 endmodule
+
+
+module Riscv_decoder_testbench;
+
+wire [63:0]  instruction;
+reg   [3:0]  inst_type;
+
+Riscv_decoder top(.instruction(instruction), .inst_type(inst_type));
+
+initial
+begin
+#100
+//instruction=0;
+
+//#100
+//instruction=64'b0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000';
+
+//#100
+//instruction=64'b0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0011';
+
+//#100
+//instruction=64'b0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0001_0011';
+
+#100 $stop;
+
+end
+
+initial begin $init_testbench(); end
+
+endmodule
+
 
 `default_nettype wire

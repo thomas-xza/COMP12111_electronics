@@ -37,6 +37,7 @@ input wire [5:0]  keycol_pin
 // Declare your buses and wires here (connections)
 wire [23:0] button;
 wire [14:0] Digit0;
+wire [63:0] instruction;
 
 
 
@@ -44,6 +45,9 @@ wire [14:0] Digit0;
 Display_Decoder D1(
 .input_code(button[23:20]),
 .segment_pattern(Digit0));
+
+//Riscv_decoder D2(
+//.instruction(instruction));
 
 BoardV3 BoardI1 ( // Board user pins
              // outputs - can be left unconnected
