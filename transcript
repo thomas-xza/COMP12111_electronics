@@ -17,366 +17,40 @@
 # /home/x93125tp/Questa/COMP12111
 # .main_pane
 # fpgaLoad
-# after#393
+# after#681
 # Info: Startup continues, no compilation required.
 # ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
 # QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:36:49 on Oct 26,2023
+# Start time: 17:24:51 on Oct 26,2023
 # vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
 # -- Compiling module Traffic_Light_Board
 # 
 # Top level modules:
 # 	Traffic_Light_Board
-# End time: 15:36:49 on Oct 26,2023, Elapsed time: 0:00:00
+# End time: 17:24:51 on Oct 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
 # QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:36:49 on Oct 26,2023
+# Start time: 17:24:51 on Oct 26,2023
 # vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
 # -- Compiling module Traffic_Light_Testbench
 # 
 # Top level modules:
 # 	Traffic_Light_Testbench
-# End time: 15:36:49 on Oct 26,2023, Elapsed time: 0:00:00
+# End time: 17:24:51 on Oct 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
 # QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:36:49 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
-# -- Compiling module Traffic_Light
-###### ./src/Ex2/Traffic_Light.v(61):     STATE_0: next_state = STATE_1;
-# ** Error: ./src/Ex2/Traffic_Light.v(61): (vlog-2730) Undefined variable: 'STATE_0'.
-# ** Error: ./src/Ex2/Traffic_Light.v(61): (vlog-2730) Undefined variable: 'STATE_1'.
-###### ./src/Ex2/Traffic_Light.v(62):     STATE_1: next_state = STATE_2;
-# ** Error: ./src/Ex2/Traffic_Light.v(62): (vlog-2730) Undefined variable: 'STATE_2'.
-###### ./src/Ex2/Traffic_Light.v(63):     STATE_2: next_state = STATE_3;
-# ** Error: ./src/Ex2/Traffic_Light.v(63): (vlog-2730) Undefined variable: 'STATE_3'.
-###### ./src/Ex2/Traffic_Light.v(64):     STATE_3: next_state = STATE_4;
-# ** Error: ./src/Ex2/Traffic_Light.v(64): (vlog-2730) Undefined variable: 'STATE_4'.
-###### ./src/Ex2/Traffic_Light.v(65):     STATE_4: next_state = STATE_5;
-# ** Error: ./src/Ex2/Traffic_Light.v(65): (vlog-2730) Undefined variable: 'STATE_5'.
-###### ./src/Ex2/Traffic_Light.v(68): 			next_state = STATE_8;
-# ** Error: ./src/Ex2/Traffic_Light.v(68): (vlog-2730) Undefined variable: 'STATE_8'.
-###### ./src/Ex2/Traffic_Light.v(70): 			next_state = STATE_6;
-# ** Error: ./src/Ex2/Traffic_Light.v(70): (vlog-2730) Undefined variable: 'STATE_6'.
-###### ./src/Ex2/Traffic_Light.v(73): 			next_state = STATE_9;
-# ** Error: ./src/Ex2/Traffic_Light.v(73): (vlog-2730) Undefined variable: 'STATE_9'.
-###### ./src/Ex2/Traffic_Light.v(75): 			next_state = STATE_7;
-# ** Error: ./src/Ex2/Traffic_Light.v(75): (vlog-2730) Undefined variable: 'STATE_7'.
-###### ./src/Ex2/Traffic_Light.v(78): 			next_state = STATE_10;
-# ** Error: ./src/Ex2/Traffic_Light.v(78): (vlog-2730) Undefined variable: 'STATE_10'.
-###### ./src/Ex2/Traffic_Light.v(104): endmodule
-# ** Error: (vlog-13069) ./src/Ex2/Traffic_Light.v(104): near "endmodule": syntax error, unexpected endmodule.
-###### ./src/Ex2/Traffic_Light.v(106): `default_nettype wire
-# ** Error: ./src/Ex2/Traffic_Light.v(106): Compiler directive "`default_nettype" is not allowed inside a design element.
-# End time: 15:36:49 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 13, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:37:34 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 15:37:35 on Oct 26,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:37:35 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-# 
-# Top level modules:
-# 	Traffic_Light_Testbench
-# End time: 15:37:35 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:37:35 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
-# -- Compiling module Traffic_Light
-###### ./src/Ex2/Traffic_Light.v(104): endmodule
-# ** Error: (vlog-13069) ./src/Ex2/Traffic_Light.v(104): near "endmodule": syntax error, unexpected endmodule.
-###### ./src/Ex2/Traffic_Light.v(106): `default_nettype wire
-# ** Error: ./src/Ex2/Traffic_Light.v(106): Compiler directive "`default_nettype" is not allowed inside a design element.
-# End time: 15:37:35 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:37:52 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 15:37:52 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:37:52 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-# 
-# Top level modules:
-# 	Traffic_Light_Testbench
-# End time: 15:37:52 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:37:52 on Oct 26,2023
+# Start time: 17:24:51 on Oct 26,2023
 # vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
 # -- Compiling module Traffic_Light
 # 
 # Top level modules:
 # 	Traffic_Light
-# End time: 15:37:52 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:42:11 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 15:42:11 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:42:11 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-# 
-# Top level modules:
-# 	Traffic_Light_Testbench
-# End time: 15:42:11 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:42:11 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
-# -- Compiling module Traffic_Light
-# 
-# Top level modules:
-# 	Traffic_Light
-# End time: 15:42:11 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:54:21 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 15:54:21 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:54:21 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-# 
-# Top level modules:
-# 	Traffic_Light_Testbench
-# End time: 15:54:21 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 15:54:21 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
-# -- Compiling module Traffic_Light
-# 
-# Top level modules:
-# 	Traffic_Light
-# End time: 15:54:21 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:07:36 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 16:07:36 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:07:36 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-###### ./src/Ex2/Traffic_Light_Testbench.v(29): initial lightseq = 6'b11111;  //  Turn all the lights on at first, test they work.
-# ** Error: ./src/Ex2/Traffic_Light_Testbench.v(29): (vlog-2110) Illegal reference to net "lightseq".
-# End time: 16:07:36 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:09:00 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 16:09:00 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:09:01 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-# 
-# Top level modules:
-# 	Traffic_Light_Testbench
-# End time: 16:09:01 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:09:01 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
-# -- Compiling module Traffic_Light
-# 
-# Top level modules:
-# 	Traffic_Light
-# End time: 16:09:01 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:09:12 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 16:09:12 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:09:12 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-###### ./src/Ex2/Traffic_Light_Testbench.v(29): lightseq = 6'b11111;  //  Turn all the lights on at first, test they work.
-# ** Error: (vlog-13069) ./src/Ex2/Traffic_Light_Testbench.v(29): near "=": syntax error, unexpected '='.
-# ** Error: ./src/Ex2/Traffic_Light_Testbench.v(29): (vlog-13205) Syntax error found in the scope following 'lightseq'. Is there a missing '::'?
-# End time: 16:09:13 on Oct 26,2023, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:12:24 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 16:12:24 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:12:24 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-###### ./src/Ex2/Traffic_Light_Testbench.v(54):   lightseq = 6'b11111;
-# ** Error: ./src/Ex2/Traffic_Light_Testbench.v(54): (vlog-2110) Illegal reference to net "lightseq".
-# End time: 16:12:24 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:22:57 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 16:22:58 on Oct 26,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:22:58 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-# 
-# Top level modules:
-# 	Traffic_Light_Testbench
-# End time: 16:22:58 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:22:58 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
-# -- Compiling module Traffic_Light
-# 
-# Top level modules:
-# 	Traffic_Light
-# End time: 16:22:58 on Oct 26,2023, Elapsed time: 0:00:00
+# End time: 17:24:51 on Oct 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" Ex2.Traffic_Light_Testbench GLIB.glbl 
-# Start time: 16:28:57 on Oct 26,2023
-# Loading libssl.so
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Note: (vopt-143) Recognized 1 FSM in module "Traffic_Light(fast)".
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
-# Loading work.Traffic_Light_Testbench(fast)
-# Loading work.Traffic_Light(fast)
-# Loading GLIB.glbl(fast)
-# Loading ./liboverwatch.so
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:29:10 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 16:29:10 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:29:10 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-###### ./src/Ex2/Traffic_Light_Testbench.v(63): #800
-# ** Error: (vlog-13069) ./src/Ex2/Traffic_Light_Testbench.v(63): near "#": syntax error, unexpected '#', expecting ';'.
-# End time: 16:29:10 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:29:34 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
-# -- Compiling module Traffic_Light_Board
-# 
-# Top level modules:
-# 	Traffic_Light_Board
-# End time: 16:29:34 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:29:34 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
-# -- Compiling module Traffic_Light_Testbench
-# 
-# Top level modules:
-# 	Traffic_Light_Testbench
-# End time: 16:29:34 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
-# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 16:29:35 on Oct 26,2023
-# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
-# -- Compiling module Traffic_Light
-# 
-# Top level modules:
-# 	Traffic_Light
-# End time: 16:29:35 on Oct 26,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 16:29:46 on Oct 26,2023, Elapsed time: 0:00:49
-# Errors: 0, Warnings: 3, Suppressed Warnings: 1
-# vsim -voptargs="+acc" Ex2.Traffic_Light_Testbench GLIB.glbl 
-# Start time: 16:29:46 on Oct 26,2023
+# Start time: 17:25:08 on Oct 26,2023
 # Loading libssl.so
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
@@ -388,37 +62,13 @@
 # Loading work.Traffic_Light(fast)
 # Loading GLIB.glbl(fast)
 # Loading ./liboverwatch.so
-add wave -position insertpoint sim:/Traffic_Light_Testbench/*
-# End time: 16:30:44 on Oct 26,2023, Elapsed time: 0:00:58
-# Errors: 0, Warnings: 3
-# vsim -voptargs="+acc" Ex1.Display_Decoder_Testbench GLIB.glbl 
-# Start time: 16:30:44 on Oct 26,2023
-# Loading libssl.so
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.Display_Decoder_Testbench(fast)
-# Loading work.Display_Decoder(fast)
-# Loading GLIB.glbl(fast)
-# Loading ./liboverwatch.so
-# End time: 16:33:42 on Oct 26,2023, Elapsed time: 0:02:58
-# Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" Ex2.Traffic_Light_Testbench GLIB.glbl 
-# Start time: 16:33:42 on Oct 26,2023
-# Loading libssl.so
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.Traffic_Light_Testbench(fast)
-# Loading work.Traffic_Light(fast)
-# Loading GLIB.glbl(fast)
-# Loading ./liboverwatch.so
 add wave -position insertpoint  \
-sim:/Traffic_Light_Testbench/lightseq
-add wave -position insertpoint  \
-sim:/Traffic_Light_Testbench/clock
-add wave -position insertpoint  \
+sim:/Traffic_Light_Testbench/lightseq \
+sim:/Traffic_Light_Testbench/clock \
+sim:/Traffic_Light_Testbench/reset \
 sim:/Traffic_Light_Testbench/start
-add wave -position insertpoint  \
-sim:/Traffic_Light_Testbench/reset
 run -all
-# [VPI Info] Running Init.** Note: $stop    : ./src/Ex2/Traffic_Light_Testbench.v(65)
-#    Time: 1 us  Iteration: 0  Instance: /Traffic_Light_Testbench
-# Break in Module Traffic_Light_Testbench at ./src/Ex2/Traffic_Light_Testbench.v line 65
+# [VPI Info] Running Init.** Note: $stop    : ./src/Ex2/Traffic_Light_Testbench.v(143)
+#    Time: 5700 ns  Iteration: 0  Instance: /Traffic_Light_Testbench
+# Break in Module Traffic_Light_Testbench at ./src/Ex2/Traffic_Light_Testbench.v line 143
 # Causality operation skipped due to absence of debug database file

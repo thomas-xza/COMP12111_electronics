@@ -3,6 +3,11 @@ K4
 z2
 Z0 !s99 nomlopt
 R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2022.4 2022.10, Oct 18 2022
 13
 !s112 1.1
@@ -12,11 +17,11 @@ R0
 cModel Technology
 Z1 d/home/x93125tp/Questa/COMP12111
 T_opt
-!s110 1698334187
-V`]:FgOB0dEJQLFGDfQX7_2
+!s110 1698337508
+VoV2<g7KFkRM^Ea7@z_eAZ3
 04 23 4 work Traffic_Light_Testbench fast 0
 04 4 4 GLIB glbl fast 0
-=1-000ae431a4f1-653a85ea-e4e08-2e8ee
+=1-000ae431a4f1-653a92e4-85df7-3dafb
 R0
 !s12b OEM100
 !s124 OEM100
@@ -25,7 +30,7 @@ tCvgOpt 0
 n@_opt
 OL;O;2022.4;75
 vTraffic_Light
-!s110 1698334175
+Z2 !s110 1698337491
 !i10b 1
 !s100 59?Yh:FFLY^?gSB5O:zV<1
 I8giocS:CC>6dYSRT]_CV^0
@@ -33,24 +38,24 @@ R1
 w1698333459
 8./src/Ex2/Traffic_Light.v
 F./src/Ex2/Traffic_Light.v
-!i122 28
+!i122 49
 L0 47 80
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 OL;L;2022.4;75
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2022.4;75
 r1
 !s85 0
 31
-!s108 1698334175.000000
+Z5 !s108 1698337491.000000
 !s107 ./src/Ex2/Traffic_Light.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex2/Traffic_Light.v|
 !s101 -O0
 !i113 0
-Z4 !s102 -cover bcsxf
-Z5 o-O0 -lint -cover bcsxf
-Z6 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+Z6 !s102 -cover bcsxf
+Z7 o-O0 -lint -cover bcsxf
+Z8 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
 n@traffic_@light
 vTraffic_Light_Board
-Z7 !s110 1698334174
+R2
 !i10b 1
 !s100 ;H5nicH=Z3Dj^l?c<dD_`2
 ITliLL6oPP0ILB:=dzSnF@0
@@ -58,44 +63,44 @@ R1
 w1696579524
 8./src/Ex2/Traffic_Light_Board.v
 F./src/Ex2/Traffic_Light_Board.v
-!i122 26
+!i122 47
 L0 16 92
-R2
 R3
+R4
 r1
 !s85 0
 31
-Z8 !s108 1698334174.000000
+R5
 !s107 ./src/Ex2/Traffic_Light_Board.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex2/Traffic_Light_Board.v|
 !s101 -O0
 !i113 0
-R4
-R5
 R6
+R7
+R8
 n@traffic_@light_@board
 vTraffic_Light_Testbench
-R7
+R2
 !i10b 1
-!s100 Ed6^_^R^knM@^B7@_@LoP0
-I10GeC_MfNIYMG`Y1?lzI_2
+!s100 WkbEZ7hJ<z6KEMIFQMXW`3
+I=[[F<niBV3h>f]8O0]6NM0
 R1
-w1698334168
+w1698337146
 8./src/Ex2/Traffic_Light_Testbench.v
 F./src/Ex2/Traffic_Light_Testbench.v
-!i122 27
-L0 13 61
-R2
+!i122 48
+L0 13 139
 R3
+R4
 r1
 !s85 0
 31
-R8
+R5
 !s107 ./src/Ex2/Traffic_Light_Testbench.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex2/Traffic_Light_Testbench.v|
 !s101 -O0
 !i113 0
-R4
-R5
 R6
+R7
+R8
 n@traffic_@light_@testbench

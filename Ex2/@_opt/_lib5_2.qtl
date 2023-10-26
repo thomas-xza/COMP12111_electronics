@@ -1,0 +1,561 @@
+m255
+K4
+z2
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/x93125tp/Questa/COMP12111
+vAckieV2
+Z1 !s110 1696583321
+!i10b 1
+!s100 C:0gK=J5PIh7kj54e2=:m0
+I1NCOA8ZzUY[ak^N9h8Ogo3
+R0
+Z2 w1696579524
+8./src/BoardLib/AckieV2.v
+F./src/BoardLib/AckieV2.v
+!i122 0
+L0 32 521
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2022.4;75
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+Z5 !s102 -cover bcsxf
+Z6 o-O0 -lint -cover bcsxf
+Z7 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+n@ackie@v2
+vBoard_reset
+R1
+!i10b 1
+!s100 ^n`a7GY1mH[j[CGLTei]o0
+Ik5PL1<gKS136R3jzKj<6<1
+R0
+R2
+8./src/BoardLib/Board_reset.v
+F./src/BoardLib/Board_reset.v
+!i122 1
+L0 6 77
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@board_reset
+vBoardV3
+R1
+!i10b 1
+!s100 =j_hSLXT7Z07C5BjXl`7W2
+Ih9?aYYK39^0QbU4IhS1g11
+R0
+R2
+8./src/BoardLib/BoardV3.v
+F./src/BoardLib/BoardV3.v
+!i122 2
+L0 10 186
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@board@v3
+vClocks
+Z8 !s110 1696583322
+!i10b 1
+!s100 XVceCZFAz1YahOIjQ>WFh0
+I9CfPUGb>U3gPiMDWa`W0h3
+R0
+R2
+8./src/BoardLib/Clocks.v
+F./src/BoardLib/Clocks.v
+!i122 3
+L0 5 32
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@clocks
+vKeyboard
+R8
+!i10b 1
+!s100 jAhM2l@6MA8_f=mE>NPI>0
+I4CZo<23BnN84a5z0iB?5V3
+R0
+R2
+8./src/BoardLib/Keyboard.v
+F./src/BoardLib/Keyboard.v
+!i122 4
+L0 5 108
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@keyboard
+vSegments_Scan
+R8
+!i10b 1
+!s100 V2R`mf;?zE=ViDIPD>NFS1
+I2L:UNj;_Vo^`Zi`WKMNXC1
+R0
+R2
+8./src/BoardLib/Segments_Scan.v
+F./src/BoardLib/Segments_Scan.v
+!i122 5
+L0 4 48
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@segments_@scan
+vUart_S7
+R8
+!i10b 1
+!s100 M]<MWb_7dgIRZ<EaXX?`e3
+ISceaj06=dcP<i3n4RK=zJ3
+R0
+R2
+8./src/BoardLib/Uart_s7.v
+F./src/BoardLib/Uart_s7.v
+!i122 6
+L0 13 97
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@uart_@s7
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/x93125tp/Questa/COMP12111
+T_opt
+!s110 1697798535
+VdoYXjSS[k?^]S<9mI83jR2
+Z2 04 15 4 work Display_Decoder fast 0
+=1-000ae431a4f1-65325987-6ed19-46ae1
+R0
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+Z5 o-quiet +acc -auto_acc_if_foreign -work work -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2022.4;75
+R1
+T_opt1
+!s110 1697802535
+VQ56TZ`7d?g48o[K?W=EcX1
+04 25 4 work Display_Decoder_Testbench fast 0
+04 4 4 GLIB glbl fast 0
+=1-000ae431a4f1-65326927-578eb-5b698
+R0
+R3
+R4
+o-quiet +acc -auto_acc_if_foreign -work Ex1 -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+R6
+n@_opt1
+R7
+R1
+T_opt2
+!s110 1697794204
+V_lLAAaK:Wi[Gm60;=iRIj0
+R2
+=1-000ae431a4f1-6532489c-38bff-30ad9
+R0
+R3
+R4
+R5
+R6
+n@_opt2
+R7
+R1
+vDisplay_Decoder
+Z8 !s110 1697802521
+!i10b 1
+!s100 1HOA7O7j867l2@;o0a=410
+I]Bk<49Ok0JWMF<SYQ_Oeg3
+R1
+Z9 w1697802352
+Z10 8./src/Ex1/Display_Decoder.v
+Z11 F./src/Ex1/Display_Decoder.v
+!i122 58
+L0 23 26
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2022.4;75
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+Z14 !s102 -cover bcsxf
+Z15 o-O0 -lint -cover bcsxf
+Z16 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+n@display_@decoder
+vDisplay_Decoder_Board
+R8
+!i10b 1
+!s100 WS2H?2d@Sbi<=_k3^M9l`2
+IFHnaOR06`_SdzmoM2cAZc2
+R1
+w1697802005
+8./src/Ex1/Display_Decoder_Board.v
+F./src/Ex1/Display_Decoder_Board.v
+!i122 56
+L0 16 99
+R12
+R13
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R14
+R15
+R16
+n@display_@decoder_@board
+vDisplay_Decoder_Testbench
+R8
+!i10b 1
+!s100 c_i=LQd=2YHRN1f=8]TbJ3
+I>KBA7ihINhBhSEJZjCAlQ2
+R1
+Z17 w1697802518
+Z18 8./src/Ex1/Display_Decoder_Testbench.v
+Z19 F./src/Ex1/Display_Decoder_Testbench.v
+!i122 57
+L0 13 54
+R12
+R13
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R14
+R15
+R16
+n@display_@decoder_@testbench
+vRiscv_decoder
+R8
+!i10b 1
+!s100 6GeiW10ZajfQ_]==]KSnY0
+IWBdOf2TSW`U;zP9gO?;aU1
+R1
+R9
+R10
+R11
+!i122 58
+L0 53 36
+R12
+R13
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R14
+R15
+R16
+n@riscv_decoder
+vRiscv_decoder_testbench
+R8
+!i10b 1
+!s100 n4ekn;@;VK`V9jmM>^WGL2
+I=<8I:C94jc_6MoGo027ba2
+R1
+R17
+R18
+R19
+!i122 57
+L0 69 28
+R12
+R13
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R14
+R15
+R16
+n@riscv_decoder_testbench
+lite/ISE/verilog/src/unisims/XNOR3.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR3.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@n@o@r3
+vXNOR4
+R99
+!i10b 1
+!s100 g]ANE6Tf?DLmS]]=ATO7=3
+I?3zUeMQ085LWTRT68HNFW1
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR4.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR4.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@n@o@r4
+vXNOR5
+R99
+!i10b 1
+!s100 >LH]IMk9^n>ebca[dMzX=3
+IdE5b]Y7UnE9F2=o_5kf_Y0
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR5.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR5.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@n@o@r5
+vXOR2
+R99
+!i10b 1
+!s100 ilkYchHM:dFj5=R[<igFl3
+IM0>^EkDQ_c2P?33e>M57k2
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR2.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR2.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r2
+vXOR3
+R99
+!i10b 1
+!s100 z1a_a4^61lWH;84N3AL<Q3
+IZVTAlW9FI7OZFJkcM?zDR3
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR3.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR3.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r3
+vXOR4
+R99
+!i10b 1
+!s100 OeRK55h8h6Z<S=z8X:[<`0
+IkO<YZCA?HeH8n5BVUm<i33
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR4.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR4.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r4
+vXOR5
+R99
+!i10b 1
+!s100 l4DBTOE65WQ5g<IQLH2D80
+IMYehF7jo3NM_83IfU]jbH3
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR5.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR5.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r5
+vXORCY
+R99
+!i10b 1
+!s100 BehQ8=5UNB6>Ro2`@BUnE0
+I8XOmDPVF0n@GaXWA]VEjR0
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r@c@y
+vXORCY_D
+R99
+!i10b 1
+!s100 o;=JFkf`A7P=eCDJOa`Zb1
+ILjiSg1WS<H7mjUdY8X_OV1
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY_D.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY_D.v
+!i122 0
+L0 23 11
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r@c@y_@d
+vXORCY_L
+R99
+!i10b 1
+!s100 NMee4NcI>JM`;l=c1D_K>3
+I87]2E8`M^jbb8BHD8BXDR2
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY_L.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY_L.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r@c@y_@l
+vZHOLD_DELAY
+R99
+!i10b 1
+!s100 _oSD]88R4;]oYPdS_Fh1S0
+IFIW9S?4GJObgUMNKikDKN3
+R1
+R10
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/ZHOLD_DELAY.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/ZHOLD_DELAY.v
+!i122 0
+L0 24 147
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@z@h@o@l@d_@d@e@l@a@y
