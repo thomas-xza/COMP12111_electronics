@@ -37,7 +37,7 @@ input wire [5:0]  keycol_pin
 // Declare your buses and wires here (connections)
 wire [23:0] button;
 wire [14:0] Digit0;
-wire [63:0] instruction;
+wire [31:0] instruction;
 
 
 

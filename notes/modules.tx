@@ -1,0 +1,12 @@
+
+Carefully consider the FSM when creating the `always` loops.
+
+Don't use `assign`, it is becoming redundant and can be replaced with `always`.
+
+Use MACROS to make the code more readable.
+
+Combinatorial (non-stateful) logic should have = assignments (blocking)
+
+Sequential (stateful) logic should have <= assignments (non-blocking)
+
+If and case statements can be nested, but no whitespace within the always statement.

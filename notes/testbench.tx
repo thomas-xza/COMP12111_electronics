@@ -1,0 +1,21 @@
+By using the FSM, consider the potential possible paths of execution
+that can be taken, and write tests for each.
+
+Remember to reset before testing and after each test.
+
+Remember to add a clock.
+
+Annotate the FSM diagram with the expected outputs, to make it easier to follow the waveform.
+
+All tests should be checked before uploading to FPGA.
+
+
+To view waves:
+
+- COMP12111 -> Compile -> Compile Ex[n]
+- COMP12111 -> Simulate -> Simulate Ex[n]
+- Simulate -> Run -> Run -All
+- View -> Wave
+- View -> Object
+- [Objects window] -> Select all -> Right-click -> Add Wave
+- [Wave Window] -> Right-click -> 

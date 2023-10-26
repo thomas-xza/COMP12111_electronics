@@ -1,0 +1,7 @@
+For COMP12111 you need to:
+
+- add wire variables
+      wire wire_name;
+      
+- fit them to an instance of the Verilog module
+      My_Module D1(.module_var(wire_name))

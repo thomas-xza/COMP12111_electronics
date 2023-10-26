@@ -44,16 +44,17 @@ input wire [5:0]  keycol_pin
 
 
 // Declare your buses and wires here (connections)
+wire clock;
 wire [3:0] Simple_buttons;
 wire [4:0] Crossing_A;
-wire Clk_1kHz;
+
 
 // Add instanace(s) here
 Traffic_Light D1(
 .lightseq(Crossing_A),
-.clock(button[1:0]),
-.reset(button[2:1]),
-.start(button[1:0])
+.clock(clock),
+.reset(Simple_buttons[2:2]),
+.start(Simple_buttons[1:1])
 );
 
 
@@ -62,12 +63,12 @@ BoardV3 BoardI1 ( // Board user pins
              .Clk_100MHz(),
              .Clk_25MHz(), 
 	     .Clk_1kHz(),
-	     .Clk_1Hz(),
-             .Simple_buttons(),	     
+	     .Clk_1Hz(clock),
+             .Simple_buttons(Simple_buttons),	     
              .button(),
 	     // inputs - must be connected	     	     
 	     .Crossing_B(6'b00_0000),
-             .Crossing_A(5'b0_0000), 
+             .Crossing_A(Crossing_A), 
 	     .Buzzer(1'b0),
 	     .S7_leds(2'b00),
 	     .Digit0(15'b000_0000_0000_0000), 

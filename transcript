@@ -17,40 +17,78 @@
 # /home/x93125tp/Questa/COMP12111
 # .main_pane
 # fpgaLoad
-# after#681
+# after#281
 # Info: Startup continues, no compilation required.
+# vsim -voptargs="+acc" Ex2.Traffic_Light_Board GLIB.glbl -L BoardLib -L Ex1 
+# Start time: 19:37:39 on Oct 26,2023
+# Loading libssl.so
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.Traffic_Light_Board(fast)
+# Loading work.Traffic_Light(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+# End time: 19:37:41 on Oct 26,2023, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" Ex2.Traffic_Light_Board GLIB.glbl -L BoardLib 
+# Start time: 19:39:19 on Oct 26,2023
+# Loading libssl.so
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.Traffic_Light_Board(fast)
+# Loading work.Traffic_Light(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
 # ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
 # QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 17:24:51 on Oct 26,2023
+# Start time: 19:43:27 on Oct 26,2023
 # vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
 # -- Compiling module Traffic_Light_Board
 # 
 # Top level modules:
 # 	Traffic_Light_Board
-# End time: 17:24:51 on Oct 26,2023, Elapsed time: 0:00:00
+# End time: 19:43:28 on Oct 26,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
 # QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 17:24:51 on Oct 26,2023
+# Start time: 19:43:28 on Oct 26,2023
 # vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
 # -- Compiling module Traffic_Light_Testbench
 # 
 # Top level modules:
 # 	Traffic_Light_Testbench
-# End time: 17:24:51 on Oct 26,2023, Elapsed time: 0:00:00
+# End time: 19:43:28 on Oct 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
 # QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
-# Start time: 17:24:51 on Oct 26,2023
+# Start time: 19:43:28 on Oct 26,2023
 # vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
 # -- Compiling module Traffic_Light
 # 
 # Top level modules:
 # 	Traffic_Light
-# End time: 17:24:51 on Oct 26,2023, Elapsed time: 0:00:00
+# End time: 19:43:28 on Oct 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" Ex2.Traffic_Light_Testbench GLIB.glbl 
-# Start time: 17:25:08 on Oct 26,2023
+# End time: 19:43:40 on Oct 26,2023, Elapsed time: 0:04:21
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" Ex2.Traffic_Light_Board GLIB.glbl -L BoardLib -L Ex1 
+# Start time: 19:43:40 on Oct 26,2023
 # Loading libssl.so
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
@@ -58,19 +96,42 @@
 # ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
 # Use vdir -l command to find such design units.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
-# Loading work.Traffic_Light_Testbench(fast)
+# Loading work.Traffic_Light_Board(fast)
 # Loading work.Traffic_Light(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
 # Loading GLIB.glbl(fast)
 # Loading ./liboverwatch.so
-add wave -position insertpoint  \
-sim:/Traffic_Light_Testbench/lightseq \
-sim:/Traffic_Light_Testbench/clock \
-sim:/Traffic_Light_Testbench/reset \
-sim:/Traffic_Light_Testbench/start
-run -all
-# [VPI Info] Running Init.** Note: $stop    : ./src/Ex2/Traffic_Light_Testbench.v(143)
-#    Time: 5700 ns  Iteration: 0  Instance: /Traffic_Light_Testbench
-# Break in Module Traffic_Light_Testbench at ./src/Ex2/Traffic_Light_Testbench.v line 143
-# Causality operation skipped due to absence of debug database file
-# End time: 18:04:38 on Oct 26,2023, Elapsed time: 0:39:30
+# End time: 19:43:42 on Oct 26,2023, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" Ex2.Traffic_Light_Board GLIB.glbl -L BoardLib 
+# Start time: 19:45:30 on Oct 26,2023
+# Loading libssl.so
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.Traffic_Light_Board(fast)
+# Loading work.Traffic_Light(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+# End time: 19:52:16 on Oct 26,2023, Elapsed time: 0:06:46
 # Errors: 0, Warnings: 3

@@ -1,0 +1,1283 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Oct 26 19:34:51 2023
+# Process ID: 414117
+# Current directory: /home/x93125tp/Questa/COMP12111/synthesis/Traffic_Light_Board
+# Command line: vivado -mode batch -source ../generated_build_Traffic_Light_Board.tcl
+# Log file: /home/x93125tp/Questa/COMP12111/synthesis/Traffic_Light_Board/vivado.log
+# Journal file: /home/x93125tp/Questa/COMP12111/synthesis/Traffic_Light_Board/vivado.jou
+#-----------------------------------------------------------
+source ../generated_build_Traffic_Light_Board.tcl
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Clocks.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Keyboard.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Segments_Scan.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex2/Traffic_Light.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex2/Traffic_Light_Board.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/GLIB/glbl.v
+# synth_design  -top Traffic_Light_Board -part xc7s25ftgb196-1 -fsm_extraction off 
+Command: synth_design -top Traffic_Light_Board -part xc7s25ftgb196-1 -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 414352 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1711.891 ; gain = 215.531 ; free physical = 19371 ; free virtual = 37059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Traffic_Light_Board' [/home/x93125tp/Questa/COMP12111/src/Ex2/Traffic_Light_Board.v:16]
+INFO: [Synth 8-6157] synthesizing module 'Traffic_Light' [/home/x93125tp/Questa/COMP12111/src/Ex2/Traffic_Light.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'Traffic_Light' (1#1) [/home/x93125tp/Questa/COMP12111/src/Ex2/Traffic_Light.v:47]
+INFO: [Synth 8-6157] synthesizing module 'BoardV3' [/home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v:10]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v:86]
+INFO: [Synth 8-6157] synthesizing module 'Board_reset' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:26]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:73]
+INFO: [Synth 8-6157] synthesizing module 'ICAPE2' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34755]
+	Parameter DEVICE_ID bound to: 56955027 - type: integer 
+	Parameter ICAP_WIDTH bound to: X32 - type: string 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAPE2' (2#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34755]
+INFO: [Synth 8-6155] done synthesizing module 'Board_reset' (3#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Clocks' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Clocks.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Clocks' (4#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Clocks.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Keyboard' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Keyboard.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/Keyboard.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Keyboard' (5#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Keyboard.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Segments_Scan' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Segments_Scan.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Segments_Scan' (6#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Segments_Scan.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Uart_S7' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v:13]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v:50]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'Uart_S7' (7#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v:13]
+INFO: [Synth 8-6157] synthesizing module 'AckieV2' [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:32]
+	Parameter CPU_TYPE bound to: 8'b00000100 
+	Parameter CPU_SUB bound to: 16'b0000000000000000 
+	Parameter FEATURE_COUNT bound to: 8'b00000000 
+	Parameter MEM_SEGS bound to: 8'b00000001 
+	Parameter MEM_START bound to: 0 - type: integer 
+	Parameter MEM_SIZE bound to: 12 - type: integer 
+	Parameter MEM_ADDR_WIDTH bound to: 8'b00001011 
+	Parameter MEM_DATA_WIDTH bound to: 8'b00001111 
+	Parameter PROC_DAT_WIDTH bound to: 8'b00001111 
+	Parameter PROC_FLAG_ADDR bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:144]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'AckieV2' (8#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'BoardV3' (9#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Traffic_Light_Board' (10#1) [/home/x93125tp/Questa/COMP12111/src/Ex2/Traffic_Light_Board.v:16]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1773.641 ; gain = 277.281 ; free physical = 19404 ; free virtual = 37111
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1776.609 ; gain = 280.250 ; free physical = 19393 ; free virtual = 37100
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25ftgb196-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s25ftgb196-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1784.613 ; gain = 288.254 ; free physical = 19390 ; free virtual = 37097
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'icape_wr_reg' into 'icape_cs_reg' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:31]
+INFO: [Synth 8-5544] ROM "keyrow" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "button_raw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:126]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:126]
+INFO: [Synth 8-5546] ROM "bp_mem_data_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bp_mem_write_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bp_mem_data_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bp_mem_write_en" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1811.434 ; gain = 315.074 ; free physical = 19322 ; free virtual = 37017
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              120 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	  13 Input    120 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     27 Bit        Muxes := 1     
+	   5 Input     24 Bit        Muxes := 1     
+	  13 Input     19 Bit        Muxes := 2     
+	  25 Input     19 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 13    
+	  12 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 9     
+	   5 Input      4 Bit        Muxes := 1     
+	  25 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	  25 Input      2 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 76    
+	   8 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 9     
+	  12 Input      1 Bit        Muxes := 5     
+	  25 Input      1 Bit        Muxes := 17    
+	  24 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Traffic_Light 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+Module Board_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module Clocks 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     27 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module Keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     24 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+Module Segments_Scan 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+Module Uart_S7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 5     
+	  12 Input      1 Bit        Muxes := 5     
+Module AckieV2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              120 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               19 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	  13 Input    120 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	  13 Input     19 Bit        Muxes := 2     
+	  25 Input     19 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   7 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	  25 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  25 Input      2 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 68    
+	  13 Input      1 Bit        Muxes := 4     
+	  24 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "button_raw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[13] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/cpu_status_reg[5]' (FDRE) to 'BoardI1/Ackie1/cpu_status_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[12] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/cpu_status_reg[4]' (FDRE) to 'BoardI1/Ackie1/cpu_status_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[11] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/cpu_status_reg[3]' (FDRE) to 'BoardI1/Ackie1/cpu_status_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[10] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/cpu_status_reg[2]' (FDRE) to 'BoardI1/Ackie1/cpu_status_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[9] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/cpu_status_reg[1]' (FDRE) to 'BoardI1/Ackie1/cpu_status_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BoardI1/Ackie1/cpu_status_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\BoardI1/Ackie1/steps_since_reset_reg[24] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[95]' (FDE) to 'BoardI1/Ackie1/return_message_reg[119]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[111]' (FDE) to 'BoardI1/Ackie1/return_message_reg[119]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[79]' (FDE) to 'BoardI1/Ackie1/return_message_reg[119]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[119]' (FDE) to 'BoardI1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[87]' (FDE) to 'BoardI1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[103]' (FDE) to 'BoardI1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[94]' (FDE) to 'BoardI1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[110]' (FDE) to 'BoardI1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[78]' (FDE) to 'BoardI1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[118]' (FDE) to 'BoardI1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[86]' (FDE) to 'BoardI1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[102]' (FDE) to 'BoardI1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[93]' (FDE) to 'BoardI1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[109]' (FDE) to 'BoardI1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[77]' (FDE) to 'BoardI1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[117]' (FDE) to 'BoardI1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[85]' (FDE) to 'BoardI1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[101]' (FDE) to 'BoardI1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[92]' (FDE) to 'BoardI1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[108]' (FDE) to 'BoardI1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[76]' (FDE) to 'BoardI1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[116]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[84]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[100]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[91]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[107]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[75]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[115]' (FDE) to 'BoardI1/Ackie1/return_message_reg[114]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[83]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[99]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[90]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[106]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[74]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[114]' (FDE) to 'BoardI1/Ackie1/return_message_reg[112]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[82]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[98]' (FDE) to 'BoardI1/Ackie1/return_message_reg[112]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[89]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[105]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[73]' (FDE) to 'BoardI1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[113]' (FDE) to 'BoardI1/Ackie1/return_message_reg[104]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[81]' (FDE) to 'BoardI1/Ackie1/return_message_reg[104]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[97]' (FDE) to 'BoardI1/Ackie1/return_message_reg[104]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[88]' (FDE) to 'BoardI1/Ackie1/return_message_reg[104]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[104]' (FDE) to 'BoardI1/Ackie1/return_message_reg[96]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[72]' (FDE) to 'BoardI1/Ackie1/return_message_reg[96]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[80]' (FDE) to 'BoardI1/Ackie1/return_message_reg[96]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BoardI1/Ackie1/return_message_reg[96] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/state_reg[7]' (FDE) to 'BoardI1/Ackie1/state_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/state_reg[6]' (FDE) to 'BoardI1/Ackie1/state_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BoardI1/Ackie1/state_reg[5] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[0]' (FD) to 'BoardI1/SS1/Segments_raw_reg[1]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[1]' (FD) to 'BoardI1/SS1/Segments_raw_reg[2]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[2]' (FD) to 'BoardI1/SS1/Segments_raw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[3]' (FD) to 'BoardI1/SS1/Segments_raw_reg[4]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[4]' (FD) to 'BoardI1/SS1/Segments_raw_reg[5]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[5]' (FD) to 'BoardI1/SS1/Segments_raw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[8]' (FD) to 'BoardI1/SS1/Segments_raw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[9]' (FD) to 'BoardI1/SS1/Segments_raw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[10]' (FD) to 'BoardI1/SS1/Segments_raw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[7]' (FD) to 'BoardI1/SS1/Segments_raw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[13]' (FD) to 'BoardI1/SS1/Segments_raw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[12]' (FD) to 'BoardI1/SS1/Segments_raw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[11]' (FD) to 'BoardI1/SS1/Segments_raw_reg[6]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/SS1/Segments_raw_reg[6]' (FD) to 'BoardI1/SS1/Segments_raw_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BoardI1/SS1/Segments_raw_reg[14] )
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[96]' (FDE) to 'BoardI1/Ackie1/return_message_reg[31]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[31]' (FDE) to 'BoardI1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[15]' (FDE) to 'BoardI1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[23]' (FDE) to 'BoardI1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[7]' (FDE) to 'BoardI1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[30]' (FDE) to 'BoardI1/Ackie1/return_message_reg[27]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[14]' (FDE) to 'BoardI1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[22]' (FDE) to 'BoardI1/Ackie1/return_message_reg[27]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[6]' (FDE) to 'BoardI1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[29]' (FDE) to 'BoardI1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[13]' (FDE) to 'BoardI1/Ackie1/return_message_reg[27]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[21]' (FDE) to 'BoardI1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[69]' (FDE) to 'BoardI1/Ackie1/return_message_reg[68]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[5]' (FDE) to 'BoardI1/Ackie1/return_message_reg[27]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[28]' (FDE) to 'BoardI1/Ackie1/return_message_reg[68]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[12]' (FDE) to 'BoardI1/Ackie1/return_message_reg[27]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[20]' (FDE) to 'BoardI1/Ackie1/return_message_reg[68]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[68]' (FDE) to 'BoardI1/Ackie1/return_message_reg[67]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[4]' (FDE) to 'BoardI1/Ackie1/return_message_reg[27]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[27]' (FDE) to 'BoardI1/Ackie1/return_message_reg[26]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[11]' (FDE) to 'BoardI1/Ackie1/return_message_reg[67]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[19]' (FDE) to 'BoardI1/Ackie1/return_message_reg[26]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[67]' (FDE) to 'BoardI1/Ackie1/return_message_reg[66]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[3]' (FDE) to 'BoardI1/Ackie1/return_message_reg[112]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[26]' (FDE) to 'BoardI1/Ackie1/return_message_reg[25]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[10]' (FDE) to 'BoardI1/Ackie1/return_message_reg[66]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[18]' (FDE) to 'BoardI1/Ackie1/return_message_reg[66]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[66]' (FDE) to 'BoardI1/Ackie1/return_message_reg[65]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[2]' (FDE) to 'BoardI1/Ackie1/return_message_reg[112]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[25]' (FDE) to 'BoardI1/Ackie1/return_message_reg[24]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[9]' (FDE) to 'BoardI1/Ackie1/return_message_reg[65]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[17]' (FDE) to 'BoardI1/Ackie1/return_message_reg[24]'
+INFO: [Synth 8-3886] merging instance 'BoardI1/Ackie1/return_message_reg[65]' (FDE) to 'BoardI1/Ackie1/return_message_reg[8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BoardI1/Ackie1/return_message_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1904.879 ; gain = 408.520 ; free physical = 19195 ; free virtual = 36887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19194 ; free virtual = 36887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19192 ; free virtual = 36886
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19203 ; free virtual = 36895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19203 ; free virtual = 36895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19205 ; free virtual = 36895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19206 ; free virtual = 36895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19204 ; free virtual = 36895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19204 ; free virtual = 36895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    25|
+|3     |ICAPE2 |     1|
+|4     |LUT1   |     8|
+|5     |LUT2   |    60|
+|6     |LUT3   |    49|
+|7     |LUT4   |    91|
+|8     |LUT5   |    81|
+|9     |LUT6   |   102|
+|10    |FDRE   |   305|
+|11    |FDSE   |    37|
+|12    |IBUF   |     5|
+|13    |OBUF   |    56|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+--------------+------+
+|      |Instance     |Module        |Cells |
++------+-------------+--------------+------+
+|1     |top          |              |   822|
+|2     |  BoardI1    |BoardV3       |   746|
+|3     |    Ackie1   |AckieV2       |   439|
+|4     |    ClocksI1 |Clocks        |   101|
+|5     |    KeyB1    |Keyboard      |     8|
+|6     |    Rst1     |Board_reset   |    55|
+|7     |    SS1      |Segments_Scan |    18|
+|8     |    U1       |Uart_S7       |   125|
+|9     |  D1         |Traffic_Light |    13|
++------+-------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19204 ; free virtual = 36895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.848 ; gain = 412.488 ; free physical = 19206 ; free virtual = 36897
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1908.855 ; gain = 412.488 ; free physical = 19206 ; free virtual = 36897
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1921.887 ; gain = 0.000 ; free physical = 19259 ; free virtual = 36972
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2043.664 ; gain = 0.000 ; free physical = 19197 ; free virtual = 36904
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+183 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2043.664 ; gain = 571.242 ; free physical = 19330 ; free virtual = 37038
+# read_xdc /cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc
+Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc]
+Finished Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc]
+# read_xdc /cadtools5/questa_custom/resource/comp12111/BoardV3_physical.xdc
+Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_physical.xdc]
+Finished Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_physical.xdc]
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[2] expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 2 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2116.602 ; gain = 72.938 ; free physical = 19318 ; free virtual = 37034
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 16f9b67c8
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2367.516 ; gain = 250.914 ; free physical = 19035 ; free virtual = 36737
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 16f9b67c8
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18894 ; free virtual = 36599
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 16f9b67c8
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18894 ; free virtual = 36599
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1d3145310
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18894 ; free virtual = 36599
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 1d3145310
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18894 ; free virtual = 36599
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1d3145310
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18892 ; free virtual = 36599
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1d3145310
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18892 ; free virtual = 36599
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18892 ; free virtual = 36599
+Ending Logic Optimization Task | Checksum: 1f5f3474d
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18892 ; free virtual = 36599
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1f5f3474d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18892 ; free virtual = 36599
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1f5f3474d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18892 ; free virtual = 36599
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18892 ; free virtual = 36599
+Ending Netlist Obfuscation Task | Checksum: 1f5f3474d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2502.484 ; gain = 0.000 ; free physical = 18892 ; free virtual = 36599
+INFO: [Common 17-83] Releasing license: Implementation
+20 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2502.484 ; gain = 458.820 ; free physical = 18892 ; free virtual = 36599
+# power_opt_design -verbose
+Command: power_opt_design -verbose
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Begin power optimizations | Checksum: 1f5f3474d
+WARNING: [Pwropt 34-141] Param pwropt.runOnPwroptedDesign is set. Skipped checking if power_opt_design has been performed earlier.
+INFO: [Pwropt 34-50] Optimizing power for module Traffic_Light_Board ...
+INFO: [Pwropt 34-207] Design is in partially-placed state. Running in partially-placed mode.
+Pre-processing: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2558.559 ; gain = 41.016 ; free physical = 18840 ; free virtual = 36547
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.869 | TNS=0.000 |
+IDT: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2606.398 ; gain = 44.840 ; free physical = 18821 ; free virtual = 36528
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+PSMgr Creation: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2606.398 ; gain = 88.855 ; free physical = 18821 ; free virtual = 36528
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-215] Skipped ODC enables for 0 nets in BRAM flops in bus-based analysis.
+INFO: [Pwropt 34-214] Skipped ODC enables for 0 nets in BRAM address flops in bus-based analysis.
+ODC: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2820.371 ; gain = 213.973 ; free physical = 18821 ; free virtual = 36527
+Power optimization passes: Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.33 . Memory (MB): peak = 2820.371 ; gain = 302.828 ; free physical = 18821 ; free virtual = 36527
+
+INFO: [Pwropt 34-77] Creating clock enable groups ...
+INFO: [Pwropt 34-96] Including small groups for filtering based on enable probabilities.
+ Done
+Grouping enables: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18837 ; free virtual = 36545
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-26] Patching clock gating enable signals for design Traffic_Light_Board ...
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 0 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+INFO: [Pwropt 34-100] Patcher adaptive clustering : original flop clusters 56 accepted clusters 56
+
+Number of Slice Registers augmented: 20 newly gated: 41 Total: 342
+Number of SRLs augmented: 0  newly gated: 0 Total: 0
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 0
+Number of Flops added for Enable Generation: 0
+
+Flops dropped: 0/85 RAMS dropped: 0/0 Clusters dropped: 0/56 Enables dropped: 0
+Patching clock gating enables finished successfully.
+Ending PowerOpt Patch Enables Task | Checksum: 165c700d2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18768 ; free virtual = 36476
+INFO: [Pwropt 34-30] Power optimization finished successfully.
+End power optimizations | Checksum: 165c700d2
+Power optimization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2820.371 ; gain = 317.887 ; free physical = 18839 ; free virtual = 36547
+INFO: [Pwropt 34-198] Malloced memory gain at end of power optimization: 47130056 bytes
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: a82e8c12
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18889 ; free virtual = 36596
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 2 BUFG optimization | Checksum: a82e8c12
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18889 ; free virtual = 36596
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 3 Remap
+INFO: [Opt 31-51] Remap created LUT6 cell: BoardI1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_2_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: BoardI1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_1.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: BoardI1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_2.
+INFO: [Opt 31-51] Remap created LUT6 cell: BoardI1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_25_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: BoardI1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_24.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: BoardI1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_25.
+INFO: [Opt 31-51] Remap created LUT6 cell: BoardI1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_30_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: BoardI1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_29.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: BoardI1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_30.
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+Phase 3 Remap | Checksum: 116492cd6
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18889 ; free virtual = 36597
+INFO: [Opt 31-389] Phase Remap created 3 cells and removed 6 cells
+
+Phase 4 Post Processing Netlist
+Phase 4 Post Processing Netlist | Checksum: 133b005e0
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18889 ; free virtual = 36597
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+---------------------------------------------------------------------------------------------------------------------
+|  Phase                    |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+---------------------------------------------------------------------------------------------------------------------
+|  Retarget                 |               0  |               0  |                                              0  |
+|  BUFG optimization        |               0  |               0  |                                              0  |
+|  Remap                    |               3  |               6  |                                              0  |
+|  Post Processing Netlist  |               0  |               0  |                                              0  |
+---------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 15f06b415
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18889 ; free virtual = 36597
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18889 ; free virtual = 36597
+Ending Netlist Obfuscation Task | Checksum: 15f06b415
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18889 ; free virtual = 36597
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+power_opt_design completed successfully
+# place_design -directive Explore
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[2] expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18874 ; free virtual = 36590
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 156102386
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18874 ; free virtual = 36590
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18874 ; free virtual = 36590
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	Clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y0
+	Clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ffac4de3
+
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18875 ; free virtual = 36591
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 112d03ee6
+
+Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18876 ; free virtual = 36590
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 112d03ee6
+
+Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18876 ; free virtual = 36590
+Phase 1 Placer Initialization | Checksum: 112d03ee6
+
+Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18876 ; free virtual = 36590
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1c68d2f70
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.39 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18868 ; free virtual = 36582
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 27 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 11 nets or cells. Created 0 new cell, deleted 11 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18879 ; free virtual = 36584
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             11  |                    11  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             11  |                    11  |           0  |           3  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 24d02a04a
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:02 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18880 ; free virtual = 36585
+Phase 2.2 Global Placement Core | Checksum: 18ec1b5e0
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:02 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18882 ; free virtual = 36587
+Phase 2 Global Placement | Checksum: 18ec1b5e0
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:02 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18882 ; free virtual = 36587
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 19ddbabe9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:02 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18883 ; free virtual = 36588
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1d337c616
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:02 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18882 ; free virtual = 36587
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1980c5e4c
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:02 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18882 ; free virtual = 36587
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 23d84b1ba
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:02 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18882 ; free virtual = 36587
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1a23a8b72
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36586
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1a910c7af
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36586
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 20698343d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36586
+Phase 3 Detail Placement | Checksum: 20698343d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36586
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 150a6ccf1
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 150a6ccf1
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.586. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: b3968edf
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+Phase 4.1 Post Commit Optimization | Checksum: b3968edf
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: b3968edf
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: b3968edf
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+Phase 4.4 Final Placement Cleanup | Checksum: fae3daf4
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: fae3daf4
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+Ending Placer Task | Checksum: f905f213
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:03 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18881 ; free virtual = 36585
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+# route_design -directive Explore
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PLCK-12] Clock Placer Checks: Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	Clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y0
+	Clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: a7bf5e70 ConstDB: 0 ShapeSum: 514693a3 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 16b1c83be
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18805 ; free virtual = 36507
+Post Restoration Checksum: NetGraph: df3f0897 NumContArr: 8bdd7b27 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 16b1c83be
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18777 ; free virtual = 36479
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 16b1c83be
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18745 ; free virtual = 36449
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 16b1c83be
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18745 ; free virtual = 36449
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1948149d4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18738 ; free virtual = 36444
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.596  | TNS=0.000  | WHS=-0.073 | THS=-0.760 |
+
+Phase 2 Router Initialization | Checksum: 2127da337
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18738 ; free virtual = 36444
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0164375 %
+  Global Horizontal Routing Utilization  = 0.00980392 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 675
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 673
+  Number of Partially Routed Nets     = 2
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 2121e2c7c
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36445
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 75
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.030  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 18b7b13dc
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.030  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: cc916d52
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+Phase 4 Rip-up And Reroute | Checksum: cc916d52
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: cc916d52
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: cc916d52
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+Phase 5 Delay and Skew Optimization | Checksum: cc916d52
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 156323822
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.037  | TNS=0.000  | WHS=0.063  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 16a4b5a08
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+Phase 6 Post Hold Fix | Checksum: 16a4b5a08
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.239134 %
+  Global Horizontal Routing Utilization  = 0.333333 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: a099509e
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18740 ; free virtual = 36446
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: a099509e
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18739 ; free virtual = 36445
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: c4595e0f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18739 ; free virtual = 36445
+
+Phase 10 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=2.037  | TNS=0.000  | WHS=0.062  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 10 Post Router Timing | Checksum: b7f18c37
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18739 ; free virtual = 36445
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18809 ; free virtual = 36515
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18809 ; free virtual = 36515
+# report_io  -file post_route_io.rpt
+report_io: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2820.371 ; gain = 0.000 ; free physical = 18804 ; free virtual = 36509
+# set_property BITSTREAM.CONFIG.USR_ACCESS         0xaabbccdd    [current_design]
+# set_property CONFIG_VOLTAGE                     3.3            [current_design]
+# set_property CFGBVS                             VCCO           [current_design]
+# set_property BITSTREAM.CONFIG.CONFIGRATE        16             [current_design]
+# set_property BITSTREAM.CONFIG.SPI_32BIT_ADDR    No             [current_design]
+# set_property BITSTREAM.CONFIG.USERID   0xADD1E            [current_design]
+# set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
+# set design_name  Traffic_Light_Board 
+# write_bitstream -force ${design_name}.bit
+Command: write_bitstream -force Traffic_Light_Board.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+WARNING: [Designutils 20-2050] The "BITSTREAM.CONFIG.SPI_32BIT_ADDR No" property setting is used to enable 24 bit SPI addressing.  For correct SPI functionality the "BITSTREAM.CONFIG.SPI_BUSWIDTH" property value of 1 has been set.
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./Traffic_Light_Board.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2930.945 ; gain = 110.574 ; free physical = 18801 ; free virtual = 36504
+# write_bitstream -force -bin_file ${design_name}
+Command: write_bitstream -force -bin_file Traffic_Light_Board
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+WARNING: [Designutils 20-2050] The "BITSTREAM.CONFIG.SPI_32BIT_ADDR No" property setting is used to enable 24 bit SPI addressing.  For correct SPI functionality the "BITSTREAM.CONFIG.SPI_BUSWIDTH" property value of 1 has been set.
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./Traffic_Light_Board.bit...
+Writing bitstream ./Traffic_Light_Board.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+9 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2962.926 ; gain = 31.980 ; free physical = 18795 ; free virtual = 36499
+# write_cfgmem    -force -format MCS -size 8 -loadbit "up 0x0 ${design_name}.bit" -interface SPIx1 ${design_name}
+Command: write_cfgmem -force -format MCS -size 8 -loadbit {up 0x0 Traffic_Light_Board.bit} -interface SPIx1 Traffic_Light_Board
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile Traffic_Light_Board.bit
+Writing file ./Traffic_Light_Board.mcs
+Writing log file ./Traffic_Light_Board.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               8M
+Start Address      0x00000000
+End Address        0x007FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0012F2CB    Oct 26 19:36:17 2023    Traffic_Light_Board.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# exit 
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 19:36:19 2023...

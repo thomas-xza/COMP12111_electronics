@@ -19,26 +19,26 @@
 
 //  Presumably so many states so that some light sequences hold during multiple clock ticks.
 
-`define STATE_0 6'b0000
-`define STATE_1 6'b0001
-`define STATE_2 6'b0010
-`define STATE_3 6'b0011
-`define STATE_4 6'b0100
-`define STATE_5 6'b0101
-`define STATE_6 6'b0110
-`define STATE_7 6'b0111
-`define STATE_8 6'b1000
-`define STATE_9 6'b1001
-`define STATE_10 6'b1010
+`define STATE_0 4'b0000
+`define STATE_1 4'b0001
+`define STATE_2 4'b0010
+`define STATE_3 4'b0011
+`define STATE_4 4'b0100
+`define STATE_5 4'b0101
+`define STATE_6 4'b0110
+`define STATE_7 4'b0111
+`define STATE_8 4'b1000
+`define STATE_9 4'b1001
+`define STATE_10 4'b1010
 
 
 //  The 4 potential light sequences, plus test sequence. 
 
-`define R__G 6'b01001  //  Red pedestrian, green traffic.
-`define R__A 6'b01010  //  Red pedestrian, amber traffic.
-`define G__R 6'b10100  //  Green pedestrian, red traffic.
-`define R__R 6'b01110  //  Red pedestrian, amber & red traffic.
-`define TEST 6'b11111  //  All lights on.
+`define R__G 5'b01001  //  Red pedestrian, green traffic.
+`define R__A 5'b01010  //  Red pedestrian, amber traffic.
+`define G__R 5'b10100  //  Green pedestrian, red traffic.
+`define R__R 5'b01110  //  Red pedestrian, amber & red traffic.
+`define TEST 5'b11111  //  All lights on.
 
 
 `timescale  1ns / 100ps
