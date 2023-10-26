@@ -53,9 +53,9 @@ begin
 
 #100  //  Wait 100ns due to hardware quirk mentioned in exercise 1.
 #100 start=1;
-#100 start=0;
-#100 start=0;
-#100 start=0;
+#100 start=1;
+#100 start=1;
+#100 start=1;
 
 
 

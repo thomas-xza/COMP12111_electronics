@@ -14,10 +14,10 @@
 // quality of the comments given.
 //
 // Add your comments:
-// [All comments inline, at present]
+// [All comments inline]
 //
 
-//  Not sure why so many states exist (yet).
+//  Presumably so many states so that some light sequences hold during multiple clock ticks.
 
 `define STATE_0 6'b0000
 `define STATE_1 6'b0001
@@ -32,12 +32,13 @@
 `define STATE_10 6'b1010
 
 
-//  The 4 potential light sequences. 
+//  The 4 potential light sequences, plus test sequence. 
 
 `define R__G 6'b01001  //  Red pedestrian, green traffic.
 `define R__A 6'b01010  //  Red pedestrian, amber traffic.
 `define G__R 6'b10100  //  Green pedestrian, red traffic.
 `define R__R 6'b01110  //  Red pedestrian, amber & red traffic.
+`define TEST 6'b11111  //  All lights on.
 
 
 `timescale  1ns / 100ps
@@ -54,13 +55,18 @@ module Traffic_Light ( output reg [4:0] 	lightseq,	//the 5-bit light sequence
 reg [3:0] current_state, next_state;
 
 
-
 //  Combinatorial logic (stateless) for input.
 //  Derives next_state from current_state and start.
 //  Note that this assumes that start is never undefined, for simplicity.
+//  Could do case-statements inside if-statements, alternatively.
+
 always @ (*)
   case(current_state)
-    `STATE_0: next_state = `STATE_1;
+    `STATE_0:
+		if (start)
+			next_state = `STATE_1;
+		else
+			next_state = current_state;  //  Explicitly remain unchanged.
     `STATE_1: next_state = `STATE_2;
     `STATE_2: next_state = `STATE_3;
     `STATE_3: next_state = `STATE_4;
@@ -88,6 +94,8 @@ always @ (*)
 
 
 //  Sequential logic (stateful)
+//  Updates current_state with next_state, when the clock rises.
+
 always @ (posedge clock)
   if (reset)
 	current_state <= `STATE_0;
@@ -96,6 +104,8 @@ always @ (posedge clock)
 
 
 //  Combinatorial logic for output
+//  Takes the current state, and outputs the light sequence based on it.
+
 always @(*)
   case(current_state)
     `STATE_0: lightseq = `R__G;
@@ -109,12 +119,8 @@ always @(*)
     `STATE_8: lightseq = `R__G;
     `STATE_9: lightseq = `R__G;
     `STATE_10: lightseq = `R__G;
+	default: lightseq = `TEST;
   endcase
-
-
-// determine output signals
-// from current_state
-
 
 
 endmodule

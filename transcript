@@ -192,3 +192,91 @@
 # 	Traffic_Light
 # End time: 15:54:21 on Oct 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:07:36 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
+# -- Compiling module Traffic_Light_Board
+# 
+# Top level modules:
+# 	Traffic_Light_Board
+# End time: 16:07:36 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:07:36 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
+# -- Compiling module Traffic_Light_Testbench
+###### ./src/Ex2/Traffic_Light_Testbench.v(29): initial lightseq = 6'b11111;  //  Turn all the lights on at first, test they work.
+# ** Error: ./src/Ex2/Traffic_Light_Testbench.v(29): (vlog-2110) Illegal reference to net "lightseq".
+# End time: 16:07:36 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:09:00 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
+# -- Compiling module Traffic_Light_Board
+# 
+# Top level modules:
+# 	Traffic_Light_Board
+# End time: 16:09:00 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:09:01 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
+# -- Compiling module Traffic_Light_Testbench
+# 
+# Top level modules:
+# 	Traffic_Light_Testbench
+# End time: 16:09:01 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:09:01 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light.v 
+# -- Compiling module Traffic_Light
+# 
+# Top level modules:
+# 	Traffic_Light
+# End time: 16:09:01 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:09:12 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
+# -- Compiling module Traffic_Light_Board
+# 
+# Top level modules:
+# 	Traffic_Light_Board
+# End time: 16:09:12 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:09:12 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
+# -- Compiling module Traffic_Light_Testbench
+###### ./src/Ex2/Traffic_Light_Testbench.v(29): lightseq = 6'b11111;  //  Turn all the lights on at first, test they work.
+# ** Error: (vlog-13069) ./src/Ex2/Traffic_Light_Testbench.v(29): near "=": syntax error, unexpected '='.
+# ** Error: ./src/Ex2/Traffic_Light_Testbench.v(29): (vlog-13205) Syntax error found in the scope following 'lightseq'. Is there a missing '::'?
+# End time: 16:09:13 on Oct 26,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:12:24 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Board.v 
+# -- Compiling module Traffic_Light_Board
+# 
+# Top level modules:
+# 	Traffic_Light_Board
+# End time: 16:12:24 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 16:12:24 on Oct 26,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex2/Traffic_Light_Testbench.v 
+# -- Compiling module Traffic_Light_Testbench
+###### ./src/Ex2/Traffic_Light_Testbench.v(54):   lightseq = 6'b11111;
+# ** Error: ./src/Ex2/Traffic_Light_Testbench.v(54): (vlog-2110) Illegal reference to net "lightseq".
+# End time: 16:12:24 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
