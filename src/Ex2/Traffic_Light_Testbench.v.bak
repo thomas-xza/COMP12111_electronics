@@ -4,7 +4,6 @@
 //
 // This is the Verilog module for the traffic light testbench
 // Tests for the traffic light should be added to this file
-//
 
 
 `timescale  1ns / 100ps
@@ -43,23 +42,90 @@ always // always do the following
   end
 
 
+//  There are 4 possible paths from STATE_0 to STATE_1:
+//    0 1 2 3 4 5 8 9 10 1
+//    0 1 2 3 4 5 6 9 10 1
+//    0 1 2 3 4 5 7 10 0 1
+//    0 1 2 3 4 5 7 0 1
 
-//  Begin sending input signals.
+//  When STATE_1 is activated, it takes 4 clock ticks to reach STATE_5 (#400 delay).
+
+
 initial
 begin
 
-// Set input signals here, using delays where appropriate
-// -----------------------------------------------------
-
 #100  //  Wait 100ns due to hardware quirk mentioned in exercise 1.
-#100 start=1;
-#100 start=1;
-#100 start=1;
-#100 start=1;
 
+//  Test: 0 1 2 3 4 5 7 0 1
 
+#100
+start=1;
 
-#100 $stop;
+#100
+start=0;
+
+#800
+start=1;
+
+#100
+reset=1;
+
+//  Test: 0 1 2 3 4 5 7 10 0 1
+
+#100
+start=1;
+
+#100
+start=0;
+
+#400
+start=1;
+
+#100
+start=0;
+
+#300
+reset=1;
+
+//  Test: 0 1 2 3 4 5 6 9 10 1
+
+#100
+start=1;
+
+#100
+start=0;
+
+#500
+start=1;
+
+#100
+start=0;
+
+#300
+reset=1;
+
+#100
+
+//  Test: 0 1 2 3 4 5 8 9 10 1
+
+#100
+start=1;
+
+#100
+start=0;
+
+#600
+start=1;
+
+#100
+start=0;
+
+#200
+reset=1;
+
+#100
+
+$stop;
 end
 
 
@@ -70,3 +136,4 @@ initial begin $init_testbench(); end
 endmodule
 
 `default_nettype wire
+
