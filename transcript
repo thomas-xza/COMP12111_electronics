@@ -19,3 +19,608 @@
 # fpgaLoad
 # after#262
 # Info: Startup continues, no compilation required.
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:01 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu_Testbench.v 
+# -- Compiling module MU0_Alu_Testbench
+# 
+# Top level modules:
+# 	MU0_Alu_Testbench
+# End time: 18:29:01 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:01 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu.v 
+# -- Compiling module MU0_Alu
+# 
+# Top level modules:
+# 	MU0_Alu
+# End time: 18:29:01 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:01 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Board.v 
+# -- Compiling module MU0_Board
+# 
+# Top level modules:
+# 	MU0_Board
+# End time: 18:29:01 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:01 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Control.v 
+# -- Compiling module MU0_Control
+# 
+# Top level modules:
+# 	MU0_Control
+# End time: 18:29:01 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:01 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Datapath.v 
+# -- Compiling module MU0_Datapath
+###### ./src/Ex3/MU0_Datapath.v(115): );
+# ** Error: ./src/Ex3/MU0_Datapath.v(115): (vlog-13282) 'MU0_Mux16' already declared in this scope.
+# End time: 18:29:02 on Nov 15,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:55 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu_Testbench.v 
+# -- Compiling module MU0_Alu_Testbench
+# 
+# Top level modules:
+# 	MU0_Alu_Testbench
+# End time: 18:29:55 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:55 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu.v 
+# -- Compiling module MU0_Alu
+# 
+# Top level modules:
+# 	MU0_Alu
+# End time: 18:29:55 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:55 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Board.v 
+# -- Compiling module MU0_Board
+# 
+# Top level modules:
+# 	MU0_Board
+# End time: 18:29:55 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:55 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Control.v 
+# -- Compiling module MU0_Control
+# 
+# Top level modules:
+# 	MU0_Control
+# End time: 18:29:55 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:29:55 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Datapath.v 
+# -- Compiling module MU0_Datapath
+###### ./src/Ex3/MU0_Datapath.v(133): Z(Z)				//  Output zero flag.
+# ** Error: ./src/Ex3/MU0_Datapath.v(133): 'Z' is not a function name.
+# ** Error: ./src/Ex3/MU0_Datapath.v(133): Component name 'Z' does not refer to a scope.
+###### ./src/Ex3/MU0_Datapath.v(132): N(N), 				//  Output negative flag.
+# ** Error: ./src/Ex3/MU0_Datapath.v(132): 'N' is not a function name.
+# ** Error: ./src/Ex3/MU0_Datapath.v(132): Component name 'N' does not refer to a scope.
+###### ./src/Ex3/MU0_Datapath.v(131): Acc(Acc), 			//  Input accumulator to flag generator.
+# ** Error: ./src/Ex3/MU0_Datapath.v(131): 'Acc' is not a function name.
+# ** Error (suppressible): (vlog-13276) ./src/Ex3/MU0_Datapath.v(131): Could not find field/method name ($$) in 'Acc' of 'Acc.$$'.
+# End time: 18:29:55 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu_Testbench.v 
+# -- Compiling module MU0_Alu_Testbench
+# 
+# Top level modules:
+# 	MU0_Alu_Testbench
+# End time: 18:30:20 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu.v 
+# -- Compiling module MU0_Alu
+# 
+# Top level modules:
+# 	MU0_Alu
+# End time: 18:30:20 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Board.v 
+# -- Compiling module MU0_Board
+# 
+# Top level modules:
+# 	MU0_Board
+# End time: 18:30:20 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Control.v 
+# -- Compiling module MU0_Control
+# 
+# Top level modules:
+# 	MU0_Control
+# End time: 18:30:20 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Datapath.v 
+# -- Compiling module MU0_Datapath
+# 
+# Top level modules:
+# 	MU0_Datapath
+# End time: 18:30:20 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Flags.v 
+# -- Compiling module MU0_Flags
+# 
+# Top level modules:
+# 	MU0_Flags
+# End time: 18:30:20 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Memory.v 
+# -- Compiling module MU0_Memory
+# 
+# Top level modules:
+# 	MU0_Memory
+# End time: 18:30:20 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux12_Testbench.v 
+# -- Compiling module MU0_Mux12_Testbench
+# 
+# Top level modules:
+# 	MU0_Mux12_Testbench
+# End time: 18:30:20 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:20 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux12.v 
+# -- Compiling module MU0_Mux12
+# 
+# Top level modules:
+# 	MU0_Mux12
+# End time: 18:30:21 on Nov 15,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:21 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux16_Testbench.v 
+# -- Compiling module MU0_Mux16_Testbench
+# 
+# Top level modules:
+# 	MU0_Mux16_Testbench
+# End time: 18:30:21 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:21 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux16.v 
+# -- Compiling module MU0_Mux16
+# 
+# Top level modules:
+# 	MU0_Mux16
+# End time: 18:30:21 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:21 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg12_Testbench.v 
+# -- Compiling module MU0_Reg12_Testbench
+# 
+# Top level modules:
+# 	MU0_Reg12_Testbench
+# End time: 18:30:21 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:21 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg12.v 
+# -- Compiling module MU0_Reg12
+# 
+# Top level modules:
+# 	MU0_Reg12
+# End time: 18:30:21 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:21 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg16_Testbench.v 
+# -- Compiling module MU0_Reg16_Testbench
+###### ./src/Ex3/MU0_Reg16_Testbench.v(61):     D = 12'hxxxx;    #100;
+# ** Warning: ./src/Ex3/MU0_Reg16_Testbench.v(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	MU0_Reg16_Testbench
+# End time: 18:30:21 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:21 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg16.v 
+# -- Compiling module MU0_Reg16
+# 
+# Top level modules:
+# 	MU0_Reg16
+# End time: 18:30:21 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:30:21 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Testbench.v 
+# -- Compiling module MU0_Testbench
+###### ./src/Ex3/MU0_Testbench.v(68): initial clock = 0;
+# ** Error: ./src/Ex3/MU0_Testbench.v(68): (vlog-2730) Undefined variable: 'clock'.
+###### ./src/Ex3/MU0_Testbench.v(69): initial reset = 0;
+# ** Error: ./src/Ex3/MU0_Testbench.v(69): (vlog-2730) Undefined variable: 'reset'.
+###### ./src/Ex3/MU0_Testbench.v(70): initial start = 0;
+# ** Error: ./src/Ex3/MU0_Testbench.v(70): (vlog-2730) Undefined variable: 'start'.
+###### ./src/Ex3/MU0_Testbench.v(93): #100		//  Wait 100ns due to hardware quirk.
+# ** Error: (vlog-13069) ./src/Ex3/MU0_Testbench.v(93): near "#": syntax error, unexpected '#', expecting ';'.
+# End time: 18:30:21 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:14 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu_Testbench.v 
+# -- Compiling module MU0_Alu_Testbench
+# 
+# Top level modules:
+# 	MU0_Alu_Testbench
+# End time: 18:31:14 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:14 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu.v 
+# -- Compiling module MU0_Alu
+# 
+# Top level modules:
+# 	MU0_Alu
+# End time: 18:31:14 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:14 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Board.v 
+# -- Compiling module MU0_Board
+# 
+# Top level modules:
+# 	MU0_Board
+# End time: 18:31:14 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:14 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Control.v 
+# -- Compiling module MU0_Control
+# 
+# Top level modules:
+# 	MU0_Control
+# End time: 18:31:14 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:14 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Datapath.v 
+# -- Compiling module MU0_Datapath
+# 
+# Top level modules:
+# 	MU0_Datapath
+# End time: 18:31:14 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Flags.v 
+# -- Compiling module MU0_Flags
+# 
+# Top level modules:
+# 	MU0_Flags
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Memory.v 
+# -- Compiling module MU0_Memory
+# 
+# Top level modules:
+# 	MU0_Memory
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux12_Testbench.v 
+# -- Compiling module MU0_Mux12_Testbench
+# 
+# Top level modules:
+# 	MU0_Mux12_Testbench
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux12.v 
+# -- Compiling module MU0_Mux12
+# 
+# Top level modules:
+# 	MU0_Mux12
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux16_Testbench.v 
+# -- Compiling module MU0_Mux16_Testbench
+# 
+# Top level modules:
+# 	MU0_Mux16_Testbench
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux16.v 
+# -- Compiling module MU0_Mux16
+# 
+# Top level modules:
+# 	MU0_Mux16
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg12_Testbench.v 
+# -- Compiling module MU0_Reg12_Testbench
+# 
+# Top level modules:
+# 	MU0_Reg12_Testbench
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg12.v 
+# -- Compiling module MU0_Reg12
+# 
+# Top level modules:
+# 	MU0_Reg12
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg16_Testbench.v 
+# -- Compiling module MU0_Reg16_Testbench
+###### ./src/Ex3/MU0_Reg16_Testbench.v(61):     D = 12'hxxxx;    #100;
+# ** Warning: ./src/Ex3/MU0_Reg16_Testbench.v(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	MU0_Reg16_Testbench
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg16.v 
+# -- Compiling module MU0_Reg16
+# 
+# Top level modules:
+# 	MU0_Reg16
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:15 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Testbench.v 
+# -- Compiling module MU0_Testbench
+###### ./src/Ex3/MU0_Testbench.v(92): #100		//  Wait 100ns due to hardware quirk.
+# ** Error: (vlog-13069) ./src/Ex3/MU0_Testbench.v(92): near "#": syntax error, unexpected '#', expecting ';'.
+# End time: 18:31:15 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu_Testbench.v 
+# -- Compiling module MU0_Alu_Testbench
+# 
+# Top level modules:
+# 	MU0_Alu_Testbench
+# End time: 18:31:35 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Alu.v 
+# -- Compiling module MU0_Alu
+# 
+# Top level modules:
+# 	MU0_Alu
+# End time: 18:31:35 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Board.v 
+# -- Compiling module MU0_Board
+# 
+# Top level modules:
+# 	MU0_Board
+# End time: 18:31:35 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Control.v 
+# -- Compiling module MU0_Control
+# 
+# Top level modules:
+# 	MU0_Control
+# End time: 18:31:35 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Datapath.v 
+# -- Compiling module MU0_Datapath
+# 
+# Top level modules:
+# 	MU0_Datapath
+# End time: 18:31:35 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Flags.v 
+# -- Compiling module MU0_Flags
+# 
+# Top level modules:
+# 	MU0_Flags
+# End time: 18:31:35 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Memory.v 
+# -- Compiling module MU0_Memory
+# 
+# Top level modules:
+# 	MU0_Memory
+# End time: 18:31:35 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux12_Testbench.v 
+# -- Compiling module MU0_Mux12_Testbench
+# 
+# Top level modules:
+# 	MU0_Mux12_Testbench
+# End time: 18:31:35 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:35 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux12.v 
+# -- Compiling module MU0_Mux12
+# 
+# Top level modules:
+# 	MU0_Mux12
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:36 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux16_Testbench.v 
+# -- Compiling module MU0_Mux16_Testbench
+# 
+# Top level modules:
+# 	MU0_Mux16_Testbench
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:36 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Mux16.v 
+# -- Compiling module MU0_Mux16
+# 
+# Top level modules:
+# 	MU0_Mux16
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:36 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg12_Testbench.v 
+# -- Compiling module MU0_Reg12_Testbench
+# 
+# Top level modules:
+# 	MU0_Reg12_Testbench
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:36 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg12.v 
+# -- Compiling module MU0_Reg12
+# 
+# Top level modules:
+# 	MU0_Reg12
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:36 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg16_Testbench.v 
+# -- Compiling module MU0_Reg16_Testbench
+###### ./src/Ex3/MU0_Reg16_Testbench.v(61):     D = 12'hxxxx;    #100;
+# ** Warning: ./src/Ex3/MU0_Reg16_Testbench.v(61): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	MU0_Reg16_Testbench
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:36 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Reg16.v 
+# -- Compiling module MU0_Reg16
+# 
+# Top level modules:
+# 	MU0_Reg16
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:36 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0_Testbench.v 
+# -- Compiling module MU0_Testbench
+# 
+# Top level modules:
+# 	MU0_Testbench
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# ** Note: Multiple occurrences of ini variable Show_source are found, only first occurence will be considered.
+# QuestaSim-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+# Start time: 18:31:36 on Nov 15,2023
+# vlog -reportprogress 300 -lint -cover bcsxf ./src/Ex3/MU0.v 
+# -- Compiling module MU0
+# 
+# Top level modules:
+# 	MU0
+# End time: 18:31:36 on Nov 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

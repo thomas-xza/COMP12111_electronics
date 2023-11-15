@@ -93,21 +93,21 @@ MU0_Reg16 IRReg(
 
 //  Note: Module parameter `A` relates to `0` in diagram.
 
-XMux MU0_Mux16(
+MU0_Mux16 XMux(
 .A(Acc),					//  Input Accumulator value.
 .B({4'b0000, PC[11:0]}),	//  Input PC value (padded to 16 bits).
 .S(X_sel),					//  Input selection flag from control.
 .Q(Dout)					//  Output data to memory-data bus.
 );
 
-AddrMux MU0_Mux12(
+MU0_Mux12 AddrMux(
 .A(PC),				//  Input PC register value.
 .B(IR[11:0]),		//  Input instruction address (last 12 LSBs only).
 .S(Addr_sel),		//  Input address selection flag from control.
 .Q(Address)			//  Output Address to memory-address bus.
 );
 
-YMux MU0_Mux16(
+MU0_Mux16 YMux(
 .A(IR),				//  Input instruction from register.
 .B(Din),			//  Input data from memory-data bus.
 .S(Y_sel),			//  Input selection flag from control.
@@ -128,9 +128,9 @@ Main_ALU MU0_Alu(
 //  MU0 Flag generation
 
 Main_flags MU0_Flags(
-Acc(Acc), 			//  Input accumulator to flag generator.
-N(N), 				//  Output negative flag.
-Z(Z)				//  Output zero flag.
+.Acc(Acc), 			//  Input accumulator to flag generator.
+.N(N), 				//  Output negative flag.
+.Z(Z)				//  Output zero flag.
 );
 
 
