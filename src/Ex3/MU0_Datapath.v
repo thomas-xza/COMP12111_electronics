@@ -20,13 +20,13 @@ input  wire        PC_En,		////  Connected.
 input  wire        IR_En,		////  Connected.
 input  wire        Acc_En,		////  Connected.
 input  wire [1:0]  M,			////  Connected.
-output wire [3:0]  F,			////  Connected.  4 MSBs of the instruction (opcode)
-output wire [11:0] Address,		////  Connected.  12 LSBs of the instruction
+output wire [3:0]  F,			////  Connected.  4 MSBs of the instruction (opcode).
+output wire [11:0] Address,		////  Connected.  12 LSBs of the instruction.
 output wire [15:0] Dout,		////  Connected.  
 output wire        N,  			////  Connected.  Flag
 output wire        Z,  			////  Connected.  Flag
-output wire [15:0] PC,			//  Why is this external?
-output wire [15:0] Acc);		//  Why is this external?
+output wire [15:0] PC,			////  Connected x2.  Unexpectedly not internal only.
+output wire [15:0] Acc);		////  Connected x2.  Unexpectedly not internal only.
 
 
 // Define internal signals using names from the datapath schematic.
@@ -37,7 +37,6 @@ wire [15:0] IR;		////  Connected x3.
 
 //  Need to define a few more datapath-internal wires.
 wire [15:0] Y;		////  Connected.  
-wire [15:0] Acc;	////  Connected x2.  
 wire [15:0] ALU;	////  Connected x2.  
 
 
@@ -78,7 +77,7 @@ MU0_Reg12 PCReg(
 .Reset(Reset),
 .En(PC_En),
 .D(ALU[11:0]),    	//  Input from ALU (last 12 LSBs only).
-.Q()     			//  Output to...???
+.Q(PC)     			//  Output PC register value.
 );
 
 MU0_Reg16 IRReg(
@@ -95,14 +94,14 @@ MU0_Reg16 IRReg(
 //  Note: Module parameter `A` relates to `0` in diagram.
 
 XMux MU0_Mux16(
-.A(Acc),			//  Input Accumulator value.
-.B(),				//  Input PC value (padded to 16 bits) TODO !!!!!
-.S(X_sel),			//  Input selection flag from control.
-.Q(Dout)			//  Output data to memory-data bus.
+.A(Acc),					//  Input Accumulator value.
+.B({4'b0000, PC[11:0]}),	//  Input PC value (padded to 16 bits).
+.S(X_sel),					//  Input selection flag from control.
+.Q(Dout)					//  Output data to memory-data bus.
 );
 
 AddrMux MU0_Mux12(
-.A(),				//  Input PC...??
+.A(PC),				//  Input PC register value.
 .B(IR[11:0]),		//  Input instruction address (last 12 LSBs only).
 .S(Addr_sel),		//  Input address selection flag from control.
 .Q(Address)			//  Output Address to memory-address bus.
