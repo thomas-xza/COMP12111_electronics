@@ -87,11 +87,11 @@ always // always do the following
 initial
 begin
 
-Reset=1
+Reset=1;
 
 #100		//  Wait 100ns due to hardware quirk.
 
-Reset=0
+Reset=0;
 
 
 #100 $stop(); // stop the simulation - could tie this to the Halted signal going high

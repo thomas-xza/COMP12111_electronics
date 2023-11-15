@@ -87,10 +87,10 @@ always // always do the following
 initial
 begin
 
+#100		//  Wait 100ns due to hardware quirk.
 Reset=1;
 
-#100		//  Wait 100ns due to hardware quirk.
-
+#100
 Reset=0;
 
 
