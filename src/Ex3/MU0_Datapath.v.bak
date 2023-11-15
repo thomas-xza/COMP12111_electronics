@@ -104,17 +104,9 @@ AddrMux MU0_Mux16(
 );
 
 XMux MU0_Mux12(
-.A(),
-.B(),
-.S(),
-.Q()
 );
 
 YMux MU0_Mux16(
-.A(),
-.B(),
-.S(),
-.Q()
 );
 
 // MU0 ALU

@@ -23,7 +23,8 @@ output reg  [15:0] Q
 
 
 //  On every clock tick, if `En` is high,
-//    then set Q with contents of D.
+//    then set Q with contents of D,
+//    else Q remains unchanged.
 
 always @ (posedge Clk)
   if (En)
@@ -31,8 +32,8 @@ always @ (posedge Clk)
   else
     Q <= Q;
 
-//  The specification says "the reset signal acts asynchronously"
-//    therefore, implemented this as a stateless block.
+//  The specification says "the reset signal acts asynchronously".
+//    Therefore, implemented this as a stateless block.
 
 always @ (Reset)
   Q = 16'b0000_0000_0000_0000;
