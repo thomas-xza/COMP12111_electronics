@@ -81,7 +81,7 @@ MU0_Reg12 PCReg(
 .Clk(Clk),
 .Reset(Reset),
 .En(PC_En),
-.D(ALU[11:0]),    	//  Input from ALU (must only select 12 bits of instruction).
+.D(ALU[11:0]),    	//  Input from ALU (last 12 LSBs only).
 .Q()     			//  Output to...???
 );
 
@@ -96,34 +96,46 @@ MU0_Reg16 IRReg(
 
 // MU0 multiplexors
 
-AddrMux MU0_Mux16(
-.A(),
-.B(),
-.S(),
-.Q()
+//  Note: Module parameter `A` relates to `0` in diagram.
+
+XMux MU0_Mux16(
+.A(Acc),			//  Input Accumulator value.
+.B(),				//  Input PC value (padded to 16 bits) TODO !!!!!
+.S(X_sel),			//  Input selection flag from control.
+.Q(Dout)			//  Output data to memory-data bus.
 );
 
-XMux MU0_Mux12(
-.A(),
-.B(),
-.S(),
-.Q()
+AddrMux MU0_Mux12(
+.A(),				//  Input PC...??
+.B(IR[11:0]),		//  Input instruction address (last 12 LSBs only).
+.S(Addr_sel),		//  Input address selection flag from control.
+.Q(Address)			//  Output Address to memory-address bus.
 );
 
 YMux MU0_Mux16(
-.A(),
-.B(),
-.S(),
-.Q()
+.A(IR),				//  Input instruction from register.
+.B(Din),			//  Input data from memory-data bus.
+.S(Y_sel),			//  Input selection flag from control.
+.Q(Y)				//  Output Y for ALU.
 );
 
 // MU0 ALU
 
+Main_ALU MU0_Alu(
+.X(X),				//  Input X.
+.Y(Y),				//  Input Y.
+.M(M),				//  Input operation from control.
+.Q(ALU)				//  Output result of arithmetic.
+);
 
 
 // MU0 Flag generation
 
-
+Main_flags MU0_Flags(
+Acc(Acc), 			//  Input accumulator to flag generator.
+N(N), 				//  Output negative flag.
+Z(Z)				//  Output zero flag.
+);
 
 
 

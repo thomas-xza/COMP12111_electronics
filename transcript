@@ -3470,3 +3470,5 @@ run -all
 # [VPI Info] Running Init.[VPI Info] Running Init.** Note: $stop    : ./src/Ex3/MU0_Reg16_Testbench.v(72)
 #    Time: 1150 ns  Iteration: 0  Instance: /MU0_Reg16_Testbench
 # Break in Module MU0_Reg16_Testbench at ./src/Ex3/MU0_Reg16_Testbench.v line 72
+# End time: 17:04:56 on Nov 15,2023, Elapsed time: 2:33:46
+# Errors: 0, Warnings: 3, Suppressed Warnings: 2
