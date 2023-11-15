@@ -10,36 +10,35 @@
 `default_nettype none
 
 module MU0_Datapath(
-input  wire        Clk,			////  Done
-input  wire        Reset,		////  Done
-input  wire [15:0] Din,
-input  wire        X_sel,
-input  wire        Y_sel,
-input  wire        Addr_sel,
-input  wire        PC_En,
-input  wire        IR_En,
-input  wire        Acc_En,
-input  wire [1:0]  M,
-output wire [3:0]  F,			//  4 MSBs of the instruction (opcode)
-output wire [11:0] Address,		//  12 LSBs of the instruction
-output wire [15:0] Dout,
-output wire        N,  			//  Flag
-output wire        Z,  			//  Flag
+input  wire        Clk,			////  Connected.
+input  wire        Reset,		////  Connected.
+input  wire [15:0] Din,			////  Connected.
+input  wire        X_sel,		////  Connected.
+input  wire        Y_sel,		////  Connected.
+input  wire        Addr_sel,	////  Connected.
+input  wire        PC_En,		////  Connected.
+input  wire        IR_En,		////  Connected.
+input  wire        Acc_En,		////  Connected.
+input  wire [1:0]  M,			////  Connected.
+output wire [3:0]  F,			////  Connected.  4 MSBs of the instruction (opcode)
+output wire [11:0] Address,		////  Connected.  12 LSBs of the instruction
+output wire [15:0] Dout,		////  Connected.  
+output wire        N,  			////  Connected.  Flag
+output wire        Z,  			////  Connected.  Flag
 output wire [15:0] PC,			//  Why is this external?
-output wire [15:0] Acc);
+output wire [15:0] Acc);		//  Why is this external?
 
 
 // Define internal signals using names from the datapath schematic.
-wire [15:0] X;
-wire [15:0] IR;
+wire [15:0] X;		////  Connected x2.  
+wire [15:0] IR;		////  Connected x3.
 //   X and IR given as example.
 
 
 //  Need to define a few more datapath-internal wires.
-wire [15:0] Y;
-wire [15:0] Acc;
-wire [15:0] ALU;
-
+wire [15:0] Y;		////  Connected.  
+wire [15:0] Acc;	////  Connected x2.  
+wire [15:0] ALU;	////  Connected x2.  
 
 
 // The following connects X and Dout together, there's no need for you to do so
@@ -48,8 +47,6 @@ assign Dout = X;
 // Buffer added F is op 4 bits of the instruction
 assign F = IR[15:12];
 //  Dout and F given as example.
-
-
 
 
 //  Sample instance (named `D1`) of module type `Traffic_Light`,
@@ -64,9 +61,9 @@ assign F = IR[15:12];
 //  );
 
 
-// Instantiate Datapath components
+//  Instantiate Datapath components
 
-//MU0 registers
+//  MU0 registers
 
 MU0_Reg16 ACCReg(
 .Clk(Clk),
@@ -75,7 +72,6 @@ MU0_Reg16 ACCReg(
 .D(ALU),    		//  Input calculated value from ALU.
 .Q(Acc)     		//  Output Accumulator value.
 );
-
 
 MU0_Reg12 PCReg(
 .Clk(Clk),
@@ -94,7 +90,7 @@ MU0_Reg16 IRReg(
 );
 
 
-// MU0 multiplexors
+//  MU0 multiplexors
 
 //  Note: Module parameter `A` relates to `0` in diagram.
 
@@ -119,7 +115,8 @@ YMux MU0_Mux16(
 .Q(Y)				//  Output Y for ALU.
 );
 
-// MU0 ALU
+
+//  MU0 ALU
 
 Main_ALU MU0_Alu(
 .X(X),				//  Input X.
@@ -129,7 +126,7 @@ Main_ALU MU0_Alu(
 );
 
 
-// MU0 Flag generation
+//  MU0 Flag generation
 
 Main_flags MU0_Flags(
 Acc(Acc), 			//  Input accumulator to flag generator.
