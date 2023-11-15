@@ -28,8 +28,6 @@ module MU0_Alu (
 //    and build a ripple-carry-adder, however Verilog
 //    does actually allow much more abstraction than expected.
 
-//  Combinatorial as ALU does not store any state.
-
 always @ (*)
   case(M)
     `ADD: Q = X + Y;

@@ -16,16 +16,15 @@ input  wire [11:0] B,
 input  wire        S, 
 output reg  [11:0] Q);
 
-
 // Combinatorial logic for 2to1 multiplexor
 // S is select, A channel0, B channel1
 
-
-
-
-
-
-
+always @ (*)
+  case(S)
+    0: Q = A;
+	1: Q = B;
+    default: Q = 12'b0000_0000_0000;
+  endcase
 
 endmodule 
 

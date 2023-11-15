@@ -61,41 +61,42 @@ o-quiet +acc -auto_acc_if_foreign -work Ex1 -gblso libssl.so -L BoardLib -L unis
 R4
 n@_opt2
 R5
+R1
 vDisplay_Decoder
-Z7 !s110 1697802521
+Z7 !s110 1700053758
 !i10b 1
 !s100 1HOA7O7j867l2@;o0a=410
 I]Bk<49Ok0JWMF<SYQ_Oeg3
 R1
-Z8 w1697802352
+Z8 w1698328334
 Z9 8./src/Ex1/Display_Decoder.v
 Z10 F./src/Ex1/Display_Decoder.v
-!i122 58
+!i122 61
 L0 23 26
 Z11 VDg1SIo80bB@j0V0VzS_@n1
 Z12 OL;L;2022.4;75
 r1
 !s85 0
 31
-Z13 !s108 1697802521.000000
-Z14 !s107 ./src/Ex1/Display_Decoder.v|
-Z15 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder.v|
+Z13 !s108 1700053758.000000
+!s107 ./src/Ex1/Display_Decoder.v|
+Z14 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder.v|
 !s101 -O0
 !i113 0
-Z16 !s102 -cover bcsxf
-Z17 o-O0 -lint -cover bcsxf
-Z18 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+Z15 !s102 -cover bcsxf
+Z16 o-O0 -lint -cover bcsxf
+Z17 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
 n@display_@decoder
 vDisplay_Decoder_Board
 R7
 !i10b 1
-!s100 WS2H?2d@Sbi<=_k3^M9l`2
-IFHnaOR06`_SdzmoM2cAZc2
+!s100 VkZS_PKJRNUmdMU:ALaPG1
+IH78`2Yh2W<<R1o2ADdb6A1
 R1
-w1697802005
+w1698341954
 8./src/Ex1/Display_Decoder_Board.v
 F./src/Ex1/Display_Decoder_Board.v
-!i122 56
+!i122 59
 L0 16 99
 R11
 R12
@@ -107,9 +108,9 @@ R13
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder_Board.v|
 !s101 -O0
 !i113 0
+R15
 R16
 R17
-R18
 n@display_@decoder_@board
 vDisplay_Decoder_Testbench
 R7
@@ -117,10 +118,10 @@ R7
 !s100 c_i=LQd=2YHRN1f=8]TbJ3
 I>KBA7ihINhBhSEJZjCAlQ2
 R1
-Z19 w1697802518
-Z20 8./src/Ex1/Display_Decoder_Testbench.v
-Z21 F./src/Ex1/Display_Decoder_Testbench.v
-!i122 57
+Z18 w1697802518
+Z19 8./src/Ex1/Display_Decoder_Testbench.v
+Z20 F./src/Ex1/Display_Decoder_Testbench.v
+!i122 60
 L0 13 54
 R11
 R12
@@ -128,24 +129,24 @@ r1
 !s85 0
 31
 R13
-Z22 !s107 ./src/Ex1/Display_Decoder_Testbench.v|
-Z23 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder_Testbench.v|
+Z21 !s107 ./src/Ex1/Display_Decoder_Testbench.v|
+Z22 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex1/Display_Decoder_Testbench.v|
 !s101 -O0
 !i113 0
+R15
 R16
 R17
-R18
 n@display_@decoder_@testbench
 vRiscv_decoder
 R7
 !i10b 1
-!s100 6GeiW10ZajfQ_]==]KSnY0
-IWBdOf2TSW`U;zP9gO?;aU1
+!s100 kQNNV95HDnAFWcHjf4CdX3
+IZDgF4ZOP:Q;iFfbBjC`>f3
 R1
 R8
 R9
 R10
-!i122 58
+!i122 61
 L0 53 36
 R11
 R12
@@ -153,13 +154,13 @@ r1
 !s85 0
 31
 R13
+Z23 !s107 ./src/Ex1/Display_Decoder.v|
 R14
-R15
 !s101 -O0
 !i113 0
+R15
 R16
 R17
-R18
 n@riscv_decoder
 vRiscv_decoder_testbench
 R7
@@ -167,10 +168,10 @@ R7
 !s100 n4ekn;@;VK`V9jmM>^WGL2
 I=<8I:C94jc_6MoGo027ba2
 R1
+R18
 R19
 R20
-R21
-!i122 57
+!i122 60
 L0 69 28
 R11
 R12
@@ -178,11 +179,11 @@ r1
 !s85 0
 31
 R13
+R21
 R22
-R23
 !s101 -O0
 !i113 0
+R15
 R16
 R17
-R18
 n@riscv_decoder_testbench
