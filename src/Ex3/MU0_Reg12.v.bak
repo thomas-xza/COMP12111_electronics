@@ -31,7 +31,7 @@ always @ (posedge Clk)
 //    therefore, implemented this as a stateless block.
 
 always @ (Reset)
-  Q = 12'b0000_0000_0000;
+  Q = 16'b0000_0000_0000_0000;
 
 
 
