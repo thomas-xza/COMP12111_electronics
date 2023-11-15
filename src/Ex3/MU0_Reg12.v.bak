@@ -21,6 +21,9 @@ output reg  [11:0] Q
 
 // behavioural code - clock driven
 
+//  On every clock tick, if `En` is high,
+//    then set Q with contents of D
+
 always @ (posedge Clk)
   if (En)
 	Q <= D;
@@ -31,7 +34,7 @@ always @ (posedge Clk)
 //    therefore, implemented this as a stateless block.
 
 always @ (Reset)
-  Q = 16'b0000_0000_0000_0000;
+  Q = 12'b0000_0000_0000;
 
 
 

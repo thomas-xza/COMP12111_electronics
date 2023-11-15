@@ -22,11 +22,20 @@ output reg  [15:0] Q
 // behavioural code - clock driven
 
 
+//  On every clock tick, if `En` is high,
+//    then set Q with contents of D.
 
+always @ (posedge Clk)
+  if (En)
+	Q <= D;
+  else
+    Q <= Q;
 
+//  The specification says "the reset signal acts asynchronously"
+//    therefore, implemented this as a stateless block.
 
-
-
+always @ (Reset)
+  Q = 16'b0000_0000_0000_0000;
 
 
 endmodule 
