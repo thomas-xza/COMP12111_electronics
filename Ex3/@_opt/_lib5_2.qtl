@@ -1,0 +1,713 @@
+m255
+K4
+z2
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/x93125tp/Questa/COMP12111
+vAckieV2
+Z1 !s110 1696583321
+!i10b 1
+!s100 C:0gK=J5PIh7kj54e2=:m0
+I1NCOA8ZzUY[ak^N9h8Ogo3
+R0
+Z2 w1696579524
+8./src/BoardLib/AckieV2.v
+F./src/BoardLib/AckieV2.v
+!i122 0
+L0 32 521
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2022.4;75
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+Z5 !s102 -cover bcsxf
+Z6 o-O0 -lint -cover bcsxf
+Z7 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+n@ackie@v2
+vBoard_reset
+R1
+!i10b 1
+!s100 ^n`a7GY1mH[j[CGLTei]o0
+Ik5PL1<gKS136R3jzKj<6<1
+R0
+R2
+8./src/BoardLib/Board_reset.v
+F./src/BoardLib/Board_reset.v
+!i122 1
+L0 6 77
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@board_reset
+vBoardV3
+R1
+!i10b 1
+!s100 =j_hSLXT7Z07C5BjXl`7W2
+Ih9?aYYK39^0QbU4IhS1g11
+R0
+R2
+8./src/BoardLib/BoardV3.v
+F./src/BoardLib/BoardV3.v
+!i122 2
+L0 10 186
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@board@v3
+vClocks
+Z8 !s110 1696583322
+!i10b 1
+!s100 XVceCZFAz1YahOIjQ>WFh0
+I9CfPUGb>U3gPiMDWa`W0h3
+R0
+R2
+8./src/BoardLib/Clocks.v
+F./src/BoardLib/Clocks.v
+!i122 3
+L0 5 32
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@clocks
+vKeyboard
+R8
+!i10b 1
+!s100 jAhM2l@6MA8_f=mE>NPI>0
+I4CZo<23BnN84a5z0iB?5V3
+R0
+R2
+8./src/BoardLib/Keyboard.v
+F./src/BoardLib/Keyboard.v
+!i122 4
+L0 5 108
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@keyboard
+vSegments_Scan
+R8
+!i10b 1
+!s100 V2R`mf;?zE=ViDIPD>NFS1
+I2L:UNj;_Vo^`Zi`WKMNXC1
+R0
+R2
+8./src/BoardLib/Segments_Scan.v
+F./src/BoardLib/Segments_Scan.v
+!i122 5
+L0 4 48
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@segments_@scan
+vUart_S7
+R8
+!i10b 1
+!s100 M]<MWb_7dgIRZ<EaXX?`e3
+ISceaj06=dcP<i3n4RK=zJ3
+R0
+R2
+8./src/BoardLib/Uart_s7.v
+F./src/BoardLib/Uart_s7.v
+!i122 6
+L0 13 97
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+R7
+n@uart_@s7
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/x93125tp/Questa/COMP12111
+T_opt
+!s110 1697798535
+VdoYXjSS[k?^]S<9mI83jR2
+04 15 4 work Display_Decoder fast 0
+=1-000ae431a4f1-65325987-6ed19-46ae1
+R0
+Z2 !s12b OEM100
+Z3 !s124 OEM100
+o-quiet +acc -auto_acc_if_foreign -work work -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2022.4;75
+R1
+T_opt1
+!s110 1697802535
+VQ56TZ`7d?g48o[K?W=EcX1
+04 25 4 work Display_Decoder_Testbench fast 0
+Z6 04 4 4 GLIB glbl fast 0
+=1-000ae431a4f1-65326927-578eb-5b698
+R0
+R2
+R3
+o-quiet +acc -auto_acc_if_foreign -work Ex1 -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1698344342
+VNYHHZka>1fIY<L>n5CiO@2
+04 21 4 work Display_Decoder_Board fast 0
+R6
+=1-000ae431a4f1-653aad95-c7f99-54b49
+R0
+R2
+R3
+o-quiet +acc -auto_acc_if_foreign -work Ex1 -gblso libssl.so -L BoardLib -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+R4
+n@_opt2
+R5
+R1
+vDisplay_Decoder
+Z7 !s110 1700053758
+!i10b 1
+!s100 1HOA7O7j867l2@;o0a=410
+I]Bk<49Ok0JWMF<SYQ_Oeg3
+R1
+Z8 w1698328334
+Z9 8./src/Ex1/Display_Decoder.v
+Z10 F./src/Ex1/Display_Decoder.v
+!i122 61
+L0 23 26
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2022.4;75
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+Z13 !s102 -cover bcsxf
+Z14 o-O0 -lint -cover bcsxf
+Z15 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+n@display_@decoder
+vDisplay_Decoder_Board
+R7
+!i10b 1
+!s100 VkZS_PKJRNUmdMU:ALaPG1
+IH78`2Yh2W<<R1o2ADdb6A1
+R1
+w1698341954
+8./src/Ex1/Display_Decoder_Board.v
+F./src/Ex1/Display_Decoder_Board.v
+!i122 59
+L0 16 99
+R11
+R12
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R13
+R14
+R15
+n@display_@decoder_@board
+vDisplay_Decoder_Testbench
+R7
+!i10b 1
+!s100 c_i=LQd=2YHRN1f=8]TbJ3
+I>KBA7ihINhBhSEJZjCAlQ2
+R1
+Z16 w1697802518
+Z17 8./src/Ex1/Display_Decoder_Testbench.v
+Z18 F./src/Ex1/Display_Decoder_Testbench.v
+!i122 60
+L0 13 54
+R11
+R12
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R13
+R14
+R15
+n@display_@decoder_@testbench
+vRiscv_decoder
+R7
+!i10b 1
+!s100 kQNNV95HDnAFWcHjf4CdX3
+IZDgF4ZOP:Q;iFfbBjC`>f3
+R1
+R8
+R9
+R10
+!i122 61
+L0 53 36
+R11
+R12
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R13
+R14
+R15
+n@riscv_decoder
+vRiscv_decoder_testbench
+R7
+!i10b 1
+!s100 n4ekn;@;VK`V9jmM>^WGL2
+I=<8I:C94jc_6MoGo027ba2
+R1
+R16
+R17
+R18
+!i122 60
+L0 69 28
+R11
+R12
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R13
+R14
+R15
+n@riscv_decoder_testbench
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/x93125tp/Questa/COMP12111
+T_opt
+!s110 1698343841
+Vi2k6UR^SCfze=GO4iHaN?0
+04 23 4 work Traffic_Light_Testbench fast 0
+Z2 04 4 4 GLIB glbl fast 0
+=1-000ae431a4f1-653aaba1-43932-4c33c
+R0
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+o-quiet +acc -auto_acc_if_foreign -work Ex2 -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2022.4;75
+R1
+T_opt1
+!s110 1698345821
+V0JJd7necnWne2SlFE7f`71
+Z7 04 19 4 work Traffic_Light_Board fast 0
+R2
+=1-000ae431a4f1-653ab35c-c92eb-74115
+R0
+R3
+R4
+o-quiet +acc -auto_acc_if_foreign -work Ex2 -gblso libssl.so -L BoardLib -L Ex1 -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+R5
+n@_opt1
+R6
+R1
+T_opt2
+!s110 1698345930
+VnFoaN<WeCFD<MRVX6M9i_0
+R7
+R2
+=1-000ae431a4f1-653ab3ca-6bfde-7ae4e
+R0
+R3
+R4
+o-quiet +acc -auto_acc_if_foreign -work Ex2 -gblso libssl.so -L BoardLib -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+R5
+n@_opt2
+R6
+R1
+vTraffic_Light
+Z8 !s110 1700054937
+!i10b 1
+!s100 ;KFCkkmS?W;g]NV_^OSJL0
+Iid^b;G?e9@PDRhC>Um`J63
+R1
+w1698346309
+8./src/Ex2/Traffic_Light.v
+F./src/Ex2/Traffic_Light.v
+!i122 145
+L0 47 80
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2022.4;75
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+Z11 !s102 -cover bcsxf
+Z12 o-O0 -lint -cover bcsxf
+Z13 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+n@traffic_@light
+vTraffic_Light_Board
+R8
+!i10b 1
+!s100 f;Y?:^8?2RoU9@AzfXDk31
+I]M`7d;E_9ZmF@DHJ@@K?33
+R1
+w1698345794
+8./src/Ex2/Traffic_Light_Board.v
+F./src/Ex2/Traffic_Light_Board.v
+!i122 143
+L0 16 110
+R9
+R10
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R11
+R12
+R13
+n@traffic_@light_@board
+vTraffic_Light_Testbench
+R8
+!i10b 1
+!s100 WkbEZ7hJ<z6KEMIFQMXW`3
+I=[[F<niBV3h>f]8O0]6NM0
+R1
+w1698337146
+8./src/Ex2/Traffic_Light_Testbench.v
+F./src/Ex2/Traffic_Light_Testbench.v
+!i122 144
+L0 13 139
+R9
+R10
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R11
+R12
+R13
+n@traffic_@light_@testbench
+lite/ISE/verilog/src/unisims/XNOR3.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR3.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@n@o@r3
+vXNOR4
+R99
+!i10b 1
+!s100 g]ANE6Tf?DLmS]]=ATO7=3
+I?3zUeMQ085LWTRT68HNFW1
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR4.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR4.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@n@o@r4
+vXNOR5
+R99
+!i10b 1
+!s100 >LH]IMk9^n>ebca[dMzX=3
+IdE5b]Y7UnE9F2=o_5kf_Y0
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR5.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XNOR5.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@n@o@r5
+vXOR2
+R99
+!i10b 1
+!s100 ilkYchHM:dFj5=R[<igFl3
+IM0>^EkDQ_c2P?33e>M57k2
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR2.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR2.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r2
+vXOR3
+R99
+!i10b 1
+!s100 z1a_a4^61lWH;84N3AL<Q3
+IZVTAlW9FI7OZFJkcM?zDR3
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR3.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR3.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r3
+vXOR4
+R99
+!i10b 1
+!s100 OeRK55h8h6Z<S=z8X:[<`0
+IkO<YZCA?HeH8n5BVUm<i33
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR4.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR4.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r4
+vXOR5
+R99
+!i10b 1
+!s100 l4DBTOE65WQ5g<IQLH2D80
+IMYehF7jo3NM_83IfU]jbH3
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR5.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XOR5.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r5
+vXORCY
+R99
+!i10b 1
+!s100 BehQ8=5UNB6>Ro2`@BUnE0
+I8XOmDPVF0n@GaXWA]VEjR0
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r@c@y
+vXORCY_D
+R99
+!i10b 1
+!s100 o;=JFkf`A7P=eCDJOa`Zb1
+ILjiSg1WS<H7mjUdY8X_OV1
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY_D.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY_D.v
+!i122 0
+L0 23 11
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r@c@y_@d
+vXORCY_L
+R99
+!i10b 1
+!s100 NMee4NcI>JM`;l=c1D_K>3
+I87]2E8`M^jbb8BHD8BXDR2
+R1
+R18
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY_L.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/XORCY_L.v
+!i122 0
+R12
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@x@o@r@c@y_@l
+vZHOLD_DELAY
+R99
+!i10b 1
+!s100 _oSD]88R4;]oYPdS_Fh1S0
+IFIW9S?4GJObgUMNKikDKN3
+R1
+R10
+8/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/ZHOLD_DELAY.v
+F/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/ids_lite/ISE/verilog/src/unisims/ZHOLD_DELAY.v
+!i122 0
+L0 24 147
+R3
+R4
+r1
+!s85 0
+31
+!s101 -O0
+!i113 0
+R5
+R6
+n@z@h@o@l@d_@d@e@l@a@y

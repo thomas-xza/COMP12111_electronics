@@ -10,12 +10,13 @@ Annotate the FSM diagram with the expected outputs, to make it easier to follow 
 All tests should be checked before uploading to FPGA.
 
 
-To view waves:
+To view waves (note this process is seriously order sensitive):
 
 - COMP12111 -> Compile -> Compile Ex[n]
 - COMP12111 -> Simulate -> Simulate Ex[n]
-- Simulate -> Run -> Run -All
 - View -> Wave
 - View -> Object
 - [Objects window] -> Select all -> Right-click -> Add Wave
-- [Wave Window] -> Right-click -> 
+- [Wave Window] -> Right-click -> Zoom Full (F)
+- Simulate -> Run -> Run -All
+
