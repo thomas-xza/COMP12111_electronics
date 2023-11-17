@@ -39,7 +39,7 @@ always @ (posedge Clk)
 //  Note that we only want to reset Q when reset is high,
 //		not whenever it changes.
 
-always @ (Reset)
+always @ (*)
   if (Reset == 1'b1)
   	Q = 16'b0000_0000_0000_0000;
   else

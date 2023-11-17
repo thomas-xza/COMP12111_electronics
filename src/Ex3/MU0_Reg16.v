@@ -21,7 +21,7 @@ output reg  [15:0] Q
 
 // behavioural code - clock driven
 
-reg [11:0] temp_Q;
+reg [15:0] temp_Q;
 
 //  On every clock tick, if `En` is high,
 //    then set Q with contents of D,
