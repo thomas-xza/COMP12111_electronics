@@ -57,6 +57,11 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2022.4 2022.10, Oct 18 2022
 13
 !s112 1.1
@@ -66,73 +71,73 @@ R0
 cModel Technology
 Z1 d/home/x93125tp/Questa/COMP12111
 T_opt
-!s110 1700235696
-VA74FzQcN_QNGCBDV;I=n`1
-04 17 4 work MU0_Alu_Testbench fast 0
+!s110 1700242277
+VQaQ6?=JXSBRL]>5GBHRjJ2
+04 19 4 work MU0_Reg16_Testbench fast 0
 Z2 04 4 4 GLIB glbl fast 0
-=1-000ae431a4f1-655789b0-aefca-d9e5e
+=1-000ae431a4f1-6557a365-22e1c-80ff1
 R0
 Z3 !s12b OEM100
 Z4 !s124 OEM100
-Z5 o-quiet +acc -auto_acc_if_foreign -work Ex3 -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3
+Z5 o-quiet +acc -auto_acc_if_foreign -work Ex3 -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
 Z6 tCvgOpt 0
 n@_opt
 Z7 OL;O;2022.4;75
-R1
 T_opt1
 !s110 1700237122
 VhJERYejDMhB5@QBRd?NiG1
-Z8 04 13 4 work MU0_Testbench fast 0
+04 13 4 work MU0_Testbench fast 0
 R2
 =1-000ae431a4f1-65578f41-d2875-e0c54
 R0
 R3
 R4
-R5
+o-quiet +acc -auto_acc_if_foreign -work Ex3 -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3
 R6
 n@_opt1
 R7
 R1
 T_opt2
-!s110 1700239863
-VcY:f1a_faG2ne;JL`A?8:3
-R8
+!s110 1700241928
+VM51g]z7o7CSY0AI?iKhl13
+04 19 4 work MU0_Reg12_Testbench fast 0
 R2
-=1-000ae431a4f1-655799f7-15a8b-edb7a
+=1-000ae431a4f1-6557a207-9e74e-7f516
 R0
 R3
 R4
-o-quiet +acc -auto_acc_if_foreign -work Ex3 -gblso libssl.so -L unisims -L BoardLib -L Ex1 -L Ex2 -L Ex3 +acc
+R5
 R6
 n@_opt2
 R7
+R1
 vMU0
-Z9 !s110 1700239860
+Z8 !s110 1700242262
 !i10b 1
 !s100 n@:e5BBWTlkER4f[Da_mM1
 IB6U53S1VS0CXeAIH8knAH1
 R1
-Z10 w1696579524
+Z9 w1696579524
 8./src/Ex3/MU0.v
 F./src/Ex3/MU0.v
-!i122 1199
+!i122 1284
 L0 10 60
-Z11 VDg1SIo80bB@j0V0VzS_@n1
-Z12 OL;L;2022.4;75
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2022.4;75
 r1
 !s85 0
 31
-Z13 !s108 1700239860.000000
+Z12 !s108 1700242262.000000
 !s107 ./src/Ex3/MU0.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0.v|
 !s101 -O0
 !i113 0
-Z14 !s102 -cover bcsxf
-Z15 o-O0 -lint -cover bcsxf
-Z16 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
+Z13 !s102 -cover bcsxf
+Z14 o-O0 -lint -cover bcsxf
+Z15 tShow_source 1 DisableOpt 1 CoverOpt 1 CvgOpt 0
 n@m@u0
 vMU0_Alu
-Z17 !s110 1700239859
+Z16 !s110 1700242260
 !i10b 1
 !s100 V7_of5o=0Ue:Qac4D<1NU0
 Iz9XXh7T4OB`V[_l<i?KOH3
@@ -140,99 +145,99 @@ R1
 w1700074350
 8./src/Ex3/MU0_Alu.v
 F./src/Ex3/MU0_Alu.v
-!i122 1184
+!i122 1269
 L0 18 25
+R10
 R11
-R12
 r1
 !s85 0
 31
-Z18 !s108 1700239859.000000
+Z17 !s108 1700242260.000000
 !s107 ./src/Ex3/MU0_Alu.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Alu.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@alu
 vMU0_Alu_Testbench
-R17
+R16
 !i10b 1
 !s100 m7BTDk5GUPG8GZhNcGk_L3
 Ij?`YO>c4o`MdUC[66QG4V1
 R1
-R10
+R9
 8./src/Ex3/MU0_Alu_Testbench.v
 F./src/Ex3/MU0_Alu_Testbench.v
-!i122 1183
+!i122 1268
 L0 19 193
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
+R17
 !s107 ./src/Ex3/MU0_Alu_Testbench.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Alu_Testbench.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@alu_@testbench
 vMU0_Board
-R17
+Z18 !s110 1700242261
 !i10b 1
 !s100 =U:BIIlmZ@odjDXP7<a9W2
 IXke7]hJMOOjRhj1i_jdSi0
 R1
-R10
+R9
 8./src/Ex3/MU0_Board.v
 F./src/Ex3/MU0_Board.v
-!i122 1185
+!i122 1270
 L0 9 113
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
+R17
 !s107 ./src/Ex3/MU0_Board.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Board.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@board
 vMU0_Control
-R17
+R18
 !i10b 1
 !s100 2:A72[`8SSM`:4A@QIITR0
 IWM=BjDR`jPQAeiWnz<W=Z0
 R1
-R10
+R9
 8./src/Ex3/MU0_Control.v
 F./src/Ex3/MU0_Control.v
-!i122 1186
+!i122 1271
 L0 14 53
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
+Z19 !s108 1700242261.000000
 !s107 ./src/Ex3/MU0_Control.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Control.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@control
 vMU0_Datapath
-R17
+R18
 !i10b 1
 !s100 53AX7F`eVVjfW6?`MNQz02
 ImCeS`9P=QR]C[lGOMoaz`3
@@ -240,74 +245,74 @@ R1
 w1700237020
 8./src/Ex3/MU0_Datapath.v
 F./src/Ex3/MU0_Datapath.v
-!i122 1187
+!i122 1272
 L0 12 133
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
+R19
 !s107 ./src/Ex3/MU0_Datapath.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Datapath.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@datapath
 vMU0_Flags
-R17
+R18
 !i10b 1
 !s100 JQ13HME;X<G=W@E[8<D@i3
 IaL3AM[YT1]a@Ofb>4?<Ja0
 R1
-R10
+R9
 8./src/Ex3/MU0_Flags.v
 F./src/Ex3/MU0_Flags.v
-!i122 1188
+!i122 1273
 L0 14 15
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
+R19
 !s107 ./src/Ex3/MU0_Flags.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Flags.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@flags
 vMU0_Memory
-R17
+R18
 !i10b 1
 !s100 30d6VD38H1O0651W8DbNb0
 IdEzfT0UnAK5=cIVJzFGcZ2
 R1
-R10
+R9
 8./src/Ex3/MU0_Memory.v
 F./src/Ex3/MU0_Memory.v
-!i122 1189
+!i122 1274
 L0 64 328
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
+R19
 !s107 ./src/Ex3/MU0_Memory.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Memory.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@memory
 vMU0_Mux12
-R9
+R18
 !i10b 1
 !s100 _AlfNdbA^0^3Z6k>=]=nP2
 IQhnL7[NU>045AF:^[0l]a1
@@ -315,49 +320,49 @@ R1
 w1700234791
 8./src/Ex3/MU0_Mux12.v
 F./src/Ex3/MU0_Mux12.v
-!i122 1191
+!i122 1276
 L0 13 17
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
+R19
 !s107 ./src/Ex3/MU0_Mux12.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Mux12.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@mux12
 vMU0_Mux12_Testbench
-R9
+R18
 !i10b 1
 !s100 nEmcm4@<SM?NS6^F;cHoD0
 IDDQe:FVe1b<gWI3oQ[P;g0
 R1
-R10
+R9
 8./src/Ex3/MU0_Mux12_Testbench.v
 F./src/Ex3/MU0_Mux12_Testbench.v
-!i122 1190
+!i122 1275
 L0 12 45
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
+R19
 !s107 ./src/Ex3/MU0_Mux12_Testbench.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Mux12_Testbench.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@mux12_@testbench
 vMU0_Mux16
-R9
+R18
 !i10b 1
 !s100 z`98=GP1RaNFIM4FlR0c?0
 If[FdlE<4lo<VGjQj4Z5`X1
@@ -365,24 +370,24 @@ R1
 w1700234879
 8./src/Ex3/MU0_Mux16.v
 F./src/Ex3/MU0_Mux16.v
-!i122 1193
+!i122 1278
 L0 14 18
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
+R19
 !s107 ./src/Ex3/MU0_Mux16.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Mux16.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@mux16
 vMU0_Mux16_Testbench
-R9
+R18
 !i10b 1
 !s100 I7:;`kWHk]j9;T=UA7;aC2
 IIA1iUFI?nRzSaG6I[zRz_3
@@ -390,49 +395,49 @@ R1
 w1700234957
 8./src/Ex3/MU0_Mux16_Testbench.v
 F./src/Ex3/MU0_Mux16_Testbench.v
-!i122 1192
+!i122 1277
 L0 12 41
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
+R19
 !s107 ./src/Ex3/MU0_Mux16_Testbench.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Mux16_Testbench.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@mux16_@testbench
 vMU0_Reg12
-R9
+R8
 !i10b 1
-!s100 H6I8e02S7H1Mzbd6n89h_0
-Ind43YYB^JWg_>GXPDijKc2
+!s100 dGPRMf9bnGjhk]^ah_Ug10
+I?JzNan@HWEk2P1?F]>?Gd3
 R1
-w1700238251
+w1700242205
 8./src/Ex3/MU0_Reg12.v
 F./src/Ex3/MU0_Reg12.v
-!i122 1195
-Z19 L0 14 32
+!i122 1280
+L0 14 38
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
+R12
 !s107 ./src/Ex3/MU0_Reg12.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Reg12.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@reg12
 vMU0_Reg12_Testbench
-R9
+R8
 !i10b 1
 !s100 6J1FjV@jKe?>Ygo7z38hE2
 I89Q<j1aI3^WCd4dLcc@D>3
@@ -440,74 +445,74 @@ R1
 w1700220181
 8./src/Ex3/MU0_Reg12_Testbench.v
 F./src/Ex3/MU0_Reg12_Testbench.v
-!i122 1194
+!i122 1279
 L0 12 67
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
+R12
 !s107 ./src/Ex3/MU0_Reg12_Testbench.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Reg12_Testbench.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@reg12_@testbench
 vMU0_Reg16
-R9
+R8
 !i10b 1
-!s100 g94Z6OeGkMZj6<<BcFnZk2
-IG8<8?YXgWoBA;nY7ebYKf0
+!s100 a[hOU<?=]9c?OlR6e8eg80
+IPUo42>mPe^WWMYgP3O<l<0
 R1
-w1700237890
+w1700242243
 8./src/Ex3/MU0_Reg16.v
 F./src/Ex3/MU0_Reg16.v
-!i122 1197
-R19
+!i122 1282
+L0 14 37
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
+R12
 !s107 ./src/Ex3/MU0_Reg16.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Reg16.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@reg16
 vMU0_Reg16_Testbench
-R9
+R8
 !i10b 1
 !s100 j6GllBU^O:`MeAo@ADn[h0
 Iz7U`o=`geQTboOU<jSL?S1
 R1
-R10
+R9
 8./src/Ex3/MU0_Reg16_Testbench.v
 F./src/Ex3/MU0_Reg16_Testbench.v
-!i122 1196
+!i122 1281
 L0 12 69
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
+R12
 !s107 ./src/Ex3/MU0_Reg16_Testbench.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Reg16_Testbench.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@reg16_@testbench
 vMU0_Testbench
-R9
+R8
 !i10b 1
 !s100 QaFZGFnIWF1JbL4C3_TdD3
 IMQVIN7T]3lhYE1ZEJ3bF>1
@@ -515,19 +520,19 @@ R1
 w1700239840
 8./src/Ex3/MU0_Testbench.v
 F./src/Ex3/MU0_Testbench.v
-!i122 1198
+!i122 1283
 L0 10 98
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
+R12
 !s107 ./src/Ex3/MU0_Testbench.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex3/MU0_Testbench.v|
 !s101 -O0
 !i113 0
+R13
 R14
 R15
-R16
 n@m@u0_@testbench

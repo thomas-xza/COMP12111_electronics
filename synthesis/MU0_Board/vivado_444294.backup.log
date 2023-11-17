@@ -1,0 +1,1641 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Nov 17 17:15:23 2023
+# Process ID: 444294
+# Current directory: /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board
+# Command line: vivado -mode batch -source ../generated_build_MU0_Board.tcl
+# Log file: /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board/vivado.log
+# Journal file: /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board/vivado.jou
+#-----------------------------------------------------------
+source ../generated_build_MU0_Board.tcl
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Clocks.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Keyboard.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Segments_Scan.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Alu.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Board.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Control.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Datapath.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Flags.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Memory.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Mux12.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Mux16.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v
+# read_verilog /home/x93125tp/Questa/COMP12111/src/GLIB/glbl.v
+# synth_design  -top MU0_Board -part xc7s25ftgb196-1 -fsm_extraction off 
+Command: synth_design -top MU0_Board -part xc7s25ftgb196-1 -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 444507 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1711.141 ; gain = 215.531 ; free physical = 19578 ; free virtual = 37627
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MU0_Board' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Board.v:9]
+INFO: [Synth 8-6157] synthesizing module 'BoardV3' [/home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v:10]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v:86]
+INFO: [Synth 8-6157] synthesizing module 'Board_reset' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:26]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:73]
+INFO: [Synth 8-6157] synthesizing module 'ICAPE2' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34755]
+	Parameter DEVICE_ID bound to: 56955027 - type: integer 
+	Parameter ICAP_WIDTH bound to: X32 - type: string 
+	Parameter SIM_CFG_FILE_NAME bound to: NONE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ICAPE2' (1#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:34755]
+INFO: [Synth 8-6155] done synthesizing module 'Board_reset' (2#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Clocks' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Clocks.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Clocks' (3#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Clocks.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Keyboard' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Keyboard.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/Keyboard.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Keyboard' (4#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Keyboard.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Segments_Scan' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Segments_Scan.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Segments_Scan' (5#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Segments_Scan.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Uart_S7' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v:13]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v:50]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'Uart_S7' (6#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/Uart_s7.v:13]
+INFO: [Synth 8-6157] synthesizing module 'AckieV2' [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:32]
+	Parameter CPU_TYPE bound to: 8'b00000100 
+	Parameter CPU_SUB bound to: 16'b0000000000000000 
+	Parameter FEATURE_COUNT bound to: 8'b00000000 
+	Parameter MEM_SEGS bound to: 8'b00000001 
+	Parameter MEM_START bound to: 0 - type: integer 
+	Parameter MEM_SIZE bound to: 12 - type: integer 
+	Parameter MEM_ADDR_WIDTH bound to: 8'b00001011 
+	Parameter MEM_DATA_WIDTH bound to: 8'b00001111 
+	Parameter PROC_DAT_WIDTH bound to: 8'b00001111 
+	Parameter PROC_FLAG_ADDR bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:144]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'AckieV2' (7#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'BoardV3' (8#1) [/home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'MU0' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Datapath' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Datapath.v:12]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Reg16' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Reg16' (9#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:14]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Reg12' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Reg12' (10#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:14]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Mux16' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Mux16.v:14]
+INFO: [Synth 8-226] default block is never used [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Mux16.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Mux16' (11#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Mux16.v:14]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Mux12' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Mux12.v:13]
+INFO: [Synth 8-226] default block is never used [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Mux12.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Mux12' (12#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Mux12.v:13]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Alu' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Alu.v:18]
+INFO: [Synth 8-226] default block is never used [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Alu.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Alu' (13#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Alu.v:18]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Flags' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Flags.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Flags' (14#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Flags.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Datapath' (15#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Datapath.v:12]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Control' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Control.v:14]
+INFO: [Synth 8-6157] synthesizing module 'AND4B3' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:601]
+INFO: [Synth 8-6155] done synthesizing module 'AND4B3' (16#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:601]
+INFO: [Synth 8-6157] synthesizing module 'AND4B1' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:575]
+INFO: [Synth 8-6155] done synthesizing module 'AND4B1' (17#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:575]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:562]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (18#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:562]
+INFO: [Synth 8-6157] synthesizing module 'AND4B2' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:588]
+INFO: [Synth 8-6155] done synthesizing module 'AND4B2' (19#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:588]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (20#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6157] synthesizing module 'FDC' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13479]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDC' (21#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13479]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (22#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6157] synthesizing module 'INV' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36118]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (23#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36118]
+INFO: [Synth 8-6157] synthesizing module 'AND2B1' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:478]
+INFO: [Synth 8-6155] done synthesizing module 'AND2B1' (24#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:478]
+INFO: [Synth 8-6157] synthesizing module 'OR4' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50006]
+INFO: [Synth 8-6155] done synthesizing module 'OR4' (25#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50006]
+INFO: [Synth 8-6157] synthesizing module 'OR2B1' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49923]
+INFO: [Synth 8-6155] done synthesizing module 'OR2B1' (26#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49923]
+INFO: [Synth 8-6157] synthesizing module 'OR2' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49912]
+INFO: [Synth 8-6155] done synthesizing module 'OR2' (27#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49912]
+INFO: [Synth 8-6157] synthesizing module 'OR3' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49958]
+INFO: [Synth 8-6155] done synthesizing module 'OR3' (28#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:49958]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Control' (29#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Control.v:14]
+INFO: [Synth 8-6157] synthesizing module 'AND3B2' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:538]
+INFO: [Synth 8-6155] done synthesizing module 'AND3B2' (30#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:538]
+INFO: [Synth 8-6157] synthesizing module 'AND3B1' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:526]
+INFO: [Synth 8-6155] done synthesizing module 'AND3B1' (31#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:526]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:514]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (32#1) [/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:514]
+INFO: [Synth 8-6155] done synthesizing module 'MU0' (33#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'MU0_Memory' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Memory.v:64]
+INFO: [Synth 8-3876] $readmem data file 'MU0_test.mem' is read successfully [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Memory.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Memory.v:193]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Memory.v:205]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Memory' (34#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Memory.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'MU0_Board' (35#1) [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Board.v:9]
+WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[15]
+WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[14]
+WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[13]
+WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[12]
+WARNING: [Synth 8-3331] design MU0_Control has unconnected port F[3]
+WARNING: [Synth 8-3331] design MU0_Reg16 has unconnected port Reset
+WARNING: [Synth 8-3331] design MU0_Reg12 has unconnected port Reset
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1773.891 ; gain = 278.281 ; free physical = 19598 ; free virtual = 37651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1785.766 ; gain = 290.156 ; free physical = 19598 ; free virtual = 37651
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25ftgb196-1
+INFO: [Device 21-403] Loading part xc7s25ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1793.770 ; gain = 298.160 ; free physical = 19596 ; free virtual = 37649
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'icape_wr_reg' into 'icape_cs_reg' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:31]
+INFO: [Synth 8-5544] ROM "keyrow" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "button_raw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:126]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/x93125tp/Questa/COMP12111/src/BoardLib/AckieV2.v:126]
+INFO: [Synth 8-5546] ROM "bp_mem_data_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bp_mem_write_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bp_mem_data_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bp_mem_write_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Alu.v:34]
+INFO: [Synth 8-3971] The signal "MU0_Memory:/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1820.691 ; gain = 325.082 ; free physical = 19520 ; free virtual = 37574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              120 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	               15 Bit    Registers := 7     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 25    
++---RAMs : 
+	              60K Bit         RAMs := 1     
+	               3K Bit         RAMs := 1     
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	  13 Input    120 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     27 Bit        Muxes := 1     
+	   5 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	  13 Input     19 Bit        Muxes := 2     
+	  25 Input     19 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+	   7 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   4 Input     16 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 18    
+	   9 Input     15 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   9 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 13    
+	  12 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	  25 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 6     
+	  25 Input      2 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 116   
+	   8 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 9     
+	  12 Input      1 Bit        Muxes := 5     
+	  25 Input      1 Bit        Muxes := 17    
+	  24 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 4     
+	   9 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Board_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module Clocks 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     27 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module Keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     24 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+Module Segments_Scan 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+Module Uart_S7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 5     
+	  12 Input      1 Bit        Muxes := 5     
+Module AckieV2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              120 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               19 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	  13 Input    120 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	  13 Input     19 Bit        Muxes := 2     
+	  25 Input     19 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	   7 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	  25 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  25 Input      2 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 68    
+	  13 Input      1 Bit        Muxes := 4     
+	  24 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 2     
+Module MU0_Reg16 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module MU0_Reg12 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module MU0_Mux16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module MU0_Mux12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module MU0_Alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 3     
+Module MU0_Memory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               15 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	              60K Bit         RAMs := 1     
+	               3K Bit         RAMs := 1     
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   7 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 18    
+	   9 Input     15 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 3     
+	   9 Input     11 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 40    
+	   9 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "button_raw" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[15]
+WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[14]
+WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[13]
+WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[12]
+INFO: [Synth 8-3971] The signal "MEM1/mem_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-6014] Unused sequential element bp_mem_ram_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element bp_io_ram_reg was removed. 
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/cpu_status_reg[0]' (FDRE) to 'Board1/Ackie1/cpu_status_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/cpu_status_reg[5]' (FDRE) to 'Board1/Ackie1/cpu_status_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/cpu_status_reg[4]' (FDRE) to 'Board1/Ackie1/cpu_status_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/cpu_status_reg[3]' (FDRE) to 'Board1/Ackie1/cpu_status_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/cpu_status_reg[2]' (FDRE) to 'Board1/Ackie1/cpu_status_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Board1/\Ackie1/cpu_status_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[95]' (FDE) to 'Board1/Ackie1/return_message_reg[119]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[111]' (FDE) to 'Board1/Ackie1/return_message_reg[119]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[79]' (FDE) to 'Board1/Ackie1/return_message_reg[119]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[119]' (FDE) to 'Board1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[87]' (FDE) to 'Board1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[103]' (FDE) to 'Board1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[94]' (FDE) to 'Board1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[110]' (FDE) to 'Board1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[78]' (FDE) to 'Board1/Ackie1/return_message_reg[118]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[118]' (FDE) to 'Board1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[86]' (FDE) to 'Board1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[102]' (FDE) to 'Board1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[93]' (FDE) to 'Board1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[109]' (FDE) to 'Board1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[77]' (FDE) to 'Board1/Ackie1/return_message_reg[117]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[117]' (FDE) to 'Board1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[85]' (FDE) to 'Board1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[101]' (FDE) to 'Board1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[92]' (FDE) to 'Board1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[108]' (FDE) to 'Board1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[76]' (FDE) to 'Board1/Ackie1/return_message_reg[116]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[116]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[84]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[100]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[91]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[107]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[75]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[115]' (FDE) to 'Board1/Ackie1/return_message_reg[114]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[83]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[99]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[90]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[106]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[74]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[114]' (FDE) to 'Board1/Ackie1/return_message_reg[112]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[82]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[98]' (FDE) to 'Board1/Ackie1/return_message_reg[112]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[89]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[105]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[73]' (FDE) to 'Board1/Ackie1/return_message_reg[113]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[113]' (FDE) to 'Board1/Ackie1/return_message_reg[104]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[81]' (FDE) to 'Board1/Ackie1/return_message_reg[104]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[97]' (FDE) to 'Board1/Ackie1/return_message_reg[104]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[88]' (FDE) to 'Board1/Ackie1/return_message_reg[104]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[104]' (FDE) to 'Board1/Ackie1/return_message_reg[96]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[72]' (FDE) to 'Board1/Ackie1/return_message_reg[96]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[80]' (FDE) to 'Board1/Ackie1/return_message_reg[96]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Board1/\Ackie1/return_message_reg[96] )
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/state_reg[7]' (FDE) to 'Board1/Ackie1/state_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/state_reg[6]' (FDE) to 'Board1/Ackie1/state_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Board1/\Ackie1/state_reg[5] )
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[96]' (FDE) to 'Board1/Ackie1/return_message_reg[69]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[69]' (FDE) to 'Board1/Ackie1/return_message_reg[68]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[68]' (FDE) to 'Board1/Ackie1/return_message_reg[67]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[67]' (FDE) to 'Board1/Ackie1/return_message_reg[66]'
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[66]' (FDE) to 'Board1/Ackie1/return_message_reg[65]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Board1/\Ackie1/return_message_reg[65] )
+INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[112]' (FDE) to 'Board1/Ackie1/return_message_reg[64]'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[15] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[15]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[15] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[15] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[14] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[14]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[14] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[14] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[13] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[13]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[13] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[13] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[12] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[12]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[12] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[12] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[11] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[11]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[11] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[11] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[10] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[10]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[10] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[10] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[9] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[9]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[9] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[9] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[8] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[8]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[8] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[8] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[7] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[7]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[7] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[7] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[6] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[6]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[6] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[6] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[5] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[5]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[5] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[5] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[4] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[4]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[4] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[4] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[3] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[3]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[3] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[3] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[2] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[2]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[2] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[2] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[1] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[1]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[1] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[1] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[0] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[0]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[0] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[0] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[11] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[11]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[11] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[11] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[10] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[10]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[10] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[10] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[9] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[9]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[9] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[9] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[8] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[8]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[8] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[8] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[7] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[7]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[7] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[7] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[6] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[6]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[6] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[6] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[5] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[5]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[5] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[5] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[4] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[4]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[4] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[4] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[3] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[3]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[3] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[3] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[2] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[2]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[2] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[2] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[1] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[1]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[1] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[1] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[0] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[0]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[0] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[0] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[15] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[15]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[15] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[15] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[14] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[14]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[14] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[14] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[13] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[13]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[13] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[13] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[12] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[12]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[12] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[12] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[11] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[11]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[11] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[11] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[10] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[10]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[10] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[10] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[9] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[9]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[9] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[9] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[8] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[8]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[8] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[8] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[7] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[7]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[7] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[7] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[6] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[6]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[6] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[6] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[5] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[5]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[5] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[5] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[4] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[4]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[4] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[4] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[3] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[3]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[3] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[3] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[2] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[2]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[2] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[2] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[1] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[1]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[1] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[1] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[0] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[0]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q_reg[0] with 2nd driver pin 'GND' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q_reg[0] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19380 ; free virtual = 37432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MEM1        | mem_reg        | 4 K x 16(READ_FIRST)   | W | R | 4 K x 16(READ_FIRST)   | W | R | Port A and B     | 0      | 2      | 
+|MEM1        | bp_mem_ram_reg | 4 K x 1(READ_FIRST)    | W | R | 4 K x 1(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+---------------+-----------+----------------------+----------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------+-----------+----------------------+----------------+
+|MEM1        | bp_io_ram_reg | Implied   | 256 x 1              | RAM128X1D x 2	 | 
++------------+---------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM mem_reg to conserve power
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19375 ; free virtual = 37433
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MEM1        | mem_reg        | 4 K x 16(READ_FIRST)   | W | R | 4 K x 16(READ_FIRST)   | W | R | Port A and B     | 0      | 2      | 
+|MEM1        | bp_mem_ram_reg | 4 K x 1(READ_FIRST)    | W | R | 4 K x 1(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+---------------+-----------+----------------------+----------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------+-----------+----------------------+----------------+
+|MEM1        | bp_io_ram_reg | Implied   | 256 x 1              | RAM128X1D x 2	 | 
++------------+---------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance MEM1/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance MEM1/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance MEM1/bp_mem_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance MEM1/bp_mem_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19379 ; free virtual = 37437
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19380 ; free virtual = 37435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19380 ; free virtual = 37435
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19378 ; free virtual = 37436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19378 ; free virtual = 37436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19377 ; free virtual = 37435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19377 ; free virtual = 37435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |AND2      |     1|
+|2     |AND3      |    16|
+|3     |AND3B1    |    32|
+|4     |AND3B2    |    16|
+|5     |AND4      |     1|
+|6     |AND4B2    |     1|
+|7     |BUF       |     1|
+|8     |BUFG      |     3|
+|9     |CARRY4    |    57|
+|10    |ICAPE2    |     1|
+|11    |INV       |     1|
+|12    |LUT1      |    50|
+|13    |LUT2      |    96|
+|14    |LUT3      |   145|
+|15    |LUT4      |   112|
+|16    |LUT5      |   155|
+|17    |LUT6      |   258|
+|18    |MUXF7     |    24|
+|19    |MUXF8     |     3|
+|20    |OR2B1     |     1|
+|21    |OR4       |    16|
+|22    |RAM128X1D |     2|
+|23    |RAMB18E1  |     1|
+|24    |RAMB36E1  |     2|
+|25    |FDC       |     1|
+|26    |FDRE      |   620|
+|27    |FDSE      |    36|
+|28    |IBUF      |    13|
+|29    |OBUF      |    56|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------+--------------+------+
+|      |Instance     |Module        |Cells |
++------+-------------+--------------+------+
+|1     |top          |              |  1721|
+|2     |  Board1     |BoardV3       |  1180|
+|3     |    Ackie1   |AckieV2       |   879|
+|4     |    ClocksI1 |Clocks        |    42|
+|5     |    KeyB1    |Keyboard      |    46|
+|6     |    Rst1     |Board_reset   |    55|
+|7     |    SS1      |Segments_Scan |    33|
+|8     |    U1       |Uart_S7       |   125|
+|9     |  MEM1       |MU0_Memory    |   380|
+|10    |  MU01       |MU0           |    88|
+|11    |    Control  |MU0_Control   |     7|
++------+-------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19377 ; free virtual = 37435
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 132 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.941 ; gain = 442.332 ; free physical = 19380 ; free virtual = 37438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1937.949 ; gain = 442.332 ; free physical = 19379 ; free virtual = 37438
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1941.074 ; gain = 0.000 ; free physical = 19460 ; free virtual = 37514
+INFO: [Netlist 29-17] Analyzing 176 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2046.914 ; gain = 0.000 ; free physical = 19394 ; free virtual = 37448
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 89 instances were transformed.
+  AND2 => LUT2: 1 instance 
+  AND3 => LUT3: 16 instances
+  AND3B1 => LUT3: 32 instances
+  AND3B2 => LUT3: 16 instances
+  AND4 => LUT4: 1 instance 
+  AND4B2 => LUT4: 1 instance 
+  BUF => LUT1: 1 instance 
+  FDC => FDCE: 1 instance 
+  INV => LUT1: 1 instance 
+  OR2B1 => LUT2: 1 instance 
+  OR4 => LUT4: 16 instances
+  RAM128X1D => RAM128X1D (inverted pins: WCLK) (MUXF7(x2), RAMD64E(x4)): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+172 Infos, 15 Warnings, 132 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 2046.914 ; gain = 575.242 ; free physical = 19526 ; free virtual = 37580
+# read_xdc /cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc
+Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc]
+Finished Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc]
+# read_xdc /cadtools5/questa_custom/resource/comp12111/BoardV3_physical.xdc
+Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_physical.xdc]
+Finished Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_physical.xdc]
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[2] expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 2 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2113.914 ; gain = 67.000 ; free physical = 19518 ; free virtual = 37572
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: c01109c3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2361.828 ; gain = 247.914 ; free physical = 19228 ; free virtual = 37281
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: ffb7c2d9
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2494.797 ; gain = 0.000 ; free physical = 19091 ; free virtual = 37148
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 4 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 14e4ad69e
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2494.797 ; gain = 0.000 ; free physical = 19089 ; free virtual = 37148
+INFO: [Opt 31-389] Phase Constant propagation created 18 cells and removed 100 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: b1270130
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2494.797 ; gain = 0.000 ; free physical = 19089 ; free virtual = 37148
+INFO: [Opt 31-389] Phase Sweep created 11 cells and removed 1 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: b1270130
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2494.797 ; gain = 0.000 ; free physical = 19089 ; free virtual = 37148
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: b1270130
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2494.797 ; gain = 0.000 ; free physical = 19089 ; free virtual = 37148
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 12d6f366c
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2494.797 ; gain = 0.000 ; free physical = 19089 ; free virtual = 37148
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               2  |               4  |                                              0  |
+|  Constant propagation         |              18  |             100  |                                              0  |
+|  Sweep                        |              11  |               1  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2494.797 ; gain = 0.000 ; free physical = 19089 ; free virtual = 37148
+Ending Logic Optimization Task | Checksum: 1a2f6bf41
+
+Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2494.797 ; gain = 0.000 ; free physical = 19089 ; free virtual = 37148
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.869 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: 1a2f6bf41
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2848.613 ; gain = 0.000 ; free physical = 19077 ; free virtual = 37136
+Ending Power Optimization Task | Checksum: 1a2f6bf41
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.50 . Memory (MB): peak = 2848.613 ; gain = 353.816 ; free physical = 19080 ; free virtual = 37139
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1a2f6bf41
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.613 ; gain = 0.000 ; free physical = 19079 ; free virtual = 37138
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.613 ; gain = 0.000 ; free physical = 19079 ; free virtual = 37138
+Ending Netlist Obfuscation Task | Checksum: 1a2f6bf41
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2848.613 ; gain = 0.000 ; free physical = 19086 ; free virtual = 37145
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2848.613 ; gain = 801.699 ; free physical = 19086 ; free virtual = 37145
+# power_opt_design -verbose
+Command: power_opt_design -verbose
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Begin power optimizations | Checksum: 1a2f6bf41
+WARNING: [Pwropt 34-141] Param pwropt.runOnPwroptedDesign is set. Skipped checking if power_opt_design has been performed earlier.
+INFO: [Pwropt 34-50] Optimizing power for module MU0_Board ...
+INFO: [Pwropt 34-207] Design is in partially-placed state. Running in partially-placed mode.
+Pre-processing: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2848.613 ; gain = 0.000 ; free physical = 19029 ; free virtual = 37088
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+IDT: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2848.613 ; gain = 0.000 ; free physical = 19020 ; free virtual = 37079
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.869 | TNS=0.000 |
+PSMgr Creation: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2848.613 ; gain = 0.000 ; free physical = 19020 ; free virtual = 37079
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-215] Skipped ODC enables for 14 nets in BRAM flops in bus-based analysis.
+INFO: [Pwropt 34-214] Skipped ODC enables for 50 nets in BRAM address flops in bus-based analysis.
+ODC: Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.42 . Memory (MB): peak = 2852.629 ; gain = 4.016 ; free physical = 19009 ; free virtual = 37068
+Power optimization passes: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.68 . Memory (MB): peak = 2852.629 ; gain = 4.016 ; free physical = 19008 ; free virtual = 37067
+
+INFO: [Pwropt 34-77] Creating clock enable groups ...
+INFO: [Pwropt 34-96] Including small groups for filtering based on enable probabilities.
+ Done
+Grouping enables: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19075 ; free virtual = 37134
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-26] Patching clock gating enable signals for design MU0_Board ...
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+INFO: [Pwropt 34-100] Patcher adaptive clustering : original flop clusters 44 accepted clusters 44
+
+Number of Slice Registers augmented: 35 newly gated: 43 Total: 668
+Number of SRLs augmented: 0  newly gated: 0 Total: 0
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 6
+Number of Flops added for Enable Generation: 0
+
+Flops dropped: 0/84 RAMS dropped: 0/0 Clusters dropped: 0/44 Enables dropped: 0
+Patching clock gating enables finished successfully.
+Ending PowerOpt Patch Enables Task | Checksum: 57681177
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19009 ; free virtual = 37065
+INFO: [Pwropt 34-30] Power optimization finished successfully.
+End power optimizations | Checksum: 57681177
+Power optimization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2852.629 ; gain = 4.016 ; free physical = 19083 ; free virtual = 37139
+INFO: [Pwropt 34-198] Malloced memory gain at end of power optimization: 1583856 bytes
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: b8a6a20d
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19083 ; free virtual = 37139
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 2 BUFG optimization | Checksum: b8a6a20d
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19083 ; free virtual = 37139
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 3 Remap
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_1.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_2.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_3.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_4.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_5.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_6.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_7.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_8.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_9.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_10.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_11.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_12.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_13.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_14.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_15.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_16.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_17.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[0]_i_13.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[0]_i_7.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[0]_i_2.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I3[0].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I4[0].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[0].
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[7]_i_26.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[7]_i_18.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[7]_i_27.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[7]_i_19.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[7]_i_28.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[7]_i_20.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[7]_i_29.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[7]_i_21.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[7]_i_12.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[0]_i_3.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[0]_i_4.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[0]_i_5.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[0]_i_12.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[0]_i_6.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[0]_i_1.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_2_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_1.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_2.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_42_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_41.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_42.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/U1/tx_reg_CE_cooolgate_en_gate_95_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/U1/tx_reg_CE_cooolgate_en_gate_94.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/U1/tx_reg_CE_cooolgate_en_gate_95.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/proc_clk_delay_reg[0]_CE_cooolgate_en_gate_26_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/proc_clk_delay_reg[0]_CE_cooolgate_en_gate_25.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/Ackie1/proc_clk_delay_reg[0]_CE_cooolgate_en_gate_26.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_47_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_46.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_47.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/data_byte_sel_reg[0]_CE_cooolgate_en_gate_32_LOPT_REMAP.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/data_byte_sel_reg[0]_CE_cooolgate_en_gate_32_LOPT_REMAP_1.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/data_byte_sel[3]_i_1.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/data_byte_sel_reg[0]_CE_cooolgate_en_gate_31.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/Ackie1/data_byte_sel_reg[0]_CE_cooolgate_en_gate_32.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/state_reg[0]_CE_cooolgate_en_gate_20_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/state_reg[0]_CE_cooolgate_en_gate_19.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/Ackie1/state_reg[0]_CE_cooolgate_en_gate_20.
+INFO: [Opt 31-51] Remap created LUT3 cell: MEM1/buzzer_time_step_count_reg[0]_CE_cooolgate_en_gate_37_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MEM1/buzzer_time_step_count_reg[0]_CE_cooolgate_en_gate_36.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MEM1/buzzer_time_step_count_reg[0]_CE_cooolgate_en_gate_37.
+INFO: [Opt 31-315] Cell of type LUT6 is reduced to LUT5, due to redundant pins: I0, cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_12
+INFO: [Opt 31-442] LUT Reduction optimized 1 LUTs
+Phase 3 Remap | Checksum: 943d37ab
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19083 ; free virtual = 37139
+INFO: [Opt 31-389] Phase Remap created 27 cells and removed 38 cells
+
+Phase 4 Post Processing Netlist
+Phase 4 Post Processing Netlist | Checksum: 139665af3
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19083 ; free virtual = 37139
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+---------------------------------------------------------------------------------------------------------------------
+|  Phase                    |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+---------------------------------------------------------------------------------------------------------------------
+|  Retarget                 |               0  |               0  |                                              0  |
+|  BUFG optimization        |               0  |               0  |                                              0  |
+|  Remap                    |              27  |              38  |                                              0  |
+|  Post Processing Netlist  |               0  |               0  |                                              0  |
+---------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 12187c01a
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19083 ; free virtual = 37139
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19083 ; free virtual = 37139
+Ending Netlist Obfuscation Task | Checksum: 12187c01a
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19083 ; free virtual = 37139
+INFO: [Common 17-83] Releasing license: Implementation
+95 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+power_opt_design completed successfully
+# place_design -directive Explore
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[2] expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19078 ; free virtual = 37133
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c07adbbe
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19078 ; free virtual = 37133
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19079 ; free virtual = 37135
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	Clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y0
+	Clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 38b2a114
+
+Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19079 ; free virtual = 37135
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 87b75732
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.44 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19079 ; free virtual = 37134
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 87b75732
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.44 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19079 ; free virtual = 37134
+Phase 1 Placer Initialization | Checksum: 87b75732
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19079 ; free virtual = 37134
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: a3187ed8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.54 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19068 ; free virtual = 37123
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 52 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 22 nets or cells. Created 0 new cell, deleted 22 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19073 ; free virtual = 37131
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             22  |                    22  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             22  |                    22  |           0  |           3  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1f32d5e25
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19073 ; free virtual = 37132
+Phase 2.2 Global Placement Core | Checksum: 20c856e70
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19072 ; free virtual = 37131
+Phase 2 Global Placement | Checksum: 20c856e70
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19072 ; free virtual = 37131
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d5ded7a2
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19072 ; free virtual = 37131
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 204fd70f2
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19072 ; free virtual = 37131
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1fdf9c5c6
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19072 ; free virtual = 37131
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1dc425f99
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19072 ; free virtual = 37131
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 2487559d7
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19067 ; free virtual = 37126
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 21dbba170
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1bef33ea5
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+Phase 3 Detail Placement | Checksum: 1bef33ea5
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:03 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19cec725e
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19cec725e
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.411. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 167b75e55
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+Phase 4.1 Post Commit Optimization | Checksum: 167b75e55
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 167b75e55
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 167b75e55
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+Phase 4.4 Final Placement Cleanup | Checksum: f0749d23
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: f0749d23
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+Ending Placer Task | Checksum: 7feedfa9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:04 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19069 ; free virtual = 37128
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+# route_design -directive Explore
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PLCK-12] Clock Placer Checks: Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	Clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y0
+	Clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 5308b1b0 ConstDB: 0 ShapeSum: 2ce62df9 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 9d0a691b
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19001 ; free virtual = 37054
+Post Restoration Checksum: NetGraph: 22acc5e NumContArr: 9adf9cbd Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 9d0a691b
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18974 ; free virtual = 37026
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 9d0a691b
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18942 ; free virtual = 36995
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 9d0a691b
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18942 ; free virtual = 36995
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 191cc7c60
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18934 ; free virtual = 36989
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.421  | TNS=0.000  | WHS=-0.102 | THS=-0.463 |
+
+Phase 2 Router Initialization | Checksum: 12ee52771
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18935 ; free virtual = 36991
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0131184 %
+  Global Horizontal Routing Utilization  = 0.00773994 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1353
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1352
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: b9b5b48d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 161
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.651  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 195d38636
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+Phase 4 Rip-up And Reroute | Checksum: 195d38636
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 2179ae897
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.658  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 2179ae897
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2179ae897
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+Phase 5 Delay and Skew Optimization | Checksum: 2179ae897
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 27d9ff827
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.658  | TNS=0.000  | WHS=0.064  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2595d73d2
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+Phase 6 Post Hold Fix | Checksum: 2595d73d2
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.610874 %
+  Global Horizontal Routing Utilization  = 0.80289 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 22ce28c3d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18938 ; free virtual = 36993
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 22ce28c3d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18937 ; free virtual = 36993
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 281a189c5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18937 ; free virtual = 36993
+
+Phase 10 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=1.659  | TNS=0.000  | WHS=0.063  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 10 Post Router Timing | Checksum: 1dd1990bd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18937 ; free virtual = 36992
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19005 ; free virtual = 37061
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 19005 ; free virtual = 37061
+# report_io  -file post_route_io.rpt
+report_io: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2852.629 ; gain = 0.000 ; free physical = 18997 ; free virtual = 37053
+# set_property BITSTREAM.CONFIG.USR_ACCESS         0xaabbccdd    [current_design]
+# set_property CONFIG_VOLTAGE                     3.3            [current_design]
+# set_property CFGBVS                             VCCO           [current_design]
+# set_property BITSTREAM.CONFIG.CONFIGRATE        16             [current_design]
+# set_property BITSTREAM.CONFIG.SPI_32BIT_ADDR    No             [current_design]
+# set_property BITSTREAM.CONFIG.USERID   0xADD1E            [current_design]
+# set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
+# set design_name  MU0_Board 
+# write_bitstream -force ${design_name}.bit
+Command: write_bitstream -force MU0_Board.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+WARNING: [Designutils 20-2050] The "BITSTREAM.CONFIG.SPI_32BIT_ADDR No" property setting is used to enable 24 bit SPI addressing.  For correct SPI functionality the "BITSTREAM.CONFIG.SPI_BUSWIDTH" property value of 1 has been set.
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./MU0_Board.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 2931.375 ; gain = 78.746 ; free physical = 18987 ; free virtual = 37041
+# write_bitstream -force -bin_file ${design_name}
+Command: write_bitstream -force -bin_file MU0_Board
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+WARNING: [Designutils 20-2050] The "BITSTREAM.CONFIG.SPI_32BIT_ADDR No" property setting is used to enable 24 bit SPI addressing.  For correct SPI functionality the "BITSTREAM.CONFIG.SPI_BUSWIDTH" property value of 1 has been set.
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./MU0_Board.bit...
+Writing bitstream ./MU0_Board.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+9 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2963.355 ; gain = 31.980 ; free physical = 18979 ; free virtual = 37033
+# write_cfgmem    -force -format MCS -size 8 -loadbit "up 0x0 ${design_name}.bit" -interface SPIx1 ${design_name}
+Command: write_cfgmem -force -format MCS -size 8 -loadbit {up 0x0 MU0_Board.bit} -interface SPIx1 MU0_Board
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile MU0_Board.bit
+Writing file ./MU0_Board.mcs
+Writing log file ./MU0_Board.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               8M
+Start Address      0x00000000
+End Address        0x007FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0012F2CB    Nov 17 17:16:53 2023    MU0_Board.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# exit 
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 17:16:56 2023...

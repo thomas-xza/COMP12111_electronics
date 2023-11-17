@@ -35,9 +35,14 @@ always @ (posedge Clk)
 //  The specification says "the reset signal acts asynchronously".
 //    Therefore, implemented this as a stateless block.
 
-always @ (Reset)
-  Q = 16'b0000_0000_0000_0000;
+//  Note that we only want to reset Q when reset is high,
+//		not whenever it changes.
 
+always @ (Reset)
+  if (Reset == 1)
+  	Q = 16'b0000_0000_0000_0000;
+  else
+    Q = Q;
 
 
 

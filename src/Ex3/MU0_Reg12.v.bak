@@ -36,7 +36,10 @@ always @ (posedge Clk)
 //    Therefore, implemented this as a stateless block.
 
 always @ (Reset)
-  Q = 12'b0000_0000_0000;
+  if (Reset == 1)
+  	Q = 12'b0000_0000_0000;
+  else
+    Q = Q;
 
 
 
