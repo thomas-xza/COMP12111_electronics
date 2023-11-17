@@ -79,7 +79,7 @@ $stop;      tells the simulator to stop
 //  Clock for testing sequential (stateful) logic.
 always // always do the following
   begin
-  #50 // wait half a clock period
+  #100 // wait half a clock period
   Clk = ~Clk; // invert the clock
   end
 
@@ -94,7 +94,7 @@ Reset=0;
 
 #4000
 
-#100 $stop(); // stop the simulation - could tie this to the Halted signal going high
+#100 $stop();	// stop the simulation - could tie this to the Halted signal going high
 end
  
 

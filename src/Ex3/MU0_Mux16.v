@@ -25,7 +25,7 @@ always @ (*)
   case(S)
     0: Q = A;
 	1: Q = B;
-    default: Q = 16'b0000_0000_0000_0000;
+    default: Q = 16'bxxxx_xxxx_xxxx_xxxx;
   endcase
 
 endmodule 

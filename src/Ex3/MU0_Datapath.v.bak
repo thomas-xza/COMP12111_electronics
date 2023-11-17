@@ -100,10 +100,10 @@ MU0_Reg16 IRReg(
 //  Note: Module parameter `A` relates to `0` in diagram.
 
 MU0_Mux16 XMux(
-.A(Acc_internal[15:0]),					//  Input Accumulator value.
+.A(Acc_internal[15:0]),				g//  Input Accumulator value.
 .B({4'b0000, PC_internal[11:0]}),	//  Input PC value (padded to 16 bits).
 .S(X_sel),							//  Input selection flag from control.
-.Q(X)							//  Output data to memory-data bus.
+.Q(X)								//  Output data to memory-data bus.
 );
 
 MU0_Mux12 AddrMux(

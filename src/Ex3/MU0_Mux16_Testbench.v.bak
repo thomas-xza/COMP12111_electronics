@@ -24,7 +24,7 @@ begin
     // Test selection of input A
     #100 S=0; A=0; B=16'bx;
     // Expect Q  = 0
-    #100 S=0; A=16'hFFFF; B=16'bx;
+    #100 S=0; A=16'hFFFF; B=16'bx;   
     // Expect Q  = FFFF
 
     // Test selection of input B 

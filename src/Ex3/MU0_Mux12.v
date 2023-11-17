@@ -23,7 +23,7 @@ always @ (*)
   case(S)
     0: Q = A;
 	1: Q = B;
-    default: Q = 12'b0000_0000_0000;
+    default: Q = 12'bxxxx_xxxx_xxxx;
   endcase
 
 endmodule 
