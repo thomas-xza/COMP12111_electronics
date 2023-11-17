@@ -91,7 +91,7 @@ MU0_Reg16 IRReg(
 .Reset(Reset),			//  Input reset signal from control.
 .En(IR_En),				//  Input IR_En from control.
 .D(Din),    			//  Input from memory bus.
-.Q(IR)     				//  Output instruction.
+.Q(IR[15:0])     		//  Output instruction.
 );
 
 
@@ -114,8 +114,8 @@ MU0_Mux12 AddrMux(
 );
 
 MU0_Mux16 YMux(
-.A(IR[15:0]),				//  Input instruction from register.
-.B(Din[15:0]),			//  Input data from memory-data bus.
+.A(Din),			//  Input instruction from register.
+.B(IR[15:0]),		//  Input data from memory-data bus.
 .S(Y_sel),			//  Input selection flag from control.
 .Q(Y)				//  Output Y for ALU.
 );

@@ -91,7 +91,28 @@ MU0_Reg16 IRReg(
 .Reset(Reset),			//  Input reset signal from control.
 .En(IR_En),				//  Input IR_En from control.
 .D(Din),    			//  Input from memory bus.
-.Q(IR)     				//  Output instruction.
+.Q(IR[15:0])     		//  Output instruction.
+);
+
+MU0_Mux16 XMux(
+.A(Acc_internal[15:0]),
+.B({4'b0000,PC_internal[11:0]}),
+.S(X_sel),
+.Q(X)
+);
+
+MU0_Mux12 AddrMux(
+.A(PC_internal[11:0]),
+.B(IR[11:0]),
+.S(Addr_sel),
+.Q(Address)
+);
+
+MU0_Mux16 YMux(
+.A(Din),
+.B(IR[15:0]),
+.S(Y_sel),
+.Q(Y)
 );
 
 
@@ -100,7 +121,7 @@ MU0_Reg16 IRReg(
 //  Note: Module parameter `A` relates to `0` in diagram.
 
 MU0_Mux16 XMux(
-.A(Acc_internal[15:0]),				g//  Input Accumulator value.
+.A(Acc_internal[15:0]),				//  Input Accumulator value.
 .B({4'b0000, PC_internal[11:0]}),	//  Input PC value (padded to 16 bits).
 .S(X_sel),							//  Input selection flag from control.
 .Q(X)								//  Output data to memory-data bus.
@@ -114,8 +135,8 @@ MU0_Mux12 AddrMux(
 );
 
 MU0_Mux16 YMux(
-.A(IR[15:0]),				//  Input instruction from register.
-.B(Din[15:0]),			//  Input data from memory-data bus.
+.A(Din),			//  Input instruction from register.
+.B(IR[15:0]),		//  Input data from memory-data bus.
 .S(Y_sel),			//  Input selection flag from control.
 .Q(Y)				//  Output Y for ALU.
 );
