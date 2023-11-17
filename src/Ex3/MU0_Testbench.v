@@ -86,16 +86,15 @@ always // always do the following
 // Perform a reset action of MU0
 initial
 begin
-
-#100		//  Wait 100ns due to hardware quirk.
+#100			//  Wait 100ns due to hardware quirk.
 Reset=1;
 
-#200
+#100
 Reset=0;
 
-#8000
+#4000
 
-#100 $stop(); // stop the simulation - could tie this to the Halted signal going high
+#100 $stop();	// stop the simulation - could tie this to the Halted signal going high
 end
  
 

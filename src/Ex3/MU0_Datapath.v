@@ -39,11 +39,11 @@ wire [15:0] IR;		////  Connected x3.
 wire [15:0] Y;		////  Connected.  
 wire [15:0] ALU;	////  Connected x2.
 
-//wire [15:0] Acc_internal;	////  Connected x3
-//wire [11:0] PC_internal;	////  
+wire [15:0] Acc_internal;	////  Connected x3
+wire [11:0] PC_internal;	////  
 
-//assign Acc = Acc_internal;
-//assign PC = {4'b0000, PC_internal[11:0]};
+assign Acc = Acc_internal;
+assign PC = {4'b0000, PC_internal[11:0]};
 
 
 //  The following connects X and Dout together, there's no need for you to do so
@@ -75,7 +75,7 @@ MU0_Reg16 ACCReg(
 .Reset(Reset),			//  Input reset signal from control.
 .En(Acc_En),			//  Input Acc_En from control.
 .D(ALU[15:0]),    			//  Input calculated value from ALU.
-.Q(Acc)    	//  Output Accumulator value.
+.Q(Acc_internal[15:0])    	//  Output Accumulator value.
 );
 
 MU0_Reg12 PCReg(
@@ -83,7 +83,7 @@ MU0_Reg12 PCReg(
 .Reset(Reset),			//  Input reset signal from control.
 .En(PC_En),				//  Input PC_En from control.
 .D(ALU[11:0]),    		//  Input from ALU (last 12 LSBs only).
-.Q(PC)   		//  Output PC register value (12 bits).
+.Q(PC_internal[11:0])   		//  Output PC register value (12 bits).
 );
 
 MU0_Reg16 IRReg(
@@ -100,14 +100,14 @@ MU0_Reg16 IRReg(
 //  Note: Module parameter `A` relates to `0` in diagram.
 
 MU0_Mux16 XMux(
-.A(Acc[15:0]),					//  Input Accumulator value.
-.B({4'b0000, PC[11:0]}),	//  Input PC value (padded to 16 bits).
+.A(Acc_internal[15:0]),				//  Input Accumulator value.
+.B({4'b0000, PC_internal[11:0]}),	//  Input PC value (padded to 16 bits).
 .S(X_sel),							//  Input selection flag from control.
-.Q(Dout)							//  Output data to memory-data bus.
+.Q(X)								//  Output data to memory-data bus.
 );
 
 MU0_Mux12 AddrMux(
-.A(PC[11:0]),	//  Input PC register value (12 bits).
+.A(PC_internal[11:0]),	//  Input PC register value (12 bits).
 .B(IR[11:0]),		//  Input instruction address (last 12 LSBs only).
 .S(Addr_sel),		//  Input address selection flag from control.
 .Q(Address)			//  Output Address to memory-address bus.
@@ -115,7 +115,7 @@ MU0_Mux12 AddrMux(
 
 MU0_Mux16 YMux(
 .A(IR[15:0]),				//  Input instruction from register.
-.B(Din),			//  Input data from memory-data bus.
+.B(Din[15:0]),			//  Input data from memory-data bus.
 .S(Y_sel),			//  Input selection flag from control.
 .Q(Y)				//  Output Y for ALU.
 );
@@ -134,7 +134,7 @@ MU0_Alu Main_ALU(
 //  MU0 Flag generation
 
 MU0_Flags Main_flags(
-.Acc(Acc[15:0]), //  Input accumulator to flag generator.
+.Acc(Acc_internal[15:0]), //  Input accumulator to flag generator.
 .N(N), 				//  Output negative flag.
 .Z(Z)				//  Output zero flag.
 );
