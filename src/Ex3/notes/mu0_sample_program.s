@@ -5,7 +5,7 @@
 	
 	ORG 0
 	
-	STA result1		; 1	0000? => [FFFF]
+	STA result1		; 1	0000* => [FFFF]
 		
 	LDA neg			; 0
 	STA result2		; 1	8000* => [0000]
