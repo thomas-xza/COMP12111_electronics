@@ -17,7 +17,7 @@ input  wire        Reset,
 input  wire        En, 
 input  wire [15:0] D, 
 output reg  [15:0] Q
- );
+);
 
 // behavioural code - clock driven
 
@@ -37,6 +37,9 @@ always @ (posedge Clk)
 
 always @ (Reset)
   Q = 16'b0000_0000_0000_0000;
+
+
+
 
 
 endmodule 

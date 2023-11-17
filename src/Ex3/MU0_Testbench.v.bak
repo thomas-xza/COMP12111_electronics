@@ -79,17 +79,17 @@ $stop;      tells the simulator to stop
 //  Clock for testing sequential (stateful) logic.
 always // always do the following
   begin
-  #100 // wait half a clock period
+  #50 // wait half a clock period
   Clk = ~Clk; // invert the clock
   end
 
 // Perform a reset action of MU0
 initial
 begin
+Reset=1;
 #100			//  Wait 100ns due to hardware quirk.
 Reset=1;
-
-#100
+#100;
 Reset=0;
 
 #4000
