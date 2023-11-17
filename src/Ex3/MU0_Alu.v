@@ -36,7 +36,7 @@ always @ (*)
     `SUB: Q = X + ~Y + 1;
     `INC: Q = X + 0 + 1;
     `PASS: Q = Y;
-	default: Q = 16'h0000;
+	default: Q = 16'hxxxx;
   endcase
 
 endmodule 
