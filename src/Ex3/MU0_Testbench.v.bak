@@ -66,7 +66,6 @@ MU0_Memory MEM1 (
 
 
 initial Clk = 0;
-initial Reset = 0;
 
 
 /*
@@ -79,20 +78,21 @@ $stop;      tells the simulator to stop
 //  Clock for testing sequential (stateful) logic.
 always // always do the following
   begin
-  #50 // wait half a clock period
+  // wait half a clock period
   Clk = ~Clk; // invert the clock
-  end
+  #50;
+ end
 
 // Perform a reset action of MU0
 initial
 begin
-Reset=1;
-#100			//  Wait 100ns due to hardware quirk.
+#100;		//  Wait 100ns due to hardware quirk.
+#50;			
 Reset=1;
 #100;
 Reset=0;
 
-#4000
+#4000;
 
 #100 $stop();	// stop the simulation - could tie this to the Halted signal going high
 end
