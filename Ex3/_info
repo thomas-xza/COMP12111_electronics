@@ -24,6 +24,7 @@ R0
 R0
 R0
 R0
+R0
 !s11f vlog 2022.4 2022.10, Oct 18 2022
 13
 !s112 1.1
@@ -33,11 +34,11 @@ R0
 cModel Technology
 Z1 d/home/x93125tp/Questa/COMP12111
 T_opt
-!s110 1700218861
-V`a9?SWl`XLcDTm<mDeeLN3
-04 19 4 work MU0_Mux12_Testbench fast 0
+!s110 1700220881
+VA10=R291>IAicdFSbNJ1G0
+04 19 4 work MU0_Reg16_Testbench fast 0
 Z2 04 4 4 GLIB glbl fast 0
-=1-000ae431a4f1-655747ed-506e4-88244
+=1-000ae431a4f1-65574fd1-5a762-91e36
 R0
 Z3 !s12b OEM100
 Z4 !s124 OEM100
@@ -45,7 +46,6 @@ Z5 o-quiet +acc -auto_acc_if_foreign -work Ex3 -gblso libssl.so -L unisims -L Bo
 Z6 tCvgOpt 0
 n@_opt
 Z7 OL;O;2022.4;75
-R1
 T_opt1
 !s110 1700218982
 VFFJ@V3O52RLbD::]<GFUf1
@@ -59,6 +59,7 @@ R5
 R6
 n@_opt1
 R7
+R1
 T_opt2
 !s110 1700218935
 VR<Fh:8ZDl[6FV=0G[UW^k0

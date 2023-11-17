@@ -112,3 +112,28 @@ run -all
 # [VPI Info] Running Init.** Note: $stop    : ./src/Ex3/MU0_Reg12_Testbench.v(70)
 #    Time: 1150 ns  Iteration: 0  Instance: /MU0_Reg12_Testbench
 # Break in Module MU0_Reg12_Testbench at ./src/Ex3/MU0_Reg12_Testbench.v line 70
+# End time: 11:34:41 on Nov 17,2023, Elapsed time: 0:31:40
+# Errors: 0, Warnings: 3, Suppressed Warnings: 2
+# vsim -voptargs="+acc" Ex3.MU0_Reg16_Testbench GLIB.glbl 
+# Start time: 11:34:41 on Nov 17,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.MU0_Reg16_Testbench(fast)
+# Loading work.MU0_Reg16(fast)
+# Loading GLIB.glbl(fast)
+# Loading ./liboverwatch.so
+add wave -position insertpoint  \
+sim:/MU0_Reg16_Testbench/D \
+sim:/MU0_Reg16_Testbench/Clk \
+sim:/MU0_Reg16_Testbench/Reset \
+sim:/MU0_Reg16_Testbench/En \
+sim:/MU0_Reg16_Testbench/Q
+run -all
+# [VPI Info] Running Init.[VPI Info] Running Init.** Note: $stop    : ./src/Ex3/MU0_Reg16_Testbench.v(72)
+#    Time: 1150 ns  Iteration: 0  Instance: /MU0_Reg16_Testbench
+# Break in Module MU0_Reg16_Testbench at ./src/Ex3/MU0_Reg16_Testbench.v line 72
