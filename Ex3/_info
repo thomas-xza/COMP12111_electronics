@@ -20,6 +20,10 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
 !s11f vlog 2022.4 2022.10, Oct 18 2022
 13
 !s112 1.1
@@ -29,11 +33,11 @@ R0
 cModel Technology
 Z1 d/home/x93125tp/Questa/COMP12111
 T_opt
-!s110 1700058671
-V7cnT:PJOPc8>o^S;lgQfZ0
-04 19 4 work MU0_Reg16_Testbench fast 0
+!s110 1700218861
+V`a9?SWl`XLcDTm<mDeeLN3
+04 19 4 work MU0_Mux12_Testbench fast 0
 Z2 04 4 4 GLIB glbl fast 0
-=1-000ae431a4f1-6554d62e-e7f72-34a1f
+=1-000ae431a4f1-655747ed-506e4-88244
 R0
 Z3 !s12b OEM100
 Z4 !s124 OEM100
@@ -42,12 +46,25 @@ Z6 tCvgOpt 0
 n@_opt
 Z7 OL;O;2022.4;75
 R1
-T_opt2
-!s110 1700075411
-VZ^IV;;FmUDE4>=TO3936z0
-04 13 4 work MU0_Testbench fast 0
+T_opt1
+!s110 1700218982
+VFFJ@V3O52RLbD::]<GFUf1
+04 19 4 work MU0_Reg12_Testbench fast 0
 R2
-=1-000ae431a4f1-65551793-cf5f-13d0a
+=1-000ae431a4f1-65574866-4afe-88b30
+R0
+R3
+R4
+R5
+R6
+n@_opt1
+R7
+T_opt2
+!s110 1700218935
+VR<Fh:8ZDl[6FV=0G[UW^k0
+04 19 4 work MU0_Mux16_Testbench fast 0
+R2
+=1-000ae431a4f1-65574837-2b66f-88778
 R0
 R3
 R4
@@ -55,6 +72,7 @@ R5
 R6
 n@_opt2
 R7
+R1
 vMU0
 Z8 !s110 1700075409
 !i10b 1

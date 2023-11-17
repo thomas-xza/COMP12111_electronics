@@ -83,7 +83,7 @@ n@_opt2
 R6
 R1
 vTraffic_Light
-Z8 !s110 1700054937
+Z8 !s110 1700213794
 !i10b 1
 !s100 ;KFCkkmS?W;g]NV_^OSJL0
 Iid^b;G?e9@PDRhC>Um`J63
@@ -91,14 +91,14 @@ R1
 w1698346309
 8./src/Ex2/Traffic_Light.v
 F./src/Ex2/Traffic_Light.v
-!i122 145
+!i122 151
 L0 47 80
 Z9 VDg1SIo80bB@j0V0VzS_@n1
 Z10 OL;L;2022.4;75
 r1
 !s85 0
 31
-Z11 !s108 1700054937.000000
+Z11 !s108 1700213794.000000
 !s107 ./src/Ex2/Traffic_Light.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex2/Traffic_Light.v|
 !s101 -O0
@@ -116,14 +116,14 @@ R1
 w1698345794
 8./src/Ex2/Traffic_Light_Board.v
 F./src/Ex2/Traffic_Light_Board.v
-!i122 143
+!i122 149
 L0 16 110
 R9
 R10
 r1
 !s85 0
 31
-!s108 1700054936.000000
+R11
 !s107 ./src/Ex2/Traffic_Light_Board.v|
 !s90 -reportprogress|300|-lint|-cover|bcsxf|./src/Ex2/Traffic_Light_Board.v|
 !s101 -O0
@@ -141,7 +141,7 @@ R1
 w1698337146
 8./src/Ex2/Traffic_Light_Testbench.v
 F./src/Ex2/Traffic_Light_Testbench.v
-!i122 144
+!i122 150
 L0 13 139
 R9
 R10

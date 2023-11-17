@@ -90,9 +90,10 @@ begin
 #100		//  Wait 100ns due to hardware quirk.
 Reset=1;
 
-#100
+#200
 Reset=0;
 
+#2000
 
 #100 $stop(); // stop the simulation - could tie this to the Halted signal going high
 end

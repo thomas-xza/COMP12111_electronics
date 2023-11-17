@@ -854,3 +854,72 @@
  - 503460 [info] Writing sector 50 total size 65537
  - 503460 [info] Board said: P
  - 503460 [info] Starting warm boot 
+ - 3691087 [info] Starting STUMP Loader
+ - 3691087 [info] No serial port specified
+ - 3691087 [info] Searching for ports...
+ - 3691087 [info] Found ttyUSB0
+ - 3691087 [info] Found ttyS4
+ - 3691087 [info] Found ttyS0
+ - 3691087 [info] Using ttyUSB0
+ - 3691087 [info] Port ttyUSB0
+ - 3691087 [info] File /home/x93125tp/Questa/COMP12111/synthesis/Traffic_Light_Board/Traffic_Light_Board.bin
+ - 3691087 [info] Sectors to upload: 19
+ - 3691087 [info] File size bytes: 1241804
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 32 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 33 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 34 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 35 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 36 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 37 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 38 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 39 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 40 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 41 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 42 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 43 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 44 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 45 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 46 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 47 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 48 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 49 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Board said: R
+ - 3691087 [info] Writing sector 50 total size 65537
+ - 3691087 [info] Board said: P
+ - 3691087 [info] Starting warm boot 

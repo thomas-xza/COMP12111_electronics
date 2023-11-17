@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date                      : Thu Oct 26 19:44:41 2023
-| Host                      : E-C10KILF1608.it.manchester.ac.uk running 64-bit Ubuntu 20.04.6 LTS
+| Date                      : Fri Nov 17 09:37:38 2023
+| Host                      : E-C10KILF1646.it.manchester.ac.uk running 64-bit Ubuntu 20.04.6 LTS
 | Command                   : report_io -file post_route_io.rpt
 | Design                    : Traffic_Light_Board
 | Device                    : xc7s25
