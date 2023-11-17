@@ -1,0 +1,162 @@
+;
+;
+;
+;
+Simple MU0 verification programme
+JDG
+November 2008
+Modified Jan 2012 by JSP
+; Begin program at reset address. Acc, pc, and ir should all
+; be 0 after reset
+ORG
+0
+; Sore to memory and ALU tests
+; Test store to memory
+STA
+result1
+; Store acc into memory loc result1.
+;result1 = 0
+; Test load accumulator from memory
+LDA
+STA
+neg
+result2
+; Acc should be set to 'h8000
+; Store value of acc to memory.
+; result2 = 'h8000
+; Simple adder overflow test
+ADD neg
+STA result3
+;
+;
+;
+;
+Acc should overflow to 0
+('h8000 + 'h8000)
+Store the addition result to memory.
+result3 = 0
+; Simple subtraction test
+SUB
+STA
+one
+result4
+; Acc should be 'hFFFF(0 - 1 = -1)
+; Store the subtraction result to memory.
+; result4 = 'hFFFF
+; Test unconditional jump(JMP) - (always jump)
+; If JMP passes result5 = 'h1A55, else result5 = 'hFA01
+JMP
+LDA
+STA
+jmp1ok
+jmperr1
+result5
+;
+;
+;
+;
+Pc should be set to jmp1ok
+If jump fails load error value
+If jump fails set memory to
+failure value.
+; Test conditional jump(JNE) based on the Z(zero) flag
+; Relies on the JMP instr already being tested and working
+; Test JNE for when Z flag is NOT set
+; If JNE jumps when it should result6 = 'h1A55,
+; else result6 = 'hFA02
+jmp1ok
+LDA
+JNE
+one
+jmp2ok
+; (Z)zero flag not set
+; Jump SHOULD be taken and execute the
+30COMP12111 Laboratory Exercise 3
+Ver. 2023
+; "pass" reporting code
+; error reporting code
+LDA jmperr2
+STA result6
+JMP fail1
+; pass reporting code
+jmp2ok
+LDA pass1
+STA result6
+;
+;
+;
+;
+;
+; If JNE failed load the acc with
+error value
+If JNE failed set memory to failure
+value. result6 = 'hFA02
+If JNE failed, then jump over the
+"pass" reporting code
+;
+;
+;
+; If jump taken load the acc with the
+pass value
+If jump taken set memory to pass
+value. result6 = 'h1A55
+; If JNE jumps when it should NOT have then result7 = 'hFA03, else
+; result7 = 'h1A55
+; Test JNE for when Z flag is set
+fail1
+LDA
+JNE zero
+fail2
+JMP jmp3ok
+; error reporting code
+fail2
+LDA jmperr3
+STA result7
+JMP stop
+; pass reporting code
+jmp3ok
+LDA
+STA
+pass1
+result7
+; (Z)zero flag set
+; If JNE jumps here, it shouldn't have,
+; execute error reporting code
+; If JNE was ok, then execute the
+;"pass" reporting code
+;
+;
+;
+;
+;
+;
+If JNE jumped when it should not
+have, then load error value
+If JNE fails set memory loc to
+failure value. result7 = 'hFA03
+If JNE failed, then jump over the
+"pass" reporting code
+; Load the acc with the pass value
+; Set memory to pass value.
+; result6 = 'h1A55
+; End of test for conditional jump(JNE) based on the Z(zero)
+; flag
+stop
+done
+STP
+JMP done
+; STOP - HALT program
+; Just in case stop instr fails
+; Definitions
+one
+neg
+zero DEFW 1
+DEFW &8000
+DEFW &0000 ; one
+; -max
+; zero
+jmperr1
+jmperr2
+jmperr3 DEFW &FA01
+DEFW &FA02
+DEFW &FA03
