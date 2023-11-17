@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri Nov 17 18:12:14 2023
-# Process ID: 577297
+# Start of session at: Fri Nov 17 17:57:07 2023
+# Process ID: 557961
 # Current directory: /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board
 # Command line: vivado -mode batch -source ../generated_build_MU0_Board.tcl
 # Log file: /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board/vivado.log
@@ -35,9 +35,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 577574 
+INFO: Helper process launched with PID 558165 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1711.922 ; gain = 215.562 ; free physical = 18667 ; free virtual = 37021
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1711.926 ; gain = 215.562 ; free physical = 19356 ; free virtual = 37465
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'MU0_Board' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Board.v:9]
 INFO: [Synth 8-6157] synthesizing module 'BoardV3' [/home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v:10]
@@ -143,10 +143,10 @@ WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_ad
 WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[12]
 WARNING: [Synth 8-3331] design MU0_Control has unconnected port F[3]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1774.672 ; gain = 278.312 ; free physical = 18722 ; free virtual = 37057
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1774.676 ; gain = 278.312 ; free physical = 19364 ; free virtual = 37485
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1786.547 ; gain = 290.188 ; free physical = 18719 ; free virtual = 37054
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1786.551 ; gain = 290.188 ; free physical = 19366 ; free virtual = 37487
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -154,7 +154,7 @@ Start Loading Part and Timing Information
 Loading part: xc7s25ftgb196-1
 INFO: [Device 21-403] Loading part xc7s25ftgb196-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1794.551 ; gain = 298.191 ; free physical = 18718 ; free virtual = 37053
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1794.555 ; gain = 298.191 ; free physical = 19365 ; free virtual = 37485
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'icape_wr_reg' into 'icape_cs_reg' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:31]
 INFO: [Synth 8-5544] ROM "keyrow" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -170,7 +170,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [/home/x93125tp/Ques
 WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
 INFO: [Synth 8-3971] The signal "MU0_Memory:/mem_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.473 ; gain = 323.113 ; free physical = 18645 ; free virtual = 36980
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1819.477 ; gain = 323.113 ; free physical = 19279 ; free virtual = 37400
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -509,7 +509,7 @@ INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[66]' (FD
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (Board1/\Ackie1/return_message_reg[65] )
 INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[112]' (FDE) to 'Board1/Ackie1/return_message_reg[64]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18489 ; free virtual = 36839
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19147 ; free virtual = 37263
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -547,7 +547,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18487 ; free virtual = 36838
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19142 ; free virtual = 37263
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -588,7 +588,7 @@ INFO: [Synth 8-7053] The timing for the instance MEM1/mem_reg_1 (implemented as 
 INFO: [Synth 8-7053] The timing for the instance MEM1/bp_mem_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance MEM1/bp_mem_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18488 ; free virtual = 36840
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19146 ; free virtual = 37267
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -612,13 +612,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18514 ; free virtual = 36860
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19146 ; free virtual = 37268
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18513 ; free virtual = 36859
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19146 ; free virtual = 37268
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -725,25 +725,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18513 ; free virtual = 36859
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19146 ; free virtual = 37267
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18511 ; free virtual = 36857
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19146 ; free virtual = 37267
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18516 ; free virtual = 36862
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19141 ; free virtual = 37268
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18516 ; free virtual = 36862
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19141 ; free virtual = 37268
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -818,18 +818,18 @@ Report Instance Areas:
 |16    |      PCReg    |MU0_Reg12     |    24|
 +------+---------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18516 ; free virtual = 36862
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19141 ; free virtual = 37268
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 88 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18517 ; free virtual = 36863
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.480 ; gain = 461.113 ; free physical = 18517 ; free virtual = 36863
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.477 ; gain = 461.113 ; free physical = 19144 ; free virtual = 37270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1957.484 ; gain = 461.113 ; free physical = 19143 ; free virtual = 37270
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1960.605 ; gain = 0.000 ; free physical = 18588 ; free virtual = 36935
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1960.609 ; gain = 0.000 ; free physical = 19227 ; free virtual = 37348
 INFO: [Netlist 29-17] Analyzing 255 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.445 ; gain = 0.000 ; free physical = 18494 ; free virtual = 36867
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.449 ; gain = 0.000 ; free physical = 19158 ; free virtual = 37280
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 151 instances were transformed.
   AND2 => LUT2: 3 instances
@@ -854,7 +854,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 173 Infos, 15 Warnings, 88 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.445 ; gain = 581.023 ; free physical = 18627 ; free virtual = 37000
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2053.449 ; gain = 581.023 ; free physical = 19290 ; free virtual = 37412
 # read_xdc /cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc
 Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc]
 Finished Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc]
@@ -869,57 +869,57 @@ Running DRC as a precondition to command opt_design
 
 Starting DRC Task
 INFO: [DRC 23-27] Running DRC with 8 threads
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[0] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[0]/Q, and MU01/Datapath/ACCReg/Q_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[0] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[0]__0/Q, and MU01/Datapath/ACCReg/Q_reg[0]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[10] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[10]__0/Q, and MU01/Datapath/ACCReg/Q_reg[10]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[11] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[11]/Q, and MU01/Datapath/ACCReg/Q_reg[11]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[12] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[12]/Q, and MU01/Datapath/ACCReg/Q_reg[12]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[11] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[11]__0/Q, and MU01/Datapath/ACCReg/Q_reg[11]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[12] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[12]__0/Q, and MU01/Datapath/ACCReg/Q_reg[12]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[13] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[13]/Q, and MU01/Datapath/ACCReg/Q_reg[13]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[14] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[14]__0/Q, and MU01/Datapath/ACCReg/Q_reg[14]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[15] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[15]/Q, and MU01/Datapath/ACCReg/Q_reg[15]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[1] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[1]/Q, and MU01/Datapath/ACCReg/Q_reg[1]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[14] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[14]/Q, and MU01/Datapath/ACCReg/Q_reg[14]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[15] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[15]__0/Q, and MU01/Datapath/ACCReg/Q_reg[15]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[1] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[1]__0/Q, and MU01/Datapath/ACCReg/Q_reg[1]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[2] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[2]__0/Q, and MU01/Datapath/ACCReg/Q_reg[2]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[3] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[3]__0/Q, and MU01/Datapath/ACCReg/Q_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[4] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[4]/Q, and MU01/Datapath/ACCReg/Q_reg[4]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[5] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[5]/Q, and MU01/Datapath/ACCReg/Q_reg[5]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[6] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[6]/Q, and MU01/Datapath/ACCReg/Q_reg[6]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[7] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[7]/Q, and MU01/Datapath/ACCReg/Q_reg[7]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[8] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[8]/Q, and MU01/Datapath/ACCReg/Q_reg[8]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[9] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[9]/Q, and MU01/Datapath/ACCReg/Q_reg[9]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[4] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[4]__0/Q, and MU01/Datapath/ACCReg/Q_reg[4]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[5] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[5]__0/Q, and MU01/Datapath/ACCReg/Q_reg[5]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[6] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[6]__0/Q, and MU01/Datapath/ACCReg/Q_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[7] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[7]__0/Q, and MU01/Datapath/ACCReg/Q_reg[7]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[8] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[8]__0/Q, and MU01/Datapath/ACCReg/Q_reg[8]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[9] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[9]__0/Q, and MU01/Datapath/ACCReg/Q_reg[9]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[0] has multiple drivers: MU01/Datapath/IRReg/Q_reg[0]__0/Q, and MU01/Datapath/IRReg/Q_reg[0]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[10] has multiple drivers: MU01/Datapath/IRReg/Q_reg[10]__0/Q, and MU01/Datapath/IRReg/Q_reg[10]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[10] has multiple drivers: MU01/Datapath/IRReg/Q_reg[10]/Q, and MU01/Datapath/IRReg/Q_reg[10]__0/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[11] has multiple drivers: MU01/Datapath/IRReg/Q_reg[11]__0/Q, and MU01/Datapath/IRReg/Q_reg[11]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[12] has multiple drivers: MU01/Datapath/IRReg/Q_reg[12]__0/Q, and MU01/Datapath/IRReg/Q_reg[12]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[13] has multiple drivers: MU01/Datapath/IRReg/Q_reg[13]__0/Q, and MU01/Datapath/IRReg/Q_reg[13]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[14] has multiple drivers: MU01/Datapath/IRReg/Q_reg[14]__0/Q, and MU01/Datapath/IRReg/Q_reg[14]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[15] has multiple drivers: MU01/Datapath/IRReg/Q_reg[15]__0/Q, and MU01/Datapath/IRReg/Q_reg[15]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[1] has multiple drivers: MU01/Datapath/IRReg/Q_reg[1]__0/Q, and MU01/Datapath/IRReg/Q_reg[1]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[2] has multiple drivers: MU01/Datapath/IRReg/Q_reg[2]__0/Q, and MU01/Datapath/IRReg/Q_reg[2]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[3] has multiple drivers: MU01/Datapath/IRReg/Q_reg[3]__0/Q, and MU01/Datapath/IRReg/Q_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[4] has multiple drivers: MU01/Datapath/IRReg/Q_reg[4]__0/Q, and MU01/Datapath/IRReg/Q_reg[4]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[5] has multiple drivers: MU01/Datapath/IRReg/Q_reg[5]__0/Q, and MU01/Datapath/IRReg/Q_reg[5]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[2] has multiple drivers: MU01/Datapath/IRReg/Q_reg[2]/Q, and MU01/Datapath/IRReg/Q_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[3] has multiple drivers: MU01/Datapath/IRReg/Q_reg[3]/Q, and MU01/Datapath/IRReg/Q_reg[3]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[4] has multiple drivers: MU01/Datapath/IRReg/Q_reg[4]/Q, and MU01/Datapath/IRReg/Q_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[5] has multiple drivers: MU01/Datapath/IRReg/Q_reg[5]/Q, and MU01/Datapath/IRReg/Q_reg[5]__0/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[6] has multiple drivers: MU01/Datapath/IRReg/Q_reg[6]__0/Q, and MU01/Datapath/IRReg/Q_reg[6]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[7] has multiple drivers: MU01/Datapath/IRReg/Q_reg[7]__0/Q, and MU01/Datapath/IRReg/Q_reg[7]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[8] has multiple drivers: MU01/Datapath/IRReg/Q_reg[8]__0/Q, and MU01/Datapath/IRReg/Q_reg[8]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[9] has multiple drivers: MU01/Datapath/IRReg/Q_reg[9]__0/Q, and MU01/Datapath/IRReg/Q_reg[9]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[0] has multiple drivers: MU01/Datapath/PCReg/Q_reg[0]__0/Q, and MU01/Datapath/PCReg/Q_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[0] has multiple drivers: MU01/Datapath/PCReg/Q_reg[0]/Q, and MU01/Datapath/PCReg/Q_reg[0]__0/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[10] has multiple drivers: MU01/Datapath/PCReg/Q_reg[10]/Q, and MU01/Datapath/PCReg/Q_reg[10]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[11] has multiple drivers: MU01/Datapath/PCReg/Q_reg[11]__0/Q, and MU01/Datapath/PCReg/Q_reg[11]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[1] has multiple drivers: MU01/Datapath/PCReg/Q_reg[1]__0/Q, and MU01/Datapath/PCReg/Q_reg[1]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[2] has multiple drivers: MU01/Datapath/PCReg/Q_reg[2]__0/Q, and MU01/Datapath/PCReg/Q_reg[2]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[3] has multiple drivers: MU01/Datapath/PCReg/Q_reg[3]__0/Q, and MU01/Datapath/PCReg/Q_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[4] has multiple drivers: MU01/Datapath/PCReg/Q_reg[4]__0/Q, and MU01/Datapath/PCReg/Q_reg[4]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[5] has multiple drivers: MU01/Datapath/PCReg/Q_reg[5]__0/Q, and MU01/Datapath/PCReg/Q_reg[5]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[6] has multiple drivers: MU01/Datapath/PCReg/Q_reg[6]__0/Q, and MU01/Datapath/PCReg/Q_reg[6]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[7] has multiple drivers: MU01/Datapath/PCReg/Q_reg[7]__0/Q, and MU01/Datapath/PCReg/Q_reg[7]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[8] has multiple drivers: MU01/Datapath/PCReg/Q_reg[8]__0/Q, and MU01/Datapath/PCReg/Q_reg[8]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[9] has multiple drivers: MU01/Datapath/PCReg/Q_reg[9]__0/Q, and MU01/Datapath/PCReg/Q_reg[9]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[11] has multiple drivers: MU01/Datapath/PCReg/Q_reg[11]/Q, and MU01/Datapath/PCReg/Q_reg[11]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[1] has multiple drivers: MU01/Datapath/PCReg/Q_reg[1]/Q, and MU01/Datapath/PCReg/Q_reg[1]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[2] has multiple drivers: MU01/Datapath/PCReg/Q_reg[2]/Q, and MU01/Datapath/PCReg/Q_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[3] has multiple drivers: MU01/Datapath/PCReg/Q_reg[3]/Q, and MU01/Datapath/PCReg/Q_reg[3]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[4] has multiple drivers: MU01/Datapath/PCReg/Q_reg[4]/Q, and MU01/Datapath/PCReg/Q_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[5] has multiple drivers: MU01/Datapath/PCReg/Q_reg[5]/Q, and MU01/Datapath/PCReg/Q_reg[5]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[6] has multiple drivers: MU01/Datapath/PCReg/Q_reg[6]/Q, and MU01/Datapath/PCReg/Q_reg[6]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[7] has multiple drivers: MU01/Datapath/PCReg/Q_reg[7]/Q, and MU01/Datapath/PCReg/Q_reg[7]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[8] has multiple drivers: MU01/Datapath/PCReg/Q_reg[8]/Q, and MU01/Datapath/PCReg/Q_reg[8]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[9] has multiple drivers: MU01/Datapath/PCReg/Q_reg[9]/Q, and MU01/Datapath/PCReg/Q_reg[9]__0/Q.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[1] expects both input and output buffering but the buffers are incomplete.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[2] expects both input and output buffering but the buffers are incomplete.
 INFO: [Project 1-461] DRC finished with 44 Errors, 2 Warnings
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2117.477 ; gain = 64.031 ; free physical = 18621 ; free virtual = 36984
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2120.449 ; gain = 67.000 ; free physical = 19281 ; free virtual = 37407
 INFO: [Common 17-83] Releasing license: Implementation
 5 Infos, 2 Warnings, 0 Critical Warnings and 45 Errors encountered.
 opt_design failed
@@ -928,4 +928,4 @@ ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
     while executing
 "opt_design"
     (file "../generated_build_MU0_Board.tcl" line 26)
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 18:12:58 2023...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 17:57:49 2023...

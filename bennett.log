@@ -1130,3 +1130,14 @@
  - 517643 [info] Writing sector 50 total size 65537
  - 517643 [info] Board said: P
  - 517643 [info] Starting warm boot 
+ - 556585 [info] Starting STUMP Loader
+ - 556585 [info] No serial port specified
+ - 556585 [info] Searching for ports...
+ - 556585 [info] Found ttyUSB0
+ - 556585 [info] Found ttyS4
+ - 556585 [info] Found ttyS0
+ - 556585 [info] Using ttyUSB0
+ - 556585 [info] Port ttyUSB0
+ - 556585 [info] File /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board/MU0_Board.bin
+ - 556585 [info] Sectors to upload: 19
+ - 556585 [info] File size bytes: 1241804
