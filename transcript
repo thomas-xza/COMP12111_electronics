@@ -4689,3 +4689,157 @@ run -all
 # [VPI Info] Running Init.** Note: $stop    : ./src/Ex3/MU0_Testbench.v(97)
 #    Time: 16350 ns  Iteration: 0  Instance: /MU0_Testbench
 # Break in Module MU0_Testbench at ./src/Ex3/MU0_Testbench.v line 97
+# End time: 18:40:32 on Nov 17,2023, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 9, Suppressed Warnings: 2
+# vsim -voptargs="+acc" Ex3.MU0_Board GLIB.glbl -L BoardLib -L Ex1 
+# Start time: 18:40:32 on Nov 17,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "AckieV2(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "Uart_S7(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Keyboard(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Segments_Scan(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Board_reset(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.MU0_Board(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
+# Loading work.MU0(fast)
+# Loading work.MU0_Datapath(fast)
+# Loading work.MU0_Reg16(fast)
+# Loading work.MU0_Reg12(fast)
+# Loading work.MU0_Mux16(fast)
+# Loading work.MU0_Mux12(fast)
+# Loading work.MU0_Alu(fast)
+# Loading work.MU0_Flags(fast)
+# Loading work.MU0_Control(fast)
+# Loading unisims.AND4B3(fast)
+# Loading unisims.AND4B1(fast)
+# Loading unisims.AND4(fast)
+# Loading unisims.AND4B2(fast)
+# Loading unisims.BUF(fast)
+# Loading unisims.FDC(fast)
+# Loading unisims.AND2(fast)
+# Loading unisims.INV(fast)
+# Loading unisims.AND2B1(fast)
+# Loading unisims.OR4(fast)
+# Loading unisims.OR2B1(fast)
+# Loading unisims.OR2(fast)
+# Loading unisims.OR3(fast)
+# Loading work.MU0_Memory(fast)
+# Loading GLIB.glbl(fast)
+# Loading unisims.AND3B2(fast)
+# Loading unisims.AND3B1(fast)
+# Loading unisims.AND3(fast)
+# Loading ./liboverwatch.so
+# End time: 18:40:36 on Nov 17,2023, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 3, Suppressed Warnings: 1
+# vsim -voptargs="+acc" Ex3.MU0_Board GLIB.glbl -L BoardLib 
+# Start time: 18:42:22 on Nov 17,2023
+# Loading libssl.so
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "AckieV2(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "Uart_S7(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Keyboard(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Segments_Scan(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "Board_reset(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.MU0_Board(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
+# Loading work.MU0(fast)
+# Loading work.MU0_Datapath(fast)
+# Loading work.MU0_Reg16(fast)
+# Loading work.MU0_Reg12(fast)
+# Loading work.MU0_Mux16(fast)
+# Loading work.MU0_Mux12(fast)
+# Loading work.MU0_Alu(fast)
+# Loading work.MU0_Flags(fast)
+# Loading work.MU0_Control(fast)
+# Loading unisims.AND4B3(fast)
+# Loading unisims.AND4B1(fast)
+# Loading unisims.AND4(fast)
+# Loading unisims.AND4B2(fast)
+# Loading unisims.BUF(fast)
+# Loading unisims.FDC(fast)
+# Loading unisims.AND2(fast)
+# Loading unisims.INV(fast)
+# Loading unisims.AND2B1(fast)
+# Loading unisims.OR4(fast)
+# Loading unisims.OR2B1(fast)
+# Loading unisims.OR2(fast)
+# Loading unisims.OR3(fast)
+# Loading work.MU0_Memory(fast)
+# Loading GLIB.glbl(fast)
+# Loading unisims.AND3B2(fast)
+# Loading unisims.AND3B1(fast)
+# Loading unisims.AND3(fast)
+# Loading ./liboverwatch.so
+# End time: 18:43:17 on Nov 17,2023, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 3, Suppressed Warnings: 1
+# vsim -voptargs="+acc" Ex3.MU0_Board GLIB.glbl -L BoardLib 
+# Start time: 18:43:17 on Nov 17,2023
+# Loading libssl.so
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.MU0_Board(fast)
+# Loading BoardLib.BoardV3(fast)
+# Loading BoardLib.Board_reset(fast)
+# Loading unisims.ICAPE2(fast)
+# Loading unisims.SIM_CONFIGE2(fast)
+# Loading BoardLib.Clocks(fast)
+# Loading BoardLib.Keyboard(fast)
+# Loading BoardLib.Segments_Scan(fast)
+# Loading BoardLib.Uart_S7(fast)
+# Loading BoardLib.AckieV2(fast)
+# Loading work.MU0(fast)
+# Loading work.MU0_Datapath(fast)
+# Loading work.MU0_Reg16(fast)
+# Loading work.MU0_Reg12(fast)
+# Loading work.MU0_Mux16(fast)
+# Loading work.MU0_Mux12(fast)
+# Loading work.MU0_Alu(fast)
+# Loading work.MU0_Flags(fast)
+# Loading work.MU0_Control(fast)
+# Loading unisims.AND4B3(fast)
+# Loading unisims.AND4B1(fast)
+# Loading unisims.AND4(fast)
+# Loading unisims.AND4B2(fast)
+# Loading unisims.BUF(fast)
+# Loading unisims.FDC(fast)
+# Loading unisims.AND2(fast)
+# Loading unisims.INV(fast)
+# Loading unisims.AND2B1(fast)
+# Loading unisims.OR4(fast)
+# Loading unisims.OR2B1(fast)
+# Loading unisims.OR2(fast)
+# Loading unisims.OR3(fast)
+# Loading work.MU0_Memory(fast)
+# Loading GLIB.glbl(fast)
+# Loading unisims.AND3B2(fast)
+# Loading unisims.AND3B1(fast)
+# Loading unisims.AND3(fast)
+# Loading ./liboverwatch.so
+# End time: 18:44:55 on Nov 17,2023, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 0

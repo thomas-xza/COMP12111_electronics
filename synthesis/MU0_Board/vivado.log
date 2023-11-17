@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri Nov 17 18:12:14 2023
-# Process ID: 577297
+# Start of session at: Fri Nov 17 18:40:36 2023
+# Process ID: 610472
 # Current directory: /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board
 # Command line: vivado -mode batch -source ../generated_build_MU0_Board.tcl
 # Log file: /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board/vivado.log
@@ -35,9 +35,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 577574 
+INFO: Helper process launched with PID 610681 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1711.922 ; gain = 215.562 ; free physical = 18667 ; free virtual = 37021
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1711.926 ; gain = 215.562 ; free physical = 18637 ; free virtual = 37049
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'MU0_Board' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Board.v:9]
 INFO: [Synth 8-6157] synthesizing module 'BoardV3' [/home/x93125tp/Questa/COMP12111/src/BoardLib/BoardV3.v:10]
@@ -143,10 +143,10 @@ WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_ad
 WARNING: [Synth 8-3331] design MU0_Memory has unconnected port breakpoint_mem_adr[12]
 WARNING: [Synth 8-3331] design MU0_Control has unconnected port F[3]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1774.672 ; gain = 278.312 ; free physical = 18722 ; free virtual = 37057
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1774.676 ; gain = 278.312 ; free physical = 18654 ; free virtual = 37070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1786.547 ; gain = 290.188 ; free physical = 18719 ; free virtual = 37054
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1786.551 ; gain = 290.188 ; free physical = 18656 ; free virtual = 37071
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -154,7 +154,7 @@ Start Loading Part and Timing Information
 Loading part: xc7s25ftgb196-1
 INFO: [Device 21-403] Loading part xc7s25ftgb196-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1794.551 ; gain = 298.191 ; free physical = 18718 ; free virtual = 37053
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1794.555 ; gain = 298.191 ; free physical = 18654 ; free virtual = 37068
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'icape_wr_reg' into 'icape_cs_reg' [/home/x93125tp/Questa/COMP12111/src/BoardLib/Board_reset.v:31]
 INFO: [Synth 8-5544] ROM "keyrow" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -166,11 +166,9 @@ INFO: [Synth 8-5546] ROM "bp_mem_write_en" won't be mapped to RAM because it is 
 INFO: [Synth 8-5546] ROM "bp_mem_data_write" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "bp_mem_write_en" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Alu.v:34]
-WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
 INFO: [Synth 8-3971] The signal "MU0_Memory:/mem_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1819.473 ; gain = 323.113 ; free physical = 18645 ; free virtual = 36980
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1819.477 ; gain = 323.113 ; free physical = 18576 ; free virtual = 36993
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -202,8 +200,9 @@ Detailed RTL Component Info :
 	               23 Bit    Registers := 1     
 	               19 Bit    Registers := 2     
 	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 6     
+	               16 Bit    Registers := 8     
 	               15 Bit    Registers := 7     
+	               12 Bit    Registers := 1     
 	               11 Bit    Registers := 1     
 	                8 Bit    Registers := 7     
 	                6 Bit    Registers := 1     
@@ -229,11 +228,11 @@ Detailed RTL Component Info :
 	  25 Input     19 Bit        Muxes := 1     
 	   3 Input     17 Bit        Muxes := 1     
 	   7 Input     17 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 7     
 	   4 Input     16 Bit        Muxes := 3     
 	   2 Input     15 Bit        Muxes := 18    
 	   9 Input     15 Bit        Muxes := 6     
-	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
 	   2 Input     11 Bit        Muxes := 3     
 	   9 Input     11 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 13    
@@ -375,6 +374,18 @@ Detailed RTL Component Info :
 	  24 Input      1 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 8     
 	   3 Input      1 Bit        Muxes := 2     
+Module MU0_Reg16 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module MU0_Reg12 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
 Module MU0_Mux16 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -509,7 +520,7 @@ INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[66]' (FD
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (Board1/\Ackie1/return_message_reg[65] )
 INFO: [Synth 8-3886] merging instance 'Board1/Ackie1/return_message_reg[112]' (FDE) to 'Board1/Ackie1/return_message_reg[64]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18489 ; free virtual = 36839
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18376 ; free virtual = 36827
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -547,7 +558,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18487 ; free virtual = 36838
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18399 ; free virtual = 36828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -588,7 +599,7 @@ INFO: [Synth 8-7053] The timing for the instance MEM1/mem_reg_1 (implemented as 
 INFO: [Synth 8-7053] The timing for the instance MEM1/bp_mem_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance MEM1/bp_mem_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18488 ; free virtual = 36840
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18401 ; free virtual = 36830
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -612,13 +623,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18514 ; free virtual = 36860
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18402 ; free virtual = 36828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18513 ; free virtual = 36859
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18402 ; free virtual = 36828
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -626,124 +637,36 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[15] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[15]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[15] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[15]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[14] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[14]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[14] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[14]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[13] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[13]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[13] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[13]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[12] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[12]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[12] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[12]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[11] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[11]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[11] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[11]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[10] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[10]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[10] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[10]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[9] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[9]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[9] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[9]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[8] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[8]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[8] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[8]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[7] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[7]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[7] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[7]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[6] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[6]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[6] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[6]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[5] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[5]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[5] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[5]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[4] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[4]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[4] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[4]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[3] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[3]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[3] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[3]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[2] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[2]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[2] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[2]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[1] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[1]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[1] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[1]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[0] with 1st driver pin 'MU01/Datapath/ACCReg/Q_reg[0]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Acc[0] with 2nd driver pin 'MU01/Datapath/ACCReg/Q_reg[0]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[11] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[11]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[11] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[11]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[10] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[10]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[10] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[10]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[9] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[9]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[9] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[9]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[8] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[8]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[8] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[8]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[7] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[7]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[7] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[7]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[6] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[6]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[6] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[6]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[5] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[5]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[5] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[5]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[4] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[4]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[4] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[4]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[3] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[3]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[3] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[3]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[2] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[2]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[2] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[2]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[1] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[1]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[1] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[1]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[0] with 1st driver pin 'MU01/Datapath/PCReg/Q_reg[0]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/PC[0] with 2nd driver pin 'MU01/Datapath/PCReg/Q_reg[0]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg12.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/F[3] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[15]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/F[3] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[15]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/F[2] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[14]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/F[2] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[14]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/F[1] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[13]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/F[1] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[13]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/F[0] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[12]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/F[0] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[12]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[11] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[11]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[11] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[11]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[10] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[10]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[10] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[10]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[9] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[9]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[9] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[9]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[8] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[8]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[8] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[8]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[7] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[7]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[7] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[7]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[6] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[6]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[6] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[6]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[5] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[5]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[5] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[5]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[4] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[4]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[4] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[4]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[3] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[3]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[3] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[3]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[2] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[2]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[2] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[2]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[1] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[1]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[1] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[1]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[0] with 1st driver pin 'MU01/Datapath/IRReg/Q_reg[0]/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:43]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MU01/Datapath/IR[0] with 2nd driver pin 'MU01/Datapath/IRReg/Q_reg[0]__0/Q' [/home/x93125tp/Questa/COMP12111/src/Ex3/MU0_Reg16.v:31]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|       44|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18513 ; free virtual = 36859
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18400 ; free virtual = 36829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18511 ; free virtual = 36857
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18400 ; free virtual = 36829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18516 ; free virtual = 36862
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18400 ; free virtual = 36829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18516 ; free virtual = 36862
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18400 ; free virtual = 36829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -769,18 +692,18 @@ Report Cell Usage:
 |8     |AND4B2    |     3|
 |9     |AND4B3    |     1|
 |10    |BUF       |     5|
-|11    |BUFG      |     5|
+|11    |BUFG      |     4|
 |12    |CARRY4    |    62|
 |13    |ICAPE2    |     1|
 |14    |INV       |     1|
 |15    |LUT1      |    49|
-|16    |LUT2      |   122|
-|17    |LUT3      |   168|
-|18    |LUT4      |   107|
-|19    |LUT5      |   215|
-|20    |LUT6      |   583|
-|21    |MUXF7     |    36|
-|22    |MUXF8     |     3|
+|16    |LUT2      |   139|
+|17    |LUT3      |   158|
+|18    |LUT4      |   162|
+|19    |LUT5      |   201|
+|20    |LUT6      |   616|
+|21    |MUXF7     |    32|
+|22    |MUXF8     |     7|
 |23    |OR2       |     1|
 |24    |OR2B1     |     2|
 |25    |OR3       |     1|
@@ -791,47 +714,46 @@ Report Cell Usage:
 |30    |FDC       |     1|
 |31    |FDRE      |   665|
 |32    |FDSE      |    36|
-|33    |LD        |    44|
-|34    |IBUF      |    13|
-|35    |OBUF      |    56|
+|33    |IBUF      |    13|
+|34    |OBUF      |    56|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+---------------+--------------+------+
 |      |Instance       |Module        |Cells |
 +------+---------------+--------------+------+
-|1     |top            |              |  2275|
-|2     |  Board1       |BoardV3       |  1187|
-|3     |    Ackie1     |AckieV2       |   881|
+|1     |top            |              |  2311|
+|2     |  Board1       |BoardV3       |  1178|
+|3     |    Ackie1     |AckieV2       |   868|
 |4     |    ClocksI1   |Clocks        |    42|
-|5     |    KeyB1      |Keyboard      |    50|
+|5     |    KeyB1      |Keyboard      |    54|
 |6     |    Rst1       |Board_reset   |    55|
 |7     |    SS1        |Segments_Scan |    33|
 |8     |    U1         |Uart_S7       |   126|
-|9     |  MEM1         |MU0_Memory    |   432|
-|10    |  MU01         |MU0           |   581|
-|11    |    Control    |MU0_Control   |   405|
-|12    |    Datapath   |MU0_Datapath  |    92|
-|13    |      ACCReg   |MU0_Reg16     |    32|
-|14    |      IRReg    |MU0_Reg16_0   |    32|
-|15    |      Main_ALU |MU0_Alu       |     4|
-|16    |      PCReg    |MU0_Reg12     |    24|
+|9     |  MEM1         |MU0_Memory    |   443|
+|10    |  MU01         |MU0           |   616|
+|11    |    Control    |MU0_Control   |    26|
+|12    |    Datapath   |MU0_Datapath  |   503|
+|13    |      ACCReg   |MU0_Reg16     |    40|
+|14    |      IRReg    |MU0_Reg16_0   |   415|
+|15    |      Main_ALU |MU0_Alu       |     8|
+|16    |      PCReg    |MU0_Reg12     |    40|
 +------+---------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18516 ; free virtual = 36862
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18400 ; free virtual = 36829
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 88 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.473 ; gain = 461.113 ; free physical = 18517 ; free virtual = 36863
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1957.480 ; gain = 461.113 ; free physical = 18517 ; free virtual = 36863
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.445 ; gain = 461.082 ; free physical = 18404 ; free virtual = 36832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1957.453 ; gain = 461.082 ; free physical = 18404 ; free virtual = 36832
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1960.605 ; gain = 0.000 ; free physical = 18588 ; free virtual = 36935
-INFO: [Netlist 29-17] Analyzing 255 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1960.578 ; gain = 0.000 ; free physical = 18482 ; free virtual = 36911
+INFO: [Netlist 29-17] Analyzing 211 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.445 ; gain = 0.000 ; free physical = 18494 ; free virtual = 36867
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2052.418 ; gain = 0.000 ; free physical = 18412 ; free virtual = 36842
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 151 instances were transformed.
+  A total of 107 instances were transformed.
   AND2 => LUT2: 3 instances
   AND2B1 => LUT2: 2 instances
   AND3 => LUT3: 16 instances
@@ -844,7 +766,6 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   BUF => LUT1: 5 instances
   FDC => FDCE: 1 instance 
   INV => LUT1: 1 instance 
-  LD => LDCE: 44 instances
   OR2 => LUT2: 1 instance 
   OR2B1 => LUT2: 2 instances
   OR3 => LUT3: 1 instance 
@@ -852,9 +773,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM128X1D => RAM128X1D (inverted pins: WCLK) (MUXF7(x2), RAMD64E(x4)): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-173 Infos, 15 Warnings, 88 Critical Warnings and 0 Errors encountered.
+173 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.445 ; gain = 581.023 ; free physical = 18627 ; free virtual = 37000
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 2052.418 ; gain = 579.992 ; free physical = 18546 ; free virtual = 36976
 # read_xdc /cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc
 Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc]
 Finished Parsing XDC File [/cadtools5/questa_custom/resource/comp12111/BoardV3_timing.xdc]
@@ -869,63 +790,981 @@ Running DRC as a precondition to command opt_design
 
 Starting DRC Task
 INFO: [DRC 23-27] Running DRC with 8 threads
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[0] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[0]/Q, and MU01/Datapath/ACCReg/Q_reg[0]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[10] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[10]__0/Q, and MU01/Datapath/ACCReg/Q_reg[10]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[11] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[11]/Q, and MU01/Datapath/ACCReg/Q_reg[11]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[12] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[12]/Q, and MU01/Datapath/ACCReg/Q_reg[12]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[13] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[13]/Q, and MU01/Datapath/ACCReg/Q_reg[13]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[14] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[14]__0/Q, and MU01/Datapath/ACCReg/Q_reg[14]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[15] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[15]/Q, and MU01/Datapath/ACCReg/Q_reg[15]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[1] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[1]/Q, and MU01/Datapath/ACCReg/Q_reg[1]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[2] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[2]__0/Q, and MU01/Datapath/ACCReg/Q_reg[2]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[3] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[3]__0/Q, and MU01/Datapath/ACCReg/Q_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[4] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[4]/Q, and MU01/Datapath/ACCReg/Q_reg[4]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[5] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[5]/Q, and MU01/Datapath/ACCReg/Q_reg[5]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[6] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[6]/Q, and MU01/Datapath/ACCReg/Q_reg[6]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[7] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[7]/Q, and MU01/Datapath/ACCReg/Q_reg[7]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[8] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[8]/Q, and MU01/Datapath/ACCReg/Q_reg[8]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/ACCReg/Q[9] has multiple drivers: MU01/Datapath/ACCReg/Q_reg[9]/Q, and MU01/Datapath/ACCReg/Q_reg[9]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[0] has multiple drivers: MU01/Datapath/IRReg/Q_reg[0]__0/Q, and MU01/Datapath/IRReg/Q_reg[0]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[10] has multiple drivers: MU01/Datapath/IRReg/Q_reg[10]__0/Q, and MU01/Datapath/IRReg/Q_reg[10]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[11] has multiple drivers: MU01/Datapath/IRReg/Q_reg[11]__0/Q, and MU01/Datapath/IRReg/Q_reg[11]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[12] has multiple drivers: MU01/Datapath/IRReg/Q_reg[12]__0/Q, and MU01/Datapath/IRReg/Q_reg[12]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[13] has multiple drivers: MU01/Datapath/IRReg/Q_reg[13]__0/Q, and MU01/Datapath/IRReg/Q_reg[13]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[14] has multiple drivers: MU01/Datapath/IRReg/Q_reg[14]__0/Q, and MU01/Datapath/IRReg/Q_reg[14]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[15] has multiple drivers: MU01/Datapath/IRReg/Q_reg[15]__0/Q, and MU01/Datapath/IRReg/Q_reg[15]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[1] has multiple drivers: MU01/Datapath/IRReg/Q_reg[1]__0/Q, and MU01/Datapath/IRReg/Q_reg[1]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[2] has multiple drivers: MU01/Datapath/IRReg/Q_reg[2]__0/Q, and MU01/Datapath/IRReg/Q_reg[2]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[3] has multiple drivers: MU01/Datapath/IRReg/Q_reg[3]__0/Q, and MU01/Datapath/IRReg/Q_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[4] has multiple drivers: MU01/Datapath/IRReg/Q_reg[4]__0/Q, and MU01/Datapath/IRReg/Q_reg[4]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[5] has multiple drivers: MU01/Datapath/IRReg/Q_reg[5]__0/Q, and MU01/Datapath/IRReg/Q_reg[5]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[6] has multiple drivers: MU01/Datapath/IRReg/Q_reg[6]__0/Q, and MU01/Datapath/IRReg/Q_reg[6]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[7] has multiple drivers: MU01/Datapath/IRReg/Q_reg[7]__0/Q, and MU01/Datapath/IRReg/Q_reg[7]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[8] has multiple drivers: MU01/Datapath/IRReg/Q_reg[8]__0/Q, and MU01/Datapath/IRReg/Q_reg[8]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/IRReg/UNCONN_OUT[9] has multiple drivers: MU01/Datapath/IRReg/Q_reg[9]__0/Q, and MU01/Datapath/IRReg/Q_reg[9]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[0] has multiple drivers: MU01/Datapath/PCReg/Q_reg[0]__0/Q, and MU01/Datapath/PCReg/Q_reg[0]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[10] has multiple drivers: MU01/Datapath/PCReg/Q_reg[10]/Q, and MU01/Datapath/PCReg/Q_reg[10]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[11] has multiple drivers: MU01/Datapath/PCReg/Q_reg[11]__0/Q, and MU01/Datapath/PCReg/Q_reg[11]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[1] has multiple drivers: MU01/Datapath/PCReg/Q_reg[1]__0/Q, and MU01/Datapath/PCReg/Q_reg[1]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[2] has multiple drivers: MU01/Datapath/PCReg/Q_reg[2]__0/Q, and MU01/Datapath/PCReg/Q_reg[2]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[3] has multiple drivers: MU01/Datapath/PCReg/Q_reg[3]__0/Q, and MU01/Datapath/PCReg/Q_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[4] has multiple drivers: MU01/Datapath/PCReg/Q_reg[4]__0/Q, and MU01/Datapath/PCReg/Q_reg[4]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[5] has multiple drivers: MU01/Datapath/PCReg/Q_reg[5]__0/Q, and MU01/Datapath/PCReg/Q_reg[5]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[6] has multiple drivers: MU01/Datapath/PCReg/Q_reg[6]__0/Q, and MU01/Datapath/PCReg/Q_reg[6]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[7] has multiple drivers: MU01/Datapath/PCReg/Q_reg[7]__0/Q, and MU01/Datapath/PCReg/Q_reg[7]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[8] has multiple drivers: MU01/Datapath/PCReg/Q_reg[8]__0/Q, and MU01/Datapath/PCReg/Q_reg[8]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net MU01/Datapath/PCReg/UNCONN_OUT[9] has multiple drivers: MU01/Datapath/PCReg/Q_reg[9]__0/Q, and MU01/Datapath/PCReg/Q_reg[9]/Q.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[1] expects both input and output buffering but the buffers are incomplete.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[2] expects both input and output buffering but the buffers are incomplete.
-INFO: [Project 1-461] DRC finished with 44 Errors, 2 Warnings
+INFO: [Project 1-461] DRC finished with 0 Errors, 2 Warnings
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
-ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2117.477 ; gain = 64.031 ; free physical = 18621 ; free virtual = 36984
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2119.418 ; gain = 67.000 ; free physical = 18537 ; free virtual = 36967
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 37fe9383
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2367.340 ; gain = 247.922 ; free physical = 18249 ; free virtual = 36678
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 50 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e4a0626d
+
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2499.309 ; gain = 0.000 ; free physical = 18117 ; free virtual = 36546
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 6 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 189b81832
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2499.309 ; gain = 0.000 ; free physical = 18117 ; free virtual = 36546
+INFO: [Opt 31-389] Phase Constant propagation created 10 cells and removed 46 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 10b9ef0ac
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2499.309 ; gain = 0.000 ; free physical = 18118 ; free virtual = 36546
+INFO: [Opt 31-389] Phase Sweep created 11 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 10b9ef0ac
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2499.309 ; gain = 0.000 ; free physical = 18118 ; free virtual = 36546
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 10b9ef0ac
+
+Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2499.309 ; gain = 0.000 ; free physical = 18118 ; free virtual = 36546
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 127ce9f21
+
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2499.309 ; gain = 0.000 ; free physical = 18118 ; free virtual = 36546
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               6  |                                              0  |
+|  Constant propagation         |              10  |              46  |                                              0  |
+|  Sweep                        |              11  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2499.309 ; gain = 0.000 ; free physical = 18118 ; free virtual = 36546
+Ending Logic Optimization Task | Checksum: 60261902
+
+Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2499.309 ; gain = 0.000 ; free physical = 18118 ; free virtual = 36546
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.869 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 6
+Ending PowerOpt Patch Enables Task | Checksum: 60261902
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2854.086 ; gain = 0.000 ; free physical = 18105 ; free virtual = 36535
+Ending Power Optimization Task | Checksum: 60261902
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.60 . Memory (MB): peak = 2854.086 ; gain = 354.777 ; free physical = 18109 ; free virtual = 36539
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 60261902
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2854.086 ; gain = 0.000 ; free physical = 18109 ; free virtual = 36539
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2854.086 ; gain = 0.000 ; free physical = 18109 ; free virtual = 36539
+Ending Netlist Obfuscation Task | Checksum: 60261902
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2854.086 ; gain = 0.000 ; free physical = 18109 ; free virtual = 36539
 INFO: [Common 17-83] Releasing license: Implementation
-5 Infos, 2 Warnings, 0 Critical Warnings and 45 Errors encountered.
-opt_design failed
-ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+26 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2854.086 ; gain = 801.668 ; free physical = 18110 ; free virtual = 36540
+# power_opt_design -verbose
+Command: power_opt_design -verbose
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Begin power optimizations | Checksum: 60261902
+WARNING: [Pwropt 34-141] Param pwropt.runOnPwroptedDesign is set. Skipped checking if power_opt_design has been performed earlier.
+INFO: [Pwropt 34-50] Optimizing power for module MU0_Board ...
+INFO: [Pwropt 34-207] Design is in partially-placed state. Running in partially-placed mode.
+Pre-processing: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2854.086 ; gain = 0.000 ; free physical = 18054 ; free virtual = 36484
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.869 | TNS=0.000 |
+PSMgr Creation: Time (s): cpu = 00:00:00.81 ; elapsed = 00:00:00.29 . Memory (MB): peak = 2854.086 ; gain = 0.000 ; free physical = 18044 ; free virtual = 36474
+Running Vector-less Activity Propagation...
+IDT: Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2854.086 ; gain = 0.000 ; free physical = 17968 ; free virtual = 36398
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
-    while executing
-"opt_design"
-    (file "../generated_build_MU0_Board.tcl" line 26)
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 18:12:58 2023...
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-215] Skipped ODC enables for 28 nets in BRAM flops in bus-based analysis.
+INFO: [Pwropt 34-214] Skipped ODC enables for 78 nets in BRAM address flops in bus-based analysis.
+ODC: Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2858.102 ; gain = 4.016 ; free physical = 18024 ; free virtual = 36454
+Power optimization passes: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.86 . Memory (MB): peak = 2858.102 ; gain = 4.016 ; free physical = 18022 ; free virtual = 36452
+
+INFO: [Pwropt 34-77] Creating clock enable groups ...
+INFO: [Pwropt 34-96] Including small groups for filtering based on enable probabilities.
+ Done
+Grouping enables: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18092 ; free virtual = 36523
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-26] Patching clock gating enable signals for design MU0_Board ...
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+INFO: [Pwropt 34-100] Patcher adaptive clustering : original flop clusters 47 accepted clusters 47
+
+Number of Slice Registers augmented: 60 newly gated: 41 Total: 713
+Number of SRLs augmented: 0  newly gated: 0 Total: 0
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 6
+Number of Flops added for Enable Generation: 0
+
+Flops dropped: 0/109 RAMS dropped: 0/0 Clusters dropped: 0/47 Enables dropped: 0
+Patching clock gating enables finished successfully.
+Ending PowerOpt Patch Enables Task | Checksum: 129a1016c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.52 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18027 ; free virtual = 36458
+INFO: [Pwropt 34-30] Power optimization finished successfully.
+End power optimizations | Checksum: 129a1016c
+Power optimization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2858.102 ; gain = 4.016 ; free physical = 18104 ; free virtual = 36534
+INFO: [Pwropt 34-198] Malloced memory gain at end of power optimization: 1916776 bytes
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell Board1/Ackie1/cpu_pause_reg_CE_cooolgate_en_gate_81 driving pin Board1/Ackie1/steps_remain[31]_i_4/O of Board1/Ackie1/steps_remain[31]_i_4.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 10650dec7
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18105 ; free virtual = 36536
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 2 BUFG optimization | Checksum: 10650dec7
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18105 ; free virtual = 36536
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 3 Remap
+INFO: [Opt 31-51] Remap created LUT4 cell: MU01/I5[4]_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[4].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[4].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[4].
+INFO: [Opt 31-51] Remap created LUT4 cell: MU01/I5[6]_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[6].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[6].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[6].
+INFO: [Opt 31-51] Remap created LUT4 cell: MU01/I5[5]_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[5].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[5].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[5].
+INFO: [Opt 31-51] Remap created LUT4 cell: MU01/Control/I4_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: MU01/Control/ID5.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/Control/I4.
+INFO: [Opt 31-51] Remap created LUT6 cell: MU01/Control/I9_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: MU01/Control/ID4.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/Control/I7.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/Control/I9.
+INFO: [Opt 31-51] Remap created LUT3 cell: MU01/Control/I12_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/Control/I13.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/Control/I12.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_31_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_30.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/U1/rx_byte_reg[0]_CE_cooolgate_en_gate_31.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_65_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_64.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/U1/tx_state_reg[0]_CE_cooolgate_en_gate_65.
+INFO: [Opt 31-51] Remap created LUT6 cell: MU01/Control/I16_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: MU01/Control/ID1.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/Control/I15.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: MU01/Control/ID2.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/Control/I17.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: MU01/Control/ID3.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: MU01/Control/I16.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/U1/tx_reg_CE_cooolgate_en_gate_113_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/U1/tx_reg_CE_cooolgate_en_gate_112.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/U1/tx_reg_CE_cooolgate_en_gate_113.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_70_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_69.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/U1/rx_state_reg[0]_CE_cooolgate_en_gate_70.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_1.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_2.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_3.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_4.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_5.
+INFO: [Opt 31-51] Remap created LUT3 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_6.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_7.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_8.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_9.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_10.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_11.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_12.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_13.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[7]_i_2_LOPT_REMAP_14.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[7]_i_17.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[7]_i_10.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[7]_i_18.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[7]_i_11.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[7]_i_4.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[7].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[7].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[7].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[15].
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[7]_i_6.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: MEM1/byte_out[7]_i_20.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[7]_i_13.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[7]_i_7.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[7]_i_23.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[7]_i_15.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[7]_i_8.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[7]_i_2.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_1.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_2.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_3.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_4.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_5.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_6.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_7.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_8.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_9.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_10.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_11.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_12.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[3]_i_1_LOPT_REMAP_13.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[3]_i_9.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: MEM1/byte_out[3]_i_10.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: MEM1/byte_out[3]_i_16.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[3]_i_11.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[3]_i_5.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[3]_i_2.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[11].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[11].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[11].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[3].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[3].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[3].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/byte_out[3]_i_3.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[3]_i_14.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[3]_i_7.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[3]_i_15.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[3]_i_8.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[3]_i_4.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[3]_i_1.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_1.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_2.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_3.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_4.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_5.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_6.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_7.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_8.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_9.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_10.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_11.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_12.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_13.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_14.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_15.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_16.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[1]_i_1_LOPT_REMAP_17.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[1]_i_12.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[1]_i_5.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[1]_i_13.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[1]_i_6.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[1]_i_2.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: MEM1/byte_out[1]_i_15.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: MEM1/byte_out[1]_i_16.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[1]_i_7.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: MEM1/byte_out[1]_i_25.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[1]_i_17.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: MEM1/byte_out[1]_i_18.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: MEM1/byte_out[1]_i_19.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[1]_i_9.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[1]_i_3.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[1].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[1].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I3[1].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I4[1].
+INFO: [Opt 31-50]   Mapped from LUT4 cell: MU01/I5[1].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[9].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[9].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[9].
+INFO: [Opt 31-50]   Mapped from LUT6 cell: MU01/byte_out[1]_i_4.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[1]_i_1.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[2]_i_1_LOPT_REMAP.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[2]_i_1_LOPT_REMAP_1.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[2]_i_1_LOPT_REMAP_2.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[2]_i_1_LOPT_REMAP_3.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[2]_i_1_LOPT_REMAP_4.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[2]_i_1_LOPT_REMAP_5.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[2]_i_1_LOPT_REMAP_6.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[2]_i_1_LOPT_REMAP_7.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[2]_i_4.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: MEM1/byte_out[2]_i_16.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[2]_i_10.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[2]_i_5.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[2].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[2].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[2].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[10].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[10].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[10].
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[2]_i_6.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[2]_i_1.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/proc_clk_delay_reg[0]_CE_cooolgate_en_gate_49_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/proc_clk_delay_reg[0]_CE_cooolgate_en_gate_48.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/Ackie1/proc_clk_delay_reg[0]_CE_cooolgate_en_gate_49.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/steps_remain_reg[10]_CE_cooolgate_en_gate_2_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/steps_remain_reg[10]_CE_cooolgate_en_gate_1.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/Ackie1/steps_remain_reg[10]_CE_cooolgate_en_gate_2.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_1.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_2.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_3.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_4.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_5.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_6.
+INFO: [Opt 31-51] Remap created LUT5 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_7.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_8.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_9.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_10.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_11.
+INFO: [Opt 31-51] Remap created LUT6 cell: Board1/Ackie1/byte_out[0]_i_1_LOPT_REMAP_12.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[0].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[0].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I3[0].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I4[0].
+INFO: [Opt 31-50]   Mapped from LUT4 cell: MU01/I5[0].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I1[8].
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MU01/I2[8].
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MU01/I5[8].
+INFO: [Opt 31-50]   Mapped from LUT6 cell: MU01/byte_out[0]_i_2.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: MEM1/byte_out[0]_i_11.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: MEM1/byte_out[0]_i_12.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: MEM1/byte_out[0]_i_19.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[0]_i_13.
+INFO: [Opt 31-50]   Mapped from LUT5 cell: Board1/Ackie1/byte_out[0]_i_7.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[0]_i_4.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/byte_out[0]_i_16.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[0]_i_9.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[0]_i_6.
+INFO: [Opt 31-50]   Mapped from LUT6 cell: Board1/Ackie1/byte_out[0]_i_1.
+INFO: [Opt 31-51] Remap created LUT4 cell: Board1/Ackie1/get_counter_reg[5]_CE_cooolgate_en_gate_121_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT4 cell: Board1/Ackie1/get_counter_reg[5]_CE_cooolgate_en_gate_120.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/Ackie1/get_counter_reg[5]_CE_cooolgate_en_gate_121.
+INFO: [Opt 31-51] Remap created LUT3 cell: Board1/Ackie1/get_counter_reg[9]_CE_cooolgate_en_gate_117_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: Board1/Ackie1/get_counter_reg[9]_CE_cooolgate_en_gate_116.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: Board1/Ackie1/get_counter_reg[9]_CE_cooolgate_en_gate_117.
+INFO: [Opt 31-51] Remap created LUT3 cell: MEM1/buzzer_time_step_count_reg[0]_CE_cooolgate_en_gate_60_LOPT_REMAP.
+INFO: [Opt 31-50]   Mapped from LUT3 cell: MEM1/buzzer_time_step_count_reg[0]_CE_cooolgate_en_gate_59.
+INFO: [Opt 31-50]   Mapped from LUT2 cell: MEM1/buzzer_time_step_count_reg[0]_CE_cooolgate_en_gate_60.
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+Phase 3 Remap | Checksum: 55b6ff85
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18104 ; free virtual = 36535
+INFO: [Opt 31-389] Phase Remap created 84 cells and removed 131 cells
+
+Phase 4 Post Processing Netlist
+Phase 4 Post Processing Netlist | Checksum: d797d587
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18104 ; free virtual = 36535
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+---------------------------------------------------------------------------------------------------------------------
+|  Phase                    |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+---------------------------------------------------------------------------------------------------------------------
+|  Retarget                 |               0  |               1  |                                              0  |
+|  BUFG optimization        |               0  |               0  |                                              0  |
+|  Remap                    |              84  |             131  |                                              0  |
+|  Post Processing Netlist  |               0  |               0  |                                              0  |
+---------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: bd98b8ac
+
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18104 ; free virtual = 36535
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18104 ; free virtual = 36535
+Ending Netlist Obfuscation Task | Checksum: bd98b8ac
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18104 ; free virtual = 36535
+INFO: [Common 17-83] Releasing license: Implementation
+245 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+power_opt_design completed successfully
+# place_design -directive Explore
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[10] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[11] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[12] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[13] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[14] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[3] (net: MEM1/mem_reg_1_11) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[4] (net: MEM1/proc_addr[1]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[5] (net: MEM1/proc_addr[2]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[6] (net: MEM1/proc_addr[3]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[7] (net: MEM1/proc_addr[4]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[8] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[9] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/WEBWE[0] (net: MEM1/Wr) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[10] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[11] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[12] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[13] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[14] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[8] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[9] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[10] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[11] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[12] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[13] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[2] (net: MEM1/proc_addr[0]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[3] (net: MEM1/ADDRBWRADDR[0]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[4] (net: MEM1/proc_addr[2]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[5] (net: MEM1/proc_addr[3]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[6] (net: MEM1/proc_addr[4]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[7] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[8] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[9] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[1] expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port ftdi[2] expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 35 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18084 ; free virtual = 36529
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 4b38bd88
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18084 ; free virtual = 36529
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18084 ; free virtual = 36530
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	Clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y0
+	Clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1c02b8b24
+
+Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18082 ; free virtual = 36530
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 26513dc3a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18082 ; free virtual = 36530
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 26513dc3a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18082 ; free virtual = 36530
+Phase 1 Placer Initialization | Checksum: 26513dc3a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18082 ; free virtual = 36530
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 295365595
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.63 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18072 ; free virtual = 36520
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 116 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 46 nets or cells. Created 0 new cell, deleted 46 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18041 ; free virtual = 36522
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             46  |                    46  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             46  |                    46  |           0  |           3  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 12e312209
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18041 ; free virtual = 36522
+Phase 2.2 Global Placement Core | Checksum: 11f67343d
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18041 ; free virtual = 36522
+Phase 2 Global Placement | Checksum: 11f67343d
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18041 ; free virtual = 36522
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 162cbbb1b
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18040 ; free virtual = 36521
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 189a1b3b6
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18040 ; free virtual = 36521
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 14ac004e2
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18040 ; free virtual = 36521
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 12280afd6
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18040 ; free virtual = 36521
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1b621e665
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18040 ; free virtual = 36521
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 142ef792e
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18040 ; free virtual = 36521
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 12b2f2c5a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18037 ; free virtual = 36518
+Phase 3 Detail Placement | Checksum: 12b2f2c5a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:03 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18034 ; free virtual = 36515
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 16046bb40
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 16046bb40
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18091 ; free virtual = 36518
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.449. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 21607f260
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18088 ; free virtual = 36515
+Phase 4.1 Post Commit Optimization | Checksum: 21607f260
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18090 ; free virtual = 36517
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 21607f260
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18090 ; free virtual = 36517
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 21607f260
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18090 ; free virtual = 36517
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18090 ; free virtual = 36517
+Phase 4.4 Final Placement Cleanup | Checksum: 2248179d1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18090 ; free virtual = 36518
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2248179d1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18090 ; free virtual = 36518
+Ending Placer Task | Checksum: 1386b8d45
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18091 ; free virtual = 36518
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18094 ; free virtual = 36521
+# route_design -directive Explore
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PLCK-12] Clock Placer Checks: Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	Clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y0
+	Clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 781f5aeb ConstDB: 0 ShapeSum: c04c325a RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 96926908
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18019 ; free virtual = 36448
+Post Restoration Checksum: NetGraph: 773f5fb5 NumContArr: 1f530953 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 96926908
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17991 ; free virtual = 36420
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 96926908
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17955 ; free virtual = 36389
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 96926908
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17955 ; free virtual = 36389
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 11e27dd0c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17945 ; free virtual = 36383
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.459  | TNS=0.000  | WHS=-0.078 | THS=-0.611 |
+
+Phase 2 Router Initialization | Checksum: 1c4a3fd36
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17943 ; free virtual = 36382
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0129603 %
+  Global Horizontal Routing Utilization  = 0.00773994 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1827
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1827
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 16ae73fae
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17945 ; free virtual = 36384
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 259
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.837  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1971a75e2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17944 ; free virtual = 36383
+Phase 4 Rip-up And Reroute | Checksum: 1971a75e2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17944 ; free virtual = 36383
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1971a75e2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17944 ; free virtual = 36383
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1971a75e2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17944 ; free virtual = 36383
+Phase 5 Delay and Skew Optimization | Checksum: 1971a75e2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17944 ; free virtual = 36383
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 12e0b6f94
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17943 ; free virtual = 36382
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.844  | TNS=0.000  | WHS=0.054  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 12e0b6f94
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17943 ; free virtual = 36382
+Phase 6 Post Hold Fix | Checksum: 12e0b6f94
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17943 ; free virtual = 36382
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.950688 %
+  Global Horizontal Routing Utilization  = 1.35217 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1a8e644ec
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17943 ; free virtual = 36382
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1a8e644ec
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17942 ; free virtual = 36381
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1ecff185c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17942 ; free virtual = 36381
+
+Phase 10 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=1.844  | TNS=0.000  | WHS=0.053  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 10 Post Router Timing | Checksum: 1385269ae
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 17942 ; free virtual = 36381
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18011 ; free virtual = 36450
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18011 ; free virtual = 36450
+# report_io  -file post_route_io.rpt
+report_io: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2858.102 ; gain = 0.000 ; free physical = 18006 ; free virtual = 36445
+# set_property BITSTREAM.CONFIG.USR_ACCESS         0xaabbccdd    [current_design]
+# set_property CONFIG_VOLTAGE                     3.3            [current_design]
+# set_property CFGBVS                             VCCO           [current_design]
+# set_property BITSTREAM.CONFIG.CONFIGRATE        16             [current_design]
+# set_property BITSTREAM.CONFIG.SPI_32BIT_ADDR    No             [current_design]
+# set_property BITSTREAM.CONFIG.USERID   0xADD1E            [current_design]
+# set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
+# set design_name  MU0_Board 
+# write_bitstream -force ${design_name}.bit
+Command: write_bitstream -force MU0_Board.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/cadtools5/Xilinx_Vivado_2019.2/Vivado/2019.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[10] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[11] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[12] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[13] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[14] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[3] (net: MEM1/mem_reg_1_11) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[4] (net: MEM1/proc_addr[1]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[5] (net: MEM1/proc_addr[2]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[6] (net: MEM1/proc_addr[3]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[7] (net: MEM1/proc_addr[4]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[8] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[9] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/WEBWE[0] (net: MEM1/Wr) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[10] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[11] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[12] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[13] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[14] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[8] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[9] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[10] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[11] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[12] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[13] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[2] (net: MEM1/proc_addr[0]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[3] (net: MEM1/ADDRBWRADDR[0]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[4] (net: MEM1/proc_addr[2]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[5] (net: MEM1/proc_addr[3]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[6] (net: MEM1/proc_addr[4]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[7] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[8] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[9] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 33 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+WARNING: [Designutils 20-2050] The "BITSTREAM.CONFIG.SPI_32BIT_ADDR No" property setting is used to enable 24 bit SPI addressing.  For correct SPI functionality the "BITSTREAM.CONFIG.SPI_BUSWIDTH" property value of 1 has been set.
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./MU0_Board.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 2940.848 ; gain = 82.746 ; free physical = 18009 ; free virtual = 36434
+# write_bitstream -force -bin_file ${design_name}
+Command: write_bitstream -force -bin_file MU0_Board
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[10] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[11] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[12] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[13] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[14] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[3] (net: MEM1/mem_reg_1_11) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[4] (net: MEM1/proc_addr[1]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[5] (net: MEM1/proc_addr[2]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[6] (net: MEM1/proc_addr[3]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[7] (net: MEM1/proc_addr[4]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[8] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/ADDRBWRADDR[9] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_0 has an input control pin MEM1/mem_reg_0/WEBWE[0] (net: MEM1/Wr) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[10] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[11] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[12] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[13] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[14] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[8] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 MEM1/mem_reg_1 has an input control pin MEM1/mem_reg_1/ADDRBWRADDR[9] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[10] (net: MEM1/proc_addr[8]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[11] (net: MEM1/proc_addr[9]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[12] (net: MEM1/proc_addr[10]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[13] (net: MEM1/proc_addr[11]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[2] (net: MEM1/proc_addr[0]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[3] (net: MEM1/ADDRBWRADDR[0]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[4] (net: MEM1/proc_addr[2]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[5] (net: MEM1/proc_addr[3]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[6] (net: MEM1/proc_addr[4]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[7] (net: MEM1/proc_addr[5]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[8] (net: MEM1/proc_addr[6]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 MEM1/bp_mem_ram_reg has an input control pin MEM1/bp_mem_ram_reg/ADDRBWRADDR[9] (net: MEM1/proc_addr[7]) which is driven by a register (MU01/Control/I0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 33 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+WARNING: [Designutils 20-2050] The "BITSTREAM.CONFIG.SPI_32BIT_ADDR No" property setting is used to enable 24 bit SPI addressing.  For correct SPI functionality the "BITSTREAM.CONFIG.SPI_BUSWIDTH" property value of 1 has been set.
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./MU0_Board.bit...
+Writing bitstream ./MU0_Board.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+9 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2972.828 ; gain = 31.980 ; free physical = 17989 ; free virtual = 36427
+# write_cfgmem    -force -format MCS -size 8 -loadbit "up 0x0 ${design_name}.bit" -interface SPIx1 ${design_name}
+Command: write_cfgmem -force -format MCS -size 8 -loadbit {up 0x0 MU0_Board.bit} -interface SPIx1 MU0_Board
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile MU0_Board.bit
+Writing file ./MU0_Board.mcs
+Writing log file ./MU0_Board.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               8M
+Start Address      0x00000000
+End Address        0x007FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0012F2CB    Nov 17 18:42:10 2023    MU0_Board.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# exit 
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 18:42:13 2023...

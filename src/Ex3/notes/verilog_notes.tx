@@ -1,2 +1,3 @@
-- only change one variable per always block (including both comb & sequential)
-- to mix output changing on reset or clock, temporary variables required
+- Only change one variable per always block (including both comb & sequential)
+- To mix output changing async on reset or sync on clock, temporary reg required
+- Some bugs only picked up by synthesis, output from waves & compiling can mislead

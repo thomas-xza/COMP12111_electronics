@@ -1141,3 +1141,83 @@
  - 556585 [info] File /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board/MU0_Board.bin
  - 556585 [info] Sectors to upload: 19
  - 556585 [info] File size bytes: 1241804
+ - 645280 [info] Starting STUMP Loader
+ - 645280 [info] No serial port specified
+ - 645280 [info] Searching for ports...
+ - 645280 [info] Found ttyUSB0
+ - 645280 [info] Found ttyS4
+ - 645280 [info] Found ttyS0
+ - 645280 [info] Using ttyUSB0
+ - 645280 [info] Port ttyUSB0
+ - 645280 [info] File /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board/MU0_Board.bin
+ - 645280 [info] Sectors to upload: 19
+ - 645280 [info] File size bytes: 1241804
+ - 646197 [info] Starting STUMP Loader
+ - 646197 [info] No serial port specified
+ - 646197 [info] Searching for ports...
+ - 646197 [info] Found ttyUSB0
+ - 646197 [info] Found ttyS4
+ - 646197 [info] Found ttyS0
+ - 646197 [info] Using ttyUSB0
+ - 646197 [info] Port ttyUSB0
+ - 646197 [info] File /home/x93125tp/Questa/COMP12111/synthesis/MU0_Board/MU0_Board.bin
+ - 646197 [info] Sectors to upload: 19
+ - 646197 [info] File size bytes: 1241804
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 32 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 33 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 34 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 35 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 36 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 37 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 38 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 39 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 40 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 41 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 42 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 43 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 44 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 45 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 46 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 47 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 48 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 49 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Board said: R
+ - 646197 [info] Writing sector 50 total size 65537
+ - 646197 [info] Board said: P
+ - 646197 [info] Starting warm boot 
