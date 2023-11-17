@@ -1,0 +1,2 @@
+- only change one variable per always block (including both comb & sequential)
+- to mix output changing on reset or clock, temporary variables required
