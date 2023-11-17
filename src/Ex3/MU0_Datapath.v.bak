@@ -74,8 +74,8 @@ MU0_Reg16 ACCReg(
 .Clk(Clk),				//  Input clock from control.
 .Reset(Reset),			//  Input reset signal from control.
 .En(Acc_En),			//  Input Acc_En from control.
-.D(ALU[15:0]),    			//  Input calculated value from ALU.
-.Q(Acc_internal[15:0])    	//  Output Accumulator value.
+.D(ALU[15:0]),    		//  Input calculated value from ALU.
+.Q(Acc_internal[15:0])  //  Output Accumulator value.
 );
 
 MU0_Reg12 PCReg(
@@ -83,7 +83,7 @@ MU0_Reg12 PCReg(
 .Reset(Reset),			//  Input reset signal from control.
 .En(PC_En),				//  Input PC_En from control.
 .D(ALU[11:0]),    		//  Input from ALU (last 12 LSBs only).
-.Q(PC_internal[11:0])   		//  Output PC register value (12 bits).
+.Q(PC_internal[11:0])   //  Output PC register value (12 bits).
 );
 
 MU0_Reg16 IRReg(
@@ -92,27 +92,6 @@ MU0_Reg16 IRReg(
 .En(IR_En),				//  Input IR_En from control.
 .D(Din),    			//  Input from memory bus.
 .Q(IR[15:0])     		//  Output instruction.
-);
-
-MU0_Mux16 XMux(
-.A(Acc_internal[15:0]),
-.B({4'b0000,PC_internal[11:0]}),
-.S(X_sel),
-.Q(X)
-);
-
-MU0_Mux12 AddrMux(
-.A(PC_internal[11:0]),
-.B(IR[11:0]),
-.S(Addr_sel),
-.Q(Address)
-);
-
-MU0_Mux16 YMux(
-.A(Din),
-.B(IR[15:0]),
-.S(Y_sel),
-.Q(Y)
 );
 
 
@@ -156,8 +135,8 @@ MU0_Alu Main_ALU(
 
 MU0_Flags Main_flags(
 .Acc(Acc_internal[15:0]), //  Input accumulator to flag generator.
-.N(N), 				//  Output negative flag.
-.Z(Z)				//  Output zero flag.
+.N(N), 					  //  Output negative flag.
+.Z(Z)					  //  Output zero flag.
 );
 
 

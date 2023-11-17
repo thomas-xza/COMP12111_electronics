@@ -40,7 +40,7 @@ wire [15:0] Y;		////  Connected.
 wire [15:0] ALU;	////  Connected x2.
 
 wire [15:0] Acc_internal;	////  Connected x3
-wire [11:0] PC_internal;	////  
+wire [11:0] PC_internal;
 
 assign Acc = Acc_internal;
 assign PC = {4'b0000, PC_internal[11:0]};
@@ -74,8 +74,8 @@ MU0_Reg16 ACCReg(
 .Clk(Clk),				//  Input clock from control.
 .Reset(Reset),			//  Input reset signal from control.
 .En(Acc_En),			//  Input Acc_En from control.
-.D(ALU[15:0]),    			//  Input calculated value from ALU.
-.Q(Acc_internal[15:0])    	//  Output Accumulator value.
+.D(ALU[15:0]),    		//  Input calculated value from ALU.
+.Q(Acc_internal[15:0])  //  Output Accumulator value.
 );
 
 MU0_Reg12 PCReg(
@@ -83,7 +83,7 @@ MU0_Reg12 PCReg(
 .Reset(Reset),			//  Input reset signal from control.
 .En(PC_En),				//  Input PC_En from control.
 .D(ALU[11:0]),    		//  Input from ALU (last 12 LSBs only).
-.Q(PC_internal[11:0])   		//  Output PC register value (12 bits).
+.Q(PC_internal[11:0])   //  Output PC register value (12 bits).
 );
 
 MU0_Reg16 IRReg(
@@ -135,8 +135,8 @@ MU0_Alu Main_ALU(
 
 MU0_Flags Main_flags(
 .Acc(Acc_internal[15:0]), //  Input accumulator to flag generator.
-.N(N), 				//  Output negative flag.
-.Z(Z)				//  Output zero flag.
+.N(N), 					  //  Output negative flag.
+.Z(Z)					  //  Output zero flag.
 );
 
 

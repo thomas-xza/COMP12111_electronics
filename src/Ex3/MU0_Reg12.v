@@ -22,15 +22,17 @@ output reg  [11:0] Q
 // behavioural code - clock driven
 
 
+reg [11:0] temp_Q;
+
 //  On every clock tick, if `En` is high,
 //    then set Q with contents of D,
 //    else Q remains unchanged.
 
 always @ (posedge Clk)
   if (En)
-	Q <= D;
+	temp_Q <= D;
   else
-    Q <= Q;
+    temp_Q <= Q;
 
 //  The specification says "the reset signal acts asynchronously"
 //    Therefore, implemented this as a stateless block.
@@ -38,11 +40,11 @@ always @ (posedge Clk)
 //  Note that we only want to reset Q when reset is high,
 //		not whenever it changes.
 
-always @ (Reset)
-  if (Reset == 1)
+always @ (*)
+  if (Reset == 1'b1)
   	Q = 12'b0000_0000_0000;
   else
-    Q = Q;
+    Q = temp_Q;
 
 
 
