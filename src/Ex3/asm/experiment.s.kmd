@@ -14,7 +14,7 @@ KMD
 00000006: 1FF6  ;         STA &0FF6
 00000007: 1FF5  ;         STA &0FF5
 00000008:       ; 
-00000008: 201B  ;         ADD max         ;       Test store to memory
+00000008: 201A  ;         ADD max         ;       Test store to memory
 00000009:       ;         ;; STA  result1 ; Store acc into memory loc result1. result1 = 0
 00000009:       ; 
 00000009:       ;         ;; ;;        Test load accumulator from memory
@@ -54,6 +54,7 @@ KMD
 00000009:       ;         ;; ;;        Simple subtraction test
 00000009:       ;         ;; SUB one              ; Acc should be 'hFFFF(0 - 1 = -1)
 00000009:       ; 
+00000009:       ; 
 00000009: 1FFA  ;         STA &0FFA
 0000000A: 1FF9  ;         STA &0FF9
 0000000B: 1FF8  ;         STA &0FF8
@@ -62,68 +63,60 @@ KMD
 0000000E: 1FF5  ;         STA &0FF5
 0000000F:       ;         ;; STA &0FF4
 0000000F:       ; 
-0000000F: 301B  ;         SUB max
+0000000F: 301A  ;         SUB max
 00000010:       ; 
-00000010:       ;         
-00000010:       ;         
-00000010: 27FF  ;         ADD &07FF
+00000010:       ;         ;; STA &0FFF
+00000010:       ; 
+00000010: 2FFF  ;         ADD traffics_on
+00000011:       ;         ;; ADD &07FF
 00000011: 1FFF  ;         STA &0FFF
 00000012:       ; 
-00000012: 001E  ;         LDA delay
-00000013: 301A  ; loop    sub one
-00000014: 201B  ;         ADD max
-00000015: 1FFF  ;         STA &0FFF
-00000016: 6013  ;         JNE loop
-00000017:       ;         
+00000012:       ;         
+00000012: 3019  ; loop    sub one
+00000013: 201A  ;         ADD max
+00000014: 1FFF  ;         STA &0FFF
+00000015: 6012  ;         JNE loop
+00000016:       ;         
+00000016:       ; 
+00000016:       ; ;;      LDA delay
+00000016:       ;         
+00000016:       ; ;; loop SUB one
+00000016:       ;         
+00000016:       ; ;;      JNE loop
+00000016:       ;         
+00000016:       ; ;;      JMP main
+00000016:       ;         
+00000016:       ; 
+00000016:       ; 
+00000016: 7000  ;         stop    STP              ; STOP - HALT progr
 00000017:       ; 
-00000017:       ; ;;      LDA delay
-00000017:       ;         
-00000017:       ; ;; loop SUB one
-00000017:       ;         
-00000017:       ; ;;      JNE loop
-00000017:       ;         
-00000017:       ; ;;      JMP main
-00000017:       ;         
-00000017:       ; 
-00000017:       ; 
-00000017: 7000  ;         stop    STP              ; STOP - HALT progr
+00000017: 4017  ;         done    JMP done         ; Just in case stop instr fails
 00000018:       ; 
-00000018: 4018  ;         done    JMP done         ; Just in case stop instr fails
-00000019:       ; 
-00000019:       ; 
-00000019: FFFF  ; test    DEFW &FFFF
-0000001A:       ;         
-0000001A: 0001  ; one     DEFW 1           ; one
-0000001B: 7FFF  ; max     DEFW &7FFF       ; max ?
-0000001C: 8000  ; neg     DEFW &8000       ; -max
-0000001D: 0000  ; zero    DEFW &0000       ; zero
-0000001E: 000F  ; delay   DEFW &000F       ; 16
-0000001F:       ;         
-0000001F:       ; letter_f        EQU &0003
-0000001F:       ; digit_5         EQU &0FFA
-0000001F:       ;         
-0000001F:       ; lights_on       EQU &0001
-0000001F: FFFF  ; result1 DEFW &FFFF
-00000020: 0000  ; result2 DEFW &0000
-00000021: FFFF  ; result3 DEFW &FFFF
-00000022: 0000  ; result4 DEFW &0000
-00000023:       ; 
-00000023:       ; 
+00000018:       ; 
+00000018: FFFF  ; test    DEFW &FFFF
+00000019:       ;         
+00000019: 0001  ; one     DEFW 1           ; one
+0000001A: 7FFF  ; max     DEFW &7FFF       ; max ?
+0000001B: 8000  ; neg     DEFW &8000       ; -max
+0000001C: 0000  ; zero    DEFW &0000       ; zero
+0000001D: 000F  ; delay   DEFW &000F       ; 16
+0000001E:       ;         
+0000001E:       ; letter_f        EQU &0003
+0000001E:       ; digit_5         EQU &0FFA
+0000001E:       ;         
+0000001E:       ; traffics_on     EQU &FFFF
+0000001E:       ; 
 
 Symbol Table: Labels
-: loop                              00000013  Local --
-: stop                              00000017  Local --
-: done                              00000018  Local --
-: test                              00000019  Local --
-: one                               0000001A  Local --
-: max                               0000001B  Local --
-: neg                               0000001C  Local --
-: zero                              0000001D  Local --
-: delay                             0000001E  Local --
+: loop                              00000012  Local --
+: stop                              00000016  Local --
+: done                              00000017  Local --
+: test                              00000018  Local --
+: one                               00000019  Local --
+: max                               0000001A  Local --
+: neg                               0000001B  Local --
+: zero                              0000001C  Local --
+: delay                             0000001D  Local --
 : letter_f                          00000003  Value
 : digit_5                           00000FFA  Value
-: lights_on                         00000001  Value
-: result1                           0000001F  Local --
-: result2                           00000020  Local --
-: result3                           00000021  Local --
-: result4                           00000022  Local --
+: traffics_on                       0000FFFF  Value

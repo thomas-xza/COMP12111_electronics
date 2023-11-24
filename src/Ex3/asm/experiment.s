@@ -14,44 +14,6 @@
 	STA &0FF5
 
 	ADD max		;       Test store to memory
-	;; STA  result1	; Store acc into memory loc result1. result1 = 0
-
-	;; ;;        Test load accumulator from memory
-	;; LDA  neg	; Acc should be set to 'h8000
-	;; STA  result2	; Store value of acc to memory. result2 = 'h8000
-
-	;; ;;        Simple adder overflow test
-	;; ADD neg		; Acc should overflow to 0 ('h8000 + 'h8000)
-	;; STA  result3	; Store the addition result to memory. result3 = 0
-
-	;; ;;        Simple subtraction test
-	;; SUB one		; Acc should be 'hFFFF(0 - 1 = -1)
-	;; STA  result4	; Store the subtraction result to memory. result4 = 'hFFFF
-
-	
-
-	;;        Test store to memory
-	;; STA  result1	; Store acc into memory loc result1. result1 = 0
-
-	;;        Test load accumulator from memory
-	;; STA  result2	; Store value of acc to memory. result2 = 'h8000
-
-	;; ;;        Simple adder overflow test
-	;; ADD neg		; Acc should overflow to 0 ('h8000 + 'h8000)
-	;; STA  result3	; Store the addition result to memory. result3 = 0
-
-	;; ;;        Simple subtraction test
-	;; SUB one		; Acc should be 'hFFFF(0 - 1 = -1)
-	;; STA  result4	; Store the subtraction result to memory. result4 = 'hFFFF
-	
-
-	
-
-	;; ;;        Simple adder overflow test
-	;; ADD neg		; Acc should overflow to 0 ('h8000 + 'h8000)
-
-	;; ;;        Simple subtraction test
-	;; SUB one		; Acc should be 'hFFFF(0 - 1 = -1)
 
 	STA &0FFA
 	STA &0FF9
@@ -63,12 +25,13 @@
 
 	SUB max
 
-	
-	
-	ADD &07FF
+	;; STA &0FFF
+
+	ADD traffics_on
+	;; ADD &07FF
 	STA &0FFF
 
-	LDA delay
+	
 loop	sub one
 	ADD max
 	STA &0FFF
@@ -101,9 +64,4 @@ delay	DEFW &000F	 ; 16
 letter_f	EQU &0003
 digit_5		EQU &0FFA
 	
-lights_on	EQU &0001
-result1 DEFW &FFFF
-result2 DEFW &0000
-result3 DEFW &FFFF
-result4 DEFW &0000
-
+traffics_on	EQU &FFFF
