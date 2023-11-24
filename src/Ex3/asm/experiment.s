@@ -76,6 +76,6 @@ neg     DEFW &8000       ; -max
 zero    DEFW &0000       ; zero
 delay	DEFW &000F	 ; 16
 	
-delay_1 DEFW &7FFF
+delay_1 DEFW &38FF
 
 traffic DEFW &0FFF
