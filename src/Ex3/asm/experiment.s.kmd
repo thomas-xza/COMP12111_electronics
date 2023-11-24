@@ -3,7 +3,7 @@ KMD
 00000000:       ; 
 00000000:       ;         ORG  0
 00000000:       ; 
-00000000:       ;         ;;  Reset all the lights to off.
+00000000:       ;          ;; Reset all the lights to off.
 00000000:       ;         
 00000000: 1FFF  ;         STA &FFFF
 00000001: 1FFF  ;         STA &0FFF
@@ -14,109 +14,76 @@ KMD
 00000006: 1FF6  ;         STA &0FF6
 00000007: 1FF5  ;         STA &0FF5
 00000008:       ; 
-00000008: 201A  ;         ADD max         ;       Test store to memory
-00000009:       ;         ;; STA  result1 ; Store acc into memory loc result1. result1 = 0
-00000009:       ; 
-00000009:       ;         ;; ;;        Test load accumulator from memory
-00000009:       ;         ;; LDA  neg     ; Acc should be set to 'h8000
-00000009:       ;         ;; STA  result2 ; Store value of acc to memory. result2 = 'h8000
-00000009:       ; 
-00000009:       ;         ;; ;;        Simple adder overflow test
-00000009:       ;         ;; ADD neg              ; Acc should overflow to 0 ('h8000 + 'h8000)
-00000009:       ;         ;; STA  result3 ; Store the addition result to memory. result3 = 0
-00000009:       ; 
-00000009:       ;         ;; ;;        Simple subtraction test
-00000009:       ;         ;; SUB one              ; Acc should be 'hFFFF(0 - 1 = -1)
-00000009:       ;         ;; STA  result4 ; Store the subtraction result to memory. result4 = 'hFFFF
-00000009:       ; 
-00000009:       ;         
-00000009:       ; 
-00000009:       ;         ;;        Test store to memory
-00000009:       ;         ;; STA  result1 ; Store acc into memory loc result1. result1 = 0
-00000009:       ; 
-00000009:       ;         ;;        Test load accumulator from memory
-00000009:       ;         ;; STA  result2 ; Store value of acc to memory. result2 = 'h8000
-00000009:       ; 
-00000009:       ;         ;; ;;        Simple adder overflow test
-00000009:       ;         ;; ADD neg              ; Acc should overflow to 0 ('h8000 + 'h8000)
-00000009:       ;         ;; STA  result3 ; Store the addition result to memory. result3 = 0
-00000009:       ; 
-00000009:       ;         ;; ;;        Simple subtraction test
-00000009:       ;         ;; SUB one              ; Acc should be 'hFFFF(0 - 1 = -1)
-00000009:       ;         ;; STA  result4 ; Store the subtraction result to memory. result4 = 'hFFFF
-00000009:       ;         
-00000009:       ; 
-00000009:       ;         
-00000009:       ; 
-00000009:       ;         ;; ;;        Simple adder overflow test
-00000009:       ;         ;; ADD neg              ; Acc should overflow to 0 ('h8000 + 'h8000)
-00000009:       ; 
-00000009:       ;         ;; ;;        Simple subtraction test
-00000009:       ;         ;; SUB one              ; Acc should be 'hFFFF(0 - 1 = -1)
-00000009:       ; 
-00000009:       ; 
-00000009: 1FFA  ;         STA &0FFA
-0000000A: 1FF9  ;         STA &0FF9
-0000000B: 1FF8  ;         STA &0FF8
-0000000C: 1FF7  ;         STA &0FF7
-0000000D: 1FF6  ;         STA &0FF6
-0000000E: 1FF5  ;         STA &0FF5
-0000000F:       ;         ;; STA &0FF4
+00000008:       ; 
+00000008: 2011  ;         ADD one                 ;  add one to acc
+00000009: 1FF0  ;         STA &FF0                ;  store to memory &FF0
+0000000A:       ;         
+0000000A:       ;         
+0000000A:       ;         ;; ADD max              ;       Test store to memory
+0000000A:       ; 
+0000000A:       ;         ;; STA &0FFA
+0000000A:       ;         ;; STA &0FF9
+0000000A:       ;         ;; STA &0FF8
+0000000A:       ;         ;; STA &0FF7
+0000000A:       ;         ;; STA &0FF6
+0000000A:       ;         ;; STA &0FF5
+0000000A:       ;         ;; ;; STA &0FF4
+0000000A:       ; 
+0000000A:       ;         ;; SUB max
+0000000A:       ; 
+0000000A:       ;         ;; STA &0FFF
+0000000A:       ; 
+0000000A:       ;         ;; ADD traffics_on
+0000000A:       ;         ;; ;; ADD &07FF
+0000000A:       ;         ;; STA &0FFF
+0000000A:       ; 
+0000000A:       ; 
+0000000A:       ; 
+0000000A:       ;         
+0000000A:       ; 
+0000000A:       ;         
+0000000A: 3011  ; loop    sub one
+0000000B: 2012  ;         ADD max
+0000000C: 1FFF  ;         STA &0FFF
+0000000D: 600A  ;         JNE loop
+0000000E:       ;         
+0000000E:       ; 
+0000000E:       ; ;;      LDA delay
+0000000E:       ;         
+0000000E:       ; ;; loop SUB one
+0000000E:       ;         
+0000000E:       ; ;;      JNE loop
+0000000E:       ;         
+0000000E:       ; ;;      JMP main
+0000000E:       ;         
+0000000E:       ; 
+0000000E:       ; 
+0000000E: 7000  ;         stop    STP              ; STOP - HALT progr
 0000000F:       ; 
-0000000F: 301A  ;         SUB max
+0000000F: 400F  ;         done    JMP done         ; Just in case stop instr fails
 00000010:       ; 
-00000010:       ;         ;; STA &0FFF
 00000010:       ; 
-00000010: 2FFF  ;         ADD traffics_on
-00000011:       ;         ;; ADD &07FF
-00000011: 1FFF  ;         STA &0FFF
-00000012:       ; 
-00000012:       ;         
-00000012: 3019  ; loop    sub one
-00000013: 201A  ;         ADD max
-00000014: 1FFF  ;         STA &0FFF
-00000015: 6012  ;         JNE loop
+00000010: FFFF  ; test    DEFW &FFFF
+00000011:       ;         
+00000011: 0001  ; one     DEFW 1           ; one
+00000012: 7FFF  ; max     DEFW &7FFF       ; max ?
+00000013: 8000  ; neg     DEFW &8000       ; -max
+00000014: 0000  ; zero    DEFW &0000       ; zero
+00000015: 000F  ; delay   DEFW &000F       ; 16
 00000016:       ;         
-00000016:       ; 
-00000016:       ; ;;      LDA delay
-00000016:       ;         
-00000016:       ; ;; loop SUB one
-00000016:       ;         
-00000016:       ; ;;      JNE loop
-00000016:       ;         
-00000016:       ; ;;      JMP main
 00000016:       ;         
 00000016:       ; 
 00000016:       ; 
-00000016: 7000  ;         stop    STP              ; STOP - HALT progr
-00000017:       ; 
-00000017: 4017  ;         done    JMP done         ; Just in case stop instr fails
-00000018:       ; 
-00000018:       ; 
-00000018: FFFF  ; test    DEFW &FFFF
-00000019:       ;         
-00000019: 0001  ; one     DEFW 1           ; one
-0000001A: 7FFF  ; max     DEFW &7FFF       ; max ?
-0000001B: 8000  ; neg     DEFW &8000       ; -max
-0000001C: 0000  ; zero    DEFW &0000       ; zero
-0000001D: 000F  ; delay   DEFW &000F       ; 16
-0000001E:       ;         
-0000001E:       ; letter_f        EQU &0003
-0000001E:       ; digit_5         EQU &0FFA
-0000001E:       ;         
-0000001E:       ; traffics_on     EQU &FFFF
-0000001E:       ; 
+00000016:       ; 
+00000016:       ; 
 
 Symbol Table: Labels
-: loop                              00000012  Local --
-: stop                              00000016  Local --
-: done                              00000017  Local --
-: test                              00000018  Local --
-: one                               00000019  Local --
-: max                               0000001A  Local --
-: neg                               0000001B  Local --
-: zero                              0000001C  Local --
-: delay                             0000001D  Local --
-: letter_f                          00000003  Value
-: digit_5                           00000FFA  Value
-: traffics_on                       0000FFFF  Value
+: loop                              0000000A  Local --
+: stop                              0000000E  Local --
+: done                              0000000F  Local --
+: test                              00000010  Local --
+: one                               00000011  Local --
+: max                               00000012  Local --
+: neg                               00000013  Local --
+: zero                              00000014  Local --
+: delay                             00000015  Local --

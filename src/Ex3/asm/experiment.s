@@ -2,7 +2,7 @@
 
 	ORG  0
 
-	;;  Reset all the lights to off.
+	 ;; Reset all the lights to off.
 	
 	STA &FFFF
 	STA &0FFF
@@ -13,23 +13,32 @@
 	STA &0FF6
 	STA &0FF5
 
-	ADD max		;       Test store to memory
 
-	STA &0FFA
-	STA &0FF9
-	STA &0FF8
-	STA &0FF7
-	STA &0FF6
-	STA &0FF5
-	;; STA &0FF4
+	ADD one			;  add one to acc
+	STA &FF0		;  store to memory &FF0
+	
+	
+	;; ADD max		;       Test store to memory
 
-	SUB max
+	;; STA &0FFA
+	;; STA &0FF9
+	;; STA &0FF8
+	;; STA &0FF7
+	;; STA &0FF6
+	;; STA &0FF5
+	;; ;; STA &0FF4
+
+	;; SUB max
 
 	;; STA &0FFF
 
-	ADD traffics_on
-	;; ADD &07FF
-	STA &0FFF
+	;; ADD traffics_on
+	;; ;; ADD &07FF
+	;; STA &0FFF
+
+
+
+	
 
 	
 loop	sub one
@@ -61,7 +70,7 @@ neg     DEFW &8000       ; -max
 zero    DEFW &0000       ; zero
 delay	DEFW &000F	 ; 16
 	
-letter_f	EQU &0003
-digit_5		EQU &0FFA
 	
-traffics_on	EQU &FFFF
+
+
+
