@@ -2,7 +2,10 @@
 
 	ORG  0
 
+	;;  Reset all the lights to off.
+	
 	STA &FFFF
+	STA &0FFF
 	STA &0FFA
 	STA &0FF9
 	STA &0FF8
@@ -50,7 +53,6 @@
 	;; ;;        Simple subtraction test
 	;; SUB one		; Acc should be 'hFFFF(0 - 1 = -1)
 
-	
 	STA &0FFA
 	STA &0FF9
 	STA &0FF8
@@ -61,6 +63,17 @@
 
 	SUB max
 
+	
+	
+	ADD &07FF
+	STA &0FFF
+
+	LDA delay
+loop	sub one
+	ADD max
+	STA &0FFF
+	JNE loop
+	
 
 ;; 	LDA delay
 	
