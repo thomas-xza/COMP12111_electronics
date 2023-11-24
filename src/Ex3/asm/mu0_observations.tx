@@ -1,0 +1,18 @@
+
+Complete instruction set seems to be:
+
+ORG x	 	     - organise following instructions in memory to address x
+STA &xxxx   	     - store ACC to memory location xxxx
+LDA &xxxx   	     - load memory location xxxx contents to ACC
+JMP label  	     - jump to specific label
+JNE label	     - check Z flag, jump if... it is not equal to 1?
+ADD label	     - add label to ACC
+SUB label	     - sub label from ACC
+STP
+DEFW
+
+The PDF contains some other instructions, but unsure if they work?
+Not feature in sample Assembly file.
+
+EQU
+JGE label		- jump to specific label

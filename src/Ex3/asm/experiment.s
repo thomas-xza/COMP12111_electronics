@@ -6,16 +6,16 @@
 	
 	STA &FFFF
 	STA &0FFF
-	STA &0FFA
-	STA &0FF9
-	STA &0FF8
-	STA &0FF7
-	STA &0FF6
-	STA &0FF5
+	;; STA &0FFA
+	;; STA &0FF9
+	;; STA &0FF8
+	;; STA &0FF7
+	;; STA &0FF6
+	;; STA &0FF5
 
 
-	ADD one			;  add one to acc
-	STA &FF0		;  store to memory &FF0
+	;; ADD max			;  add one to acc
+	;; STA &0FFF		;  store to memory &FF0
 	
 	
 	;; ADD max		;       Test store to memory
@@ -36,17 +36,23 @@
 	;; ;; ADD &07FF
 	;; STA &0FFF
 
+flash
 
-
+	ADD max			;  add one to acc
+	STA &0FFF		;  store to memory &0FFF
 	
-
+		LDA delay_1
+loop_delay	sub one
+		JNE loop_delay
 	
-loop	sub one
-	ADD max
-	STA &0FFF
-	JNE loop
-	
+	STA &0FFF		;  store to memory &0FFF
 
+		LDA delay_1
+loop_delay_2	sub one
+		JNE loop_delay_2
+	
+	JMP flash
+	
 ;; 	LDA delay
 	
 ;; loop	SUB one
@@ -70,7 +76,6 @@ neg     DEFW &8000       ; -max
 zero    DEFW &0000       ; zero
 delay	DEFW &000F	 ; 16
 	
-	
+delay_1 DEFW &7FFF
 
-
-
+traffic DEFW &0FFF
