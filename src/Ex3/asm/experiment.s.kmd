@@ -1,0 +1,113 @@
+KMD
+00000000:       ; 
+00000000:       ; 
+00000000:       ;         ORG  0
+00000000:       ; 
+00000000: 1FFF  ;         STA &FFFF
+00000001: 1FFA  ;         STA &0FFA
+00000002: 1FF9  ;         STA &0FF9
+00000003: 1FF8  ;         STA &0FF8
+00000004: 1FF7  ;         STA &0FF7
+00000005: 1FF6  ;         STA &0FF6
+00000006: 1FF5  ;         STA &0FF5
+00000007:       ; 
+00000007: 2012  ;         ADD max         ;       Test store to memory
+00000008:       ;         ;; STA  result1 ; Store acc into memory loc result1. result1 = 0
+00000008:       ; 
+00000008:       ;         ;; ;;        Test load accumulator from memory
+00000008:       ;         ;; LDA  neg     ; Acc should be set to 'h8000
+00000008:       ;         ;; STA  result2 ; Store value of acc to memory. result2 = 'h8000
+00000008:       ; 
+00000008:       ;         ;; ;;        Simple adder overflow test
+00000008:       ;         ;; ADD neg              ; Acc should overflow to 0 ('h8000 + 'h8000)
+00000008:       ;         ;; STA  result3 ; Store the addition result to memory. result3 = 0
+00000008:       ; 
+00000008:       ;         ;; ;;        Simple subtraction test
+00000008:       ;         ;; SUB one              ; Acc should be 'hFFFF(0 - 1 = -1)
+00000008:       ;         ;; STA  result4 ; Store the subtraction result to memory. result4 = 'hFFFF
+00000008:       ; 
+00000008:       ;         
+00000008:       ; 
+00000008:       ;         ;;        Test store to memory
+00000008:       ;         ;; STA  result1 ; Store acc into memory loc result1. result1 = 0
+00000008:       ; 
+00000008:       ;         ;;        Test load accumulator from memory
+00000008:       ;         ;; STA  result2 ; Store value of acc to memory. result2 = 'h8000
+00000008:       ; 
+00000008:       ;         ;; ;;        Simple adder overflow test
+00000008:       ;         ;; ADD neg              ; Acc should overflow to 0 ('h8000 + 'h8000)
+00000008:       ;         ;; STA  result3 ; Store the addition result to memory. result3 = 0
+00000008:       ; 
+00000008:       ;         ;; ;;        Simple subtraction test
+00000008:       ;         ;; SUB one              ; Acc should be 'hFFFF(0 - 1 = -1)
+00000008:       ;         ;; STA  result4 ; Store the subtraction result to memory. result4 = 'hFFFF
+00000008:       ;         
+00000008:       ; 
+00000008:       ;         
+00000008:       ; 
+00000008:       ;         ;; ;;        Simple adder overflow test
+00000008:       ;         ;; ADD neg              ; Acc should overflow to 0 ('h8000 + 'h8000)
+00000008:       ; 
+00000008:       ;         ;; ;;        Simple subtraction test
+00000008:       ;         ;; SUB one              ; Acc should be 'hFFFF(0 - 1 = -1)
+00000008:       ; 
+00000008:       ;         
+00000008: 1FFA  ;         STA &0FFA
+00000009: 1FF9  ;         STA &0FF9
+0000000A: 1FF8  ;         STA &0FF8
+0000000B: 1FF7  ;         STA &0FF7
+0000000C: 1FF6  ;         STA &0FF6
+0000000D: 1FF5  ;         STA &0FF5
+0000000E:       ;         ;; STA &0FF4
+0000000E:       ; 
+0000000E:       ; 
+0000000E:       ; ;;      LDA delay
+0000000E:       ;         
+0000000E:       ; ;; loop SUB one
+0000000E:       ;         
+0000000E:       ; ;;      JNE loop
+0000000E:       ;         
+0000000E:       ; ;;      JMP main
+0000000E:       ;         
+0000000E:       ; 
+0000000E:       ; 
+0000000E: 7000  ;         stop    STP              ; STOP - HALT progr
+0000000F:       ; 
+0000000F: 400F  ;         done    JMP done         ; Just in case stop instr fails
+00000010:       ; 
+00000010:       ; 
+00000010: FFFF  ; test    DEFW &FFFF
+00000011:       ;         
+00000011: 0001  ; one     DEFW 1           ; one
+00000012: 7FFF  ; max     DEFW &7FFF       ; max ?
+00000013: 8000  ; neg     DEFW &8000       ; -max
+00000014: 0000  ; zero    DEFW &0000       ; zero
+00000015: 000F  ; delay   DEFW &000F       ; 16
+00000016:       ;         
+00000016:       ; letter_f        EQU &0003
+00000016:       ; digit_5         EQU &0FFA
+00000016:       ;         
+00000016:       ; lights_on       EQU &0001
+00000016: FFFF  ; result1 DEFW &FFFF
+00000017: 0000  ; result2 DEFW &0000
+00000018: FFFF  ; result3 DEFW &FFFF
+00000019: 0000  ; result4 DEFW &0000
+0000001A:       ; 
+0000001A:       ; 
+
+Symbol Table: Labels
+: stop                              0000000E  Local --
+: done                              0000000F  Local --
+: test                              00000010  Local --
+: one                               00000011  Local --
+: max                               00000012  Local --
+: neg                               00000013  Local --
+: zero                              00000014  Local --
+: delay                             00000015  Local --
+: letter_f                          00000003  Value
+: digit_5                           00000FFA  Value
+: lights_on                         00000001  Value
+: result1                           00000016  Local --
+: result2                           00000017  Local --
+: result3                           00000018  Local --
+: result4                           00000019  Local --
