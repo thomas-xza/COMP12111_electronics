@@ -77,7 +77,7 @@ KMD
 00000012: 0000  ; zero    DEFW &0000       ; zero
 00000013: 000F  ; delay   DEFW &000F       ; 16
 00000014:       ;         
-00000014: 34FF  ; delay_1 DEFW &34FF
+00000014: 1C80  ; delay_1 DEFW &1C80
 00000015:       ; 
 00000015: 0FFF  ; traffic DEFW &0FFF
 00000016:       ; 
