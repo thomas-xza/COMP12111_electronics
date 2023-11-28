@@ -47,7 +47,7 @@ loop_delay_4_0	sub one
 		JNE loop_delay_4_0
 	
 			LDA delay_max
-loop_delay_4_0_1	sub one
+loop_delay_4_1		sub one
 			JNE loop_delay_4_0_1
 	
 	STA &0FFF		;  store to memory &0FFF
@@ -57,7 +57,7 @@ loop_delay_4_1		sub one
 			JNE loop_delay_4_1
 	
 			LDA delay_max
-loop_delay_4_1_1	sub one
+loop_delay_4_2		sub one
 			JNE loop_delay_4_1_1
 	
 
