@@ -22,7 +22,7 @@ def main():
 
         delay_n -= 1
 
-        print(intro, first_delay, "disable light\n", second_delay, "jump\n\n")
+        print(intro, first_delay, "disable light\n", second_delay, "\n\n")
 
         # final_str = ""
 
@@ -37,7 +37,7 @@ def generate_delay_set(delay_n, toggle, delay_quantity):
 
     while delay_quantity_counter < delay_quantity:
 
-        delay_set += generate_delay(delay_n, 0, delay_quantity_counter)
+        delay_set += generate_delay(delay_n, toggle, delay_quantity_counter)
 
         delay_quantity_counter += 1
 
