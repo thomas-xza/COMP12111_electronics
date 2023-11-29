@@ -16,13 +16,9 @@ def main():
 
         intro = f"flash_{delay_n}\n" + "store max\n"
 
-        # first_delay = generate_delay(delay_n, 0, delay_quantity)
-
         first_delay = generate_delay_set(delay_n, 0, delay_quantity)
 
-        delay_quantity = 0
-
-        second_delay = generate_delay(delay_n, 1, delay_quantity)
+        second_delay = generate_delay_set(delay_n, 1, delay_quantity)
 
         delay_n -= 1
 
@@ -34,8 +30,6 @@ def main():
 
 
 def generate_delay_set(delay_n, toggle, delay_quantity):
-
-    print(delay_quantity)
 
     delay_quantity_counter = 0
 
