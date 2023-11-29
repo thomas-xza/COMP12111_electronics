@@ -2,7 +2,7 @@
 
 def main():
 
-    initial_value = 4
+    initial_value = 8
 
     delay_set = generate_pow_2_set(initial_value)
 
