@@ -14,7 +14,7 @@ def main():
 
     for delay_quantity in delay_set:
 
-        intro = f"flash_{delay_n}\n" + "store max\n"
+        intro = f"flash_{delay_n}\n" + "enable light\n"
 
         first_delay = generate_delay_set(delay_n, 0, delay_quantity)
 
@@ -22,7 +22,7 @@ def main():
 
         delay_n -= 1
 
-        print(intro, first_delay, "store 0fff\n", second_delay, "jump\n\n")
+        print(intro, first_delay, "disable light\n", second_delay, "jump\n\n")
 
         # final_str = ""
 
