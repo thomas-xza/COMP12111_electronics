@@ -33,13 +33,17 @@ def main():
 
         second_delay = generate_delay_set(delay_n, 1, delay_quantity)
 
-        print("\n\n".join([
+        # print(
+
+        seq = "\n\n".join([
             intro,
             first_delay,
             "STA &0FFF",
             second_delay,
             m_light_str[1]
         ])
+
+        print(seq)
 
         delay_n -= 1
 
