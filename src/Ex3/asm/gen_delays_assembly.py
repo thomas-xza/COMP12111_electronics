@@ -6,31 +6,71 @@ def main():
 
     delay_set = generate_pow_2_set(initial_value)
 
-    delay_n_init = len(delay_set) + 2
+    delay_n_init = 128
     
     delay_n = delay_n_init
 
-    print(delay_set)
+    m_light_select = 0xffa
 
-    for delay_quantity in delay_set:
+    flashes_total = 16
 
-        intro = [
-            f"flash_{delay_n}",
+    flashes_counter = 0
+
+    while flashes_counter < flashes_total:
+
+        delay_quantity = get_delay_quantity(delay_set, flashes_counter)
+
+        m_light_select = get_next_m_light(m_light_select)
+
+        m_light
+
+        intro = "\n".join([
+            f"\n\nflash_{delay_n}",
             "ADD max",
-            "STA &0FFF"].join("\n")
+            "STA &0FFF"])
 
         first_delay = generate_delay_set(delay_n, 0, delay_quantity)
 
         second_delay = generate_delay_set(delay_n, 1, delay_quantity)
 
-        delay_n -= 1
-
-        print([intro,
+        print("\n\n".join([intro,
                first_delay,
                "STA &0FFF",
                second_delay,
-               ].join("\n"))
+               ]))
 
+        delay_n -= 1
+
+        flashes_counter += 1
+
+
+def get_next_m_light(light_target):
+
+    light_target -= 1
+
+    if light_target < 0xff5:
+
+        return 0xffa
+
+    else:
+
+        return light_target
+
+    # return hex(light_target).replace("0x", "&").upper()
+
+    
+        
+
+def get_delay_quantity(delay_set, flashes_counter):
+
+    if flashes_counter < len(delay_set):
+
+        return delay_set[flashes_counter]
+
+    else:
+
+        return 1
+        
 
 def generate_delay_set(delay_n, toggle, delay_quantity):
 
@@ -51,10 +91,10 @@ def generate_delay(delay_n, toggle, delay_quantity):
 
     delay_label = f"loop_delay_{delay_n}_{toggle}_{delay_quantity}"
 
-    delay_asm = ["LDA delay_max",
+    delay_asm = "\n".join(["LDA delay_max",
                  delay_label,
                  "sub one",
-                 f"JNE {delay_label}"].join("\n")
+                 f"JNE {delay_label}"])
                  
     return delay_asm
 
@@ -72,7 +112,6 @@ def generate_pow_2_set(initial_value):
         v = v // 2
 
     return delay_set
-
 
 
 main()
