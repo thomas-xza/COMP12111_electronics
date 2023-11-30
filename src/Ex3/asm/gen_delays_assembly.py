@@ -22,7 +22,9 @@ def main():
 
         m_light_select = get_next_m_light(m_light_select)
 
-        m_light
+        m_light_pattern = get_next_m_light_pattern(flashes_counter)
+
+        
 
         intro = "\n".join([
             f"\n\nflash_{delay_n}",
@@ -44,6 +46,43 @@ def main():
         flashes_counter += 1
 
 
+def get_next_m_light_pattern(flashes_counter):
+
+    ##  n =>
+    ##  [<data_to_write>, <data_to_erase>]
+
+    if flashes_counter % 2 == 0:
+
+        pattern = "m_pattern_a"
+
+        # pattern = format_input_mu0(0b000000011101101)
+
+    else:
+
+        pattern = "m_pattern_b"
+
+        # pattern = format_input_mu0(0b000000011101101)
+
+    action_to_perform = flashes_counter % 12
+
+    if action_to_perform < 6:
+
+        load = True
+
+        "\n".join[
+            f"LDA {pattern}",
+            
+
+    else:
+
+        store = True
+
+
+def format_input_mu0(n):
+
+    return hex(n).replace("0x", "&").upper()
+
+        
 def get_next_m_light(light_target):
 
     light_target -= 1
@@ -58,8 +97,6 @@ def get_next_m_light(light_target):
 
     # return hex(light_target).replace("0x", "&").upper()
 
-    
-        
 
 def get_delay_quantity(delay_set, flashes_counter):
 
