@@ -1,0 +1,4 @@
+#!/bin/bash
+light_seq_head.s
+light_seq_tail.s
+gen_delays_assembly.py

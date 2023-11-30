@@ -1,0 +1,21 @@
+
+
+	ORG  0
+
+
+	done    JMP flash_128         ; Just in case stop instr fails
+
+
+test	DEFW &FFFF
+	
+one     DEFW 1           ; one
+max	DEFW &7FFF	 ; max ?
+neg     DEFW &8000       ; -max
+zero    DEFW &0000       ; zero
+delay	DEFW &000F	 ; 16
+	
+delay_1 DEFW &2ABD
+delay_2 DEFW &38FF
+delay_max DEFW &7FFF
+
+traffic DEFW &0FFF

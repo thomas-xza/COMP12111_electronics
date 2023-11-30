@@ -23,6 +23,21 @@ class Test_gen_assembly(unittest.TestCase):
         self.assertEqual(asm_string, expected_asm_str)
 
 
+    def test_get_next_m_light(self):
+
+        next_light = get_next_m_light(0xffa, 7)
+
+        self.assertEqual(next_light, )
+
+
+    # def test_generate_m_light_asm_valid_2(self):
+
+    #     asm_string = generate_m_light_asm(0xffa, 7)
+
+    #     expected_asm_str = "\n".join(['', 'STA 4089'])
+
+    #     self.assertEqual(asm_string, expected_asm_str)
+
 
 if __name__ == '__main__':
     unittest.main()

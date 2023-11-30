@@ -1,0 +1,2353 @@
+KMD
+00000000:       ; 
+00000000:       ; 
+00000000:       ;         ORG  0
+00000000:       ; 
+00000000:       ; 
+00000000:       ; flash_130
+00000000: 2417  ; ADD max
+00000001: 1FFF  ; STA &0FFF
+00000002: 041E  ; LDA m_pattern_a
+00000003: 1FFA  ; STA &FFA
+00000004: 0419  ; LDA zero
+00000005:       ; 
+00000005:       ; 
+00000005:       ; 
+00000005: 041D  ; LDA delay_max
+00000006:       ; loop_delay_130_0_0
+00000006: 3416  ; sub one
+00000007: 6006  ; JNE loop_delay_130_0_0
+00000008:       ; 
+00000008: 041D  ; LDA delay_max
+00000009:       ; loop_delay_130_0_1
+00000009: 3416  ; sub one
+0000000A: 6009  ; JNE loop_delay_130_0_1
+0000000B:       ; 
+0000000B: 041D  ; LDA delay_max
+0000000C:       ; loop_delay_130_0_2
+0000000C: 3416  ; sub one
+0000000D: 600C  ; JNE loop_delay_130_0_2
+0000000E:       ; 
+0000000E: 041D  ; LDA delay_max
+0000000F:       ; loop_delay_130_0_3
+0000000F: 3416  ; sub one
+00000010: 600F  ; JNE loop_delay_130_0_3
+00000011:       ; 
+00000011: 041D  ; LDA delay_max
+00000012:       ; loop_delay_130_0_4
+00000012: 3416  ; sub one
+00000013: 6012  ; JNE loop_delay_130_0_4
+00000014:       ; 
+00000014: 041D  ; LDA delay_max
+00000015:       ; loop_delay_130_0_5
+00000015: 3416  ; sub one
+00000016: 6015  ; JNE loop_delay_130_0_5
+00000017:       ; 
+00000017: 041D  ; LDA delay_max
+00000018:       ; loop_delay_130_0_6
+00000018: 3416  ; sub one
+00000019: 6018  ; JNE loop_delay_130_0_6
+0000001A:       ; 
+0000001A: 041D  ; LDA delay_max
+0000001B:       ; loop_delay_130_0_7
+0000001B: 3416  ; sub one
+0000001C: 601B  ; JNE loop_delay_130_0_7
+0000001D:       ; 
+0000001D: 041D  ; LDA delay_max
+0000001E:       ; loop_delay_130_0_8
+0000001E: 3416  ; sub one
+0000001F: 601E  ; JNE loop_delay_130_0_8
+00000020:       ; 
+00000020: 041D  ; LDA delay_max
+00000021:       ; loop_delay_130_0_9
+00000021: 3416  ; sub one
+00000022: 6021  ; JNE loop_delay_130_0_9
+00000023:       ; 
+00000023: 041D  ; LDA delay_max
+00000024:       ; loop_delay_130_0_10
+00000024: 3416  ; sub one
+00000025: 6024  ; JNE loop_delay_130_0_10
+00000026:       ; 
+00000026: 041D  ; LDA delay_max
+00000027:       ; loop_delay_130_0_11
+00000027: 3416  ; sub one
+00000028: 6027  ; JNE loop_delay_130_0_11
+00000029:       ; 
+00000029: 041D  ; LDA delay_max
+0000002A:       ; loop_delay_130_0_12
+0000002A: 3416  ; sub one
+0000002B: 602A  ; JNE loop_delay_130_0_12
+0000002C:       ; 
+0000002C: 041D  ; LDA delay_max
+0000002D:       ; loop_delay_130_0_13
+0000002D: 3416  ; sub one
+0000002E: 602D  ; JNE loop_delay_130_0_13
+0000002F:       ; 
+0000002F: 041D  ; LDA delay_max
+00000030:       ; loop_delay_130_0_14
+00000030: 3416  ; sub one
+00000031: 6030  ; JNE loop_delay_130_0_14
+00000032:       ; 
+00000032: 041D  ; LDA delay_max
+00000033:       ; loop_delay_130_0_15
+00000033: 3416  ; sub one
+00000034: 6033  ; JNE loop_delay_130_0_15
+00000035:       ; 
+00000035: 041D  ; LDA delay_max
+00000036:       ; loop_delay_130_0_16
+00000036: 3416  ; sub one
+00000037: 6036  ; JNE loop_delay_130_0_16
+00000038:       ; 
+00000038: 041D  ; LDA delay_max
+00000039:       ; loop_delay_130_0_17
+00000039: 3416  ; sub one
+0000003A: 6039  ; JNE loop_delay_130_0_17
+0000003B:       ; 
+0000003B: 041D  ; LDA delay_max
+0000003C:       ; loop_delay_130_0_18
+0000003C: 3416  ; sub one
+0000003D: 603C  ; JNE loop_delay_130_0_18
+0000003E:       ; 
+0000003E: 041D  ; LDA delay_max
+0000003F:       ; loop_delay_130_0_19
+0000003F: 3416  ; sub one
+00000040: 603F  ; JNE loop_delay_130_0_19
+00000041:       ; 
+00000041: 041D  ; LDA delay_max
+00000042:       ; loop_delay_130_0_20
+00000042: 3416  ; sub one
+00000043: 6042  ; JNE loop_delay_130_0_20
+00000044:       ; 
+00000044: 041D  ; LDA delay_max
+00000045:       ; loop_delay_130_0_21
+00000045: 3416  ; sub one
+00000046: 6045  ; JNE loop_delay_130_0_21
+00000047:       ; 
+00000047: 041D  ; LDA delay_max
+00000048:       ; loop_delay_130_0_22
+00000048: 3416  ; sub one
+00000049: 6048  ; JNE loop_delay_130_0_22
+0000004A:       ; 
+0000004A: 041D  ; LDA delay_max
+0000004B:       ; loop_delay_130_0_23
+0000004B: 3416  ; sub one
+0000004C: 604B  ; JNE loop_delay_130_0_23
+0000004D:       ; 
+0000004D: 041D  ; LDA delay_max
+0000004E:       ; loop_delay_130_0_24
+0000004E: 3416  ; sub one
+0000004F: 604E  ; JNE loop_delay_130_0_24
+00000050:       ; 
+00000050: 041D  ; LDA delay_max
+00000051:       ; loop_delay_130_0_25
+00000051: 3416  ; sub one
+00000052: 6051  ; JNE loop_delay_130_0_25
+00000053:       ; 
+00000053: 041D  ; LDA delay_max
+00000054:       ; loop_delay_130_0_26
+00000054: 3416  ; sub one
+00000055: 6054  ; JNE loop_delay_130_0_26
+00000056:       ; 
+00000056: 041D  ; LDA delay_max
+00000057:       ; loop_delay_130_0_27
+00000057: 3416  ; sub one
+00000058: 6057  ; JNE loop_delay_130_0_27
+00000059:       ; 
+00000059: 041D  ; LDA delay_max
+0000005A:       ; loop_delay_130_0_28
+0000005A: 3416  ; sub one
+0000005B: 605A  ; JNE loop_delay_130_0_28
+0000005C:       ; 
+0000005C: 041D  ; LDA delay_max
+0000005D:       ; loop_delay_130_0_29
+0000005D: 3416  ; sub one
+0000005E: 605D  ; JNE loop_delay_130_0_29
+0000005F:       ; 
+0000005F: 041D  ; LDA delay_max
+00000060:       ; loop_delay_130_0_30
+00000060: 3416  ; sub one
+00000061: 6060  ; JNE loop_delay_130_0_30
+00000062:       ; 
+00000062: 041D  ; LDA delay_max
+00000063:       ; loop_delay_130_0_31
+00000063: 3416  ; sub one
+00000064: 6063  ; JNE loop_delay_130_0_31
+00000065:       ; 
+00000065:       ; 
+00000065:       ; 
+00000065: 1FFF  ; STA &0FFF
+00000066:       ; 
+00000066: 041D  ; LDA delay_max
+00000067:       ; loop_delay_130_1_0
+00000067: 3416  ; sub one
+00000068: 6067  ; JNE loop_delay_130_1_0
+00000069:       ; 
+00000069: 041D  ; LDA delay_max
+0000006A:       ; loop_delay_130_1_1
+0000006A: 3416  ; sub one
+0000006B: 606A  ; JNE loop_delay_130_1_1
+0000006C:       ; 
+0000006C: 041D  ; LDA delay_max
+0000006D:       ; loop_delay_130_1_2
+0000006D: 3416  ; sub one
+0000006E: 606D  ; JNE loop_delay_130_1_2
+0000006F:       ; 
+0000006F: 041D  ; LDA delay_max
+00000070:       ; loop_delay_130_1_3
+00000070: 3416  ; sub one
+00000071: 6070  ; JNE loop_delay_130_1_3
+00000072:       ; 
+00000072: 041D  ; LDA delay_max
+00000073:       ; loop_delay_130_1_4
+00000073: 3416  ; sub one
+00000074: 6073  ; JNE loop_delay_130_1_4
+00000075:       ; 
+00000075: 041D  ; LDA delay_max
+00000076:       ; loop_delay_130_1_5
+00000076: 3416  ; sub one
+00000077: 6076  ; JNE loop_delay_130_1_5
+00000078:       ; 
+00000078: 041D  ; LDA delay_max
+00000079:       ; loop_delay_130_1_6
+00000079: 3416  ; sub one
+0000007A: 6079  ; JNE loop_delay_130_1_6
+0000007B:       ; 
+0000007B: 041D  ; LDA delay_max
+0000007C:       ; loop_delay_130_1_7
+0000007C: 3416  ; sub one
+0000007D: 607C  ; JNE loop_delay_130_1_7
+0000007E:       ; 
+0000007E: 041D  ; LDA delay_max
+0000007F:       ; loop_delay_130_1_8
+0000007F: 3416  ; sub one
+00000080: 607F  ; JNE loop_delay_130_1_8
+00000081:       ; 
+00000081: 041D  ; LDA delay_max
+00000082:       ; loop_delay_130_1_9
+00000082: 3416  ; sub one
+00000083: 6082  ; JNE loop_delay_130_1_9
+00000084:       ; 
+00000084: 041D  ; LDA delay_max
+00000085:       ; loop_delay_130_1_10
+00000085: 3416  ; sub one
+00000086: 6085  ; JNE loop_delay_130_1_10
+00000087:       ; 
+00000087: 041D  ; LDA delay_max
+00000088:       ; loop_delay_130_1_11
+00000088: 3416  ; sub one
+00000089: 6088  ; JNE loop_delay_130_1_11
+0000008A:       ; 
+0000008A: 041D  ; LDA delay_max
+0000008B:       ; loop_delay_130_1_12
+0000008B: 3416  ; sub one
+0000008C: 608B  ; JNE loop_delay_130_1_12
+0000008D:       ; 
+0000008D: 041D  ; LDA delay_max
+0000008E:       ; loop_delay_130_1_13
+0000008E: 3416  ; sub one
+0000008F: 608E  ; JNE loop_delay_130_1_13
+00000090:       ; 
+00000090: 041D  ; LDA delay_max
+00000091:       ; loop_delay_130_1_14
+00000091: 3416  ; sub one
+00000092: 6091  ; JNE loop_delay_130_1_14
+00000093:       ; 
+00000093: 041D  ; LDA delay_max
+00000094:       ; loop_delay_130_1_15
+00000094: 3416  ; sub one
+00000095: 6094  ; JNE loop_delay_130_1_15
+00000096:       ; 
+00000096: 041D  ; LDA delay_max
+00000097:       ; loop_delay_130_1_16
+00000097: 3416  ; sub one
+00000098: 6097  ; JNE loop_delay_130_1_16
+00000099:       ; 
+00000099: 041D  ; LDA delay_max
+0000009A:       ; loop_delay_130_1_17
+0000009A: 3416  ; sub one
+0000009B: 609A  ; JNE loop_delay_130_1_17
+0000009C:       ; 
+0000009C: 041D  ; LDA delay_max
+0000009D:       ; loop_delay_130_1_18
+0000009D: 3416  ; sub one
+0000009E: 609D  ; JNE loop_delay_130_1_18
+0000009F:       ; 
+0000009F: 041D  ; LDA delay_max
+000000A0:       ; loop_delay_130_1_19
+000000A0: 3416  ; sub one
+000000A1: 60A0  ; JNE loop_delay_130_1_19
+000000A2:       ; 
+000000A2: 041D  ; LDA delay_max
+000000A3:       ; loop_delay_130_1_20
+000000A3: 3416  ; sub one
+000000A4: 60A3  ; JNE loop_delay_130_1_20
+000000A5:       ; 
+000000A5: 041D  ; LDA delay_max
+000000A6:       ; loop_delay_130_1_21
+000000A6: 3416  ; sub one
+000000A7: 60A6  ; JNE loop_delay_130_1_21
+000000A8:       ; 
+000000A8: 041D  ; LDA delay_max
+000000A9:       ; loop_delay_130_1_22
+000000A9: 3416  ; sub one
+000000AA: 60A9  ; JNE loop_delay_130_1_22
+000000AB:       ; 
+000000AB: 041D  ; LDA delay_max
+000000AC:       ; loop_delay_130_1_23
+000000AC: 3416  ; sub one
+000000AD: 60AC  ; JNE loop_delay_130_1_23
+000000AE:       ; 
+000000AE: 041D  ; LDA delay_max
+000000AF:       ; loop_delay_130_1_24
+000000AF: 3416  ; sub one
+000000B0: 60AF  ; JNE loop_delay_130_1_24
+000000B1:       ; 
+000000B1: 041D  ; LDA delay_max
+000000B2:       ; loop_delay_130_1_25
+000000B2: 3416  ; sub one
+000000B3: 60B2  ; JNE loop_delay_130_1_25
+000000B4:       ; 
+000000B4: 041D  ; LDA delay_max
+000000B5:       ; loop_delay_130_1_26
+000000B5: 3416  ; sub one
+000000B6: 60B5  ; JNE loop_delay_130_1_26
+000000B7:       ; 
+000000B7: 041D  ; LDA delay_max
+000000B8:       ; loop_delay_130_1_27
+000000B8: 3416  ; sub one
+000000B9: 60B8  ; JNE loop_delay_130_1_27
+000000BA:       ; 
+000000BA: 041D  ; LDA delay_max
+000000BB:       ; loop_delay_130_1_28
+000000BB: 3416  ; sub one
+000000BC: 60BB  ; JNE loop_delay_130_1_28
+000000BD:       ; 
+000000BD: 041D  ; LDA delay_max
+000000BE:       ; loop_delay_130_1_29
+000000BE: 3416  ; sub one
+000000BF: 60BE  ; JNE loop_delay_130_1_29
+000000C0:       ; 
+000000C0: 041D  ; LDA delay_max
+000000C1:       ; loop_delay_130_1_30
+000000C1: 3416  ; sub one
+000000C2: 60C1  ; JNE loop_delay_130_1_30
+000000C3:       ; 
+000000C3: 041D  ; LDA delay_max
+000000C4:       ; loop_delay_130_1_31
+000000C4: 3416  ; sub one
+000000C5: 60C4  ; JNE loop_delay_130_1_31
+000000C6:       ; 
+000000C6:       ; 
+000000C6:       ; 
+000000C6:       ; 
+000000C6:       ; 
+000000C6:       ; 
+000000C6:       ; flash_129
+000000C6: 2417  ; ADD max
+000000C7: 1FFF  ; STA &0FFF
+000000C8: 041F  ; LDA m_pattern_b
+000000C9: 1FF9  ; STA &FF9
+000000CA: 0419  ; LDA zero
+000000CB:       ; 
+000000CB:       ; 
+000000CB:       ; 
+000000CB: 041D  ; LDA delay_max
+000000CC:       ; loop_delay_129_0_0
+000000CC: 3416  ; sub one
+000000CD: 60CC  ; JNE loop_delay_129_0_0
+000000CE:       ; 
+000000CE: 041D  ; LDA delay_max
+000000CF:       ; loop_delay_129_0_1
+000000CF: 3416  ; sub one
+000000D0: 60CF  ; JNE loop_delay_129_0_1
+000000D1:       ; 
+000000D1: 041D  ; LDA delay_max
+000000D2:       ; loop_delay_129_0_2
+000000D2: 3416  ; sub one
+000000D3: 60D2  ; JNE loop_delay_129_0_2
+000000D4:       ; 
+000000D4: 041D  ; LDA delay_max
+000000D5:       ; loop_delay_129_0_3
+000000D5: 3416  ; sub one
+000000D6: 60D5  ; JNE loop_delay_129_0_3
+000000D7:       ; 
+000000D7: 041D  ; LDA delay_max
+000000D8:       ; loop_delay_129_0_4
+000000D8: 3416  ; sub one
+000000D9: 60D8  ; JNE loop_delay_129_0_4
+000000DA:       ; 
+000000DA: 041D  ; LDA delay_max
+000000DB:       ; loop_delay_129_0_5
+000000DB: 3416  ; sub one
+000000DC: 60DB  ; JNE loop_delay_129_0_5
+000000DD:       ; 
+000000DD: 041D  ; LDA delay_max
+000000DE:       ; loop_delay_129_0_6
+000000DE: 3416  ; sub one
+000000DF: 60DE  ; JNE loop_delay_129_0_6
+000000E0:       ; 
+000000E0: 041D  ; LDA delay_max
+000000E1:       ; loop_delay_129_0_7
+000000E1: 3416  ; sub one
+000000E2: 60E1  ; JNE loop_delay_129_0_7
+000000E3:       ; 
+000000E3: 041D  ; LDA delay_max
+000000E4:       ; loop_delay_129_0_8
+000000E4: 3416  ; sub one
+000000E5: 60E4  ; JNE loop_delay_129_0_8
+000000E6:       ; 
+000000E6: 041D  ; LDA delay_max
+000000E7:       ; loop_delay_129_0_9
+000000E7: 3416  ; sub one
+000000E8: 60E7  ; JNE loop_delay_129_0_9
+000000E9:       ; 
+000000E9: 041D  ; LDA delay_max
+000000EA:       ; loop_delay_129_0_10
+000000EA: 3416  ; sub one
+000000EB: 60EA  ; JNE loop_delay_129_0_10
+000000EC:       ; 
+000000EC: 041D  ; LDA delay_max
+000000ED:       ; loop_delay_129_0_11
+000000ED: 3416  ; sub one
+000000EE: 60ED  ; JNE loop_delay_129_0_11
+000000EF:       ; 
+000000EF: 041D  ; LDA delay_max
+000000F0:       ; loop_delay_129_0_12
+000000F0: 3416  ; sub one
+000000F1: 60F0  ; JNE loop_delay_129_0_12
+000000F2:       ; 
+000000F2: 041D  ; LDA delay_max
+000000F3:       ; loop_delay_129_0_13
+000000F3: 3416  ; sub one
+000000F4: 60F3  ; JNE loop_delay_129_0_13
+000000F5:       ; 
+000000F5: 041D  ; LDA delay_max
+000000F6:       ; loop_delay_129_0_14
+000000F6: 3416  ; sub one
+000000F7: 60F6  ; JNE loop_delay_129_0_14
+000000F8:       ; 
+000000F8: 041D  ; LDA delay_max
+000000F9:       ; loop_delay_129_0_15
+000000F9: 3416  ; sub one
+000000FA: 60F9  ; JNE loop_delay_129_0_15
+000000FB:       ; 
+000000FB:       ; 
+000000FB:       ; 
+000000FB: 1FFF  ; STA &0FFF
+000000FC:       ; 
+000000FC: 041D  ; LDA delay_max
+000000FD:       ; loop_delay_129_1_0
+000000FD: 3416  ; sub one
+000000FE: 60FD  ; JNE loop_delay_129_1_0
+000000FF:       ; 
+000000FF: 041D  ; LDA delay_max
+00000100:       ; loop_delay_129_1_1
+00000100: 3416  ; sub one
+00000101: 6100  ; JNE loop_delay_129_1_1
+00000102:       ; 
+00000102: 041D  ; LDA delay_max
+00000103:       ; loop_delay_129_1_2
+00000103: 3416  ; sub one
+00000104: 6103  ; JNE loop_delay_129_1_2
+00000105:       ; 
+00000105: 041D  ; LDA delay_max
+00000106:       ; loop_delay_129_1_3
+00000106: 3416  ; sub one
+00000107: 6106  ; JNE loop_delay_129_1_3
+00000108:       ; 
+00000108: 041D  ; LDA delay_max
+00000109:       ; loop_delay_129_1_4
+00000109: 3416  ; sub one
+0000010A: 6109  ; JNE loop_delay_129_1_4
+0000010B:       ; 
+0000010B: 041D  ; LDA delay_max
+0000010C:       ; loop_delay_129_1_5
+0000010C: 3416  ; sub one
+0000010D: 610C  ; JNE loop_delay_129_1_5
+0000010E:       ; 
+0000010E: 041D  ; LDA delay_max
+0000010F:       ; loop_delay_129_1_6
+0000010F: 3416  ; sub one
+00000110: 610F  ; JNE loop_delay_129_1_6
+00000111:       ; 
+00000111: 041D  ; LDA delay_max
+00000112:       ; loop_delay_129_1_7
+00000112: 3416  ; sub one
+00000113: 6112  ; JNE loop_delay_129_1_7
+00000114:       ; 
+00000114: 041D  ; LDA delay_max
+00000115:       ; loop_delay_129_1_8
+00000115: 3416  ; sub one
+00000116: 6115  ; JNE loop_delay_129_1_8
+00000117:       ; 
+00000117: 041D  ; LDA delay_max
+00000118:       ; loop_delay_129_1_9
+00000118: 3416  ; sub one
+00000119: 6118  ; JNE loop_delay_129_1_9
+0000011A:       ; 
+0000011A: 041D  ; LDA delay_max
+0000011B:       ; loop_delay_129_1_10
+0000011B: 3416  ; sub one
+0000011C: 611B  ; JNE loop_delay_129_1_10
+0000011D:       ; 
+0000011D: 041D  ; LDA delay_max
+0000011E:       ; loop_delay_129_1_11
+0000011E: 3416  ; sub one
+0000011F: 611E  ; JNE loop_delay_129_1_11
+00000120:       ; 
+00000120: 041D  ; LDA delay_max
+00000121:       ; loop_delay_129_1_12
+00000121: 3416  ; sub one
+00000122: 6121  ; JNE loop_delay_129_1_12
+00000123:       ; 
+00000123: 041D  ; LDA delay_max
+00000124:       ; loop_delay_129_1_13
+00000124: 3416  ; sub one
+00000125: 6124  ; JNE loop_delay_129_1_13
+00000126:       ; 
+00000126: 041D  ; LDA delay_max
+00000127:       ; loop_delay_129_1_14
+00000127: 3416  ; sub one
+00000128: 6127  ; JNE loop_delay_129_1_14
+00000129:       ; 
+00000129: 041D  ; LDA delay_max
+0000012A:       ; loop_delay_129_1_15
+0000012A: 3416  ; sub one
+0000012B: 612A  ; JNE loop_delay_129_1_15
+0000012C:       ; 
+0000012C:       ; 
+0000012C:       ; 
+0000012C:       ; 
+0000012C:       ; 
+0000012C:       ; 
+0000012C:       ; flash_128
+0000012C: 2417  ; ADD max
+0000012D: 1FFF  ; STA &0FFF
+0000012E: 041E  ; LDA m_pattern_a
+0000012F: 1FF8  ; STA &FF8
+00000130: 0419  ; LDA zero
+00000131:       ; 
+00000131:       ; 
+00000131:       ; 
+00000131: 041D  ; LDA delay_max
+00000132:       ; loop_delay_128_0_0
+00000132: 3416  ; sub one
+00000133: 6132  ; JNE loop_delay_128_0_0
+00000134:       ; 
+00000134: 041D  ; LDA delay_max
+00000135:       ; loop_delay_128_0_1
+00000135: 3416  ; sub one
+00000136: 6135  ; JNE loop_delay_128_0_1
+00000137:       ; 
+00000137: 041D  ; LDA delay_max
+00000138:       ; loop_delay_128_0_2
+00000138: 3416  ; sub one
+00000139: 6138  ; JNE loop_delay_128_0_2
+0000013A:       ; 
+0000013A: 041D  ; LDA delay_max
+0000013B:       ; loop_delay_128_0_3
+0000013B: 3416  ; sub one
+0000013C: 613B  ; JNE loop_delay_128_0_3
+0000013D:       ; 
+0000013D: 041D  ; LDA delay_max
+0000013E:       ; loop_delay_128_0_4
+0000013E: 3416  ; sub one
+0000013F: 613E  ; JNE loop_delay_128_0_4
+00000140:       ; 
+00000140: 041D  ; LDA delay_max
+00000141:       ; loop_delay_128_0_5
+00000141: 3416  ; sub one
+00000142: 6141  ; JNE loop_delay_128_0_5
+00000143:       ; 
+00000143: 041D  ; LDA delay_max
+00000144:       ; loop_delay_128_0_6
+00000144: 3416  ; sub one
+00000145: 6144  ; JNE loop_delay_128_0_6
+00000146:       ; 
+00000146: 041D  ; LDA delay_max
+00000147:       ; loop_delay_128_0_7
+00000147: 3416  ; sub one
+00000148: 6147  ; JNE loop_delay_128_0_7
+00000149:       ; 
+00000149:       ; 
+00000149:       ; 
+00000149: 1FFF  ; STA &0FFF
+0000014A:       ; 
+0000014A: 041D  ; LDA delay_max
+0000014B:       ; loop_delay_128_1_0
+0000014B: 3416  ; sub one
+0000014C: 614B  ; JNE loop_delay_128_1_0
+0000014D:       ; 
+0000014D: 041D  ; LDA delay_max
+0000014E:       ; loop_delay_128_1_1
+0000014E: 3416  ; sub one
+0000014F: 614E  ; JNE loop_delay_128_1_1
+00000150:       ; 
+00000150: 041D  ; LDA delay_max
+00000151:       ; loop_delay_128_1_2
+00000151: 3416  ; sub one
+00000152: 6151  ; JNE loop_delay_128_1_2
+00000153:       ; 
+00000153: 041D  ; LDA delay_max
+00000154:       ; loop_delay_128_1_3
+00000154: 3416  ; sub one
+00000155: 6154  ; JNE loop_delay_128_1_3
+00000156:       ; 
+00000156: 041D  ; LDA delay_max
+00000157:       ; loop_delay_128_1_4
+00000157: 3416  ; sub one
+00000158: 6157  ; JNE loop_delay_128_1_4
+00000159:       ; 
+00000159: 041D  ; LDA delay_max
+0000015A:       ; loop_delay_128_1_5
+0000015A: 3416  ; sub one
+0000015B: 615A  ; JNE loop_delay_128_1_5
+0000015C:       ; 
+0000015C: 041D  ; LDA delay_max
+0000015D:       ; loop_delay_128_1_6
+0000015D: 3416  ; sub one
+0000015E: 615D  ; JNE loop_delay_128_1_6
+0000015F:       ; 
+0000015F: 041D  ; LDA delay_max
+00000160:       ; loop_delay_128_1_7
+00000160: 3416  ; sub one
+00000161: 6160  ; JNE loop_delay_128_1_7
+00000162:       ; 
+00000162:       ; 
+00000162:       ; 
+00000162:       ; 
+00000162:       ; 
+00000162:       ; 
+00000162:       ; flash_127
+00000162: 2417  ; ADD max
+00000163: 1FFF  ; STA &0FFF
+00000164: 041F  ; LDA m_pattern_b
+00000165: 1FF7  ; STA &FF7
+00000166: 0419  ; LDA zero
+00000167:       ; 
+00000167:       ; 
+00000167:       ; 
+00000167: 041D  ; LDA delay_max
+00000168:       ; loop_delay_127_0_0
+00000168: 3416  ; sub one
+00000169: 6168  ; JNE loop_delay_127_0_0
+0000016A:       ; 
+0000016A: 041D  ; LDA delay_max
+0000016B:       ; loop_delay_127_0_1
+0000016B: 3416  ; sub one
+0000016C: 616B  ; JNE loop_delay_127_0_1
+0000016D:       ; 
+0000016D: 041D  ; LDA delay_max
+0000016E:       ; loop_delay_127_0_2
+0000016E: 3416  ; sub one
+0000016F: 616E  ; JNE loop_delay_127_0_2
+00000170:       ; 
+00000170: 041D  ; LDA delay_max
+00000171:       ; loop_delay_127_0_3
+00000171: 3416  ; sub one
+00000172: 6171  ; JNE loop_delay_127_0_3
+00000173:       ; 
+00000173:       ; 
+00000173:       ; 
+00000173: 1FFF  ; STA &0FFF
+00000174:       ; 
+00000174: 041D  ; LDA delay_max
+00000175:       ; loop_delay_127_1_0
+00000175: 3416  ; sub one
+00000176: 6175  ; JNE loop_delay_127_1_0
+00000177:       ; 
+00000177: 041D  ; LDA delay_max
+00000178:       ; loop_delay_127_1_1
+00000178: 3416  ; sub one
+00000179: 6178  ; JNE loop_delay_127_1_1
+0000017A:       ; 
+0000017A: 041D  ; LDA delay_max
+0000017B:       ; loop_delay_127_1_2
+0000017B: 3416  ; sub one
+0000017C: 617B  ; JNE loop_delay_127_1_2
+0000017D:       ; 
+0000017D: 041D  ; LDA delay_max
+0000017E:       ; loop_delay_127_1_3
+0000017E: 3416  ; sub one
+0000017F: 617E  ; JNE loop_delay_127_1_3
+00000180:       ; 
+00000180:       ; 
+00000180:       ; 
+00000180:       ; 
+00000180:       ; 
+00000180:       ; 
+00000180:       ; flash_126
+00000180: 2417  ; ADD max
+00000181: 1FFF  ; STA &0FFF
+00000182: 041E  ; LDA m_pattern_a
+00000183: 1FF6  ; STA &FF6
+00000184: 0419  ; LDA zero
+00000185:       ; 
+00000185:       ; 
+00000185:       ; 
+00000185: 041D  ; LDA delay_max
+00000186:       ; loop_delay_126_0_0
+00000186: 3416  ; sub one
+00000187: 6186  ; JNE loop_delay_126_0_0
+00000188:       ; 
+00000188: 041D  ; LDA delay_max
+00000189:       ; loop_delay_126_0_1
+00000189: 3416  ; sub one
+0000018A: 6189  ; JNE loop_delay_126_0_1
+0000018B:       ; 
+0000018B:       ; 
+0000018B:       ; 
+0000018B: 1FFF  ; STA &0FFF
+0000018C:       ; 
+0000018C: 041D  ; LDA delay_max
+0000018D:       ; loop_delay_126_1_0
+0000018D: 3416  ; sub one
+0000018E: 618D  ; JNE loop_delay_126_1_0
+0000018F:       ; 
+0000018F: 041D  ; LDA delay_max
+00000190:       ; loop_delay_126_1_1
+00000190: 3416  ; sub one
+00000191: 6190  ; JNE loop_delay_126_1_1
+00000192:       ; 
+00000192:       ; 
+00000192:       ; 
+00000192:       ; 
+00000192:       ; 
+00000192:       ; 
+00000192:       ; flash_125
+00000192: 2417  ; ADD max
+00000193: 1FFF  ; STA &0FFF
+00000194: 041F  ; LDA m_pattern_b
+00000195: 1FF5  ; STA &FF5
+00000196: 0419  ; LDA zero
+00000197:       ; 
+00000197:       ; 
+00000197:       ; 
+00000197: 041D  ; LDA delay_max
+00000198:       ; loop_delay_125_0_0
+00000198: 3416  ; sub one
+00000199: 6198  ; JNE loop_delay_125_0_0
+0000019A:       ; 
+0000019A:       ; 
+0000019A:       ; 
+0000019A: 1FFF  ; STA &0FFF
+0000019B:       ; 
+0000019B: 041D  ; LDA delay_max
+0000019C:       ; loop_delay_125_1_0
+0000019C: 3416  ; sub one
+0000019D: 619C  ; JNE loop_delay_125_1_0
+0000019E:       ; 
+0000019E:       ; 
+0000019E:       ; 
+0000019E:       ; 
+0000019E:       ; 
+0000019E:       ; 
+0000019E:       ; flash_124
+0000019E: 2417  ; ADD max
+0000019F: 1FFF  ; STA &0FFF
+000001A0:       ; 
+000001A0:       ; 
+000001A0: 041D  ; LDA delay_max
+000001A1:       ; loop_delay_124_0_0
+000001A1: 3416  ; sub one
+000001A2: 61A1  ; JNE loop_delay_124_0_0
+000001A3:       ; 
+000001A3:       ; 
+000001A3:       ; 
+000001A3: 1FFF  ; STA &0FFF
+000001A4:       ; 
+000001A4: 041D  ; LDA delay_max
+000001A5:       ; loop_delay_124_1_0
+000001A5: 3416  ; sub one
+000001A6: 61A5  ; JNE loop_delay_124_1_0
+000001A7:       ; 
+000001A7:       ; 
+000001A7:       ; 
+000001A7: 1FFA  ; STA 4090
+000001A8:       ; 
+000001A8:       ; 
+000001A8:       ; flash_123
+000001A8: 2417  ; ADD max
+000001A9: 1FFF  ; STA &0FFF
+000001AA:       ; 
+000001AA:       ; 
+000001AA: 041D  ; LDA delay_max
+000001AB:       ; loop_delay_123_0_0
+000001AB: 3416  ; sub one
+000001AC: 61AB  ; JNE loop_delay_123_0_0
+000001AD:       ; 
+000001AD:       ; 
+000001AD:       ; 
+000001AD: 1FFF  ; STA &0FFF
+000001AE:       ; 
+000001AE: 041D  ; LDA delay_max
+000001AF:       ; loop_delay_123_1_0
+000001AF: 3416  ; sub one
+000001B0: 61AF  ; JNE loop_delay_123_1_0
+000001B1:       ; 
+000001B1:       ; 
+000001B1:       ; 
+000001B1: 1FF9  ; STA 4089
+000001B2:       ; 
+000001B2:       ; 
+000001B2:       ; flash_122
+000001B2: 2417  ; ADD max
+000001B3: 1FFF  ; STA &0FFF
+000001B4:       ; 
+000001B4:       ; 
+000001B4: 041D  ; LDA delay_max
+000001B5:       ; loop_delay_122_0_0
+000001B5: 3416  ; sub one
+000001B6: 61B5  ; JNE loop_delay_122_0_0
+000001B7:       ; 
+000001B7:       ; 
+000001B7:       ; 
+000001B7: 1FFF  ; STA &0FFF
+000001B8:       ; 
+000001B8: 041D  ; LDA delay_max
+000001B9:       ; loop_delay_122_1_0
+000001B9: 3416  ; sub one
+000001BA: 61B9  ; JNE loop_delay_122_1_0
+000001BB:       ; 
+000001BB:       ; 
+000001BB:       ; 
+000001BB: 1FF8  ; STA 4088
+000001BC:       ; 
+000001BC:       ; 
+000001BC:       ; flash_121
+000001BC: 2417  ; ADD max
+000001BD: 1FFF  ; STA &0FFF
+000001BE:       ; 
+000001BE:       ; 
+000001BE: 041D  ; LDA delay_max
+000001BF:       ; loop_delay_121_0_0
+000001BF: 3416  ; sub one
+000001C0: 61BF  ; JNE loop_delay_121_0_0
+000001C1:       ; 
+000001C1:       ; 
+000001C1:       ; 
+000001C1: 1FFF  ; STA &0FFF
+000001C2:       ; 
+000001C2: 041D  ; LDA delay_max
+000001C3:       ; loop_delay_121_1_0
+000001C3: 3416  ; sub one
+000001C4: 61C3  ; JNE loop_delay_121_1_0
+000001C5:       ; 
+000001C5:       ; 
+000001C5:       ; 
+000001C5: 1FF7  ; STA 4087
+000001C6:       ; 
+000001C6:       ; 
+000001C6:       ; flash_120
+000001C6: 2417  ; ADD max
+000001C7: 1FFF  ; STA &0FFF
+000001C8:       ; 
+000001C8:       ; 
+000001C8: 041D  ; LDA delay_max
+000001C9:       ; loop_delay_120_0_0
+000001C9: 3416  ; sub one
+000001CA: 61C9  ; JNE loop_delay_120_0_0
+000001CB:       ; 
+000001CB:       ; 
+000001CB:       ; 
+000001CB: 1FFF  ; STA &0FFF
+000001CC:       ; 
+000001CC: 041D  ; LDA delay_max
+000001CD:       ; loop_delay_120_1_0
+000001CD: 3416  ; sub one
+000001CE: 61CD  ; JNE loop_delay_120_1_0
+000001CF:       ; 
+000001CF:       ; 
+000001CF:       ; 
+000001CF: 1FF6  ; STA 4086
+000001D0:       ; 
+000001D0:       ; 
+000001D0:       ; flash_119
+000001D0: 2417  ; ADD max
+000001D1: 1FFF  ; STA &0FFF
+000001D2:       ; 
+000001D2:       ; 
+000001D2: 041D  ; LDA delay_max
+000001D3:       ; loop_delay_119_0_0
+000001D3: 3416  ; sub one
+000001D4: 61D3  ; JNE loop_delay_119_0_0
+000001D5:       ; 
+000001D5:       ; 
+000001D5:       ; 
+000001D5: 1FFF  ; STA &0FFF
+000001D6:       ; 
+000001D6: 041D  ; LDA delay_max
+000001D7:       ; loop_delay_119_1_0
+000001D7: 3416  ; sub one
+000001D8: 61D7  ; JNE loop_delay_119_1_0
+000001D9:       ; 
+000001D9:       ; 
+000001D9:       ; 
+000001D9: 1FF5  ; STA 4085
+000001DA:       ; 
+000001DA:       ; 
+000001DA:       ; flash_118
+000001DA: 2417  ; ADD max
+000001DB: 1FFF  ; STA &0FFF
+000001DC: 041E  ; LDA m_pattern_a
+000001DD: 1FFA  ; STA &FFA
+000001DE: 0419  ; LDA zero
+000001DF:       ; 
+000001DF:       ; 
+000001DF:       ; 
+000001DF: 041D  ; LDA delay_max
+000001E0:       ; loop_delay_118_0_0
+000001E0: 3416  ; sub one
+000001E1: 61E0  ; JNE loop_delay_118_0_0
+000001E2:       ; 
+000001E2:       ; 
+000001E2:       ; 
+000001E2: 1FFF  ; STA &0FFF
+000001E3:       ; 
+000001E3: 041D  ; LDA delay_max
+000001E4:       ; loop_delay_118_1_0
+000001E4: 3416  ; sub one
+000001E5: 61E4  ; JNE loop_delay_118_1_0
+000001E6:       ; 
+000001E6:       ; 
+000001E6:       ; 
+000001E6:       ; 
+000001E6:       ; 
+000001E6:       ; 
+000001E6:       ; flash_117
+000001E6: 2417  ; ADD max
+000001E7: 1FFF  ; STA &0FFF
+000001E8: 041F  ; LDA m_pattern_b
+000001E9: 1FF9  ; STA &FF9
+000001EA: 0419  ; LDA zero
+000001EB:       ; 
+000001EB:       ; 
+000001EB:       ; 
+000001EB: 041D  ; LDA delay_max
+000001EC:       ; loop_delay_117_0_0
+000001EC: 3416  ; sub one
+000001ED: 61EC  ; JNE loop_delay_117_0_0
+000001EE:       ; 
+000001EE:       ; 
+000001EE:       ; 
+000001EE: 1FFF  ; STA &0FFF
+000001EF:       ; 
+000001EF: 041D  ; LDA delay_max
+000001F0:       ; loop_delay_117_1_0
+000001F0: 3416  ; sub one
+000001F1: 61F0  ; JNE loop_delay_117_1_0
+000001F2:       ; 
+000001F2:       ; 
+000001F2:       ; 
+000001F2:       ; 
+000001F2:       ; 
+000001F2:       ; 
+000001F2:       ; flash_116
+000001F2: 2417  ; ADD max
+000001F3: 1FFF  ; STA &0FFF
+000001F4: 041E  ; LDA m_pattern_a
+000001F5: 1FF8  ; STA &FF8
+000001F6: 0419  ; LDA zero
+000001F7:       ; 
+000001F7:       ; 
+000001F7:       ; 
+000001F7: 041D  ; LDA delay_max
+000001F8:       ; loop_delay_116_0_0
+000001F8: 3416  ; sub one
+000001F9: 61F8  ; JNE loop_delay_116_0_0
+000001FA:       ; 
+000001FA:       ; 
+000001FA:       ; 
+000001FA: 1FFF  ; STA &0FFF
+000001FB:       ; 
+000001FB: 041D  ; LDA delay_max
+000001FC:       ; loop_delay_116_1_0
+000001FC: 3416  ; sub one
+000001FD: 61FC  ; JNE loop_delay_116_1_0
+000001FE:       ; 
+000001FE:       ; 
+000001FE:       ; 
+000001FE:       ; 
+000001FE:       ; 
+000001FE:       ; 
+000001FE:       ; flash_115
+000001FE: 2417  ; ADD max
+000001FF: 1FFF  ; STA &0FFF
+00000200: 041F  ; LDA m_pattern_b
+00000201: 1FF7  ; STA &FF7
+00000202: 0419  ; LDA zero
+00000203:       ; 
+00000203:       ; 
+00000203:       ; 
+00000203: 041D  ; LDA delay_max
+00000204:       ; loop_delay_115_0_0
+00000204: 3416  ; sub one
+00000205: 6204  ; JNE loop_delay_115_0_0
+00000206:       ; 
+00000206:       ; 
+00000206:       ; 
+00000206: 1FFF  ; STA &0FFF
+00000207:       ; 
+00000207: 041D  ; LDA delay_max
+00000208:       ; loop_delay_115_1_0
+00000208: 3416  ; sub one
+00000209: 6208  ; JNE loop_delay_115_1_0
+0000020A:       ; 
+0000020A:       ; 
+0000020A:       ; 
+0000020A:       ; 
+0000020A:       ; 
+0000020A:       ; 
+0000020A:       ; flash_114
+0000020A: 2417  ; ADD max
+0000020B: 1FFF  ; STA &0FFF
+0000020C: 041E  ; LDA m_pattern_a
+0000020D: 1FF6  ; STA &FF6
+0000020E: 0419  ; LDA zero
+0000020F:       ; 
+0000020F:       ; 
+0000020F:       ; 
+0000020F: 041D  ; LDA delay_max
+00000210:       ; loop_delay_114_0_0
+00000210: 3416  ; sub one
+00000211: 6210  ; JNE loop_delay_114_0_0
+00000212:       ; 
+00000212:       ; 
+00000212:       ; 
+00000212: 1FFF  ; STA &0FFF
+00000213:       ; 
+00000213: 041D  ; LDA delay_max
+00000214:       ; loop_delay_114_1_0
+00000214: 3416  ; sub one
+00000215: 6214  ; JNE loop_delay_114_1_0
+00000216:       ; 
+00000216:       ; 
+00000216:       ; 
+00000216:       ; 
+00000216:       ; 
+00000216:       ; 
+00000216:       ; flash_113
+00000216: 2417  ; ADD max
+00000217: 1FFF  ; STA &0FFF
+00000218: 041F  ; LDA m_pattern_b
+00000219: 1FF5  ; STA &FF5
+0000021A: 0419  ; LDA zero
+0000021B:       ; 
+0000021B:       ; 
+0000021B:       ; 
+0000021B: 041D  ; LDA delay_max
+0000021C:       ; loop_delay_113_0_0
+0000021C: 3416  ; sub one
+0000021D: 621C  ; JNE loop_delay_113_0_0
+0000021E:       ; 
+0000021E: 041D  ; LDA delay_max
+0000021F:       ; loop_delay_113_0_1
+0000021F: 3416  ; sub one
+00000220: 621F  ; JNE loop_delay_113_0_1
+00000221:       ; 
+00000221:       ; 
+00000221:       ; 
+00000221: 1FFF  ; STA &0FFF
+00000222:       ; 
+00000222: 041D  ; LDA delay_max
+00000223:       ; loop_delay_113_1_0
+00000223: 3416  ; sub one
+00000224: 6223  ; JNE loop_delay_113_1_0
+00000225:       ; 
+00000225: 041D  ; LDA delay_max
+00000226:       ; loop_delay_113_1_1
+00000226: 3416  ; sub one
+00000227: 6226  ; JNE loop_delay_113_1_1
+00000228:       ; 
+00000228:       ; 
+00000228:       ; 
+00000228:       ; 
+00000228:       ; 
+00000228:       ; 
+00000228:       ; flash_112
+00000228: 2417  ; ADD max
+00000229: 1FFF  ; STA &0FFF
+0000022A: 041E  ; LDA m_pattern_a
+0000022B: 1FFA  ; STA &FFA
+0000022C: 0419  ; LDA zero
+0000022D:       ; 
+0000022D:       ; 
+0000022D:       ; 
+0000022D: 041D  ; LDA delay_max
+0000022E:       ; loop_delay_112_0_0
+0000022E: 3416  ; sub one
+0000022F: 622E  ; JNE loop_delay_112_0_0
+00000230:       ; 
+00000230: 041D  ; LDA delay_max
+00000231:       ; loop_delay_112_0_1
+00000231: 3416  ; sub one
+00000232: 6231  ; JNE loop_delay_112_0_1
+00000233:       ; 
+00000233: 041D  ; LDA delay_max
+00000234:       ; loop_delay_112_0_2
+00000234: 3416  ; sub one
+00000235: 6234  ; JNE loop_delay_112_0_2
+00000236:       ; 
+00000236: 041D  ; LDA delay_max
+00000237:       ; loop_delay_112_0_3
+00000237: 3416  ; sub one
+00000238: 6237  ; JNE loop_delay_112_0_3
+00000239:       ; 
+00000239:       ; 
+00000239:       ; 
+00000239: 1FFF  ; STA &0FFF
+0000023A:       ; 
+0000023A: 041D  ; LDA delay_max
+0000023B:       ; loop_delay_112_1_0
+0000023B: 3416  ; sub one
+0000023C: 623B  ; JNE loop_delay_112_1_0
+0000023D:       ; 
+0000023D: 041D  ; LDA delay_max
+0000023E:       ; loop_delay_112_1_1
+0000023E: 3416  ; sub one
+0000023F: 623E  ; JNE loop_delay_112_1_1
+00000240:       ; 
+00000240: 041D  ; LDA delay_max
+00000241:       ; loop_delay_112_1_2
+00000241: 3416  ; sub one
+00000242: 6241  ; JNE loop_delay_112_1_2
+00000243:       ; 
+00000243: 041D  ; LDA delay_max
+00000244:       ; loop_delay_112_1_3
+00000244: 3416  ; sub one
+00000245: 6244  ; JNE loop_delay_112_1_3
+00000246:       ; 
+00000246:       ; 
+00000246:       ; 
+00000246:       ; 
+00000246:       ; 
+00000246:       ; 
+00000246:       ; flash_111
+00000246: 2417  ; ADD max
+00000247: 1FFF  ; STA &0FFF
+00000248: 041F  ; LDA m_pattern_b
+00000249: 1FF9  ; STA &FF9
+0000024A: 0419  ; LDA zero
+0000024B:       ; 
+0000024B:       ; 
+0000024B:       ; 
+0000024B: 041D  ; LDA delay_max
+0000024C:       ; loop_delay_111_0_0
+0000024C: 3416  ; sub one
+0000024D: 624C  ; JNE loop_delay_111_0_0
+0000024E:       ; 
+0000024E: 041D  ; LDA delay_max
+0000024F:       ; loop_delay_111_0_1
+0000024F: 3416  ; sub one
+00000250: 624F  ; JNE loop_delay_111_0_1
+00000251:       ; 
+00000251: 041D  ; LDA delay_max
+00000252:       ; loop_delay_111_0_2
+00000252: 3416  ; sub one
+00000253: 6252  ; JNE loop_delay_111_0_2
+00000254:       ; 
+00000254: 041D  ; LDA delay_max
+00000255:       ; loop_delay_111_0_3
+00000255: 3416  ; sub one
+00000256: 6255  ; JNE loop_delay_111_0_3
+00000257:       ; 
+00000257: 041D  ; LDA delay_max
+00000258:       ; loop_delay_111_0_4
+00000258: 3416  ; sub one
+00000259: 6258  ; JNE loop_delay_111_0_4
+0000025A:       ; 
+0000025A: 041D  ; LDA delay_max
+0000025B:       ; loop_delay_111_0_5
+0000025B: 3416  ; sub one
+0000025C: 625B  ; JNE loop_delay_111_0_5
+0000025D:       ; 
+0000025D: 041D  ; LDA delay_max
+0000025E:       ; loop_delay_111_0_6
+0000025E: 3416  ; sub one
+0000025F: 625E  ; JNE loop_delay_111_0_6
+00000260:       ; 
+00000260: 041D  ; LDA delay_max
+00000261:       ; loop_delay_111_0_7
+00000261: 3416  ; sub one
+00000262: 6261  ; JNE loop_delay_111_0_7
+00000263:       ; 
+00000263:       ; 
+00000263:       ; 
+00000263: 1FFF  ; STA &0FFF
+00000264:       ; 
+00000264: 041D  ; LDA delay_max
+00000265:       ; loop_delay_111_1_0
+00000265: 3416  ; sub one
+00000266: 6265  ; JNE loop_delay_111_1_0
+00000267:       ; 
+00000267: 041D  ; LDA delay_max
+00000268:       ; loop_delay_111_1_1
+00000268: 3416  ; sub one
+00000269: 6268  ; JNE loop_delay_111_1_1
+0000026A:       ; 
+0000026A: 041D  ; LDA delay_max
+0000026B:       ; loop_delay_111_1_2
+0000026B: 3416  ; sub one
+0000026C: 626B  ; JNE loop_delay_111_1_2
+0000026D:       ; 
+0000026D: 041D  ; LDA delay_max
+0000026E:       ; loop_delay_111_1_3
+0000026E: 3416  ; sub one
+0000026F: 626E  ; JNE loop_delay_111_1_3
+00000270:       ; 
+00000270: 041D  ; LDA delay_max
+00000271:       ; loop_delay_111_1_4
+00000271: 3416  ; sub one
+00000272: 6271  ; JNE loop_delay_111_1_4
+00000273:       ; 
+00000273: 041D  ; LDA delay_max
+00000274:       ; loop_delay_111_1_5
+00000274: 3416  ; sub one
+00000275: 6274  ; JNE loop_delay_111_1_5
+00000276:       ; 
+00000276: 041D  ; LDA delay_max
+00000277:       ; loop_delay_111_1_6
+00000277: 3416  ; sub one
+00000278: 6277  ; JNE loop_delay_111_1_6
+00000279:       ; 
+00000279: 041D  ; LDA delay_max
+0000027A:       ; loop_delay_111_1_7
+0000027A: 3416  ; sub one
+0000027B: 627A  ; JNE loop_delay_111_1_7
+0000027C:       ; 
+0000027C:       ; 
+0000027C:       ; 
+0000027C:       ; 
+0000027C:       ; 
+0000027C:       ; 
+0000027C:       ; flash_110
+0000027C: 2417  ; ADD max
+0000027D: 1FFF  ; STA &0FFF
+0000027E: 041E  ; LDA m_pattern_a
+0000027F: 1FF8  ; STA &FF8
+00000280: 0419  ; LDA zero
+00000281:       ; 
+00000281:       ; 
+00000281:       ; 
+00000281: 041D  ; LDA delay_max
+00000282:       ; loop_delay_110_0_0
+00000282: 3416  ; sub one
+00000283: 6282  ; JNE loop_delay_110_0_0
+00000284:       ; 
+00000284: 041D  ; LDA delay_max
+00000285:       ; loop_delay_110_0_1
+00000285: 3416  ; sub one
+00000286: 6285  ; JNE loop_delay_110_0_1
+00000287:       ; 
+00000287: 041D  ; LDA delay_max
+00000288:       ; loop_delay_110_0_2
+00000288: 3416  ; sub one
+00000289: 6288  ; JNE loop_delay_110_0_2
+0000028A:       ; 
+0000028A: 041D  ; LDA delay_max
+0000028B:       ; loop_delay_110_0_3
+0000028B: 3416  ; sub one
+0000028C: 628B  ; JNE loop_delay_110_0_3
+0000028D:       ; 
+0000028D: 041D  ; LDA delay_max
+0000028E:       ; loop_delay_110_0_4
+0000028E: 3416  ; sub one
+0000028F: 628E  ; JNE loop_delay_110_0_4
+00000290:       ; 
+00000290: 041D  ; LDA delay_max
+00000291:       ; loop_delay_110_0_5
+00000291: 3416  ; sub one
+00000292: 6291  ; JNE loop_delay_110_0_5
+00000293:       ; 
+00000293: 041D  ; LDA delay_max
+00000294:       ; loop_delay_110_0_6
+00000294: 3416  ; sub one
+00000295: 6294  ; JNE loop_delay_110_0_6
+00000296:       ; 
+00000296: 041D  ; LDA delay_max
+00000297:       ; loop_delay_110_0_7
+00000297: 3416  ; sub one
+00000298: 6297  ; JNE loop_delay_110_0_7
+00000299:       ; 
+00000299: 041D  ; LDA delay_max
+0000029A:       ; loop_delay_110_0_8
+0000029A: 3416  ; sub one
+0000029B: 629A  ; JNE loop_delay_110_0_8
+0000029C:       ; 
+0000029C: 041D  ; LDA delay_max
+0000029D:       ; loop_delay_110_0_9
+0000029D: 3416  ; sub one
+0000029E: 629D  ; JNE loop_delay_110_0_9
+0000029F:       ; 
+0000029F: 041D  ; LDA delay_max
+000002A0:       ; loop_delay_110_0_10
+000002A0: 3416  ; sub one
+000002A1: 62A0  ; JNE loop_delay_110_0_10
+000002A2:       ; 
+000002A2: 041D  ; LDA delay_max
+000002A3:       ; loop_delay_110_0_11
+000002A3: 3416  ; sub one
+000002A4: 62A3  ; JNE loop_delay_110_0_11
+000002A5:       ; 
+000002A5: 041D  ; LDA delay_max
+000002A6:       ; loop_delay_110_0_12
+000002A6: 3416  ; sub one
+000002A7: 62A6  ; JNE loop_delay_110_0_12
+000002A8:       ; 
+000002A8: 041D  ; LDA delay_max
+000002A9:       ; loop_delay_110_0_13
+000002A9: 3416  ; sub one
+000002AA: 62A9  ; JNE loop_delay_110_0_13
+000002AB:       ; 
+000002AB: 041D  ; LDA delay_max
+000002AC:       ; loop_delay_110_0_14
+000002AC: 3416  ; sub one
+000002AD: 62AC  ; JNE loop_delay_110_0_14
+000002AE:       ; 
+000002AE: 041D  ; LDA delay_max
+000002AF:       ; loop_delay_110_0_15
+000002AF: 3416  ; sub one
+000002B0: 62AF  ; JNE loop_delay_110_0_15
+000002B1:       ; 
+000002B1:       ; 
+000002B1:       ; 
+000002B1: 1FFF  ; STA &0FFF
+000002B2:       ; 
+000002B2: 041D  ; LDA delay_max
+000002B3:       ; loop_delay_110_1_0
+000002B3: 3416  ; sub one
+000002B4: 62B3  ; JNE loop_delay_110_1_0
+000002B5:       ; 
+000002B5: 041D  ; LDA delay_max
+000002B6:       ; loop_delay_110_1_1
+000002B6: 3416  ; sub one
+000002B7: 62B6  ; JNE loop_delay_110_1_1
+000002B8:       ; 
+000002B8: 041D  ; LDA delay_max
+000002B9:       ; loop_delay_110_1_2
+000002B9: 3416  ; sub one
+000002BA: 62B9  ; JNE loop_delay_110_1_2
+000002BB:       ; 
+000002BB: 041D  ; LDA delay_max
+000002BC:       ; loop_delay_110_1_3
+000002BC: 3416  ; sub one
+000002BD: 62BC  ; JNE loop_delay_110_1_3
+000002BE:       ; 
+000002BE: 041D  ; LDA delay_max
+000002BF:       ; loop_delay_110_1_4
+000002BF: 3416  ; sub one
+000002C0: 62BF  ; JNE loop_delay_110_1_4
+000002C1:       ; 
+000002C1: 041D  ; LDA delay_max
+000002C2:       ; loop_delay_110_1_5
+000002C2: 3416  ; sub one
+000002C3: 62C2  ; JNE loop_delay_110_1_5
+000002C4:       ; 
+000002C4: 041D  ; LDA delay_max
+000002C5:       ; loop_delay_110_1_6
+000002C5: 3416  ; sub one
+000002C6: 62C5  ; JNE loop_delay_110_1_6
+000002C7:       ; 
+000002C7: 041D  ; LDA delay_max
+000002C8:       ; loop_delay_110_1_7
+000002C8: 3416  ; sub one
+000002C9: 62C8  ; JNE loop_delay_110_1_7
+000002CA:       ; 
+000002CA: 041D  ; LDA delay_max
+000002CB:       ; loop_delay_110_1_8
+000002CB: 3416  ; sub one
+000002CC: 62CB  ; JNE loop_delay_110_1_8
+000002CD:       ; 
+000002CD: 041D  ; LDA delay_max
+000002CE:       ; loop_delay_110_1_9
+000002CE: 3416  ; sub one
+000002CF: 62CE  ; JNE loop_delay_110_1_9
+000002D0:       ; 
+000002D0: 041D  ; LDA delay_max
+000002D1:       ; loop_delay_110_1_10
+000002D1: 3416  ; sub one
+000002D2: 62D1  ; JNE loop_delay_110_1_10
+000002D3:       ; 
+000002D3: 041D  ; LDA delay_max
+000002D4:       ; loop_delay_110_1_11
+000002D4: 3416  ; sub one
+000002D5: 62D4  ; JNE loop_delay_110_1_11
+000002D6:       ; 
+000002D6: 041D  ; LDA delay_max
+000002D7:       ; loop_delay_110_1_12
+000002D7: 3416  ; sub one
+000002D8: 62D7  ; JNE loop_delay_110_1_12
+000002D9:       ; 
+000002D9: 041D  ; LDA delay_max
+000002DA:       ; loop_delay_110_1_13
+000002DA: 3416  ; sub one
+000002DB: 62DA  ; JNE loop_delay_110_1_13
+000002DC:       ; 
+000002DC: 041D  ; LDA delay_max
+000002DD:       ; loop_delay_110_1_14
+000002DD: 3416  ; sub one
+000002DE: 62DD  ; JNE loop_delay_110_1_14
+000002DF:       ; 
+000002DF: 041D  ; LDA delay_max
+000002E0:       ; loop_delay_110_1_15
+000002E0: 3416  ; sub one
+000002E1: 62E0  ; JNE loop_delay_110_1_15
+000002E2:       ; 
+000002E2:       ; 
+000002E2:       ; 
+000002E2:       ; 
+000002E2:       ; 
+000002E2:       ; 
+000002E2:       ; flash_109
+000002E2: 2417  ; ADD max
+000002E3: 1FFF  ; STA &0FFF
+000002E4: 041F  ; LDA m_pattern_b
+000002E5: 1FF7  ; STA &FF7
+000002E6: 0419  ; LDA zero
+000002E7:       ; 
+000002E7:       ; 
+000002E7:       ; 
+000002E7: 041D  ; LDA delay_max
+000002E8:       ; loop_delay_109_0_0
+000002E8: 3416  ; sub one
+000002E9: 62E8  ; JNE loop_delay_109_0_0
+000002EA:       ; 
+000002EA: 041D  ; LDA delay_max
+000002EB:       ; loop_delay_109_0_1
+000002EB: 3416  ; sub one
+000002EC: 62EB  ; JNE loop_delay_109_0_1
+000002ED:       ; 
+000002ED: 041D  ; LDA delay_max
+000002EE:       ; loop_delay_109_0_2
+000002EE: 3416  ; sub one
+000002EF: 62EE  ; JNE loop_delay_109_0_2
+000002F0:       ; 
+000002F0: 041D  ; LDA delay_max
+000002F1:       ; loop_delay_109_0_3
+000002F1: 3416  ; sub one
+000002F2: 62F1  ; JNE loop_delay_109_0_3
+000002F3:       ; 
+000002F3: 041D  ; LDA delay_max
+000002F4:       ; loop_delay_109_0_4
+000002F4: 3416  ; sub one
+000002F5: 62F4  ; JNE loop_delay_109_0_4
+000002F6:       ; 
+000002F6: 041D  ; LDA delay_max
+000002F7:       ; loop_delay_109_0_5
+000002F7: 3416  ; sub one
+000002F8: 62F7  ; JNE loop_delay_109_0_5
+000002F9:       ; 
+000002F9: 041D  ; LDA delay_max
+000002FA:       ; loop_delay_109_0_6
+000002FA: 3416  ; sub one
+000002FB: 62FA  ; JNE loop_delay_109_0_6
+000002FC:       ; 
+000002FC: 041D  ; LDA delay_max
+000002FD:       ; loop_delay_109_0_7
+000002FD: 3416  ; sub one
+000002FE: 62FD  ; JNE loop_delay_109_0_7
+000002FF:       ; 
+000002FF: 041D  ; LDA delay_max
+00000300:       ; loop_delay_109_0_8
+00000300: 3416  ; sub one
+00000301: 6300  ; JNE loop_delay_109_0_8
+00000302:       ; 
+00000302: 041D  ; LDA delay_max
+00000303:       ; loop_delay_109_0_9
+00000303: 3416  ; sub one
+00000304: 6303  ; JNE loop_delay_109_0_9
+00000305:       ; 
+00000305: 041D  ; LDA delay_max
+00000306:       ; loop_delay_109_0_10
+00000306: 3416  ; sub one
+00000307: 6306  ; JNE loop_delay_109_0_10
+00000308:       ; 
+00000308: 041D  ; LDA delay_max
+00000309:       ; loop_delay_109_0_11
+00000309: 3416  ; sub one
+0000030A: 6309  ; JNE loop_delay_109_0_11
+0000030B:       ; 
+0000030B: 041D  ; LDA delay_max
+0000030C:       ; loop_delay_109_0_12
+0000030C: 3416  ; sub one
+0000030D: 630C  ; JNE loop_delay_109_0_12
+0000030E:       ; 
+0000030E: 041D  ; LDA delay_max
+0000030F:       ; loop_delay_109_0_13
+0000030F: 3416  ; sub one
+00000310: 630F  ; JNE loop_delay_109_0_13
+00000311:       ; 
+00000311: 041D  ; LDA delay_max
+00000312:       ; loop_delay_109_0_14
+00000312: 3416  ; sub one
+00000313: 6312  ; JNE loop_delay_109_0_14
+00000314:       ; 
+00000314: 041D  ; LDA delay_max
+00000315:       ; loop_delay_109_0_15
+00000315: 3416  ; sub one
+00000316: 6315  ; JNE loop_delay_109_0_15
+00000317:       ; 
+00000317: 041D  ; LDA delay_max
+00000318:       ; loop_delay_109_0_16
+00000318: 3416  ; sub one
+00000319: 6318  ; JNE loop_delay_109_0_16
+0000031A:       ; 
+0000031A: 041D  ; LDA delay_max
+0000031B:       ; loop_delay_109_0_17
+0000031B: 3416  ; sub one
+0000031C: 631B  ; JNE loop_delay_109_0_17
+0000031D:       ; 
+0000031D: 041D  ; LDA delay_max
+0000031E:       ; loop_delay_109_0_18
+0000031E: 3416  ; sub one
+0000031F: 631E  ; JNE loop_delay_109_0_18
+00000320:       ; 
+00000320: 041D  ; LDA delay_max
+00000321:       ; loop_delay_109_0_19
+00000321: 3416  ; sub one
+00000322: 6321  ; JNE loop_delay_109_0_19
+00000323:       ; 
+00000323: 041D  ; LDA delay_max
+00000324:       ; loop_delay_109_0_20
+00000324: 3416  ; sub one
+00000325: 6324  ; JNE loop_delay_109_0_20
+00000326:       ; 
+00000326: 041D  ; LDA delay_max
+00000327:       ; loop_delay_109_0_21
+00000327: 3416  ; sub one
+00000328: 6327  ; JNE loop_delay_109_0_21
+00000329:       ; 
+00000329: 041D  ; LDA delay_max
+0000032A:       ; loop_delay_109_0_22
+0000032A: 3416  ; sub one
+0000032B: 632A  ; JNE loop_delay_109_0_22
+0000032C:       ; 
+0000032C: 041D  ; LDA delay_max
+0000032D:       ; loop_delay_109_0_23
+0000032D: 3416  ; sub one
+0000032E: 632D  ; JNE loop_delay_109_0_23
+0000032F:       ; 
+0000032F: 041D  ; LDA delay_max
+00000330:       ; loop_delay_109_0_24
+00000330: 3416  ; sub one
+00000331: 6330  ; JNE loop_delay_109_0_24
+00000332:       ; 
+00000332: 041D  ; LDA delay_max
+00000333:       ; loop_delay_109_0_25
+00000333: 3416  ; sub one
+00000334: 6333  ; JNE loop_delay_109_0_25
+00000335:       ; 
+00000335: 041D  ; LDA delay_max
+00000336:       ; loop_delay_109_0_26
+00000336: 3416  ; sub one
+00000337: 6336  ; JNE loop_delay_109_0_26
+00000338:       ; 
+00000338: 041D  ; LDA delay_max
+00000339:       ; loop_delay_109_0_27
+00000339: 3416  ; sub one
+0000033A: 6339  ; JNE loop_delay_109_0_27
+0000033B:       ; 
+0000033B: 041D  ; LDA delay_max
+0000033C:       ; loop_delay_109_0_28
+0000033C: 3416  ; sub one
+0000033D: 633C  ; JNE loop_delay_109_0_28
+0000033E:       ; 
+0000033E: 041D  ; LDA delay_max
+0000033F:       ; loop_delay_109_0_29
+0000033F: 3416  ; sub one
+00000340: 633F  ; JNE loop_delay_109_0_29
+00000341:       ; 
+00000341: 041D  ; LDA delay_max
+00000342:       ; loop_delay_109_0_30
+00000342: 3416  ; sub one
+00000343: 6342  ; JNE loop_delay_109_0_30
+00000344:       ; 
+00000344: 041D  ; LDA delay_max
+00000345:       ; loop_delay_109_0_31
+00000345: 3416  ; sub one
+00000346: 6345  ; JNE loop_delay_109_0_31
+00000347:       ; 
+00000347:       ; 
+00000347:       ; 
+00000347: 1FFF  ; STA &0FFF
+00000348:       ; 
+00000348: 041D  ; LDA delay_max
+00000349:       ; loop_delay_109_1_0
+00000349: 3416  ; sub one
+0000034A: 6349  ; JNE loop_delay_109_1_0
+0000034B:       ; 
+0000034B: 041D  ; LDA delay_max
+0000034C:       ; loop_delay_109_1_1
+0000034C: 3416  ; sub one
+0000034D: 634C  ; JNE loop_delay_109_1_1
+0000034E:       ; 
+0000034E: 041D  ; LDA delay_max
+0000034F:       ; loop_delay_109_1_2
+0000034F: 3416  ; sub one
+00000350: 634F  ; JNE loop_delay_109_1_2
+00000351:       ; 
+00000351: 041D  ; LDA delay_max
+00000352:       ; loop_delay_109_1_3
+00000352: 3416  ; sub one
+00000353: 6352  ; JNE loop_delay_109_1_3
+00000354:       ; 
+00000354: 041D  ; LDA delay_max
+00000355:       ; loop_delay_109_1_4
+00000355: 3416  ; sub one
+00000356: 6355  ; JNE loop_delay_109_1_4
+00000357:       ; 
+00000357: 041D  ; LDA delay_max
+00000358:       ; loop_delay_109_1_5
+00000358: 3416  ; sub one
+00000359: 6358  ; JNE loop_delay_109_1_5
+0000035A:       ; 
+0000035A: 041D  ; LDA delay_max
+0000035B:       ; loop_delay_109_1_6
+0000035B: 3416  ; sub one
+0000035C: 635B  ; JNE loop_delay_109_1_6
+0000035D:       ; 
+0000035D: 041D  ; LDA delay_max
+0000035E:       ; loop_delay_109_1_7
+0000035E: 3416  ; sub one
+0000035F: 635E  ; JNE loop_delay_109_1_7
+00000360:       ; 
+00000360: 041D  ; LDA delay_max
+00000361:       ; loop_delay_109_1_8
+00000361: 3416  ; sub one
+00000362: 6361  ; JNE loop_delay_109_1_8
+00000363:       ; 
+00000363: 041D  ; LDA delay_max
+00000364:       ; loop_delay_109_1_9
+00000364: 3416  ; sub one
+00000365: 6364  ; JNE loop_delay_109_1_9
+00000366:       ; 
+00000366: 041D  ; LDA delay_max
+00000367:       ; loop_delay_109_1_10
+00000367: 3416  ; sub one
+00000368: 6367  ; JNE loop_delay_109_1_10
+00000369:       ; 
+00000369: 041D  ; LDA delay_max
+0000036A:       ; loop_delay_109_1_11
+0000036A: 3416  ; sub one
+0000036B: 636A  ; JNE loop_delay_109_1_11
+0000036C:       ; 
+0000036C: 041D  ; LDA delay_max
+0000036D:       ; loop_delay_109_1_12
+0000036D: 3416  ; sub one
+0000036E: 636D  ; JNE loop_delay_109_1_12
+0000036F:       ; 
+0000036F: 041D  ; LDA delay_max
+00000370:       ; loop_delay_109_1_13
+00000370: 3416  ; sub one
+00000371: 6370  ; JNE loop_delay_109_1_13
+00000372:       ; 
+00000372: 041D  ; LDA delay_max
+00000373:       ; loop_delay_109_1_14
+00000373: 3416  ; sub one
+00000374: 6373  ; JNE loop_delay_109_1_14
+00000375:       ; 
+00000375: 041D  ; LDA delay_max
+00000376:       ; loop_delay_109_1_15
+00000376: 3416  ; sub one
+00000377: 6376  ; JNE loop_delay_109_1_15
+00000378:       ; 
+00000378: 041D  ; LDA delay_max
+00000379:       ; loop_delay_109_1_16
+00000379: 3416  ; sub one
+0000037A: 6379  ; JNE loop_delay_109_1_16
+0000037B:       ; 
+0000037B: 041D  ; LDA delay_max
+0000037C:       ; loop_delay_109_1_17
+0000037C: 3416  ; sub one
+0000037D: 637C  ; JNE loop_delay_109_1_17
+0000037E:       ; 
+0000037E: 041D  ; LDA delay_max
+0000037F:       ; loop_delay_109_1_18
+0000037F: 3416  ; sub one
+00000380: 637F  ; JNE loop_delay_109_1_18
+00000381:       ; 
+00000381: 041D  ; LDA delay_max
+00000382:       ; loop_delay_109_1_19
+00000382: 3416  ; sub one
+00000383: 6382  ; JNE loop_delay_109_1_19
+00000384:       ; 
+00000384: 041D  ; LDA delay_max
+00000385:       ; loop_delay_109_1_20
+00000385: 3416  ; sub one
+00000386: 6385  ; JNE loop_delay_109_1_20
+00000387:       ; 
+00000387: 041D  ; LDA delay_max
+00000388:       ; loop_delay_109_1_21
+00000388: 3416  ; sub one
+00000389: 6388  ; JNE loop_delay_109_1_21
+0000038A:       ; 
+0000038A: 041D  ; LDA delay_max
+0000038B:       ; loop_delay_109_1_22
+0000038B: 3416  ; sub one
+0000038C: 638B  ; JNE loop_delay_109_1_22
+0000038D:       ; 
+0000038D: 041D  ; LDA delay_max
+0000038E:       ; loop_delay_109_1_23
+0000038E: 3416  ; sub one
+0000038F: 638E  ; JNE loop_delay_109_1_23
+00000390:       ; 
+00000390: 041D  ; LDA delay_max
+00000391:       ; loop_delay_109_1_24
+00000391: 3416  ; sub one
+00000392: 6391  ; JNE loop_delay_109_1_24
+00000393:       ; 
+00000393: 041D  ; LDA delay_max
+00000394:       ; loop_delay_109_1_25
+00000394: 3416  ; sub one
+00000395: 6394  ; JNE loop_delay_109_1_25
+00000396:       ; 
+00000396: 041D  ; LDA delay_max
+00000397:       ; loop_delay_109_1_26
+00000397: 3416  ; sub one
+00000398: 6397  ; JNE loop_delay_109_1_26
+00000399:       ; 
+00000399: 041D  ; LDA delay_max
+0000039A:       ; loop_delay_109_1_27
+0000039A: 3416  ; sub one
+0000039B: 639A  ; JNE loop_delay_109_1_27
+0000039C:       ; 
+0000039C: 041D  ; LDA delay_max
+0000039D:       ; loop_delay_109_1_28
+0000039D: 3416  ; sub one
+0000039E: 639D  ; JNE loop_delay_109_1_28
+0000039F:       ; 
+0000039F: 041D  ; LDA delay_max
+000003A0:       ; loop_delay_109_1_29
+000003A0: 3416  ; sub one
+000003A1: 63A0  ; JNE loop_delay_109_1_29
+000003A2:       ; 
+000003A2: 041D  ; LDA delay_max
+000003A3:       ; loop_delay_109_1_30
+000003A3: 3416  ; sub one
+000003A4: 63A3  ; JNE loop_delay_109_1_30
+000003A5:       ; 
+000003A5: 041D  ; LDA delay_max
+000003A6:       ; loop_delay_109_1_31
+000003A6: 3416  ; sub one
+000003A7: 63A6  ; JNE loop_delay_109_1_31
+000003A8:       ; 
+000003A8:       ; 
+000003A8:       ; 
+000003A8:       ; 
+000003A8:       ; 
+000003A8:       ; 
+000003A8:       ; flash_108
+000003A8: 2417  ; ADD max
+000003A9: 1FFF  ; STA &0FFF
+000003AA:       ; 
+000003AA:       ; 
+000003AA: 041D  ; LDA delay_max
+000003AB:       ; loop_delay_108_0_0
+000003AB: 3416  ; sub one
+000003AC: 63AB  ; JNE loop_delay_108_0_0
+000003AD:       ; 
+000003AD:       ; 
+000003AD:       ; 
+000003AD: 1FFF  ; STA &0FFF
+000003AE:       ; 
+000003AE: 041D  ; LDA delay_max
+000003AF:       ; loop_delay_108_1_0
+000003AF: 3416  ; sub one
+000003B0: 63AF  ; JNE loop_delay_108_1_0
+000003B1:       ; 
+000003B1:       ; 
+000003B1:       ; 
+000003B1: 1FF6  ; STA 4086
+000003B2:       ; 
+000003B2:       ; 
+000003B2:       ; flash_107
+000003B2: 2417  ; ADD max
+000003B3: 1FFF  ; STA &0FFF
+000003B4:       ; 
+000003B4:       ; 
+000003B4: 041D  ; LDA delay_max
+000003B5:       ; loop_delay_107_0_0
+000003B5: 3416  ; sub one
+000003B6: 63B5  ; JNE loop_delay_107_0_0
+000003B7:       ; 
+000003B7:       ; 
+000003B7:       ; 
+000003B7: 1FFF  ; STA &0FFF
+000003B8:       ; 
+000003B8: 041D  ; LDA delay_max
+000003B9:       ; loop_delay_107_1_0
+000003B9: 3416  ; sub one
+000003BA: 63B9  ; JNE loop_delay_107_1_0
+000003BB:       ; 
+000003BB:       ; 
+000003BB:       ; 
+000003BB: 1FF5  ; STA 4085
+000003BC:       ; 
+000003BC:       ; 
+000003BC:       ; flash_106
+000003BC: 2417  ; ADD max
+000003BD: 1FFF  ; STA &0FFF
+000003BE:       ; 
+000003BE:       ; 
+000003BE: 041D  ; LDA delay_max
+000003BF:       ; loop_delay_106_0_0
+000003BF: 3416  ; sub one
+000003C0: 63BF  ; JNE loop_delay_106_0_0
+000003C1:       ; 
+000003C1:       ; 
+000003C1:       ; 
+000003C1: 1FFF  ; STA &0FFF
+000003C2:       ; 
+000003C2: 041D  ; LDA delay_max
+000003C3:       ; loop_delay_106_1_0
+000003C3: 3416  ; sub one
+000003C4: 63C3  ; JNE loop_delay_106_1_0
+000003C5:       ; 
+000003C5:       ; 
+000003C5:       ; 
+000003C5: 1FFA  ; STA 4090
+000003C6:       ; 
+000003C6:       ; 
+000003C6:       ; flash_105
+000003C6: 2417  ; ADD max
+000003C7: 1FFF  ; STA &0FFF
+000003C8:       ; 
+000003C8:       ; 
+000003C8: 041D  ; LDA delay_max
+000003C9:       ; loop_delay_105_0_0
+000003C9: 3416  ; sub one
+000003CA: 63C9  ; JNE loop_delay_105_0_0
+000003CB:       ; 
+000003CB:       ; 
+000003CB:       ; 
+000003CB: 1FFF  ; STA &0FFF
+000003CC:       ; 
+000003CC: 041D  ; LDA delay_max
+000003CD:       ; loop_delay_105_1_0
+000003CD: 3416  ; sub one
+000003CE: 63CD  ; JNE loop_delay_105_1_0
+000003CF:       ; 
+000003CF:       ; 
+000003CF:       ; 
+000003CF: 1FF9  ; STA 4089
+000003D0:       ; 
+000003D0:       ; 
+000003D0:       ; flash_104
+000003D0: 2417  ; ADD max
+000003D1: 1FFF  ; STA &0FFF
+000003D2:       ; 
+000003D2:       ; 
+000003D2: 041D  ; LDA delay_max
+000003D3:       ; loop_delay_104_0_0
+000003D3: 3416  ; sub one
+000003D4: 63D3  ; JNE loop_delay_104_0_0
+000003D5:       ; 
+000003D5:       ; 
+000003D5:       ; 
+000003D5: 1FFF  ; STA &0FFF
+000003D6:       ; 
+000003D6: 041D  ; LDA delay_max
+000003D7:       ; loop_delay_104_1_0
+000003D7: 3416  ; sub one
+000003D8: 63D7  ; JNE loop_delay_104_1_0
+000003D9:       ; 
+000003D9:       ; 
+000003D9:       ; 
+000003D9: 1FF8  ; STA 4088
+000003DA:       ; 
+000003DA:       ; 
+000003DA:       ; flash_103
+000003DA: 2417  ; ADD max
+000003DB: 1FFF  ; STA &0FFF
+000003DC:       ; 
+000003DC:       ; 
+000003DC: 041D  ; LDA delay_max
+000003DD:       ; loop_delay_103_0_0
+000003DD: 3416  ; sub one
+000003DE: 63DD  ; JNE loop_delay_103_0_0
+000003DF:       ; 
+000003DF:       ; 
+000003DF:       ; 
+000003DF: 1FFF  ; STA &0FFF
+000003E0:       ; 
+000003E0: 041D  ; LDA delay_max
+000003E1:       ; loop_delay_103_1_0
+000003E1: 3416  ; sub one
+000003E2: 63E1  ; JNE loop_delay_103_1_0
+000003E3:       ; 
+000003E3:       ; 
+000003E3:       ; 
+000003E3: 1FF7  ; STA 4087
+000003E4:       ; 
+000003E4:       ; 
+000003E4:       ; flash_102
+000003E4: 2417  ; ADD max
+000003E5: 1FFF  ; STA &0FFF
+000003E6: 041E  ; LDA m_pattern_a
+000003E7: 1FF6  ; STA &FF6
+000003E8: 0419  ; LDA zero
+000003E9:       ; 
+000003E9:       ; 
+000003E9:       ; 
+000003E9: 041D  ; LDA delay_max
+000003EA:       ; loop_delay_102_0_0
+000003EA: 3416  ; sub one
+000003EB: 63EA  ; JNE loop_delay_102_0_0
+000003EC:       ; 
+000003EC:       ; 
+000003EC:       ; 
+000003EC: 1FFF  ; STA &0FFF
+000003ED:       ; 
+000003ED: 041D  ; LDA delay_max
+000003EE:       ; loop_delay_102_1_0
+000003EE: 3416  ; sub one
+000003EF: 63EE  ; JNE loop_delay_102_1_0
+000003F0:       ; 
+000003F0:       ; 
+000003F0:       ; 
+000003F0:       ; 
+000003F0:       ; 
+000003F0:       ; 
+000003F0:       ; flash_101
+000003F0: 2417  ; ADD max
+000003F1: 1FFF  ; STA &0FFF
+000003F2: 041F  ; LDA m_pattern_b
+000003F3: 1FF5  ; STA &FF5
+000003F4: 0419  ; LDA zero
+000003F5:       ; 
+000003F5:       ; 
+000003F5:       ; 
+000003F5: 041D  ; LDA delay_max
+000003F6:       ; loop_delay_101_0_0
+000003F6: 3416  ; sub one
+000003F7: 63F6  ; JNE loop_delay_101_0_0
+000003F8:       ; 
+000003F8:       ; 
+000003F8:       ; 
+000003F8: 1FFF  ; STA &0FFF
+000003F9:       ; 
+000003F9: 041D  ; LDA delay_max
+000003FA:       ; loop_delay_101_1_0
+000003FA: 3416  ; sub one
+000003FB: 63FA  ; JNE loop_delay_101_1_0
+000003FC:       ; 
+000003FC:       ; 
+000003FC:       ; 
+000003FC:       ; 
+000003FC:       ; 
+000003FC:       ; 
+000003FC:       ; flash_100
+000003FC: 2417  ; ADD max
+000003FD: 1FFF  ; STA &0FFF
+000003FE: 041E  ; LDA m_pattern_a
+000003FF: 1FFA  ; STA &FFA
+00000400: 0419  ; LDA zero
+00000401:       ; 
+00000401:       ; 
+00000401:       ; 
+00000401: 041D  ; LDA delay_max
+00000402:       ; loop_delay_100_0_0
+00000402: 3416  ; sub one
+00000403: 6402  ; JNE loop_delay_100_0_0
+00000404:       ; 
+00000404:       ; 
+00000404:       ; 
+00000404: 1FFF  ; STA &0FFF
+00000405:       ; 
+00000405: 041D  ; LDA delay_max
+00000406:       ; loop_delay_100_1_0
+00000406: 3416  ; sub one
+00000407: 6406  ; JNE loop_delay_100_1_0
+00000408:       ; 
+00000408:       ; 
+00000408:       ; 
+00000408:       ; 
+00000408:       ; 
+00000408:       ; 
+00000408:       ; flash_99
+00000408: 2417  ; ADD max
+00000409: 1FFF  ; STA &0FFF
+0000040A: 041F  ; LDA m_pattern_b
+0000040B: 1FF9  ; STA &FF9
+0000040C: 0419  ; LDA zero
+0000040D:       ; 
+0000040D:       ; 
+0000040D:       ; 
+0000040D: 041D  ; LDA delay_max
+0000040E:       ; loop_delay_99_0_0
+0000040E: 3416  ; sub one
+0000040F: 640E  ; JNE loop_delay_99_0_0
+00000410:       ; 
+00000410:       ; 
+00000410:       ; 
+00000410: 1FFF  ; STA &0FFF
+00000411:       ; 
+00000411: 041D  ; LDA delay_max
+00000412:       ; loop_delay_99_1_0
+00000412: 3416  ; sub one
+00000413: 6412  ; JNE loop_delay_99_1_0
+00000414:       ; 
+00000414:       ; 
+00000414:       ; 
+00000414:       ; 
+00000414:       ; 
+00000414:       ; 
+00000414: 4000  ;         done    JMP flash_130         ; Just in case stop instr fails
+00000415:       ; 
+00000415:       ; 
+00000415: FFFF  ; test    DEFW &FFFF
+00000416:       ;         
+00000416: 0001  ; one     DEFW 1           ; one
+00000417: 7FFF  ; max     DEFW &7FFF       ; max ?
+00000418: 8000  ; neg     DEFW &8000       ; -max
+00000419: 0000  ; zero    DEFW &0000       ; zero
+0000041A: 000F  ; delay   DEFW &000F       ; 16
+0000041B:       ;         
+0000041B: 2ABD  ; delay_1 DEFW &2ABD
+0000041C: 38FF  ; delay_2 DEFW &38FF
+0000041D: 7FFF  ; delay_max DEFW &7FFF
+0000041E:       ; 
+0000041E: 00ED  ; m_pattern_a DEFW &00ED
+0000041F: 00DB  ; m_pattern_b DEFW &00DB
+00000420:       ; 
+00000420: 0FFF  ; traffic DEFW &0FFF
+00000421:       ; 
+
+Symbol Table: Labels
+: flash_130                         00000000  Local --
+: loop_delay_130_0_0                00000006  Local --
+: loop_delay_130_0_1                00000009  Local --
+: loop_delay_130_0_2                0000000C  Local --
+: loop_delay_130_0_3                0000000F  Local --
+: loop_delay_130_0_4                00000012  Local --
+: loop_delay_130_0_5                00000015  Local --
+: loop_delay_130_0_6                00000018  Local --
+: loop_delay_130_0_7                0000001B  Local --
+: loop_delay_130_0_8                0000001E  Local --
+: loop_delay_130_0_9                00000021  Local --
+: loop_delay_130_0_10               00000024  Local --
+: loop_delay_130_0_11               00000027  Local --
+: loop_delay_130_0_12               0000002A  Local --
+: loop_delay_130_0_13               0000002D  Local --
+: loop_delay_130_0_14               00000030  Local --
+: loop_delay_130_0_15               00000033  Local --
+: loop_delay_130_0_16               00000036  Local --
+: loop_delay_130_0_17               00000039  Local --
+: loop_delay_130_0_18               0000003C  Local --
+: loop_delay_130_0_19               0000003F  Local --
+: loop_delay_130_0_20               00000042  Local --
+: loop_delay_130_0_21               00000045  Local --
+: loop_delay_130_0_22               00000048  Local --
+: loop_delay_130_0_23               0000004B  Local --
+: loop_delay_130_0_24               0000004E  Local --
+: loop_delay_130_0_25               00000051  Local --
+: loop_delay_130_0_26               00000054  Local --
+: loop_delay_130_0_27               00000057  Local --
+: loop_delay_130_0_28               0000005A  Local --
+: loop_delay_130_0_29               0000005D  Local --
+: loop_delay_130_0_30               00000060  Local --
+: loop_delay_130_0_31               00000063  Local --
+: loop_delay_130_1_0                00000067  Local --
+: loop_delay_130_1_1                0000006A  Local --
+: loop_delay_130_1_2                0000006D  Local --
+: loop_delay_130_1_3                00000070  Local --
+: loop_delay_130_1_4                00000073  Local --
+: loop_delay_130_1_5                00000076  Local --
+: loop_delay_130_1_6                00000079  Local --
+: loop_delay_130_1_7                0000007C  Local --
+: loop_delay_130_1_8                0000007F  Local --
+: loop_delay_130_1_9                00000082  Local --
+: loop_delay_130_1_10               00000085  Local --
+: loop_delay_130_1_11               00000088  Local --
+: loop_delay_130_1_12               0000008B  Local --
+: loop_delay_130_1_13               0000008E  Local --
+: loop_delay_130_1_14               00000091  Local --
+: loop_delay_130_1_15               00000094  Local --
+: loop_delay_130_1_16               00000097  Local --
+: loop_delay_130_1_17               0000009A  Local --
+: loop_delay_130_1_18               0000009D  Local --
+: loop_delay_130_1_19               000000A0  Local --
+: loop_delay_130_1_20               000000A3  Local --
+: loop_delay_130_1_21               000000A6  Local --
+: loop_delay_130_1_22               000000A9  Local --
+: loop_delay_130_1_23               000000AC  Local --
+: loop_delay_130_1_24               000000AF  Local --
+: loop_delay_130_1_25               000000B2  Local --
+: loop_delay_130_1_26               000000B5  Local --
+: loop_delay_130_1_27               000000B8  Local --
+: loop_delay_130_1_28               000000BB  Local --
+: loop_delay_130_1_29               000000BE  Local --
+: loop_delay_130_1_30               000000C1  Local --
+: loop_delay_130_1_31               000000C4  Local --
+: flash_129                         000000C6  Local --
+: loop_delay_129_0_0                000000CC  Local --
+: loop_delay_129_0_1                000000CF  Local --
+: loop_delay_129_0_2                000000D2  Local --
+: loop_delay_129_0_3                000000D5  Local --
+: loop_delay_129_0_4                000000D8  Local --
+: loop_delay_129_0_5                000000DB  Local --
+: loop_delay_129_0_6                000000DE  Local --
+: loop_delay_129_0_7                000000E1  Local --
+: loop_delay_129_0_8                000000E4  Local --
+: loop_delay_129_0_9                000000E7  Local --
+: loop_delay_129_0_10               000000EA  Local --
+: loop_delay_129_0_11               000000ED  Local --
+: loop_delay_129_0_12               000000F0  Local --
+: loop_delay_129_0_13               000000F3  Local --
+: loop_delay_129_0_14               000000F6  Local --
+: loop_delay_129_0_15               000000F9  Local --
+: loop_delay_129_1_0                000000FD  Local --
+: loop_delay_129_1_1                00000100  Local --
+: loop_delay_129_1_2                00000103  Local --
+: loop_delay_129_1_3                00000106  Local --
+: loop_delay_129_1_4                00000109  Local --
+: loop_delay_129_1_5                0000010C  Local --
+: loop_delay_129_1_6                0000010F  Local --
+: loop_delay_129_1_7                00000112  Local --
+: loop_delay_129_1_8                00000115  Local --
+: loop_delay_129_1_9                00000118  Local --
+: loop_delay_129_1_10               0000011B  Local --
+: loop_delay_129_1_11               0000011E  Local --
+: loop_delay_129_1_12               00000121  Local --
+: loop_delay_129_1_13               00000124  Local --
+: loop_delay_129_1_14               00000127  Local --
+: loop_delay_129_1_15               0000012A  Local --
+: flash_128                         0000012C  Local --
+: loop_delay_128_0_0                00000132  Local --
+: loop_delay_128_0_1                00000135  Local --
+: loop_delay_128_0_2                00000138  Local --
+: loop_delay_128_0_3                0000013B  Local --
+: loop_delay_128_0_4                0000013E  Local --
+: loop_delay_128_0_5                00000141  Local --
+: loop_delay_128_0_6                00000144  Local --
+: loop_delay_128_0_7                00000147  Local --
+: loop_delay_128_1_0                0000014B  Local --
+: loop_delay_128_1_1                0000014E  Local --
+: loop_delay_128_1_2                00000151  Local --
+: loop_delay_128_1_3                00000154  Local --
+: loop_delay_128_1_4                00000157  Local --
+: loop_delay_128_1_5                0000015A  Local --
+: loop_delay_128_1_6                0000015D  Local --
+: loop_delay_128_1_7                00000160  Local --
+: flash_127                         00000162  Local --
+: loop_delay_127_0_0                00000168  Local --
+: loop_delay_127_0_1                0000016B  Local --
+: loop_delay_127_0_2                0000016E  Local --
+: loop_delay_127_0_3                00000171  Local --
+: loop_delay_127_1_0                00000175  Local --
+: loop_delay_127_1_1                00000178  Local --
+: loop_delay_127_1_2                0000017B  Local --
+: loop_delay_127_1_3                0000017E  Local --
+: flash_126                         00000180  Local --
+: loop_delay_126_0_0                00000186  Local --
+: loop_delay_126_0_1                00000189  Local --
+: loop_delay_126_1_0                0000018D  Local --
+: loop_delay_126_1_1                00000190  Local --
+: flash_125                         00000192  Local --
+: loop_delay_125_0_0                00000198  Local --
+: loop_delay_125_1_0                0000019C  Local --
+: flash_124                         0000019E  Local --
+: loop_delay_124_0_0                000001A1  Local --
+: loop_delay_124_1_0                000001A5  Local --
+: flash_123                         000001A8  Local --
+: loop_delay_123_0_0                000001AB  Local --
+: loop_delay_123_1_0                000001AF  Local --
+: flash_122                         000001B2  Local --
+: loop_delay_122_0_0                000001B5  Local --
+: loop_delay_122_1_0                000001B9  Local --
+: flash_121                         000001BC  Local --
+: loop_delay_121_0_0                000001BF  Local --
+: loop_delay_121_1_0                000001C3  Local --
+: flash_120                         000001C6  Local --
+: loop_delay_120_0_0                000001C9  Local --
+: loop_delay_120_1_0                000001CD  Local --
+: flash_119                         000001D0  Local --
+: loop_delay_119_0_0                000001D3  Local --
+: loop_delay_119_1_0                000001D7  Local --
+: flash_118                         000001DA  Local --
+: loop_delay_118_0_0                000001E0  Local --
+: loop_delay_118_1_0                000001E4  Local --
+: flash_117                         000001E6  Local --
+: loop_delay_117_0_0                000001EC  Local --
+: loop_delay_117_1_0                000001F0  Local --
+: flash_116                         000001F2  Local --
+: loop_delay_116_0_0                000001F8  Local --
+: loop_delay_116_1_0                000001FC  Local --
+: flash_115                         000001FE  Local --
+: loop_delay_115_0_0                00000204  Local --
+: loop_delay_115_1_0                00000208  Local --
+: flash_114                         0000020A  Local --
+: loop_delay_114_0_0                00000210  Local --
+: loop_delay_114_1_0                00000214  Local --
+: flash_113                         00000216  Local --
+: loop_delay_113_0_0                0000021C  Local --
+: loop_delay_113_0_1                0000021F  Local --
+: loop_delay_113_1_0                00000223  Local --
+: loop_delay_113_1_1                00000226  Local --
+: flash_112                         00000228  Local --
+: loop_delay_112_0_0                0000022E  Local --
+: loop_delay_112_0_1                00000231  Local --
+: loop_delay_112_0_2                00000234  Local --
+: loop_delay_112_0_3                00000237  Local --
+: loop_delay_112_1_0                0000023B  Local --
+: loop_delay_112_1_1                0000023E  Local --
+: loop_delay_112_1_2                00000241  Local --
+: loop_delay_112_1_3                00000244  Local --
+: flash_111                         00000246  Local --
+: loop_delay_111_0_0                0000024C  Local --
+: loop_delay_111_0_1                0000024F  Local --
+: loop_delay_111_0_2                00000252  Local --
+: loop_delay_111_0_3                00000255  Local --
+: loop_delay_111_0_4                00000258  Local --
+: loop_delay_111_0_5                0000025B  Local --
+: loop_delay_111_0_6                0000025E  Local --
+: loop_delay_111_0_7                00000261  Local --
+: loop_delay_111_1_0                00000265  Local --
+: loop_delay_111_1_1                00000268  Local --
+: loop_delay_111_1_2                0000026B  Local --
+: loop_delay_111_1_3                0000026E  Local --
+: loop_delay_111_1_4                00000271  Local --
+: loop_delay_111_1_5                00000274  Local --
+: loop_delay_111_1_6                00000277  Local --
+: loop_delay_111_1_7                0000027A  Local --
+: flash_110                         0000027C  Local --
+: loop_delay_110_0_0                00000282  Local --
+: loop_delay_110_0_1                00000285  Local --
+: loop_delay_110_0_2                00000288  Local --
+: loop_delay_110_0_3                0000028B  Local --
+: loop_delay_110_0_4                0000028E  Local --
+: loop_delay_110_0_5                00000291  Local --
+: loop_delay_110_0_6                00000294  Local --
+: loop_delay_110_0_7                00000297  Local --
+: loop_delay_110_0_8                0000029A  Local --
+: loop_delay_110_0_9                0000029D  Local --
+: loop_delay_110_0_10               000002A0  Local --
+: loop_delay_110_0_11               000002A3  Local --
+: loop_delay_110_0_12               000002A6  Local --
+: loop_delay_110_0_13               000002A9  Local --
+: loop_delay_110_0_14               000002AC  Local --
+: loop_delay_110_0_15               000002AF  Local --
+: loop_delay_110_1_0                000002B3  Local --
+: loop_delay_110_1_1                000002B6  Local --
+: loop_delay_110_1_2                000002B9  Local --
+: loop_delay_110_1_3                000002BC  Local --
+: loop_delay_110_1_4                000002BF  Local --
+: loop_delay_110_1_5                000002C2  Local --
+: loop_delay_110_1_6                000002C5  Local --
+: loop_delay_110_1_7                000002C8  Local --
+: loop_delay_110_1_8                000002CB  Local --
+: loop_delay_110_1_9                000002CE  Local --
+: loop_delay_110_1_10               000002D1  Local --
+: loop_delay_110_1_11               000002D4  Local --
+: loop_delay_110_1_12               000002D7  Local --
+: loop_delay_110_1_13               000002DA  Local --
+: loop_delay_110_1_14               000002DD  Local --
+: loop_delay_110_1_15               000002E0  Local --
+: flash_109                         000002E2  Local --
+: loop_delay_109_0_0                000002E8  Local --
+: loop_delay_109_0_1                000002EB  Local --
+: loop_delay_109_0_2                000002EE  Local --
+: loop_delay_109_0_3                000002F1  Local --
+: loop_delay_109_0_4                000002F4  Local --
+: loop_delay_109_0_5                000002F7  Local --
+: loop_delay_109_0_6                000002FA  Local --
+: loop_delay_109_0_7                000002FD  Local --
+: loop_delay_109_0_8                00000300  Local --
+: loop_delay_109_0_9                00000303  Local --
+: loop_delay_109_0_10               00000306  Local --
+: loop_delay_109_0_11               00000309  Local --
+: loop_delay_109_0_12               0000030C  Local --
+: loop_delay_109_0_13               0000030F  Local --
+: loop_delay_109_0_14               00000312  Local --
+: loop_delay_109_0_15               00000315  Local --
+: loop_delay_109_0_16               00000318  Local --
+: loop_delay_109_0_17               0000031B  Local --
+: loop_delay_109_0_18               0000031E  Local --
+: loop_delay_109_0_19               00000321  Local --
+: loop_delay_109_0_20               00000324  Local --
+: loop_delay_109_0_21               00000327  Local --
+: loop_delay_109_0_22               0000032A  Local --
+: loop_delay_109_0_23               0000032D  Local --
+: loop_delay_109_0_24               00000330  Local --
+: loop_delay_109_0_25               00000333  Local --
+: loop_delay_109_0_26               00000336  Local --
+: loop_delay_109_0_27               00000339  Local --
+: loop_delay_109_0_28               0000033C  Local --
+: loop_delay_109_0_29               0000033F  Local --
+: loop_delay_109_0_30               00000342  Local --
+: loop_delay_109_0_31               00000345  Local --
+: loop_delay_109_1_0                00000349  Local --
+: loop_delay_109_1_1                0000034C  Local --
+: loop_delay_109_1_2                0000034F  Local --
+: loop_delay_109_1_3                00000352  Local --
+: loop_delay_109_1_4                00000355  Local --
+: loop_delay_109_1_5                00000358  Local --
+: loop_delay_109_1_6                0000035B  Local --
+: loop_delay_109_1_7                0000035E  Local --
+: loop_delay_109_1_8                00000361  Local --
+: loop_delay_109_1_9                00000364  Local --
+: loop_delay_109_1_10               00000367  Local --
+: loop_delay_109_1_11               0000036A  Local --
+: loop_delay_109_1_12               0000036D  Local --
+: loop_delay_109_1_13               00000370  Local --
+: loop_delay_109_1_14               00000373  Local --
+: loop_delay_109_1_15               00000376  Local --
+: loop_delay_109_1_16               00000379  Local --
+: loop_delay_109_1_17               0000037C  Local --
+: loop_delay_109_1_18               0000037F  Local --
+: loop_delay_109_1_19               00000382  Local --
+: loop_delay_109_1_20               00000385  Local --
+: loop_delay_109_1_21               00000388  Local --
+: loop_delay_109_1_22               0000038B  Local --
+: loop_delay_109_1_23               0000038E  Local --
+: loop_delay_109_1_24               00000391  Local --
+: loop_delay_109_1_25               00000394  Local --
+: loop_delay_109_1_26               00000397  Local --
+: loop_delay_109_1_27               0000039A  Local --
+: loop_delay_109_1_28               0000039D  Local --
+: loop_delay_109_1_29               000003A0  Local --
+: loop_delay_109_1_30               000003A3  Local --
+: loop_delay_109_1_31               000003A6  Local --
+: flash_108                         000003A8  Local --
+: loop_delay_108_0_0                000003AB  Local --
+: loop_delay_108_1_0                000003AF  Local --
+: flash_107                         000003B2  Local --
+: loop_delay_107_0_0                000003B5  Local --
+: loop_delay_107_1_0                000003B9  Local --
+: flash_106                         000003BC  Local --
+: loop_delay_106_0_0                000003BF  Local --
+: loop_delay_106_1_0                000003C3  Local --
+: flash_105                         000003C6  Local --
+: loop_delay_105_0_0                000003C9  Local --
+: loop_delay_105_1_0                000003CD  Local --
+: flash_104                         000003D0  Local --
+: loop_delay_104_0_0                000003D3  Local --
+: loop_delay_104_1_0                000003D7  Local --
+: flash_103                         000003DA  Local --
+: loop_delay_103_0_0                000003DD  Local --
+: loop_delay_103_1_0                000003E1  Local --
+: flash_102                         000003E4  Local --
+: loop_delay_102_0_0                000003EA  Local --
+: loop_delay_102_1_0                000003EE  Local --
+: flash_101                         000003F0  Local --
+: loop_delay_101_0_0                000003F6  Local --
+: loop_delay_101_1_0                000003FA  Local --
+: flash_100                         000003FC  Local --
+: loop_delay_100_0_0                00000402  Local --
+: loop_delay_100_1_0                00000406  Local --
+: flash_99                          00000408  Local --
+: loop_delay_99_0_0                 0000040E  Local --
+: loop_delay_99_1_0                 00000412  Local --
+: done                              00000414  Local --
+: test                              00000415  Local --
+: one                               00000416  Local --
+: max                               00000417  Local --
+: neg                               00000418  Local --
+: zero                              00000419  Local --
+: delay                             0000041A  Local --
+: delay_1                           0000041B  Local --
+: delay_2                           0000041C  Local --
+: delay_max                         0000041D  Local --
+: m_pattern_a                       0000041E  Local --
+: m_pattern_b                       0000041F  Local --
+: traffic                           00000420  Local --
