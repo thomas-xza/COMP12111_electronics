@@ -20,11 +20,7 @@ def main():
 
         delay_quantity = get_delay_quantity(delay_set, flashes_counter)
 
-        m_light_select = get_next_m_light(m_light_select)
-
-        m_light_pattern = get_next_m_light_pattern(flashes_counter)
-
-        
+        m_light_str = generate_m_light_asm(m_light_select, flashes_counter)
 
         intro = "\n".join([
             f"\n\nflash_{delay_n}",
@@ -46,6 +42,28 @@ def main():
         flashes_counter += 1
 
 
+def generate_m_light_asm(m_light_select, flashes_counter):
+
+    m_light_select = get_next_m_light(m_light_select)
+
+    m_light_pattern = get_next_m_light_pattern(flashes_counter)
+
+    action_to_perform = flashes_counter % 12
+
+    if action_to_perform < 6:
+
+        return "\n".join[
+            f"LDA {pattern}",
+            
+        load = True
+
+    else:
+
+        store = True
+
+    
+
+        
 def get_next_m_light_pattern(flashes_counter):
 
     ##  n =>
@@ -53,29 +71,15 @@ def get_next_m_light_pattern(flashes_counter):
 
     if flashes_counter % 2 == 0:
 
-        pattern = "m_pattern_a"
+        return = "m_pattern_a"
 
         # pattern = format_input_mu0(0b000000011101101)
 
     else:
 
-        pattern = "m_pattern_b"
+        return = "m_pattern_b"
 
         # pattern = format_input_mu0(0b000000011101101)
-
-    action_to_perform = flashes_counter % 12
-
-    if action_to_perform < 6:
-
-        load = True
-
-        "\n".join[
-            f"LDA {pattern}",
-            
-
-    else:
-
-        store = True
 
 
 def format_input_mu0(n):
