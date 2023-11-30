@@ -1,0 +1,50 @@
+#!/usr/bin/python3
+
+def main():
+
+    flash_n = 4
+
+    delay_quantity = 1
+
+    intro = f"flash_{flash_n}\n" + "store max"
+
+    quantity = 4
+
+    delay_set = generate_pow_2_set(quantity)
+
+    delay_set.reverse()
+
+    for delay_counter in delay_set:
+
+        final_str = ""
+
+        counter = 0
+
+        first_delay = generate_delay(delay_counter, delay_quantity, 0)
+
+
+
+def generate_pow_2_set(quantity):
+
+    delay_set = []
+
+    for n in range(quantity, 0, -1):
+
+        delay_set.append(2^n)
+
+    return delay_set
+
+
+def generate_delay(delay_n, delay_quantity, toggle):
+
+    output_str = "load max"
+
+    output_str += f"loop_delay_{delay_n}_{delay_quantity}_{toggle} sub one"
+
+    output_str += f"JNE loop_delay_{delay_n}_{delay_quantity}_{toggle}"
+
+    return output_str
+
+
+main()
+
