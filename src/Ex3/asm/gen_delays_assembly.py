@@ -25,17 +25,21 @@ def main():
         intro = "\n".join([
             f"\n\nflash_{delay_n}",
             "ADD max",
-            "STA &0FFF"])
+            "STA &0FFF",
+            m_light_str[0]
+        ])
 
         first_delay = generate_delay_set(delay_n, 0, delay_quantity)
 
         second_delay = generate_delay_set(delay_n, 1, delay_quantity)
 
-        print("\n\n".join([intro,
-               first_delay,
-               "STA &0FFF",
-               second_delay,
-               ]))
+        print("\n\n".join([
+            intro,
+            first_delay,
+            "STA &0FFF",
+            second_delay,
+            m_light_str[1]
+        ])
 
         delay_n -= 1
 
@@ -45,41 +49,40 @@ def main():
 def generate_m_light_asm(m_light_select, flashes_counter):
 
     m_light_select = get_next_m_light(m_light_select)
+    
+    m_light_select_str = format_input_mu0(m_light_select)
 
     m_light_pattern = get_next_m_light_pattern(flashes_counter)
 
     action_to_perform = flashes_counter % 12
 
     if action_to_perform < 6:
+        
+       ##  Load
 
-        return "\n".join[
-            f"LDA {pattern}",
+        seq = "\n".join([
+            f"LDA {m_light_pattern}",
+            f"STA {m_light_select_str}",
+            f"LDA zero"])
+
+        return [seq, ""]
             
-        load = True
-
     else:
 
-        store = True
-
-    
+        seq = "\n".join([ f"STA {m_light_select}"])
+        return ["", seq]
 
         
 def get_next_m_light_pattern(flashes_counter):
 
-    ##  n =>
-    ##  [<data_to_write>, <data_to_erase>]
 
     if flashes_counter % 2 == 0:
 
-        return = "m_pattern_a"
-
-        # pattern = format_input_mu0(0b000000011101101)
+        return "m_pattern_a"
 
     else:
 
-        return = "m_pattern_b"
-
-        # pattern = format_input_mu0(0b000000011101101)
+        return "m_pattern_b"
 
 
 def format_input_mu0(n):
@@ -155,5 +158,7 @@ def generate_pow_2_set(initial_value):
     return delay_set
 
 
-main()
+if __name__ == '__main__':
+    
+    main()
 

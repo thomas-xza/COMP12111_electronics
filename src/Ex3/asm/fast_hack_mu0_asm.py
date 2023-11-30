@@ -2,41 +2,41 @@
 
 def main():
 
-    iter_flash = 3
+    store = "\t\tSTA &0FFF\n"
 
-    iter_time = 0
+    delay_times = generate_delay_times()
 
-    middle = "\t\tSTA &0FFF\n"
+    quantity_of_full_flashes = 3
 
     
-    delay_time = []
-
-    quantity = 2
     
-    for i in range(quantity+1, 0, -1):
-
-        delay_time.append(i**2)
-        
-
-    while iter_flash < iter_flash + quantity - 1:
-
         intro = f"flash_{iter_flash}\n" + \
-            "\t\tADD max                 ;  add max to ACC\n" + \
-            "\t\tSTA &0FFF               ;  store to memory &0FFF\n"
+            "\t\tADD max                 ;  add max to ACC\n" + store
 
         delay_1 = generate_delay(iter_flash, delay_time[iter_time], "0")
         
         delay_2 = generate_delay(iter_flash, delay_time[iter_time], "1")
 
-        print(intro + delay_1 + middle + delay_2 + "\n\n")
-
-        iter_flash += 1
+        # print(intro + store + delay_1 + store + delay_2 + "\n\n")
 
         iter_time += 1
 
+
+def generate_delay_times():
+
+    delay_times = []
+
+    while i < 16:
+
+        delay_times.append(i)
+
+        i = i * 2
+
+    delay_times.reverse()
+
+    return delay_times
+
         
-
-
 def generate_delay(iter_flash, iter_time, toggle):
 
     counter = 0
@@ -44,7 +44,6 @@ def generate_delay(iter_flash, iter_time, toggle):
     final_str = ""
 
     while ( counter < iter_time ):
-
 
         final_str += "\t\tLDA delay_max\n" + \
         f"loop_delay_{iter_flash}_{counter}_{toggle}\t\tsub one\n" + \
