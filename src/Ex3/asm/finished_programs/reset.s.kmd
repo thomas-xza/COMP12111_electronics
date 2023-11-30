@@ -1,0 +1,51 @@
+KMD
+00000000:       ; 
+00000000:       ; 
+00000000:       ;         ORG  0
+00000000:       ; 
+00000000:       ;          ;; Reset all the lights to off.
+00000000:       ;         
+00000000: 1FFF  ;         STA &FFFF
+00000001: 1FFF  ;         STA &0FFF
+00000002: 1FFA  ;         STA &0FFA
+00000003: 1FF9  ;         STA &0FF9
+00000004: 1FF8  ;         STA &0FF8
+00000005: 1FF7  ;         STA &0FF7
+00000006: 1FF6  ;         STA &0FF6
+00000007: 1FF5  ;         STA &0FF5
+00000008: 1FFF  ;         STA &0FFF               ;  store to memory &0FFF
+00000009:       ; 
+00000009:       ; 
+00000009: 7000  ;         stop    STP              ; STOP - HALT progr
+0000000A:       ; 
+0000000A: 400A  ;         done    JMP done         ; Just in case stop instr fails
+0000000B:       ; 
+0000000B:       ; 
+0000000B: FFFF  ; test    DEFW &FFFF
+0000000C:       ;         
+0000000C: 0001  ; one     DEFW 1           ; one
+0000000D: 7FFF  ; max     DEFW &7FFF       ; max ?
+0000000E: 8000  ; neg     DEFW &8000       ; -max
+0000000F: 0000  ; zero    DEFW &0000       ; zero
+00000010: 000F  ; delay   DEFW &000F       ; 16
+00000011:       ;         
+00000011: 2ABD  ; delay_1 DEFW &2ABD
+00000012: 38FF  ; delay_2 DEFW &38FF
+00000013: 7FFF  ; delay_max DEFW &7FFF
+00000014:       ; 
+00000014: 0FFF  ; traffic DEFW &0FFF
+00000015:       ; 
+
+Symbol Table: Labels
+: stop                              00000009  Local --
+: done                              0000000A  Local --
+: test                              0000000B  Local --
+: one                               0000000C  Local --
+: max                               0000000D  Local --
+: neg                               0000000E  Local --
+: zero                              0000000F  Local --
+: delay                             00000010  Local --
+: delay_1                           00000011  Local --
+: delay_2                           00000012  Local --
+: delay_max                         00000013  Local --
+: traffic                           00000014  Local --

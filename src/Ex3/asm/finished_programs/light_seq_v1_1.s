@@ -578,6 +578,10 @@ STA 4085
 flash_118
 ADD max
 STA &0FFF
+LDA m_pattern_a
+STA &FFA
+LDA zero
+
 
 
 LDA delay_max
@@ -596,12 +600,16 @@ JNE loop_delay_118_1_0
 
 
 
-STA 4090
+
 
 
 flash_117
 ADD max
 STA &0FFF
+LDA m_pattern_b
+STA &FF9
+LDA zero
+
 
 
 LDA delay_max
@@ -620,12 +628,16 @@ JNE loop_delay_117_1_0
 
 
 
-STA 4089
+
 
 
 flash_116
 ADD max
 STA &0FFF
+LDA m_pattern_a
+STA &FF8
+LDA zero
+
 
 
 LDA delay_max
@@ -644,12 +656,16 @@ JNE loop_delay_116_1_0
 
 
 
-STA 4088
+
 
 
 flash_115
 ADD max
 STA &0FFF
+LDA m_pattern_b
+STA &FF7
+LDA zero
+
 
 
 LDA delay_max
@@ -668,12 +684,16 @@ JNE loop_delay_115_1_0
 
 
 
-STA 4087
+
 
 
 flash_114
 ADD max
 STA &0FFF
+LDA m_pattern_a
+STA &FF6
+LDA zero
+
 
 
 LDA delay_max
@@ -692,12 +712,16 @@ JNE loop_delay_114_1_0
 
 
 
-STA 4086
+
 
 
 flash_113
 ADD max
 STA &0FFF
+LDA m_pattern_b
+STA &FF5
+LDA zero
+
 
 
 LDA delay_max
@@ -716,7 +740,7 @@ JNE loop_delay_113_1_0
 
 
 
-STA 4085
+
 
 
 	done    JMP flash_130         ; Just in case stop instr fails

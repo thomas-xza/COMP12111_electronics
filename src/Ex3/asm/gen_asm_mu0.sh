@@ -3,5 +3,6 @@
 target="light_seq.s"
 
 cat light_seq_head.s > $target
-./gen_delays_assembly.py >> $target
+python3 $1 >> $target
 cat light_seq_tail.s >> $target
+

@@ -59,7 +59,7 @@ def generate_m_light_asm(m_light_select, flashes_counter):
 
     m_light_pattern = get_next_m_light_pattern(flashes_counter)
 
-    action_to_perform = flashes_counter % 18
+    action_to_perform = flashes_counter % 12
 
     if action_to_perform < 6:
         
@@ -73,11 +73,6 @@ def generate_m_light_asm(m_light_select, flashes_counter):
         ])
 
         return [seq, ""]
-
-    elif action_to_perform > 5 and action_to_perform < 12:
-
-        seq = "\n".join([ f"STA {m_light_select}"])
-        return ["", seq]        
             
     else:
 
@@ -91,7 +86,7 @@ def get_next_m_light_pattern(flashes_counter):
 
         return "m_pattern_a"
 
-    elif flashes_counter % 2 == 1:
+    else:
 
         return "m_pattern_b"
 

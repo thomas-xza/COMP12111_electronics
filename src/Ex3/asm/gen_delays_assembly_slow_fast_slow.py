@@ -2,7 +2,7 @@
 
 def main():
 
-    initial_value = 16
+    initial_value = 4
 
     delay_set = generate_pow_2_set(initial_value)
 
@@ -12,45 +12,52 @@ def main():
 
     m_light_select = 0xffa
 
-    flashes_total = 18
+    flashes_total = 16
 
     flashes_counter = 0
 
     top_level_loop = 0
 
-    while flashes_counter < flashes_total:
+    while top_level_loop < 2:
 
-        delay_quantity = get_delay_quantity(delay_set, flashes_counter)
+        while flashes_counter < flashes_total:
 
-        m_light_str = generate_m_light_asm(m_light_select, flashes_counter)
+            delay_quantity = get_delay_quantity(delay_set, flashes_counter)
 
-        intro = "\n".join([
-            f"\n\nflash_{delay_n}",
-            "ADD max",
-            "STA &0FFF",
-            m_light_str[0]
-        ])
+            m_light_str = generate_m_light_asm(m_light_select, flashes_counter)
 
-        first_delay = generate_delay_set(delay_n, 0, delay_quantity)
+            intro = "\n".join([
+                f"\n\nflash_{delay_n}",
+                "ADD max",
+                "STA &0FFF",
+                m_light_str[0]
+            ])
 
-        second_delay = generate_delay_set(delay_n, 1, delay_quantity)
+            first_delay = generate_delay_set(delay_n, 0, delay_quantity)
 
-        seq = "\n\n".join([
-            intro,
-            first_delay,
-            "STA &0FFF",
-            second_delay,
-            m_light_str[1]
-        ])
+            second_delay = generate_delay_set(delay_n, 1, delay_quantity)
 
-        print(seq)
+            seq = "\n\n".join([
+                intro,
+                first_delay,
+                "STA &0FFF",
+                second_delay,
+                m_light_str[1]
+            ])
 
-        m_light_select = get_next_m_light(m_light_select)
+            print(seq)
 
-        delay_n -= 1
+            m_light_select = get_next_m_light(m_light_select)
 
-        flashes_counter += 1
+            delay_n -= 1
 
+            flashes_counter += 1
+
+        top_level_loop += 1
+            
+        flashes_counter = 0
+
+        delay_set.reverse()
 
 
 def generate_m_light_asm(m_light_select, flashes_counter):
@@ -59,7 +66,7 @@ def generate_m_light_asm(m_light_select, flashes_counter):
 
     m_light_pattern = get_next_m_light_pattern(flashes_counter)
 
-    action_to_perform = flashes_counter % 18
+    action_to_perform = flashes_counter % 12
 
     if action_to_perform < 6:
         
@@ -73,11 +80,6 @@ def generate_m_light_asm(m_light_select, flashes_counter):
         ])
 
         return [seq, ""]
-
-    elif action_to_perform > 5 and action_to_perform < 12:
-
-        seq = "\n".join([ f"STA {m_light_select}"])
-        return ["", seq]        
             
     else:
 
@@ -91,7 +93,7 @@ def get_next_m_light_pattern(flashes_counter):
 
         return "m_pattern_a"
 
-    elif flashes_counter % 2 == 1:
+    else:
 
         return "m_pattern_b"
 
