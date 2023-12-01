@@ -1,0 +1,14 @@
+
+mux
+  - error: default to zero instead of undefined
+  - detection: via waves, after full-processor testbench did not work
+
+register
+  - error: attempted to set same variable in 2 different `always` blocks
+  - detection: error messages during synthesis that this is not allowed
+
+datapath
+  - error: mixed up X and Dout
+  - error: mixed up YMux inputs
+  - detections: testbench simulation
+

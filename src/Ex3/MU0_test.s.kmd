@@ -1,0 +1,107 @@
+KMD
+00000000:       ; ;       Simple MU0 verification programme
+00000000:       ; ;       JDG
+00000000:       ; ;       November 2008
+00000000:       ; ;       Modified Jan 2012 by JSP
+00000000:       ; 
+00000000:       ; ;       Begin program at reset address. Acc, pc, and ir should all be 0 after reset
+00000000:       ;         ORG  0
+00000000:       ; 
+00000000:       ; ;       Test store to memory 
+00000000: 1022  ;         STA  result1     ; Store acc into memory loc result1. result1 = 0
+00000001:       ; 
+00000001:       ; ;       Test load accumulator from memory
+00000001: 001C  ;         LDA  neg         ; Acc should be set to 'h8000
+00000002: 1023  ;         STA  result2     ; Store value of acc to memory. result2 = 'h8000
+00000003:       ; 
+00000003:       ; ;       Simple adder overflow test
+00000003: 201C  ;         ADD neg          ; Acc should overflow to 0 ('h8000 + 'h8000)
+00000004: 1024  ;         STA  result3     ; Store the addition result to memory. result3 = 0
+00000005:       ; 
+00000005:       ; ;       Simple subtraction test
+00000005: 301B  ;         SUB one          ; Acc should be 'hFFFF(0 - 1 = -1) 
+00000006: 1025  ;         STA  result4     ; Store the subtraction result to memory. result4 = 'hFFFF       
+00000007:       ; 
+00000007:       ; ;       Test unconditional jump(JMP) - (always jump)
+00000007:       ; ;       If JMP passes result5 = 'h1A55, else result5 = 'hFA01
+00000007: 400A  ;         JMP  jmp1ok      ; Pc should be set to jmp1ok
+00000008: 001E  ;         LDA  jmperr1     ; If jump fails load error value
+00000009: 1026  ;         STA  result5     ; If jump fails set memory to failure value.
+0000000A:       ; 
+0000000A:       ; 
+0000000A:       ; ;       Test conditional jump(JNE) based on the Z(zero) flag
+0000000A:       ; ;       Relies on the JMP instr already being tested and working
+0000000A:       ; 
+0000000A:       ; ;       Test JNE for when Z flag is NOT set
+0000000A:       ; ;       If JNE jumps when it should result6 = 'h1A55, else result6 = 'hFA02
+0000000A: 001B  ; jmp1ok  LDA  one         ; (Z)zero flag not set 
+0000000B: 600F  ;         JNE  jmp2ok      ; Jump SHOULD be taken and execute the "pass" reporting code
+0000000C:       ; ;       error reporting code
+0000000C: 001F  ;         LDA  jmperr2     ; If JNE failed load the acc with error value
+0000000D: 1027  ;         STA  result6     ; If JNE failed set memory to failure value. result6 = 'hFA02
+0000000E: 4011  ;         JMP  fail1       ; If JNE failed, then jump over the "pass" reporting code
+0000000F:       ; ;       pass reporting code
+0000000F: 0021  ; jmp2ok  LDA  pass1       ; If jump taken load the acc with the pass value
+00000010: 1027  ;         STA  result6     ; If jump taken set memory to pass value. result6 = 'h1A55
+00000011:       ; 
+00000011:       ; ;       If JNE jumps when it should NOT result7 = 'hFA03, else result7 = 'h1A55
+00000011:       ; ;       Test JNE for when Z flag is set
+00000011: 001D  ; fail1   LDA  zero        ; (Z)zero flag set 
+00000012: 6014  ;         JNE  fail2       ; If JNE jumps here, it shouldn't have, execute error reporting code
+00000013: 4017  ;         JMP  jmp3ok      ; If JNE was ok, then execute the "pass" reporting code 
+00000014:       ; ;       error reporting code 
+00000014: 0020  ; fail2   LDA  jmperr3     ; If JNE jumped when it should not have, then load error value
+00000015: 1028  ;         STA  result7     ; If JNE fails set memory loc to failure value. result7 = 'hFA03
+00000016: 4019  ;         JMP  stop        ; If JNE failed, then jump over the "pass" reporting code 
+00000017:       ; ;       pass reporting code
+00000017: 0021  ; jmp3ok  LDA  pass1       ; Load the acc with the pass value
+00000018: 1028  ;         STA  result7     ; Set memory to pass value. result6 = 'h1A55
+00000019:       ; ;       End of test for conditional jump(JNE) based on the Z(zero) flag
+00000019:       ; 
+00000019:       ; 
+00000019: 7000  ; stop    STP              ; STOP - HALT program
+0000001A: 401A  ; done    JMP done         ; Just in case stop instr fails
+0000001B:       ; 
+0000001B: 0001  ; one     DEFW 1           ; one
+0000001C: 8000  ; neg     DEFW &8000       ; -max
+0000001D: 0000  ; zero    DEFW &0000       ; zero
+0000001E:       ; 
+0000001E: FA01  ; jmperr1 DEFW &FA01       ; jump fail values
+0000001F: FA02  ; jmperr2 DEFW &FA02
+00000020: FA03  ; jmperr3 DEFW &FA03
+00000021:       ; 
+00000021: 1A55  ; pass1   DEFW &1A55       ; jump pass value
+00000022:       ; 
+00000022:       ; ;       result storage area
+00000022: FFFF  ; result1 DEFW &FFFF
+00000023: 0000  ; result2 DEFW &0000
+00000024: FFFF  ; result3 DEFW &FFFF
+00000025: 0000  ; result4 DEFW &0000
+00000026: 1A55  ; result5 DEFW &1A55
+00000027: 0000  ; result6 DEFW &0000
+00000028: 0000  ; result7 DEFW &0000
+00000029:       ; 
+00000029:       ; 
+
+Symbol Table: Labels
+: jmp1ok                            0000000A  Local --
+: jmp2ok                            0000000F  Local --
+: fail1                             00000011  Local --
+: fail2                             00000014  Local --
+: jmp3ok                            00000017  Local --
+: stop                              00000019  Local --
+: done                              0000001A  Local --
+: one                               0000001B  Local --
+: neg                               0000001C  Local --
+: zero                              0000001D  Local --
+: jmperr1                           0000001E  Local --
+: jmperr2                           0000001F  Local --
+: jmperr3                           00000020  Local --
+: pass1                             00000021  Local --
+: result1                           00000022  Local --
+: result2                           00000023  Local --
+: result3                           00000024  Local --
+: result4                           00000025  Local --
+: result5                           00000026  Local --
+: result6                           00000027  Local --
+: result7                           00000028  Local --
